@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Optional: Block aggressive AI scrapers if you want to keep your IP private
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://chokmah.me/sitemap.xml
