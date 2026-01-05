@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chokmah LLC – Sovereign Competence Theme</title>
+    <meta name="description" content="Official Sovereign Competence brand theme for Chokmah LLC. Upload this file to your repository root as theme.html for quick reference.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-base: #0f172a;        /* Deep Anthracite */
+            --surface: #1e293b;        /* Slate Armor */
+            --accent: #d97706;         /* Signal Amber */
+            --highlight: #f59e0b;      /* Active Amber */
+            --text-primary: #f8fafc;   /* Titanium White */
+            --text-muted: #cbd5e1;     /* Cadet Grey */
+        }
+        body { 
+            background: var(--bg-base); 
+            color: var(--text-primary); 
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .card { 
+            background: var(--surface); 
+            box-shadow: 0 20px 30px -5px rgba(0,0,0,0.4); 
+        }
+        .accent { color: var(--accent); }
+        .highlight { color: var(--highlight); }
+        .muted { color: var(--text-muted); }
+    </style>
+</head>
+<body class="min-h-screen py-12 px-6">
+    <div class="max-w-4xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-bold mb-4">Chokmah LLC</h1>
+            <p class="text-2xl muted">Sovereign Competence – Official Brand Theme</p>
+        </header>
+
+        <section class="card rounded-2xl p-10 mb-12">
+            <h2 class="text-3xl font-bold mb-8">Palette Reference</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-lg">
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 rounded-lg" style="background:#0f172a;"></div>
+                    <div>
+                        <p class="font-bold">Deep Anthracite</p>
+                        <p class="muted">#0f172a</p>
+                        <p class="muted text-sm">Primary background, hero sections</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 rounded-lg" style="background:#1e293b;"></div>
+                    <div>
+                        <p class="font-bold">Slate Armor</p>
+                        <p class="muted">#1e293b</p>
+                        <p class="muted text-sm">Cards, panels, surfaces</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 rounded-lg" style="background:#d97706;"></div>
+                    <div>
+                        <p class="font-bold accent">Signal Amber</p>
+                        <p class="muted">#d97706</p>
+                        <p class="muted text-sm">Accents, buttons, icons, badges</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 rounded-lg" style="background:#f59e0b;"></div>
+                    <div>
+                        <p class="font-bold highlight">Active Amber</p>
+                        <p class="muted">#f59e0b</p>
+                        <p class="muted text-sm">Hover states, glows</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 rounded-lg bg-white"></div>
+                    <div>
+                        <p class="font-bold">Titanium White</p>
+                        <p class="muted">#f8fafc</p>
+                        <p class="muted text-sm">Primary text, headings</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-6">
+                    <div class="w-24 h-24 rounded-lg" style="background:#cbd5e1;"></div>
+                    <div>
+                        <p class="font-bold muted">Cadet Grey</p>
+                        <p class="muted">#cbd5e1</p>
+                        <p class="muted text-sm">Secondary/muted text</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card rounded-2xl p-10">
+            <h2 class="text-3xl font-bold mb-8">Tailwind Config Snippet</h2>
+            <pre class="bg-black/30 rounded-lg p-6 overflow-x-auto text-sm">
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        chokmah: {
+          base:      '#0f172a',
+          surface:   '#1e293b',
+          accent:    '#d97706',
+          highlight: '#f59e0b',
+          text:      '#f8fafc',
+          muted:     '#cbd5e1',
+        }
+      }
+    }
+  }
+}
+            </pre>
+            <p class="mt-6 muted">Copy this into your tailwind.config.js to use <code class="accent">bg-chokmah-base</code>, <code class="accent">text-chokmah-accent</code>, etc.</p>
+        </section>
+
+        <footer class="text-center mt-16 muted">
+            <p>© 2026 Chokmah LLC – Vermont member-managed LLC</p>
+            <p class="mt-2 text-sm">Upload this file to your repo root (e.g., theme.html) for instant brand reference.</p>
+        </footer>
+    </div>
+</body>
+</html>
