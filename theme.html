@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chokmah LLC – Sovereign Competence Theme</title>
-    <meta name="description" content="Official Sovereign Competence brand theme for Chokmah LLC. Upload this file to your repository root as theme.html for quick reference.">
+    <title>Chokmah LLC – Sovereign Competence Theme (Dark Mode)</title>
+    <meta name="description" content="Official Sovereign Competence brand theme for Chokmah LLC with full dark-mode support. Upload as theme-dark.html.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-base: #0f172a;        /* Deep Anthracite */
+            --bg-base: #0f172a;        /* Deep Anthracite – dark mode default */
             --surface: #1e293b;        /* Slate Armor */
             --accent: #d97706;         /* Signal Amber */
             --highlight: #f59e0b;      /* Active Amber */
             --text-primary: #f8fafc;   /* Titanium White */
             --text-muted: #cbd5e1;     /* Cadet Grey */
+        }
+        /* Light mode override (optional) */
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg-base: #f8fafc;
+                --surface: #ffffff;
+                --text-primary: #0f172a;
+                --text-muted: #475569;
+            }
         }
         body { 
             background: var(--bg-base); 
@@ -26,28 +35,57 @@
         .card { 
             background: var(--surface); 
             box-shadow: 0 20px 30px -5px rgba(0,0,0,0.4); 
+            transition: all 0.3s ease;
+        }
+        .card:hover { 
+            transform: translateY(-10px); 
+            box-shadow: 0 30px 60px -12px rgba(0,0,0,0.5); 
         }
         .accent { color: var(--accent); }
         .highlight { color: var(--highlight); }
         .muted { color: var(--text-muted); }
+
+        /* Responsive mobile breakpoints */
+        @media (max-width: 639px) {
+            h1 { font-size: 2.5rem !important; }
+            .text-5xl { font-size: 2.5rem; }
+            .text-3xl { font-size: 1.875rem; }
+            .palette-grid { grid-template-columns: 1fr; }
+            .flex { flex-direction: column; align-items: center; }
+            .w-24 { width: 6rem; height: 6rem; }
+            .p-10 { padding: 1.5rem; }
+            .mb-16 { margin-bottom: 2rem; }
+            .mb-12 { margin-bottom: 2rem; }
+            .mb-8 { margin-bottom: 1rem; }
+        }
+        @media (min-width: 640px) {
+            .palette-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        @media (min-width: 768px) {
+            .max-w-4xl { max-width: 56rem; }
+            .palette-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        }
+        @media (min-width: 1024px) {
+            .max-w-4xl { max-width: 64rem; }
+        }
     </style>
 </head>
 <body class="min-h-screen py-12 px-6">
     <div class="max-w-4xl mx-auto">
         <header class="text-center mb-16">
             <h1 class="text-5xl font-bold mb-4">Chokmah LLC</h1>
-            <p class="text-2xl muted">Sovereign Competence – Official Brand Theme</p>
+            <p class="text-2xl muted">Sovereign Competence – Official Brand Theme (Dark Mode)</p>
         </header>
 
         <section class="card rounded-2xl p-10 mb-12">
             <h2 class="text-3xl font-bold mb-8">Palette Reference</h2>
-            <div class="grid md:grid-cols-2 gap-8 text-lg">
+            <div class="grid gap-8 text-lg palette-grid">
                 <div class="flex items-center gap-6">
                     <div class="w-24 h-24 rounded-lg" style="background:#0f172a;"></div>
                     <div>
                         <p class="font-bold">Deep Anthracite</p>
                         <p class="muted">#0f172a</p>
-                        <p class="muted text-sm">Primary background, hero sections</p>
+                        <p class="muted text-sm">Primary background (dark mode)</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-6">
@@ -55,7 +93,7 @@
                     <div>
                         <p class="font-bold">Slate Armor</p>
                         <p class="muted">#1e293b</p>
-                        <p class="muted text-sm">Cards, panels, surfaces</p>
+                        <p class="muted text-sm">Cards & panels</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-6">
@@ -63,7 +101,7 @@
                     <div>
                         <p class="font-bold accent">Signal Amber</p>
                         <p class="muted">#d97706</p>
-                        <p class="muted text-sm">Accents, buttons, icons, badges</p>
+                        <p class="muted text-sm">Accents, buttons, icons</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-6">
@@ -71,7 +109,7 @@
                     <div>
                         <p class="font-bold highlight">Active Amber</p>
                         <p class="muted">#f59e0b</p>
-                        <p class="muted text-sm">Hover states, glows</p>
+                        <p class="muted text-sm">Hover & glow states</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-6">
@@ -79,7 +117,7 @@
                     <div>
                         <p class="font-bold">Titanium White</p>
                         <p class="muted">#f8fafc</p>
-                        <p class="muted text-sm">Primary text, headings</p>
+                        <p class="muted text-sm">Primary text (dark mode)</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-6">
@@ -87,7 +125,7 @@
                     <div>
                         <p class="font-bold muted">Cadet Grey</p>
                         <p class="muted">#cbd5e1</p>
-                        <p class="muted text-sm">Secondary/muted text</p>
+                        <p class="muted text-sm">Secondary text</p>
                     </div>
                 </div>
             </div>
@@ -97,6 +135,7 @@
             <h2 class="text-3xl font-bold mb-8">Tailwind Config Snippet</h2>
             <pre class="bg-black/30 rounded-lg p-6 overflow-x-auto text-sm">
 module.exports = {
+  darkMode: 'class', // or 'media' for system preference
   theme: {
     extend: {
       colors: {
@@ -113,12 +152,12 @@ module.exports = {
   }
 }
             </pre>
-            <p class="mt-6 muted">Copy this into your tailwind.config.js to use <code class="accent">bg-chokmah-base</code>, <code class="accent">text-chokmah-accent</code>, etc.</p>
+            <p class="mt-6 muted">Use <code class="accent">bg-chokmah-base</code>, <code class="accent">text-chokmah-accent</code>, etc.</p>
         </section>
 
         <footer class="text-center mt-16 muted">
             <p>© 2026 Chokmah LLC – Vermont member-managed LLC</p>
-            <p class="mt-2 text-sm">Upload this file to your repo root (e.g., theme.html) for instant brand reference.</p>
+            <p class="mt-2 text-sm">Dark mode active by default; respects system preference via @media (prefers-color-scheme: light).</p>
         </footer>
     </div>
 </body>
