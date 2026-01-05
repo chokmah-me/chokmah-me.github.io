@@ -229,25 +229,30 @@
             </ul>
         </section>
 
-        <!-- New Prominent CTA Section -->
+       <!-- Updated Prominent CTA Section -->
         <section id="cta" class="bg-gradient-to-br from-amber-900/20 to-slate-900 p-12 rounded-3xl shadow-2xl border-4 border-amber-700 text-center">
             <h2 class="text-5xl font-bold mb-8 text-amber-400">Ready to Transform Your Security Workflow?</h2>
             <p class="text-2xl mb-10 text-slate-200">Book your 16-hour AI-powered training and start saving hundreds of hours per compliance cycle.</p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <!-- Primary mailto button (kept for devices with email client) -->
                 <a href="mailto:info@chokmah.me?subject=Inquiry:%20AI-Powered%20CISO%20Training&body=Hi%20dyb,%0D%0A%0D%0AI'd%20like%20to%20learn%20more%20about%20the%2016-hour%20AI-powered%20CISO%20training%20package." 
                    class="px-10 py-5 bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold text-xl rounded-xl shadow-lg transition transform hover:scale-105">
-                    Email to Book → info@chokmah.me
+                    Open Email Client →
                 </a>
-                <p class="text-lg text-slate-300">Limited slots available – reply today to secure your session.</p>
+
+                <!-- Fallback: Copy email button -->
+                <button onclick="copyEmail()" 
+                        class="px-10 py-5 bg-slate-700 hover:bg-slate-600 text-white font-bold text-xl rounded-xl shadow-lg transition transform hover:scale-105 flex items-center gap-3">
+                    <span>Copy Email Address</span>
+                    <span id="copied" class="copied hidden text-green-400 text-lg">✓ Copied!</span>
+                </button>
             </div>
+            <p class="mt-8 text-xl text-slate-300">Email: <span class="font-mono text-amber-400 selectable">info@chokmah.me</span></p>
+            <p class="mt-4 text-lg text-slate-400">Limited slots available – reach out today to secure your session.</p>
         </section>
     </main>
 
     <footer class="bg-slate-900 text-slate-400 py-8 px-4 text-center border-t-4 border-amber-700">
-        <p class="text-xl">Trainer: dyb | <a href="mailto:info@chokmah.me" class="text-amber-400 hover:underline">Contact: info@chokmah.me</a></p>
-    </footer>
-
-  <footer class="bg-slate-900 text-slate-400 py-8 px-4 text-center border-t-4 border-amber-700">
         <p class="text-xl">Trainer: dyb | <a href="mailto:info@chokmah.me" class="text-amber-400 hover:underline">Contact: info@chokmah.me</a></p>
     </footer>
 
@@ -257,6 +262,15 @@
         }
         function closeAllDetails() {
             document.querySelectorAll('details').forEach(detail => { detail.open = false; });
+        }
+
+        function copyEmail() {
+            navigator.clipboard.writeText('info@chokmah.me');
+            const copiedMsg = document.getElementById('copied');
+            copiedMsg.classList.remove('hidden');
+            setTimeout(() => {
+                copiedMsg.classList.add('hidden');
+            }, 2000);
         }
     </script>
 </body>
