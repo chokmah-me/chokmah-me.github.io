@@ -2,8 +2,7 @@
 
 **Sovereign-grade security and AI-driven engineering solutions.**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17744054.svg)](https://doi.org/10.5281/zenodo.17744054)
+**[Professional Services](https://chokmah.me) | [Open Source](https://github.com/chokmah-me)**
 
 ---
 
@@ -20,37 +19,16 @@ Delivering sovereign-grade competence in:
 ## 📁 GitHub Portfolio
 
 ### 🤖 Claude Code Playbook
-**[Repository](https://github.com/chokmah-me/claude-code-playbook)** | **[Latest Release](https://github.com/chokmah-me/claude-code-playbook/releases)** | **[Documentation](https://github.com/chokmah-me/claude-code-playbook#readme)**
+**[Repository](https://github.com/chokmah-me/claude-code-playbook)**
 
-**Practitioner's Playbook for Token-Efficient AI Engineering**
-
-A comprehensive guide for maximizing Claude Code efficiency while staying within token budgets. Features 7 specialized workflows, 26+ shell aliases, and proven token economics.
-
-**Key Achievements:**
-- ⚡ **67% reduction** in conversation turns for refactoring tasks
-- 📊 **25K token budget** compliance for Claude Pro efficiency
-- 🎯 **100% test pass rate** maintained throughout workflows
-- 🖥️ **Cross-platform** support (Windows PowerShell, Mac, Linux)
-
-**Perfect for:** Professional developers using Claude Pro who need predictable token costs and efficient workflows.
+Token-efficient AI engineering workflows for professional development teams. Proven 67% reduction in conversation turns with predictable token economics.
 
 ---
 
 ### 🚀 Roo-Kimi Playbook  
-**[Repository](https://github.com/chokmah-me/roo-kimi-playbook)** | **[Latest Release](https://github.com/chokmah-me/roo-kimi-playbook/releases)** | **[Configuration Guide](https://github.com/chokmah-me/roo-kimi-playbook#readme)**
+**[Repository](https://github.com/chokmah-me/roo-kimi-playbook)**
 
-**Kimi K2 & Roo Code Optimization Playbook**
-
-Complete configuration guide for optimizing Kimi K2's agent-tuned model with Roo Code, featuring context engineering and cost governance protocols.
-
-**Key Features:**
-- 🧠 **Agent-tuned optimization** for Kimi K2 model
-- 💰 **$3.00 per 1M tokens** cost governance
-- 📈 **92% task completion** rate (vs 85% baseline)
-- 🔄 **18-step horizon** context management
-- ⚙️ **Legacy format** compatibility protocols
-
-**Perfect for:** Developers using Kimi K2 with Roo Code who need advanced context engineering and cost optimization.
+Optimization guide for Kimi K2's agent-tuned model with Roo Code. Advanced context engineering with 92% task completion rate.
 
 ---
 
@@ -72,81 +50,52 @@ Professional services portfolio showcasing sovereign-grade security and AI engin
 
 ## 🏆 Proven Results
 
-**Across All Projects:**
-- **Token Efficiency**: 25-67% reduction in API costs
-- **Task Completion**: 92% success rate (industry baseline: 85%)
-- **Setup Time**: 15 minutes to productive workflow
-- **Quality Gates**: 100% test pass rate, zero API breakage
-- **Budget Compliance**: Stay within Claude Pro token limits
+- **92% Task Completion** Rate (vs 85% baseline)
+- **67% Cost Reduction** in AI development workflows  
+- **Federal Court SME** Recognition
+- **DoD R&D Leadership** Experience
 
 ---
 
-## 🚀 Quick Start Guide
+## 🚀 Quick Start
 
-### For AI Engineering (Open Source)
-Choose your platform:
-
-**Claude Code Users:**
+**Open Source Tools:**
 ```bash
+# Claude Code workflows
 git clone https://github.com/chokmah-me/claude-code-playbook.git
-cd claude-code-playbook
-# Windows: . scripts/powershell/setup_powershell_profile.ps1
-# Unix: cat templates/.bash_aliases.template >> ~/.bashrc
-ccnew  # Start your session
-```
 
-**Roo Code + Kimi K2 Users:**
-```bash
+# Kimi K2 optimization  
 git clone https://github.com/chokmah-me/roo-kimi-playbook.git
-cd roo-kimi-playbook
-cp .clinerules /your/project/
-cp -r .roo /your/project/
-# Configure Roo Code with provided settings
 ```
 
-### For Professional Services
-**Contact:** info@chokmah.me  
-**Website:** [chokmah.me](https://chokmah-me.github.io)  
-**Services:** Cybersecurity architecture, AI engineering, expert witness, training
+**Business Inquiries:** info@chokmah.me
 
 ---
 
 ## 📊 Technical Expertise
 
 ### AI Engineering
-- **Context Engineering** - Architectural minimization of context-window waste
-- **Token Economics** - Predictable API cost management
-- **Agentic Workflows** - Multi-step AI task orchestration
-- **Secure LLM Integration** - Defensive AI workflow design
+- **Context Engineering** - 40-60% LLM cost reduction
+- **Token Economics** - Predictable API cost management  
+- **Agentic Workflows** - Multi-step AI orchestration
 
 ### Cybersecurity  
-- **Federal Court SME** - Recognized expert witness credentials
-- **DoD R&D Leadership** - Prior Department of Defense research experience
-- **STRIDE/PASTA** - Industry-standard threat modeling methodologies
-- **Quantitative Risk Profiling** - Financial exposure-based security metrics
+- **Federal Court SME** - Expert witness credentials
+- **DoD R&D Leadership** - Department of Defense experience
+- **STRIDE/PASTA** - Threat modeling methodologies
 
-### Software Architecture
-- **Modern TypeScript Patterns** - Functional composition, result monads
-- **Feature-Based Modules** - Scalable architecture organization
-- **Cross-Platform Tooling** - Windows, Mac, Linux compatibility
-- **CI/CD Integration** - Automated quality gates and validation
+### Professional Services
+- **Expert Witness** - Federal court qualified
+- **Bespoke Curriculum** - Rapid turnaround custom training
+- **Secure SDLC** - AI-enhanced development lifecycle
 
 ---
 
-## 🎓 Educational Background
+## 🎓 Background
 
-**Academic Experience:**
-- Tenure-track teaching experience
-- NSA CAE-R program development
-- University-level cybersecurity curriculum design
-- Professional training and workshop delivery
-- Bespoke curriculum design with rapid turnaround
-
-**Industry Experience:**
-- U.S. Federal Court Subject Matter Expert
-- Department of Defense R&D leadership
-- Fortune 500 fintech experience  
-- Secure SDLC implementation
+**Academic:** Tenure-track teaching, NSA CAE-R program development, university curriculum design  
+**Industry:** Federal Court SME, DoD R&D leadership, Fortune 500 fintech experience  
+**Specialization:** Bespoke curriculum design with rapid turnaround
 
 ---
 
@@ -156,7 +105,7 @@ cp -r .roo /your/project/
 - **Free Playbooks** - Complete AI engineering workflows
 - **Community Support** - GitHub issues and discussions
 - **Documentation** - Comprehensive setup and usage guides
-- **MIT Licensed** - Free for commercial and personal use
+- **Open Source** - MIT licensed projects available
 
 ### Professional Services
 - **Consulting Engagements** - Custom security and AI solutions
@@ -214,27 +163,19 @@ cp -r .roo /your/project/
 
 ---
 
-## 📄 License & Philosophy
+## 📄 License & Legal
 
-**Open Source Projects:** MIT License - Free for all use cases  
-**Philosophy:** AI-assisted development and cybersecurity should be accessible to all organizations, not just those with large budgets.
-
----
-
-## 🙏 Acknowledgments
-
-- **Anthropic** for Claude Pro and Claude Code platforms
-- **Kimi Team** for the agent-tuned coding model
-- **Roo Code Community** for excellent open-source tooling
-- **U.S. Federal Courts** for SME recognition and opportunities
-- **DoD Research Community** for advancing sovereign-grade security
-- **All Contributors** who provide feedback and improvements
-- **You** for exploring these solutions and advancing the field
+**Open Source Projects:** Individual repositories may be available under MIT License  
+**Professional Services:** All services subject to Chokmah LLC terms and conditions  
+**Expert Witness:** Qualified for federal court testimony and reports
 
 ---
 
-*Made with ❤️ for the global developer and cybersecurity communities*
+## 📞 Contact
 
-**Last Updated:** January 2026  
-**Status:** ✅ Production Ready  
-**Contact:** info@chokmah.me
+**Email:** info@chokmah.me  
+**Website:** [chokmah.me](https://chokmah-me.github.io)  
+
+---
+
+**Last Updated:** January 2026
