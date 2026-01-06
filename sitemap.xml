@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Main homepage -->
    <url>
       <loc>https://chokmah.me/</loc>
-      <lastmod>2026-01-05</lastmod>
+      <lastmod>2026-01-06</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
    </url>
    
+   <!-- AI CISO Training page -->
    <url>
       <loc>https://chokmah.me/ai-ciso-training/</loc>
-      <lastmod>2026-01-05</lastmod>
+      <lastmod>2026-01-06</lastmod>
       <changefreq>monthly</changefreq>
       <priority>0.9</priority>
+   </url>
+   
+   <!-- Repository pages (GitHub) -->
+   <url>
+      <loc>https://github.com/chokmah-me/claude-code-playbook</loc>
+      <lastmod>2026-01-06</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>https://github.com/chokmah-me/roo-kimi-playbook</loc>
+      <lastmod>2026-01-06</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   
+   <url>
+      <loc>https://github.com/chokmah-me/chokmah-me.github.io</loc>
+      <lastmod>2026-01-06</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.7</priority>
    </url>
 </urlset>
