@@ -135,15 +135,12 @@ cp -r .roo /your/project/
 
 ## 🎓 Educational Background
 
-**Academic & Curriculum Design Experience:**
+**Academic Experience:**
 - Tenure-track teaching experience
 - NSA CAE-R program development
 - University-level cybersecurity curriculum design
 - Professional training and workshop delivery
-- **AI-powered curriculum development** for executive education
-- **Instructional design** for technical certification programs
-- **Course authoring** with measurable learning outcomes
-- **Workshop facilitation** for Fortune 500 and government clients
+- Bespoke curriculum design with rapid turnaround
 
 **Industry Experience:**
 - U.S. Federal Court Subject Matter Expert
@@ -166,53 +163,7 @@ cp -r .roo /your/project/
 - **Expert Witness Services** - Federal court testimony and reports
 - **Training & Workshops** - Tailored educational programs
 - **Contract Development** - Specialized project delivery
-- **Curriculum Design** - AI-powered course development and instructional design
-
----
-
-## 🎓 Curriculum Design Example: AI-Powered CISO Training
-
-**Course:** [AI-Powered CISO Training: Spec-Driven Security](https://chokmah.me/ai-ciso-training/)  
-**Duration:** 16 hours (4 sessions × 4 hours)  
-**Investment:** $3,500 per participant  
-**Target Audience:** Chief Information Security Officers, Security Architects, Compliance Leaders
-
-### Course Innovation
-Transform traditional security specification writing through AI-powered workflows. Participants learn to generate precise, compliant specifications from natural language using Claude Code and Kimi for Coding — **without manual writing**.
-
-### Session Breakdown
-**Session 1: Architecture Mapping & Spec Foundation**
-- Introduction to Claude and Kimi AI tools
-- Live demo: Natural language → formal YAML spec
-- Hands-on: Generate firmware update spec
-- Deliverables: `claude-spec`, `kimi-spec` tools + example firmware-spec.yaml
-
-**Session 2: Compliance & Control Mapping**  
-- Multi-framework mapping (NERC-CIP, IEC-62443, UL-1998, EU-CRA, AU-SOCI)
-- AI-powered gap analysis and evidence strategies
-- Deliverables: `claude-compliance`, `kimi-compliance` tools + mapping report
-
-**Session 3: Threat Modeling**
-- AI-driven STRIDE and PASTA analysis for critical infrastructure
-- Automated mitigation and test case generation
-- Deliverables: `claude-threatmodel`, `kimi-threatmodel` tools + full analysis
-
-**Session 4: Implementation & Automation**
-- Secure code generation from specifications
-- Spec → FastAPI + Kubernetes manifests demo
-- Deliverables: `claude-implement` tool + 85% production-ready code
-
-### Measurable Results
-- **Time Savings:** 440+ hours per full security development cycle
-- **Quality Metrics:** 88% automated test coverage, 90%+ compliance alignment, 85% production-ready code
-- **ROI:** 500%+ first-year return on investment
-- **Speed:** Weeks of manual work → seconds with AI workflows
-
-### Business Impact
-- **60% development cost reduction**
-- **50% compliance cost reduction** 
-- **95% compliance alignment achieved**
-- **Cross-framework standardization** for maximum coverage with minimum investment
+- **Bespoke Curriculum Design** - Rapid turnaround custom courses (e.g., AI CISO training for energy sector)
 
 ---
 
@@ -223,11 +174,10 @@ Transform traditional security specification writing through AI-powered workflow
 - Teams maintaining 100% test pass rates during major refactorings
 - Organizations reducing AI API costs by 40-60% through context engineering
 
-**Cybersecurity & Curriculum Design:**
+**Cybersecurity:**
 - Federal court recognition as SME in cybersecurity matters
 - DoD research programs delivering sovereign-grade security solutions
 - Fortune 500 companies implementing secure AI-enhanced operations
-- **AI-Powered CISO Training Program** - 16-hour executive education course (see detailed breakdown below)
 
 ---
 
