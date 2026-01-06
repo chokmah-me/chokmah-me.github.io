@@ -67,7 +67,7 @@ git clone https://github.com/chokmah-me/roo-kimi-playbook.git
 
 **Academic:** Former Tenure-track at R2, NSA CAE-R program, university curriculum design  
 **Industry:** Lead Sec Engineer at F500 fintech  
-**US Gov:** US DoD 6.1-6.3 OCO R&D Lead & PI, recognized SME (forensics, logs, profiling, programming) in US Fed. Court
+**US Gov:** US DoD 6.1-6.3 R&D Lead & PI, SME (forensics, logs, profiling, programming) in US Fed. Court
 
 ---
 
@@ -83,7 +83,7 @@ git clone https://github.com/chokmah-me/roo-kimi-playbook.git
 - **Expert Witness Services** - Federal court testimony and reports
 - **Training & Workshops** - Tailored educational programs
 - **Contract Development** - Specialized project delivery
-- **Bespoke Curriculum Design** - Custom AI and security courses (e.g., AI CISO training for energy sector)
+- **Bespoke Curriculum Design** - Custom AI and security courses (e.g., [AI CISO training](https://chokmah.me/ai-ciso-training/) for energy sector)
 
 ---
 
@@ -104,3 +104,4 @@ git clone https://github.com/chokmah-me/roo-kimi-playbook.git
 
 
 **Last Updated:** January 2026
+
