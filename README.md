@@ -43,7 +43,8 @@ Professional services portfolio showcasing sovereign-grade security and AI engin
 - 🛡️ **Cybersecurity Architecture** - STRIDE, PASTA, attack tree methodologies
 - 🤖 **AI-Enhanced Security Operations** - Anomaly detection, automated triage
 - 📊 **Context Engineering** - 40-60% LLM cost reduction
-- 🎓 **Tailored Workshops** - Secure coding, AI integration, risk profiling
+- 🎓 **Tailored Training** - Secure coding, AI integration
+- ✨ **Curriculum Design** - Hyper-customized, compliant AI and security courses
 - ⚖️ **Expert Witness Services** - Federal court SME testimony and technical reports
 
 ---
@@ -104,4 +105,5 @@ git clone https://github.com/chokmah-me/roo-kimi-playbook.git
 
 
 **Last Updated:** January 2026
+
 
