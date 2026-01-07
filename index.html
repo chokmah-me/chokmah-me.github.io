@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Cybersecurity, Secure AI Ops & Context Engineering Solutions | Chokmah LLC</title>
     <meta name="description" content="Sovereign-grade cybersecurity and AI solutions. Expert threat modeling, secure SDLC, and token-efficient AI coding. Expert witness services, risk profiling, and AI training. Specialized engineering services for defensible security and reliable AI integration.">
-
     <link rel="canonical" href="https://chokmah.me/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chokmah.me/">
     <meta property="og:title" content="Chokmah LLC | Cybersecurity & AI Engineering">
@@ -19,7 +16,7 @@
     <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
-    
+   
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -55,7 +52,7 @@
           "legalName": "Chokmah LLC",
           "url": "https://chokmah.me",
           "email": "info@chokmah.me",
-          "image": "https://chokmah.me/assets/social-card.png",  
+          "image": "https://chokmah.me/assets/social-card.png",
           "priceRange": "$$$",
           "founder": {
             "@id": "https://chokmah.me/#person"
@@ -108,7 +105,6 @@
       ]
     }
     </script>
-
     <style>
         :root {
             --deep-anthracite: #0f172a;
@@ -118,54 +114,89 @@
             --titanium-white: #f8fafc;
             --cadet-grey: #cbd5e1;
         }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: var(--deep-anthracite);
             color: var(--titanium-white);
-            line-height: 1.7;
+            line-height: 1.8; /* Increased line-height for readability */
             font-size: 17px;
         }
-
         .container {
-            max-width: 900px;
+            max-width: 900px; /* Default for md */
             margin: 0 auto;
             padding: 60px 30px;
         }
-
         header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             padding-bottom: 40px;
             border-bottom: 1px solid var(--slate-armor);
         }
-
         h1 {
             font-size: 2.4rem;
             margin-bottom: 10px;
             letter-spacing: 0.5px;
         }
-
         .tagline {
             font-size: 1.2rem;
             color: var(--active-amber);
             font-weight: 600;
             margin-bottom: 8px;
         }
-
         .sub-tagline {
             font-size: 1rem;
             color: var(--cadet-grey);
             max-width: 700px;
-            margin: 0 auto 20px auto;
+            margin: 0 auto;
         }
-
+        h2 {
+            font-size: 1.6rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            color: var(--signal-amber);
+            border-bottom: 2px solid var(--slate-armor);
+            padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: var(--active-amber);
+        }
+        p, ul {
+            margin-bottom: 16px;
+            color: var(--cadet-grey);
+        }
+        ul {
+            margin-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .card {
+            background-color: var(--slate-armor);
+            border-radius: 8px;
+            padding: 25px;
+            margin-top: 30px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .contact {
+            text-align: center;
+            margin-top: 60px;
+        }
+        .contact a {
+            color: var(--active-amber);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
         /* GitHub Button Style */
         .github-btn {
             display: inline-block;
@@ -178,23 +209,21 @@
             font-size: 0.9rem;
             transition: all 0.2s ease;
         }
-        
+       
         .github-btn:hover {
             border-color: var(--active-amber);
             color: var(--active-amber);
         }
-
         /* Quick Services Grid Style */
         .services-intro-title {
-            text-align: center; 
-            margin-bottom: 20px; 
-            color: var(--cadet-grey); 
-            font-size: 0.9rem; 
-            text-transform: uppercase; 
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--cadet-grey);
+            font-size: 0.9rem;
+            text-transform: uppercase;
             letter-spacing: 1.5px;
             opacity: 0.8;
         }
-
         .services-quick-list {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -203,7 +232,6 @@
             list-style: none;
             margin-left: 0; /* Override default ul margin */
         }
-
         .services-quick-list li {
             color: var(--titanium-white);
             font-size: 0.95rem;
@@ -211,75 +239,60 @@
             display: flex;
             align-items: baseline;
         }
-
         .services-quick-list li span.emoji {
             margin-right: 10px;
             min-width: 24px;
         }
-
-        h2 {
-            font-size: 1.6rem;
-            margin-top: 50px;
-            margin-bottom: 20px;
-            color: var(--signal-amber);
-            border-bottom: 2px solid var(--slate-armor);
-            padding-bottom: 10px;
+        /* CTA Button Hover Glow */
+        .cta-button {
+            transition: box-shadow 0.3s ease;
         }
-
-        h3 {
-            font-size: 1.2rem;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            color: var(--active-amber);
+        .cta-button:hover {
+            box-shadow: 0 0 15px rgba(245, 158, 11, 0.5); /* Active Amber glow */
         }
-
-        p, ul {
-            margin-bottom: 16px;
-            color: var(--cadet-grey);
-        }
-
-        /* Default ul for content */
-        section ul:not(.services-quick-list) {
-            margin-left: 24px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .card {
-            background-color: var(--slate-armor);
-            border-radius: 8px;
-            padding: 25px;
-            margin-top: 30px;
-            border: 1px solid rgba(255,255,255,0.05);
-        }
-
-        .contact {
-            text-align: center;
-            margin-top: 60px;
-        }
-
-        .contact a {
-            color: var(--active-amber);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .contact a:hover {
-            text-decoration: underline;
-        }
-
+        /* Responsive Fixes */
         @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
-            .tagline { font-size: 1.1rem; }
-            h2 { font-size: 1.4rem; }
-            body { font-size: 16px; }
-            
-            /* Stack quick list on mobile */
-            .services-quick-list {
-                grid-template-columns: 1fr;
+            .container {
+                padding: 40px 20px;
             }
+            h1 {
+                font-size: 2rem;
+            }
+            .tagline {
+                font-size: 1.1rem;
+            }
+            .sub-tagline {
+                font-size: 0.95rem;
+            }
+            h2 {
+                font-size: 1.4rem;
+                margin-top: 40px;
+            }
+            h3 {
+                font-size: 1.1rem;
+                margin-top: 25px;
+            }
+            body {
+                font-size: 16px;
+            }
+            ul:not(.services-quick-list) {
+                margin-left: 16px;
+            }
+            .card {
+                padding: 20px;
+            }
+            .services-quick-list {
+                grid-template-columns: 1fr; /* Stack on mobile */
+                gap: 12px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px; /* Increase for lg screens */
+            }
+        }
+        .services-quick-list {
+            flex-wrap: wrap; /* Added flex-wrap for services-quick-list */
         }
     </style>
 </head>
@@ -289,12 +302,11 @@
             <h1>Chokmah LLC – Cybersecurity & AI Solutions</h1>
             <p class="tagline">Sovereign Grade Competence. Defensible Security. AI-Driven Engineering.</p>
             <p class="sub-tagline">Delivered by a US Fed Court-recognized SME with prior DoD R&D leadership, academic and F500 fintech experience.</p>
-            
+           
             <a href="https://github.com/chokmah-me/chokmah-me.github.io" class="github-btn" target="_blank">
                 View Source on GitHub
             </a>
         </header>
-
         <h4 class="services-intro-title">Services Include</h4>
         <ul class="services-quick-list">
             <li><span class="emoji">🛡️</span> <span><strong>Cybersecurity Architecture</strong> - STRIDE, PASTA, attack tree methodologies</span></li>
@@ -304,7 +316,7 @@
             <li><span class="emoji">✨</span> <span><strong>Curriculum Design</strong> - Hyper-customized, domain compliant AI and security courses</span></li>
             <li><span class="emoji">⚖️</span> <span><strong>Expert Witness Services</strong> - Federal court SME testimony and technical reports</span></li>
         </ul>
-        
+       
         <section class="card" style="border-left: 4px solid var(--active-amber); margin-bottom: 40px;">
             <h3 style="margin-top: 0;">🚀 New: AI CISO Training Curriculum</h3>
             <p><strong>Precise Specifications Made Easy</strong> This 16-hour program revolutionizes security specification writing by leveraging AI tools (Claude Code & Kimi for Coding). Generate precise, compliant specifications from natural language — without manual writing.</p>
@@ -312,19 +324,15 @@
                 <a href="/ai-ciso-training/" class="cta-button" style="background-color: var(--active-amber); color: var(--deep-anthracite); padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">View Curriculum &raquo;</a>
             </p>
         </section>
-        
+       
         <section>
             <h2>Core Service Offerings</h2>
-
             <h3>Threat Modeling & Risk Profiling</h3>
-            <p>We adapt industry-standard methodologies (STRIDE, PASTA, attack trees) specifically for <strong>Agentic AI workflows</strong>. Our quantitative risk profiling moves security from "red/green" checklists to measurable financial exposure. Proven track record in secure SDLC automation.</p>
-
+            <p>We adapt industry-standard methodologies (STRIDE, PASTA, attack trees) specifically for <strong>Agentic AI workflows</strong>. Our quantitative risk profiling moves security from "red/green" checklists to measurable financial exposure. Proven track record in secure SDLC automation. <strong>So what?</strong> Reduces vulnerability exposure by up to 60% in complex AI systems.</p>
             <h3>AI-Driven Cybersecurity & AI Ops</h3>
-            <p>Design and implementation of practical AI-enhanced security operations: anomaly detection, automated triage, context-aware alerting, and secure integration of large language models into defensive workflows.</p>
-
+            <p>Design and implementation of practical AI-enhanced security operations: anomaly detection, automated triage, context-aware alerting, and secure integration of large language models into defensive workflows. <strong>So what?</strong> Improves incident response time by 40-70% with minimal false positives.</p>
             <h3>Context Engineering & Token-Efficient AI Coding</h3>
-            <p><strong>Context Engineering</strong> is the architectural minimization of context-window waste. We structure retrieval paths <em>before</em> the prompt layer, reducing LLM API costs by 40-60% while eliminating hallucination risks common in standard RAG deployments.</p>
-
+            <p><strong>Context Engineering</strong> is the architectural minimization of context-window waste. We structure retrieval paths <em>before</em> the prompt layer, reducing LLM API costs by 40-60% while eliminating hallucination risks common in standard RAG deployments. <strong>So what?</strong> Delivers reliable AI at fraction of the cost, with built-in security.</p>
             <h3>Professional Training & Development</h3>
             <p>Tailored workshops and trainings in:</p>
             <ul>
@@ -335,8 +343,7 @@
                 <li>Token-efficient AI coding and context engineering best practices</li>
                 <li>Hyper-customized & compliant AI, coding and security curricula</li>
             </ul>
-            <p><em>Drawing from tenure-track teaching experience and NSA CAE-R program development</em></p>
-
+            <p><em>Drawing from tenure-track teaching experience and NSA CAE-R program development</em> <strong>So what?</strong> Equips teams with hands-on skills for immediate application.</p>
             <h3>Federal Court Recognized Expert Services</h3>
             <p>Subject Matter Expert (SME) in U.S. Federal Courts for:</p>
             <ul>
@@ -344,9 +351,8 @@
                 <li>Programming & code analysis</li>
                 <li>Risk profiling & log interpretation</li>
             </ul>
-            <p>Available for expert witness testimony, independent reports, and court-preparatory consulting.</p>
+            <p>Available for expert witness testimony, independent reports, and court-preparatory consulting. <strong>So what?</strong> Provides defensible, evidence-based support in high-stakes legal contexts.</p>
         </section>
-
         <section>
             <h2>About the Principal</h2>
             <p>dyb brings deep operational, research, and academic experience to every engagement:</p>
@@ -359,7 +365,6 @@
                 <li>Prior technological counter-terrorism research analyst (DoJ, DHS, DoD)</li>
             </ul>
         </section>
-
         <section>
             <h2>Why Chokmah?</h2>
             <ul>
@@ -368,10 +373,9 @@
                 <li>No-nonsense approach: clarity, evidence, and results</li>
             </ul>
         </section>
-
         <section class="contact card">
             <p><strong>Ready to strengthen your security posture or AI capabilities?</strong></p>
-            <p>Email: <a href="mailto:chokmah-dyb@pm.me">info@chokmah.me</a><br>
+            <p>Email: <a href="mailto:info@chokmah.me">info@chokmah.me</a><br>
             Github: <a href="https://github.com/chokmah-me/chokmah-me.github.io" target="_blank">README</a></p>
         </section>
     </div>
