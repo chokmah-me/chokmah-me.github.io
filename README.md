@@ -33,11 +33,11 @@ Optimization guide for Kimi K2's agent-tuned model with Roo Code. Advanced conte
 ---
 
 ### 🌐 Professional Website
-**[Repository](https://github.com/chokmah-me/chokmah-me.github.io)** | **[Live Site](https://chokmah-me.github.io)**
+**[Repository](https://github.com/chokmah-me/chokmah-me.github.io)** | **[Live Site](https://chokmah.me)**
 
 **Chokmah LLC - Cybersecurity & AI Engineering Services**
 
-Professional services portfolio showcasing sovereign-grade security and AI engineering expertise. 
+Professional services portfolio showcasing sovereign-grade security and AI engineering expertise.
 
 **Services Include:**
 - 🛡️ **Cybersecurity Architecture** - STRIDE, PASTA, attack tree methodologies
@@ -47,16 +47,37 @@ Professional services portfolio showcasing sovereign-grade security and AI engin
 - ✨ **Curriculum Design** - Hyper-customized, compliant AI and security courses
 - ⚖️ **Expert Witness Services** - Federal court SME testimony and technical reports
 
+**Tech Stack:**
+- Static HTML/CSS with Tailwind CSS (CDN)
+- GitHub Pages deployment
+- Comprehensive SEO with Schema.org JSON-LD
+- Mobile-first responsive design
+
 ---
 
 ## 🚀 Quick Start
 
-**Open Source Tools:**
+### For Website Development
+```bash
+# Clone this repository
+git clone https://github.com/chokmah-me/chokmah-me.github.io.git
+cd chokmah-me.github.io
+
+# Serve locally (Python 3)
+python -m http.server 8000
+
+# Or with Node.js
+npx http-server -p 8000
+
+# View at http://localhost:8000
+```
+
+### Open Source Tools
 ```bash
 # Claude Code workflows
 git clone https://github.com/chokmah-me/claude-code-playbook.git
 
-# Kimi K2 optimization  
+# Kimi K2 optimization
 git clone https://github.com/chokmah-me/roo-kimi-playbook.git
 ```
 
@@ -85,6 +106,35 @@ git clone https://github.com/chokmah-me/roo-kimi-playbook.git
 - **Training & Workshops** - Tailored educational programs
 - **Contract Development** - Specialized project delivery
 - **Bespoke Curriculum Design** - Custom AI and security courses (e.g., [AI CISO training](https://chokmah.me/ai-ciso-training/) for energy sector)
+
+---
+
+## 🛠️ Repository Structure
+
+This repository contains the static website for Chokmah LLC, deployed via GitHub Pages.
+
+### Key Files
+- **index.html** - Main landing page
+- **ai-ciso-training/index.html** - AI CISO training curriculum page
+- **theme.html** - Brand color palette and design system reference
+- **CLAUDE.md** - Documentation for Claude Code AI assistant
+- **sitemap.xml** - SEO sitemap
+- **robots.txt** - Crawler configuration
+- **.gitignore** - Excludes local Claude Code settings
+
+### Assets
+- **assets/** - Social card images and marketing assets
+- **favicon.ico**, **favicon-32x32.png**, **apple-touch-icon.png** - Site icons
+- **icon.svg** - SVG logo with terminal prompt design
+
+### Design System
+- **Color Palette**: "Sovereign Competence" theme with Deep Anthracite, Signal Amber, and Titanium White
+- **Typography**: Inter font family via Google Fonts
+- **Framework**: Tailwind CSS (CDN)
+- **Responsive**: Mobile-first with breakpoints at 600px, 640px, 768px, 1024px
+
+### Deployment
+Changes to the `main` branch automatically deploy to https://chokmah.me via GitHub Pages.
 
 ---
 
