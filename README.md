@@ -148,8 +148,8 @@ Changes to the `main` branch automatically deploy to https://chokmah.me via GitH
 
 ## 📞 Contact
 
-**Email:** info@chokmah.me  
-**Website:** [chokmah.me](https://chokmah-me.github.io)  
+**Email:** info@chokmah.me
+**Website:** [chokmah.me](https://chokmah.me)  
 
 ---
 
