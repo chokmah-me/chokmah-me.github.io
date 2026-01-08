@@ -154,6 +154,6 @@ Changes to the `main` branch automatically deploy to https://chokmah.me via GitH
 ---
 
 
-**Last Updated:** January 2026
+**Last Updated:** January 8, 2026
 
 
