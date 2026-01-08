@@ -120,8 +120,12 @@ Currently blocks GPTBot while allowing general crawling. Modify `robots.txt` to 
 - **Responsive Time-Saved Cards**: Grid layout with card-hover effects and gradient backgrounds
 - **Mobile Optimizations**: Responsive text sizes, hyphenation, and word-breaking for narrow viewports
 
-## Domain & Contact Configuration
+## Repository Configuration
 
+### Version Control
+- **.gitignore**: Excludes `.claude/` directory (local Claude Code settings)
+
+### Domain & Contact
 - **Primary domain**: chokmah.me (configured in CNAME file)
 - **GitHub Pages**: chokmah-me.github.io redirects to chokmah.me
 - **Email**: info@chokmah.me (public-facing contact in schema markup and UI)
