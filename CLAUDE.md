@@ -120,6 +120,30 @@ Currently blocks GPTBot while allowing general crawling. Modify `robots.txt` to 
 - **Responsive Time-Saved Cards**: Grid layout with card-hover effects and gradient backgrounds
 - **Mobile Optimizations**: Responsive text sizes, hyphenation, and word-breaking for narrow viewports
 
+## GitHub Portfolio Organization
+
+The README.md features a categorized portfolio of Chokmah repositories organized into 4 main categories:
+
+### 🎓 AI Engineering Playbooks
+- **claude-code-playbook**: Token-efficient AI engineering workflows (67% reduction in conversation turns)
+- **roo-kimi-playbook**: Kimi K2 optimization guide with Roo Code (92% task completion rate)
+
+### 🛠️ Tools & Extensions
+- **claude-code-skills**: 19+ proven Claude Code skills for development, analysis, and productivity
+
+### 🔬 Research & Simulation
+- **acp-simulation**: Asymmetric Cognitive Projection (ACP) framework for cybersecurity defense validation
+
+### 🌐 Professional Services
+- **chokmah-me.github.io** (this repository): Professional services portfolio website
+
+When updating the GitHub Portfolio section in README.md:
+- Maintain the categorized structure
+- Keep descriptions concise and benefit-focused
+- Include metrics where applicable (e.g., "67% reduction", "92% task completion")
+- Use text-only format (no badges or shields)
+- Update the Quick Start section if adding new repositories
+
 ## Repository Configuration
 
 ### Version Control
