@@ -18,24 +18,48 @@ Delivering sovereign-grade competence in:
 
 ## 📁 GitHub Portfolio
 
-### 🤖 Claude Code Playbook
+### 🎓 AI Engineering Playbooks
+Professional workflows and optimization guides for AI-assisted development.
+
+#### 🤖 Claude Code Playbook
 **[Repository](https://github.com/chokmah-me/claude-code-playbook)**
 
 Token-efficient AI engineering workflows for professional development teams. Proven 67% reduction in conversation turns with predictable token economics.
 
 ---
 
-### 🚀 Roo-Kimi Playbook  
+#### 🚀 Roo-Kimi Playbook
 **[Repository](https://github.com/chokmah-me/roo-kimi-playbook)**
 
 Optimization guide for Kimi K2's agent-tuned model with Roo Code. Advanced context engineering with 92% task completion rate.
 
 ---
 
-### 🌐 Professional Website
-**[Repository](https://github.com/chokmah-me/chokmah-me.github.io)** | **[Live Site](https://chokmah.me)**
+### 🛠️ Tools & Extensions
+Productivity tools and skill collections for enhanced development workflows.
 
-**Chokmah LLC - Cybersecurity & AI Engineering Services**
+#### ⚡ Claude Code Skills
+**[Repository](https://github.com/chokmah-me/claude-code-skills)**
+
+19+ proven Claude Code skills for development, analysis, and productivity. Featuring session-snapshot and skill-extractor meta-skills.
+
+---
+
+### 🔬 Research & Simulation
+Advanced cybersecurity research and simulation frameworks.
+
+#### 🛡️ ACP Simulation Framework
+**[Repository](https://github.com/chokmah-me/acp-simulation)**
+
+Asymmetric Cognitive Projection (ACP) simulation framework for validating strategic cybersecurity defense mechanisms against instance-based learning attackers.
+
+---
+
+### 🌐 Professional Services
+Live websites and service portfolios.
+
+#### 💼 Chokmah LLC Website
+**[Repository](https://github.com/chokmah-me/chokmah-me.github.io)** | **[Live Site](https://chokmah.me)**
 
 Professional services portfolio showcasing sovereign-grade security and AI engineering expertise.
 
@@ -74,11 +98,15 @@ npx http-server -p 8000
 
 ### Open Source Tools
 ```bash
-# Claude Code workflows
+# AI Engineering Playbooks
 git clone https://github.com/chokmah-me/claude-code-playbook.git
-
-# Kimi K2 optimization
 git clone https://github.com/chokmah-me/roo-kimi-playbook.git
+
+# Tools & Extensions
+git clone https://github.com/chokmah-me/claude-code-skills.git
+
+# Research & Simulation
+git clone https://github.com/chokmah-me/acp-simulation.git
 ```
 
 **Business Inquiries:** info@chokmah.me
