@@ -137,35 +137,6 @@ git clone https://github.com/chokmah-me/acp-simulation.git
 
 ---
 
-## 🛠️ Repository Structure
-
-This repository contains the static website for Chokmah LLC, deployed via GitHub Pages.
-
-### Key Files
-- **index.html** - Main landing page
-- **ai-ciso-training/index.html** - AI CISO training curriculum page
-- **theme.html** - Brand color palette and design system reference
-- **CLAUDE.md** - Documentation for Claude Code AI assistant
-- **sitemap.xml** - SEO sitemap
-- **robots.txt** - Crawler configuration
-- **.gitignore** - Excludes local Claude Code settings
-
-### Assets
-- **assets/** - Social card images and marketing assets
-- **favicon.ico**, **favicon-32x32.png**, **apple-touch-icon.png** - Site icons
-- **icon.svg** - SVG logo with terminal prompt design
-
-### Design System
-- **Color Palette**: "Sovereign Competence" theme with Deep Anthracite, Signal Amber, and Titanium White
-- **Typography**: Inter font family via Google Fonts
-- **Framework**: Tailwind CSS (CDN)
-- **Responsive**: Mobile-first with breakpoints at 600px, 640px, 768px, 1024px
-
-### Deployment
-Changes to the `main` branch automatically deploy to https://chokmah.me via GitHub Pages.
-
----
-
 ## 📄 License & Legal
 
 **Open Source Projects:** Individual repositories may be available under MIT License  
