@@ -133,21 +133,31 @@
             color: var(--active-amber);
         }
 
-        /* Deliverables Box */
+        /* Deliverables Box - Optimized */
         .deliverables-box {
-            background: rgba(245, 158, 11, 0.1); /* Low opacity amber */
-            border: 1px solid var(--active-amber);
+            background: rgba(245, 158, 11, 0.08); /* Slightly more subtle background */
+            border: 1px solid rgba(245, 158, 11, 0.4); /* Softer border for elegance */
             border-radius: 8px;
-            padding: 25px;
-            margin: 30px 0;
+            padding: 30px; /* More internal padding */
+            margin: 40px 0;
+        }
+        .check-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px; /* Consistent spacing between items */
         }
         .check-list li {
             list-style: none;
-            margin-bottom: 8px;
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Crucial: Aligns emoji to TOP of text, not center */
+            line-height: 1.6;
         }
-        .check-list span { margin-right: 10px; }
+        .check-list span { 
+            margin-right: 16px; /* More space between emoji and text */
+            font-size: 1.3rem;  /* Slightly larger icons */
+            flex-shrink: 0;     /* Prevents emoji from getting squashed on mobile */
+            margin-top: -4px;   /* optical alignment to match text height */
+        }
 
         /* CTA Section */
         .cta-section {
