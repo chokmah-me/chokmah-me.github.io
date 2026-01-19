@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Security Intro: AI-Assisted & Spec-Driven | Chokmah LLC</title>
+    <meta name="description" content="A 3-hour intensive course on building secure serverless applications (AWS/Azure) using AI-driven specifications. Generate production-ready security controls, threat models, and infrastructure tests.">
+    <link rel="canonical" href="https://chokmah.me/cloud-security-intro/">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://chokmah.me/cloud-security-intro/">
+    <meta property="og:title" content="Cloud Security Intro: Spec-Driven & AI-Assisted">
+    <meta property="og:description" content="Build secure serverless apps with AI. 3 Hours. 6 Labs. Production-ready YAML specs, STRIDE threat models, and automated pytest validation.">
+    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Cloud Security Intro: Serverless Specs",
+      "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications. Build a secure API with STRIDE threat models and pytest validation.",
+      "provider": {
+        "@type": "Organization",
+        "name": "Chokmah LLC",
+        "sameAs": "https://chokmah.me"
+      },
+      "educationalCredentialAwarded": "Certificate of Completion",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Online",
+        "courseWorkload": "PT3H"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --deep-anthracite: #0f172a;
+            --slate-armor: #1e293b;
+            --signal-amber: #d97706;
+            --active-amber: #f59e0b;
+            --titanium-white: #f8fafc;
+            --cadet-grey: #cbd5e1;
+            --success-green: #10b981;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--deep-anthracite);
+            color: var(--titanium-white);
+            line-height: 1.6;
+            font-size: 17px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 30px;
+        }
+        
+        /* Typography */
+        h1 { font-size: 2.2rem; margin-bottom: 10px; line-height: 1.2; }
+        h2 { font-size: 1.6rem; color: var(--signal-amber); margin: 50px 0 20px 0; border-bottom: 2px solid var(--slate-armor); padding-bottom: 10px; }
+        h3 { font-size: 1.2rem; color: var(--active-amber); margin: 30px 0 10px 0; }
+        p { color: var(--cadet-grey); margin-bottom: 16px; }
+        
+        /* Navigation */
+        .nav-back {
+            display: inline-block;
+            margin-bottom: 40px;
+            color: var(--active-amber);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .nav-back:hover { text-decoration: underline; }
+
+        /* The "Spec Sheet" Grid */
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        @media (min-width: 768px) {
+            .spec-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+        .spec-card {
+            background: var(--slate-armor);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+        }
+        .spec-value {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--titanium-white);
+            margin-bottom: 5px;
+        }
+        .spec-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--cadet-grey);
+            opacity: 0.8;
+        }
+
+        /* Module Lists */
+        ul.module-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        ul.module-list li {
+            padding-left: 25px;
+            position: relative;
+            margin-bottom: 10px;
+            color: var(--cadet-grey);
+        }
+        ul.module-list li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--active-amber);
+        }
+
+        /* Deliverables Box */
+        .deliverables-box {
+            background: rgba(245, 158, 11, 0.1); /* Low opacity amber */
+            border: 1px solid var(--active-amber);
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .check-list li {
+            list-style: none;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .check-list span { margin-right: 10px; }
+
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            margin-top: 80px;
+            padding: 40px;
+            background: var(--slate-armor);
+            border-radius: 12px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--active-amber);
+            color: var(--deep-anthracite);
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-top: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="/" class="nav-back">&larr; Return to Headquarters</a>
+
+        <header>
+            <p style="text-transform: uppercase; letter-spacing: 1.5px; color: var(--active-amber); font-size: 0.9rem; margin-bottom: 10px;">New Curriculum</p>
+            <h1>Cloud Security Intro: Serverless Specs</h1>
+            <p style="font-size: 1.2rem; max-width: 700px; color: var(--cadet-grey);">
+                Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure. 
+                Move from "vague requirements" to <strong>production-ready infrastructure tests</strong> in 3 hours.
+            </p>
+        </header>
+
+        <div class="spec-grid">
+            <div class="spec-card">
+                <span class="spec-value">3 Hrs</span>
+                <span class="spec-label">Intensive Training</span>
+            </div>
+            <div class="spec-card">
+                <span class="spec-value">6</span>
+                <span class="spec-label">Hands-On Labs</span>
+            </div>
+            <div class="spec-card">
+                <span class="spec-value">14</span>
+                <span class="spec-label">Automated Validators</span>
+            </div>
+        </div>
+
+        <section>
+            <h2>Build It Securely. From Scratch.</h2>
+            <p>Most cloud security courses teach you how to audit <em>someone else's</em> mess. This course teaches you how to <strong>build it right the first time</strong>.</p>
+            <p>Using <strong>Claude Code</strong> and <strong>AI-Assisted workflows</strong>, you will generate and validate a secure serverless task management API. This is not a toy project—your deliverables will include <strong>300-400+ lines</strong> of production-ready code.</p>
+            
+            <div class="deliverables-box">
+                <h3 style="margin-top: 0; margin-bottom: 15px; color: var(--active-amber);">📦 What You Will Build (Deliverables)</h3>
+                <ul class="check-list">
+                    <li><span>📄</span> <strong>Cloud Security Specs (YAML)</strong> with 12+ embedded controls</li>
+                    <li><span>🔗</span> <strong>Traceability Matrix</strong> mapping vulnerabilities to AWS/Azure services</li>
+                    <li><span>🛡️</span> <strong>STRIDE Threat Model</strong> identifying 9+ cloud-specific attack vectors</li>
+                    <li><span>🧪</span> <strong>Infrastructure Tests</strong> (Python/pytest) validating your architecture</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Course Modules</h2>
+
+            <h3>Module 1: AI-Powered Specifications (70 min)</h3>
+            <p>Transform vague requirements into precise, testable security specs. Learn to use Claude Code to embed IAM, secrets, and encryption controls directly into your design phase.</p>
+            <ul class="module-list">
+                <li>Generate <code>serverless-api-spec.yaml</code> from natural language</li>
+                <li>Embed 12+ security controls (IAM, Secrets, Logging)</li>
+                <li><strong>Deliverable:</strong> Validated OpenAPI Specification</li>
+            </ul>
+
+            <h3>Module 2: Requirements Automation (70 min)</h3>
+            <p>Decompose OWASP Cloud Top 10 threats into actionable engineering tasks. Stop guessing what "secure" means and start proving it.</p>
+            <ul class="module-list">
+                <li>Break down vulnerabilities into preventive controls</li>
+                <li>Create traceability matrices (Reqs → Services → Tests)</li>
+                <li><strong>Deliverable:</strong> <code>cloud-security-requirements.yaml</code></li>
+            </ul>
+
+            <h3>Module 3: Threat Modeling & Infra Testing (70 min)</h3>
+            <p>Apply STRIDE to serverless infrastructure and write the tests that prove you are safe. This is the "Secret Sauce" of high-velocity security teams.</p>
+            <ul class="module-list">
+                <li>Identify cloud-specific attack vectors (Overprivileged Roles, Public Buckets)</li>
+                <li>Write infrastructure-as-code security tests using `boto3` or Azure SDK</li>
+                <li><strong>Deliverable:</strong> `test_cloud_security.py` (10+ test cases)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Prerequisites</h2>
+            <p>This is an intermediate-level engineering course. You should be comfortable with:</p>
+            <ul class="module-list">
+                <li><strong>Cloud Basics:</strong> Familiarity with AWS Lambda or Azure Functions</li>
+                <li><strong>Python 3.9+:</strong> Basic scripting and package management</li>
+                <li><strong>Terminal:</strong> Comfortable navigating CLI</li>
+            </ul>
+        </section>
+
+        <section class="cta-section">
+            <h2 style="margin-top: 0; border-bottom: none;">Ready to Deploy?</h2>
+            <p>Stop manually writing boilerplate. Start engineering defensible security.</p>
+            <a href="mailto:info@chokmah.me?subject=Request: Cloud Security Syllabus" class="cta-button">Request Full Syllabus & Pricing</a>
+            <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">Available for individual engineers and corporate workshops.</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
