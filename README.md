@@ -71,30 +71,9 @@ Professional services portfolio showcasing sovereign-grade security and AI engin
 - ✨ **Curriculum Design** - Hyper-customized, compliant AI and security courses
 - ⚖️ **Expert Witness Services** - Federal court SME testimony and technical reports
 
-**Tech Stack:**
-- Static HTML/CSS with Tailwind CSS (CDN)
-- GitHub Pages deployment
-- Comprehensive SEO with Schema.org JSON-LD
-- Mobile-first responsive design
-
 ---
 
 ## 🚀 Quick Start
-
-### For Website Development
-```bash
-# Clone this repository
-git clone https://github.com/chokmah-me/chokmah-me.github.io.git
-cd chokmah-me.github.io
-
-# Serve locally (Python 3)
-python -m http.server 8000
-
-# Or with Node.js
-npx http-server -p 8000
-
-# View at http://localhost:8000
-```
 
 ### Open Source Tools
 ```bash
@@ -153,6 +132,7 @@ git clone https://github.com/chokmah-me/acp-simulation.git
 ---
 
 
-**Last Updated:** January 8, 2026
+**Last Updated:** January 24, 2026
+
 
 
