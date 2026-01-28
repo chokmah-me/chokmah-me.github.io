@@ -35,16 +35,6 @@ Optimization guide for Kimi K2's agent-tuned model with Roo Code. Advanced conte
 
 ---
 
-### 🛠️ Tools & Extensions
-Productivity tools and skill collections for enhanced development workflows.
-
-#### ⚡ Claude Code Skills
-**[Repository](https://github.com/chokmah-me/claude-code-skills)**
-
-19+ proven Claude Code skills for development, analysis, and productivity. Featuring session-snapshot and skill-extractor meta-skills.
-
----
-
 ### 🔬 Research & Simulation
 Advanced cybersecurity research and simulation frameworks.
 
@@ -133,6 +123,7 @@ git clone https://github.com/chokmah-me/acp-simulation.git
 
 
 **Last Updated:** January 24, 2026
+
 
 
 
