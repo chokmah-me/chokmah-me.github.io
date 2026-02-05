@@ -24,123 +24,160 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
     
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://chokmah.me/#website",
-          "url": "https://chokmah.me",
-          "name": "Chokmah LLC",
-          "description": "Sovereign Grade Competence in Cyber-Physical Defense & AI Solutions",
-          "publisher": { "@id": "https://chokmah.me/#organization" },
-          "inLanguage": "en-US"
-        },
-        {
-          "@type": "WebPage",
-          "@id": "https://chokmah.me/#webpage",
-          "url": "https://chokmah.me",
-          "name": "Chokmah LLC – Cyber-Physical & AI Defense",
-          "isPartOf": { "@id": "https://chokmah.me/#website" },
-          "about": { "@id": "https://chokmah.me/#organization" },
-          "description": "Expert industrial cybersecurity, FuSA oversight, and AI engineering services by a Federal Court SME."
-        },
-        {
-          "@type": "ProfessionalService",
-          "@id": "https://chokmah.me/#organization",
-          "name": "Chokmah LLC",
-          "legalName": "Chokmah LLC",
-          "url": "https://chokmah.me",
-          "email": "info@chokmah.me",
-          "sameAs": [
-            "https://dyb.mataroa.blog/",
-            "https://github.com/chokmah-me"
-          ],
-          "image": "https://chokmah.me/assets/social-card.png",
-          "priceRange": "$$$",
-          "founder": { "@id": "https://chokmah.me/#person" },
-          "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "VT",
-            "addressCountry": "US"
+      "@type": "WebSite",
+      "@id": "https://chokmah.me/#website",
+      "url": "https://chokmah.me",
+      "name": "Chokmah LLC",
+      "description": "Sovereign Grade Competence in Cyber-Physical Defense & AI Solutions",
+      "publisher": { "@id": "https://chokmah.me/#organization" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://chokmah.me/#webpage",
+      "url": "https://chokmah.me",
+      "name": "Chokmah LLC – Cyber-Physical & AI Defense",
+      "isPartOf": { "@id": "https://chokmah.me/#website" },
+      "about": { "@id": "https://chokmah.me/#organization" },
+      "description": "Expert industrial cybersecurity, FuSA oversight, and AI engineering services by a Federal Court SME."
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://chokmah.me/#organization",
+      "name": "Chokmah LLC",
+      "legalName": "Chokmah LLC",
+      "url": "https://chokmah.me",
+      "email": "info@chokmah.me",
+      "sameAs": [
+        "https://dyb.mataroa.blog/",
+        "https://github.com/chokmah-me"
+      ],
+      "image": "https://chokmah.me/assets/social-card.png",
+      "priceRange": "$$$",
+      "founder": { "@id": "https://chokmah.me/#person" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "VT",
+        "addressCountry": "US"
+      },
+      "knowsAbout": [
+        "Threat Modeling (STRIDE/PASTA)",
+        "Agentic AI Safety",
+        "Context Engineering",
+        "Digital Forensics",
+        "Secure SDLC",
+        "Quantum Information & Computing",
+        "Post-Quantum Cryptography (PQC)",
+        "Critical Infrastructure Protection (NERC-CIP)",
+        "Zero-Knowledge Proofs",
+        "Industrial Cybersecurity (OT/ICS)",
+        "Functional Safety (FuSA)",
+        "Cyber-Physical Systems (CPS)",
+        "Battery Energy Storage Safety (BESS)",
+        "Agentic AI Coding",
+        "Regulatory Compliance (UL 1998, NERC CIP)",
+        "Digital Forensics & Expert Witness",
+        "OSCAL v1.1.2",
+        "NIST SP 800-53",
+        "IEC 62443"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://chokmah.me/#catalog",
+        "name": "Chokmah Service Offerings",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Industrial Cybersecurity & FuSA",
+              "description": "Hazard analysis and defense for OT/ICS and BESS environments."
+            }
           },
-            "knowsAbout": [
-            "Threat Modeling (STRIDE/PASTA)",
-            "Agentic AI Safety",
-            "Context Engineering",
-            "Digital Forensics",
-            "Secure SDLC",
-            "Quantum Information & Computing",
-            "Post-Quantum Cryptography (PQC)",
-            "Critical Infrastructure Protection (NERC-CIP)",
-            "Zero-Knowledge Proofs",
-            "Industrial Cybersecurity (OT/ICS)",
-            "Functional Safety (FuSA)",
-            "Cyber-Physical Systems (CPS)",
-            "Battery Energy Storage Safety (BESS)",
-            "Agentic AI Safety",
-            "Agentic AI Coding",
-            "Regulatory Compliance (UL 1998, NERC CIP)",
-            "Digital Forensics & Expert Witness"
-          ],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Core Service Offerings",
-            "itemListElement": [
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Industrial Cybersecurity & FuSA",
-                  "description": "Hazard analysis and defense for OT/ICS and BESS environments."
-                }
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Threat Modeling & Risk Profiling",
+              "description": "Adaptation of STRIDE and PASTA methodologies for Agentic AI workflows."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Context Engineering",
+              "description": "Architectural minimization of context-window waste."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Cloud Security Intro: Serverless Specs",
+              "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications.",
+              "educationalCredentialAwarded": "Certificate of Completion",
+              "hasCourseInstance": {
+                "@type": "CourseInstance",
+                "courseMode": "Online",
+                "courseWorkload": "PT3H"
               },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Threat Modeling & Risk Profiling",
-                  "description": "Adaptation of STRIDE and PASTA methodologies for Agentic AI workflows."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Context Engineering",
-                  "description": "Architectural minimization of context-window waste."
-                }
-              },
-              {
-                "@type": "Offer",
-                "itemOffered": {
-                  "@type": "Course",
-                  "name": "Cloud Security Intro: Serverless Specs",
-                  "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications.",
-                  "educationalCredentialAwarded": "Certificate of Completion",
-                  "hasCourseInstance": {
-                    "@type": "CourseInstance",
-                    "courseMode": "Online",
-                    "courseWorkload": "PT3H"
-                  },
-                  "provider": { "@id": "https://chokmah.me/#organization" }
-                }
-              }
-            ]
+              "provider": { "@id": "https://chokmah.me/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "OT/ICS Strategic Defense",
+              "description": "IEC 62443 aligned defense-in-depth and micro-segmentation for SCADA and Control Systems."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://chokmah.me/#oscal-service",
+              "name": "Regulatory Engineering",
+              "description": "Automated NERC-CIP to OSCAL v1.1.2 transformation and NIST SP 800-53 mapping."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Industrial AI & Functional Safety",
+              "description": "STRIDE and PASTA driven hazard analysis for AI-integrated Safety Instrumented Systems."
+            }
           }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://chokmah.me/#person",
-          "name": "dyb",
-          "jobTitle": "Principal & Subject Matter Expert",
-          "description": "Former tenure-track Assistant Professor, DoD R&D Lead, and National Security Fellow.",
-          "affiliation": { "@id": "https://chokmah.me/#organization" }
-        }
-      ]
+        ]
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://chokmah.me/#oscal-toolkit",
+      "name": "NERC-CIP to OSCAL Toolkit",
+      "description": "Automated engine converting unstructured NERC-CIP requirements to OSCAL v1.1.2 component definitions.",
+      "creator": { "@id": "https://chokmah.me/#organization" },
+      "datePublished": "2026-01-01",
+      "measurementTechnique": "AI Semantic Mapping"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://chokmah.me/#person",
+      "name": "dyb",
+      "jobTitle": "Principal & Subject Matter Expert",
+      "description": "Former tenure-track Assistant Professor, DoD R&D Lead, and National Security Fellow.",
+      "affiliation": { "@id": "https://chokmah.me/#organization" }
     }
-    </script>
+  ]
+}
+</script>
  <style>
         :root {
             --deep-anthracite: #0f172a;
@@ -337,7 +374,7 @@
 <body>
     <div class="container">
        <header>
-            <h1>Chokmah LLC – Consulting, Cybersecurity & AI Solutions</h1>
+            <h1>Chokmah LLC – Technical Consulting, Cybersecurity & AI Solutions</h1>
             <p class="tagline">Industrial Cybersecurity. Functional Safety. AI-Driven Engineering.</p>
             <p class="sub-tagline">Sovereign Grade Competence. Delivered by a US Fed Court-recognized SME with prior DoD R&D leadership, academic and F500 fintech experience.</p>
             
