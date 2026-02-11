@@ -128,9 +128,6 @@ The README.md features a categorized portfolio of Chokmah repositories organized
 - **claude-code-playbook**: Token-efficient AI engineering workflows (67% reduction in conversation turns)
 - **roo-kimi-playbook**: Kimi K2 optimization guide with Roo Code (92% task completion rate)
 
-### 🛠️ Tools & Extensions
-- **claude-code-skills**: 19+ proven Claude Code skills for development, analysis, and productivity
-
 ### 🔬 Research & Simulation
 - **acp-simulation**: Asymmetric Cognitive Projection (ACP) framework for cybersecurity defense validation
 
