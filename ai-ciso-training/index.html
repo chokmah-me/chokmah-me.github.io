@@ -11,23 +11,30 @@
     
    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-        /* SOVEREIGN FALLBACK PAINT - No CDN Required */
-        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; margin: 0; }
-        header { background: linear-gradient(to bottom, #0f172a, #020617); padding: 4rem 1rem; border-bottom: 4px solid #b45309; text-align: center; }
-        section { background: rgba(30, 41, 59, 0.5); padding: 2.5rem; border-radius: 1rem; border: 1px solid #334155; margin-bottom: 5rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
-        h1 { font-size: 3rem; font-weight: 800; margin-bottom: 1.5rem; letter-spacing: -0.025em; }
-        h2 { font-size: 2.25rem; font-weight: 600; color: #f59e0b; margin-bottom: 2rem; text-align: center; }
-        .text-amber-500 { color: #f59e0b; }
-        .text-amber-400 { color: #fbbf24; }
-        .bg-amber-600 { background-color: #d97706; padding: 0.75rem 1.5rem; border-radius: 0.5rem; color: #020617; font-weight: 600; text-decoration: none; display: inline-block; }
-        .bg-amber-600:hover { background-color: #f59e0b; }
-        details { border-left: 4px solid #d97706; padding-left: 2rem; margin-bottom: 2.5rem; }
-        summary { font-size: 1.875rem; font-weight: 600; cursor: pointer; margin-bottom: 1rem; color: #fbbf24; }
-        .grid { display: grid; gap: 2.5rem; }
-        @media (min-width: 768px) { .grid-cols-4 { grid-template-columns: repeat(4, 1fr); } }
-        .card-stat { background: linear-gradient(to bottom right, #0f172a, #1e293b); padding: 2rem; border-radius: 1rem; text-align: center; border: 1px solid rgba(180, 83, 9, 0.3); }
-    </style>
+<style>
+    /* SOVEREIGN ENGINE: Hard-Coded Layout */
+    body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; margin: 0; line-height: 1.6; }
+    
+    /* FIX 1: Nav/Table of Contents (The Blue Bunching) */
+    .nav-hardened { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; padding: 1rem; border-bottom: 1px solid #b45309; background: #0f172a; position: sticky; top: 0; z-index: 100; }
+    .nav-hardened a { color: #3b82f6; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+    .nav-hardened a:hover { color: #fbbf24; }
+
+    /* FIX 2: Block Spacing (The Black Bunching) */
+    main { max-width: 60rem; margin: 0 auto; padding: 2rem 1rem; }
+    section { margin-bottom: 4rem; padding: 2.5rem; background: #0f172a; border-radius: 1rem; border: 1px solid #334155; }
+    h2 { color: #f59e0b; text-align: center; margin-bottom: 2rem; font-size: 2.5rem; }
+
+    /* FIX 3: Buttons (Expand/Collapse) */
+    .btn-container { display: flex; justify-content: flex-start; gap: 10px; margin-bottom: 20px; }
+    .btn-amber { background: #d97706; color: #020617; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; }
+    .btn-slate { background: #334155; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; }
+    
+    /* Content Detail Styling */
+    article { border-left: 4px solid #d97706; padding-left: 20px; margin-bottom: 30px; }
+    summary { font-size: 1.5rem; font-weight: bold; color: #fbbf24; cursor: pointer; margin-bottom: 10px; }
+</style>
+
     <meta name="description" content="Transform traditional security specification writing into an AI-powered workflow for CISOs, saving hundreds of hours per cycle.">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="AI-Powered CISO Training: Spec-Driven Security" />
@@ -104,7 +111,7 @@
 
     <!-- Sticky Navigation -->
     <nav class="sticky top-0 bg-slate-900/90 backdrop-blur z-50 border-b border-amber-800 py-4">
-        <div class="max-w-4xl mx-auto flex flex-wrap justify-center gap-6 text-lg">
+        <div class="nav-hardened">
             <a href="#overview" class="hover:text-amber-400 transition">Overview</a>
             <a href="#sessions" class="hover:text-amber-400 transition">Sessions</a>
             <a href="#compliance" class="hover:text-amber-400 transition">Compliance Objectives</a>
@@ -125,7 +132,7 @@
         <section id="sessions" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
             <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Detailed Training Sessions</h2>
             <!-- Expand/Collapse All Buttons -->
-            <div class="flex justify-end mb-8 gap-4">
+            <div class="btn-container">
                 <button onclick="openAllDetails()" class="px-6 py-3 bg-amber-600 hover:bg-amber-500 rounded-lg transition text-lg font-medium">Expand All</button>
                 <button onclick="closeAllDetails()" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg transition text-lg font-medium">Collapse All</button>
             </div>
@@ -188,9 +195,9 @@
         <section id="compliance" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
             <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Direct Response to Common CISO Compliance Objectives</h2>
             <!-- Expand/Collapse All for Compliance -->
-            <div class="flex justify-end mb-8 gap-4">
-                <button onclick="openAllDetails()" class="px-6 py-3 bg-amber-600 hover:bg-amber-500 rounded-lg transition text-lg font-medium">Expand All</button>
-                <button onclick="closeAllDetails()" class="px-6 py-3 bg-slate-700 hover:bg-slate-600 rounded-lg transition text-lg font-medium">Collapse All</button>
+            <div class="btn-container">
+                <button onclick="openAllDetails()" class="btn-amber">Expand All</button>
+                <button onclick="closeAllDetails()" class="btn-slate">Collapse All</button>
             </div>
             <div class="space-y-12 text-xl">
                 <article class="border-l-4 border-amber-600 pl-8">
@@ -298,20 +305,18 @@
         <section id="cta" class="bg-gradient-to-br from-amber-900/20 to-slate-900 p-12 rounded-3xl shadow-2xl border-4 border-amber-700 text-center">
             <h2 class="text-5xl font-bold mb-8 text-amber-400">Ready to Transform Your Security Workflow?</h2>
             <p class="text-2xl mb-10 text-slate-200">Book your 16-hour AI-powered training and start saving hundreds of hours per compliance cycle.</p>
-            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <!-- Primary mailto button (kept for devices with email client) -->
-                <a href="mailto:info@chokmah.me?subject=Inquiry:%20AI-Powered%20CISO%20Training&body=Hi%20dyb,%0D%0A%0D%0AI'd%20like%20to%20learn%20more%20about%20the%2016-hour%20AI-powered%20CISO%20training%20package."
-                    class="px-10 py-5 bg-amber-600 hover:bg-amber-500 text-slate-950 font-bold text-xl rounded-xl shadow-lg transition transform hover:scale-105">
-                    Open Email Client →
-                </a>
+           <div class="btn-container" style="justify-content: center; margin-top: 40px; flex-wrap: wrap;">
+    <a href="mailto:info@chokmah.me?subject=Inquiry:%20AI-Powered%20CISO%20Training&body=Hi%20dyb,%0D%0A%0D%0AI'd%20like%20to%20learn%20more%20about%20the%2016-hour%20AI-powered%20CISO%20training%20package."
+       class="btn-amber" style="font-size: 1.25rem; padding: 15px 30px;">
+        Open Email Client →
+    </a>
 
-                <!-- Fallback: Copy email button -->
-                <button onclick="copyEmail()" 
-                        class="px-10 py-5 bg-slate-700 hover:bg-slate-600 text-white font-bold text-xl rounded-xl shadow-lg transition transform hover:scale-105 flex items-center gap-3">
-                    <span>Copy Email Address</span>
-                    <span id="copied" class="copied hidden text-green-400 text-lg">✓ Copied!</span>
-                </button>
-            </div>
+    <button onclick="copyEmail()" 
+            class="btn-slate" style="font-size: 1.25rem; padding: 15px 30px; display: flex; items-center; gap: 10px;">
+        <span>Copy Email Address</span>
+        <span id="copied" class="hidden" style="color: #4ade80;">✓</span>
+    </button>
+</div>
             <p class="mt-8 text-xl text-slate-300">Email: <span class="font-mono text-amber-400 selectable">info@chokmah.me</span></p>
             <p class="mt-4 text-lg text-slate-400">Limited slots available – reach out today to secure your session.</p>
         </section>
