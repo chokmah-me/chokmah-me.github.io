@@ -1,8 +1,8 @@
+
 User-agent: *
 Allow: /
+Disallow: /404.html
+Disallow: /assets/
 
-# Optional: Block aggressive AI scrapers if you want to keep your IP private
-User-agent: GPTBot
-Disallow: /
-
+# Sitemap location for technical authority
 Sitemap: https://chokmah.me/sitemap.xml
