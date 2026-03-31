@@ -1,6 +1,5 @@
-# Chokmah-Me - AI Engineering & Cybersecurity
+# Chokmah.me - Industrial Cybersecurity. Functional Safety. AI-Driven Engineering.
 
-**Sovereign-grade security and AI-driven engineering solutions.**
 
 **[Professional Services](https://chokmah.me) | [Open Source](https://github.com/chokmah-me)**
 
@@ -8,102 +7,50 @@
 
 ## 🎯 Professional Focus
 
-Delivering sovereign-grade competence in:
-- **AI-Assisted Software Engineering** - Token-efficient development workflows
-- **Cybersecurity Architecture** - Federal Court SME & DoD R&D experience  
-- **Context Engineering** - 40-60% LLM API cost reduction
-- **Secure SDLC Automation** - Practical AI-enhanced security operations
+Sovereign-grade competence in **cyber-physical defense**, **industrial cybersecurity**, and **AI-driven engineering** for high-consequence environments.
+
+- **Industrial Cybersecurity & OT/ICS Defense** — IEC 62443, IEC 62933, UL 991 / 1998
+- **Functional Safety (FuSA) Oversight** — Hazard analysis for BESS and AI-integrated Safety Instrumented Systems
+- **AI CISO Training: Spec-Driven Security** — 16-hour program generating compliant specs from natural language (Claude Code)
+- **Threat Modeling for Agentic AI** — STRIDE/PASTA adapted for autonomous systems
+- **Federal Court Expert Witness Services** — Recognized SME in computer security, forensics, and risk profiling
 
 ---
 
 ## 📁 GitHub Portfolio
 
-### 🎓 AI Engineering Playbooks
-Professional workflows and optimization guides for AI-assisted development.
-
-#### 🤖 Claude Code Playbook
-**[Repository](https://github.com/chokmah-me/claude-code-playbook)**
-
-Token-efficient AI engineering workflows for professional development teams. Proven 67% reduction in conversation turns with predictable token economics.
-
----
-
-#### 🚀 Roo-Kimi Playbook
-**[Repository](https://github.com/chokmah-me/roo-kimi-playbook)**
-
-Optimization guide for Kimi K2's agent-tuned model with Roo Code. Advanced context engineering with 92% task completion rate.
-
----
-
-### 🔬 Research & Simulation
-Advanced cybersecurity research and simulation frameworks.
-
-#### 🛡️ ACP Simulation Framework
-**[Repository](https://github.com/chokmah-me/acp-simulation)**
-
-Asymmetric Cognitive Projection (ACP) simulation framework for validating strategic cybersecurity defense mechanisms against instance-based learning attackers.
-
----
-
-### 🌐 Professional Services
-Live websites and service portfolios.
-
-#### 💼 Chokmah LLC Website
-**[Repository](https://github.com/chokmah-me/chokmah-me.github.io)** | **[Live Site](https://chokmah.me)**
-
-Professional services portfolio showcasing sovereign-grade security and AI engineering expertise.
-
-**Services Include:**
-- 🛡️ **Cybersecurity Architecture** - STRIDE, PASTA, attack tree methodologies
-- 🤖 **AI-Enhanced Security Operations** - Anomaly detection, automated triage
-- 📊 **Context Engineering** - 40-60% LLM cost reduction
-- 🎓 **Tailored Training** - Secure coding, AI integration
-- ✨ **Curriculum Design** - Hyper-customized, compliant AI and security courses
-- ⚖️ **Expert Witness Services** - Federal court SME testimony and technical reports
-
----
-
-## 🚀 Quick Start
-
-### Open Source Tools
-```bash
-# AI Engineering Playbooks
-git clone https://github.com/chokmah-me/claude-code-playbook.git
-git clone https://github.com/chokmah-me/roo-kimi-playbook.git
-
-# Tools & Extensions
-git clone https://github.com/chokmah-me/claude-code-skills.git
-
-# Research & Simulation
-git clone https://github.com/chokmah-me/acp-simulation.git
-```
-
-**Business Inquiries:** info@chokmah.me
-
----
-
-## 🎓 Background
-
-**Academic:** Former Tenure-track at R2, NSA CAE-R program, university curriculum design  
-**Industry:** Lead Sec Engineer at F500 fintech  
-**US Gov:** US DoD 6.1-6.3 R&D Lead & PI, SME (forensics, logs, profiling, programming) in US Fed. Court
+[UPDATE coming soon]
 
 ---
 
 ## 🤝 Engagement Models
 
-### Open Source Contribution
-- **Free Playbooks** - Complete AI engineering workflows
-- **Documentation** - Comprehensive setup and usage guides
-- **Open Source** - MIT licensed projects available
+- **Consulting & Advisory** — Architectural review, safety oversight, regulatory engineering  
+- **Training & Workshops** — AI CISO, secure SDLC, context engineering  
+- **Expert Witness Services** — Federal court testimony and technical reports  
+- **Contract Development** — Custom sovereign-grade solutions  
 
-### Professional Services
-- **Consulting Engagements** - Custom security and AI solutions
-- **Expert Witness Services** - Federal court testimony and reports
-- **Training & Workshops** - Tailored educational programs
-- **Contract Development** - Specialized project delivery
-- **Bespoke Curriculum Design** - Custom AI and security courses (e.g., [AI CISO training](https://chokmah.me/ai-ciso-training/) for energy sector)
+---
 
+## 🚀 Quick Links
+
+- **[Live Professional Services](https://chokmah.me)**
+- **[AI CISO Training Syllabus](https://chokmah.me/ai-ciso-training/)**
+- **[Cloud Security Intro](https://chokmah.me/cloud-security-intro/)**
+- **[Field Notes](https://dyb.mataroa.blog/)**
+
+---
+
+## 🎓 Background
+
+**Dr. Daniyel Yaacov Bilar**  
+Principal Consultant, Chokmah LLC  
+
+- Federal Court Recognized SME (computer security, digital forensics, programming, risk profiling)  
+- Former Lead Cybersecurity Analyst, Visa Inc. (F500 fintech)  
+- Former Director of Research, Siege Technologies (DoD 6.1-6.3 OCO R&D Lead & Principal Investigator)  
+- Former Tenure-Track Assistant Professor, University of New Orleans (NSA CAE-R designation)  
+  
 ---
 
 ## 📄 License & Legal
@@ -122,7 +69,8 @@ git clone https://github.com/chokmah-me/acp-simulation.git
 ---
 
 
-**Last Updated:** January 24, 2026
+**Last Updated:** March 31, 2026  
+**Canonical Home:** [https://chokmah.me](https://chokmah.me)
 
 
 
