@@ -4,7 +4,6 @@
 
 **[Professional Services](https://chokmah.me) | [Open Source](https://github.com/chokmah-me)**
 
----
 
 ## 🎯 Professional Focus
 
@@ -30,7 +29,8 @@ Active publication pipeline across six threads. Full index on [Zenodo](https://z
 | Security / Info Theory | The Shibboleth Lattice | [10.5281/zenodo.19652725](https://doi.org/10.5281/zenodo.19652725) |
 | Security / Info Theory | Volt Typhoon as nth-Order Bleeding Thesis | [10.5281/zenodo.19739954](https://doi.org/10.5281/zenodo.19739954) |
 
-*Threads: EML/FPGA · Compiler-as-NUM · Autonomous C2 · Financial Networks · Security/InfoSec · Agent Verification*
+*Threads: EML/FPGA · Compiler-as-NUM · Autonomous C2 · Financial Networks · Security/InfoSec · Agent Verification*  
+
 ---
 
 ## 🤝 Engagement Models
