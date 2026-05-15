@@ -48,6 +48,7 @@ Active publication pipeline across six threads. Full index on [Zenodo](https://z
 **→ [AI CISO Training](https://chokmah.me/ai-ciso-training/)** — 16-hour program, spec-driven security with Claude Code  
 **→ [Field Notes](https://dyb.mataroa.blog/)** — working notes, not marketing  
 **→ [info@chokmah.me](mailto:info@chokmah.me)** — direct contact
+
 ---
 
 ## 🎓 Background
