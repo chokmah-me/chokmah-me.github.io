@@ -15,39 +15,32 @@ Sovereign-grade competence in **cyber-physical defense**, **industrial cybersecu
 - **Threat Modeling for Agentic AI** — STRIDE/PASTA adapted for autonomous systems
 - **Federal Court Expert Witness Services** — Recognized SME in computer security, forensics, and risk profiling
 
+### ⚡ Current Advisory Availability (Q2 2026 – Q1 2027)
+
+> **Capacity Notice:** Retained on functional safety systems through February 2027. 10 hours/week of remaining capacity is reserved for specialized advisory or federal court mandates.
+
+### 🚀 Book a Diagnostics Briefing
+If you have a project or a case that fits this profile, kindly conisder booking an initial 30-minute scoping call. 
+
+**[→ Book a call](https://cal.com/chokmah-dyb/30min)**
+
 ---
 
-## 📁 Selected Research (2025–2026)
+## 📁 Selected Research (2026)
 
-Active publication pipeline across six threads. Full index on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Bilar%2C%20Daniyel%20Yaacov%22&l=list&p=1&s=10&sort=newest) and [OSF](https://osf.io/fqxmu/)
+Active publication pipeline across seven threads. Full index on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Bilar%2C%20Daniyel%20Yaacov%22&l=list&p=1&s=10&sort=newest) and [OSF](https://osf.io/fqxmu/)
 
 | Thread | Paper | DOI |
 |---|---|---|
-| Autonomous Systems / C2 | Golden Dome Latency Governance: AOM Extended to Boost-Phase Intercept | [10.5281/zenodo.19368682](https://doi.org/10.5281/zenodo.19368682) |
-| Financial Networks | Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks | [10.5281/zenodo.19632278](https://doi.org/10.5281/zenodo.19632278) |
+| Autonomous Governance | On the Necessary Void at the Center of Autonomous Governance | [10.5281/zenodo.20190801](https://doi.org/10.5281/zenodo.20190801) |
+| Software Architecture | Fan-In Distributions in Human vs AI Python: A Constructal Law Analysis | [10.5281/zenodo.20313669](https://doi.org/10.5281/zenodo.20313669) |
+| Crisis Simulation | Balance of Power 2026 (v2.0.6) | [10.5281/zenodo.20395851](https://doi.org/10.5281/zenodo.20395851) |
 | Agent Verification | Three Regimes of Capability Attestation for Autonomous Agents | [10.5281/zenodo.20114610](https://doi.org/10.5281/zenodo.20114610) |
+| Security / TCS | The Computability Filter | [10.5281/zenodo.19818321](https://doi.org/10.5281/zenodo.19818321) |
 | Security / Info Theory | The Shibboleth Lattice | [10.5281/zenodo.19652725](https://doi.org/10.5281/zenodo.19652725) |
-| Security / Info Theory | Volt Typhoon as nth-Order Bleeding Thesis | [10.5281/zenodo.19739954](https://doi.org/10.5281/zenodo.19739954) |
 
-*Threads: EML/FPGA · Compiler-as-NUM · Autonomous C2 · Financial Networks · Security/InfoSec · Agent Verification*  
+*Threads: EML/FPGA · Compiler-as-NUM · Autonomous C2 · Financial Networks · Security/InfoSec · Agent Verification · Software Architecture*
 
----
-
-## 🤝 Engagement Models
-
-- **Consulting & Advisory** — Architectural review, safety oversight, regulatory engineering  
-- **Training & Workshops** — AI CISO, secure SDLC, context engineering  
-- **Expert Witness Services** — Federal court testimony and technical reports  
-- **Contract Development** — Custom sovereign-grade solutions  
-
----
-
-## 🚀 Engage
-
-**→ [chokmah.me](https://chokmah.me)** — professional services, retainer and project engagements  
-**→ [AI CISO Training](https://chokmah.me/ai-ciso-training/)** — 16-hour program, spec-driven security with Claude Code  
-**→ [Field Notes](https://dyb.mataroa.blog/)** — working notes, not marketing  
-**→ [info@chokmah.me](mailto:info@chokmah.me)** — direct contact
 
 ---
 
@@ -73,7 +66,7 @@ Principal Consultant, Chokmah LLC
 ---
 
 
-**Last Updated:** May 14, 2026  
+**Last Updated:** May 27, 2026  
 **Canonical Home:** [https://chokmah.me](https://chokmah.me)
 
 
