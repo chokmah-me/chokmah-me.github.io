@@ -17,7 +17,7 @@ Sovereign-grade competence in **cyber-physical defense**, **industrial cybersecu
 
 ### ⚡ Current Advisory Availability (Q2 2026 – Q1 2027)
 
-> **Capacity Notice:** Retained on functional safety systems through February 2027. 10 hours/week of remaining capacity is reserved for specialized advisory or federal court mandates.
+> **Capacity Notice:** Retained through February 2027. 5-8 hours/week of remaining capacity available.
 
 ### 🚀 Book a Diagnostics Briefing
 If you have a project or a case that fits this profile, kindly conisder booking an initial 30-minute scoping call. 
