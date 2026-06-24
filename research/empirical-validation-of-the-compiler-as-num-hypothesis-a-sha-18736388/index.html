@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR | Chokmah Research</title>
+    <meta name="description" content="A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a run...">
+    <link rel="canonical" href="https://chokmah.me/research/empirical-validation-of-the-compiler-as-num-hypothesis-a-sha-18736388/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://chokmah.me/research/empirical-validation-of-the-compiler-as-num-hypothesis-a-sha-18736388/">
+    <meta property="og:title" content="Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR">
+    <meta property="og:description" content="A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a run...">
+    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="citation_title" content="Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR">
+    <meta name="citation_author" content="Bilar, Daniyel Yaacov">
+    <meta name="citation_author" content="Bilar, Daniyel Yaacov">
+    <meta name="citation_publication_date" content="2026-02-23">
+    <meta name="citation_doi" content="10.5281/zenodo.18736388">
+    <meta name="citation_publisher" content="Zenodo">
+    <meta name="citation_public_url" content="https://zenodo.org/records/18736388">
+    <meta name="citation_abstract_html_url" content="https://zenodo.org/records/18736388">
+    <meta name="citation_pdf_url" content="https://zenodo.org/records/18736388/files/JSA_submission-v4.pdf?download=1">
+    <meta name="citation_keywords" content="compiler optimization; JIT compilation; network utility maximization; dual decomposition; profile guided optimization; inlining; empirical validation; shadow prices; resource allocation; MIR compiler">
+    <meta name="DC.title" content="Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR">
+    <meta name="DC.creator" content="Bilar, Daniyel Yaacov">
+    <meta name="DC.creator" content="Bilar, Daniyel Yaacov">
+    <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.18736388">
+    <meta name="DC.date" content="2026-02-23">
+    <meta name="DC.rights" content="cc-by-4.0">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR",
+  "headline": "Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR",
+  "url": "https://chokmah.me/research/empirical-validation-of-the-compiler-as-num-hypothesis-a-sha-18736388/",
+  "datePublished": "2026-02-23",
+  "inLanguage": "en",
+  "abstract": "A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a runtime master broadcasts shadow prices (execution frequency data), and the optimizer allocates its budget where the price is highest. We test this hypothesis empirically by instrumenting MIR, a lightweight JIT compiler infrastructure, with a shadow-price-responsive inlining threshold. Across 3,000 inlining decisions (750 per condition x 4 conditions), we find strong monotonic correlation between shadow price and inlining outcome (Spearman rho = 0.71, p < 10^-114), large effect sizes (Cohen's d = 2.00), and 98.4% decision agreement under plus-or-minus 20% price perturbation. Stratified analysis reveals that shadow-price sensitivity is optimization-level-dependent: conservative settings (O0) show reduced responsiveness (rho = 0.50) due to threshold ceiling effects, while moderate and aggressive settings (O1, O2) show strong responsiveness (rho = 0.82). Size-stratified analysis identifies a decision boundary at 100 to 200 IR instructions where shadow prices govern the inlining outcome. These results corroborate the NUM formalism as a predictive framework for compiler inlining behavior and establish experimental infrastructure for further validation. Version 1.1 incorporates expanded discussion of the scope of claims, addressing underdetermination and the epistemological status of the standalone decision function as a passed falsification test. Design implications are strengthened with specific falsifiable predictions including O(1/sqrt(k)) convergence bounds for cross-module price propagation and O(log n) stability bounds for adaptive inlining. This preprint is archived for open access and to support reproducibility",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.18736388"
+  },
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.18736388"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://chokmah.me/#person",
+      "name": "Dr. Daniyel Yaacov Bilar",
+      "sameAs": [
+        "https://orcid.org/0000-0002-9040-6914"
+      ]
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo"
+  },
+  "isPartOf": {
+    "@id": "https://chokmah.me/research/#collection"
+  },
+  "keywords": [
+    "compiler optimization",
+    "JIT compilation",
+    "network utility maximization",
+    "dual decomposition",
+    "profile guided optimization",
+    "inlining",
+    "empirical validation",
+    "shadow prices",
+    "resource allocation",
+    "MIR compiler"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+    </script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-anthracite: #0f172a;
+            --slate-armor: #1e293b;
+            --signal-amber: #d97706;
+            --active-amber: #f59e0b;
+            --titanium-white: #f8fafc;
+            --cadet-grey: #cbd5e1;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--deep-anthracite);
+            color: var(--titanium-white);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        a { color: var(--active-amber); }
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 30px; }
+        .site-nav { font-size: 0.9rem; color: var(--cadet-grey); margin-bottom: 40px; }
+        .site-nav a { text-decoration: none; }
+        header { margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid var(--slate-armor); }
+        h1 { font-size: 2.2rem; margin-bottom: 14px; letter-spacing: 0.3px; line-height: 1.25; }
+        .tagline { color: var(--active-amber); font-weight: 600; }
+        h2 { font-size: 1.4rem; margin: 40px 0 14px; color: var(--signal-amber);
+             border-bottom: 2px solid var(--slate-armor); padding-bottom: 8px; }
+        h3 { font-size: 1.15rem; color: var(--active-amber); }
+        p, ul { margin-bottom: 16px; color: var(--cadet-grey); }
+        ul { margin-left: 24px; } li { margin-bottom: 8px; }
+        .meta { color: var(--cadet-grey); font-size: 0.95rem; margin-bottom: 24px; }
+        .meta span { color: var(--titanium-white); }
+        .callout { background-color: var(--slate-armor); border-left: 3px solid var(--signal-amber);
+                   border-radius: 6px; padding: 16px 20px; margin: 24px 0; font-size: 0.97rem; }
+        .callout a { font-weight: 600; }
+        .kw { color: var(--cadet-grey); font-size: 0.9rem; }
+        .card { background-color: var(--slate-armor); border-radius: 8px; padding: 22px 24px;
+                margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
+        .card:hover { border-color: var(--signal-amber); }
+        .card h3 { margin-bottom: 6px; }
+        .card h3 a { text-decoration: none; }
+        .card .meta { margin-bottom: 8px; font-size: 0.85rem; }
+        .card p { margin-bottom: 0; font-size: 0.95rem; }
+        .year-head { color: var(--signal-amber); font-size: 1.1rem; margin: 36px 0 14px; }
+        footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--slate-armor);
+                 color: var(--cadet-grey); font-size: 0.85rem; text-align: center; }
+        footer a { text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="site-nav"><a href="/">chokmah.me</a> / <a href="/research/">Research</a></nav>
+    <header>
+      <h1>Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR</h1>
+      <p class="meta"><span>Bilar, Daniyel Yaacov; Bilar, Daniyel Yaacov</span> &middot; 2026-02-23 &middot; publication/preprint &middot; cc-by-4.0</p>
+    </header>
+    <div class="callout">
+      <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.18736388">https://doi.org/10.5281/zenodo.18736388</a><br>
+      <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/18736388/files/JSA_submission-v4.pdf?download=1">open</a><br>
+    </div>
+    <h2>Abstract</h2>
+    <p>A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a runtime master broadcasts shadow prices (execution frequency data), and the optimizer allocates its budget where the price is highest. We test this hypothesis empirically by instrumenting MIR, a lightweight JIT compiler infrastructure, with a shadow-price-responsive inlining threshold. Across 3,000 inlining decisions (750 per condition x 4 conditions), we find strong monotonic correlation between shadow price and inlining outcome (Spearman rho = 0.71, p &lt; 10^-114), large effect sizes (Cohen&#39;s d = 2.00), and 98.4% decision agreement under plus-or-minus 20% price perturbation. Stratified analysis reveals that shadow-price sensitivity is optimization-level-dependent: conservative settings (O0) show reduced responsiveness (rho = 0.50) due to threshold ceiling effects, while moderate and aggressive settings (O1, O2) show strong responsiveness (rho = 0.82). Size-stratified analysis identifies a decision boundary at 100 to 200 IR instructions where shadow prices govern the inlining outcome. These results corroborate the NUM formalism as a predictive framework for compiler inlining behavior and establish experimental infrastructure for further validation. Version 1.1 incorporates expanded discussion of the scope of claims, addressing underdetermination and the epistemological status of the standalone decision function as a passed falsification test. Design implications are strengthened with specific falsifiable predictions including O(1/sqrt(k)) convergence bounds for cross-module price propagation and O(log n) stability bounds for adaptive inlining. This preprint is archived for open access and to support reproducibility</p>
+    <h2>Keywords</h2>
+    <p class="kw">compiler optimization &middot; JIT compilation &middot; network utility maximization &middot; dual decomposition &middot; profile guided optimization &middot; inlining &middot; empirical validation &middot; shadow prices &middot; resource allocation &middot; MIR compiler</p>
+    <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>
+    <footer>
+        <p>&copy; 2026 Chokmah LLC &middot;
+        <a href="/">chokmah.me</a> &middot;
+        <a href="/research/">Research</a> &middot;
+        <a href="https://github.com/chokmah-me">GitHub</a></p>
+        <p>Records of version are hosted on <a href="https://zenodo.org">Zenodo</a>; mirrored to <a href="https://osf.io">OSF</a>.</p>
+    </footer>
+    </div>
+</body>
+</html>

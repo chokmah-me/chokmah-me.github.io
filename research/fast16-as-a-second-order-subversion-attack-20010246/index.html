@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fast16 as a Second-Order Subversion Attack | Chokmah Research</title>
+    <meta name="description" content="v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne&#39;...">
+    <link rel="canonical" href="https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/">
+    <meta property="og:title" content="fast16 as a Second-Order Subversion Attack">
+    <meta property="og:description" content="v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne&#39;...">
+    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="citation_title" content="fast16 as a Second-Order Subversion Attack">
+    <meta name="citation_author" content="Bilar, Daniyel Yaacov">
+    <meta name="citation_publication_date" content="2026-05-03">
+    <meta name="citation_doi" content="10.5281/zenodo.20010246">
+    <meta name="citation_publisher" content="Zenodo">
+    <meta name="citation_public_url" content="https://zenodo.org/records/20010246">
+    <meta name="citation_abstract_html_url" content="https://zenodo.org/records/20010246">
+    <meta name="citation_pdf_url" content="https://zenodo.org/records/20010246/files/dyb-2026o-fast16%20as%20a%20Second-Order%20Subversion%20Attack-REL.pdf?download=1">
+    <meta name="citation_keywords" content="nth-order attacks; subversion attack; fast16; Stuxnet; supply chain; kernel rootkit engineering; simulation; FLAW3D; CPU; additive manufacturing; Thompson; LS-DYNA; FPU; corruption; Highly Optimized Tolerance; cyber-physical sabotage; reproducible builds; trusting trust">
+    <meta name="DC.title" content="fast16 as a Second-Order Subversion Attack">
+    <meta name="DC.creator" content="Bilar, Daniyel Yaacov">
+    <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.20010246">
+    <meta name="DC.date" content="2026-05-03">
+    <meta name="DC.rights" content="cc-by-4.0">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "fast16 as a Second-Order Subversion Attack",
+  "headline": "fast16 as a Second-Order Subversion Attack",
+  "url": "https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/",
+  "datePublished": "2026-05-03",
+  "inLanguage": "en",
+  "abstract": "v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne's April 2026 disclosure of fast16, a precision sabotage framework compiled in August 2005, predates Stuxnet by five years and corrupts floating-point calculations in engineering simulation software via kernel-mode filesystem filtering. The infosec community described the mechanism accurately but did not classify the attack class. This paper applies the nth-order attackframework from Bilar (NATO CCDCOE, 2009) and argues fast16 is a second-order subversion attack: the high-precision research end system is reached through two successive ancillary systems, the OS kernel filesystem stack and the engineering simulation software above it. The wormlet is a delivery mechanism, not a distinct ancillary hop. fast16 is structurally comparable to Thompson's compiler trojan but one order lower and more covert: it operates at runtime below the application layer with no source-level or on-disk trace, defeating the reproducible-build defense that catches Thompson. Stuxnet, dr0wned, and FLAW3D are mapped at the same second order in different substrates, showing the taxonomy holds across software and physical manufacturing pipelines. The classification yields concrete defenses (hardware-rooted driver attestation, diverse independent toolchains across validation hosts, air-gapped reference baselines) that follow from the framework rather than the incident report.Companion to Bilar (2026), \"Volt Typhoon as Operational Realization of the nth-Order Bleeding Thesis\" (Zenodo 19739954).",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.20010246"
+  },
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.20010246"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://chokmah.me/#person",
+      "name": "Dr. Daniyel Yaacov Bilar",
+      "sameAs": [
+        "https://orcid.org/0000-0002-9040-6914"
+      ]
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo"
+  },
+  "isPartOf": {
+    "@id": "https://chokmah.me/research/#collection"
+  },
+  "keywords": [
+    "nth-order attacks",
+    "subversion attack",
+    "fast16",
+    "Stuxnet",
+    "supply chain",
+    "kernel rootkit engineering",
+    "simulation",
+    "FLAW3D",
+    "CPU",
+    "additive manufacturing",
+    "Thompson",
+    "LS-DYNA",
+    "FPU",
+    "corruption",
+    "Highly Optimized Tolerance",
+    "cyber-physical sabotage",
+    "reproducible builds",
+    "trusting trust"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+    </script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-anthracite: #0f172a;
+            --slate-armor: #1e293b;
+            --signal-amber: #d97706;
+            --active-amber: #f59e0b;
+            --titanium-white: #f8fafc;
+            --cadet-grey: #cbd5e1;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--deep-anthracite);
+            color: var(--titanium-white);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        a { color: var(--active-amber); }
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 30px; }
+        .site-nav { font-size: 0.9rem; color: var(--cadet-grey); margin-bottom: 40px; }
+        .site-nav a { text-decoration: none; }
+        header { margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid var(--slate-armor); }
+        h1 { font-size: 2.2rem; margin-bottom: 14px; letter-spacing: 0.3px; line-height: 1.25; }
+        .tagline { color: var(--active-amber); font-weight: 600; }
+        h2 { font-size: 1.4rem; margin: 40px 0 14px; color: var(--signal-amber);
+             border-bottom: 2px solid var(--slate-armor); padding-bottom: 8px; }
+        h3 { font-size: 1.15rem; color: var(--active-amber); }
+        p, ul { margin-bottom: 16px; color: var(--cadet-grey); }
+        ul { margin-left: 24px; } li { margin-bottom: 8px; }
+        .meta { color: var(--cadet-grey); font-size: 0.95rem; margin-bottom: 24px; }
+        .meta span { color: var(--titanium-white); }
+        .callout { background-color: var(--slate-armor); border-left: 3px solid var(--signal-amber);
+                   border-radius: 6px; padding: 16px 20px; margin: 24px 0; font-size: 0.97rem; }
+        .callout a { font-weight: 600; }
+        .kw { color: var(--cadet-grey); font-size: 0.9rem; }
+        .card { background-color: var(--slate-armor); border-radius: 8px; padding: 22px 24px;
+                margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
+        .card:hover { border-color: var(--signal-amber); }
+        .card h3 { margin-bottom: 6px; }
+        .card h3 a { text-decoration: none; }
+        .card .meta { margin-bottom: 8px; font-size: 0.85rem; }
+        .card p { margin-bottom: 0; font-size: 0.95rem; }
+        .year-head { color: var(--signal-amber); font-size: 1.1rem; margin: 36px 0 14px; }
+        footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--slate-armor);
+                 color: var(--cadet-grey); font-size: 0.85rem; text-align: center; }
+        footer a { text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="site-nav"><a href="/">chokmah.me</a> / <a href="/research/">Research</a></nav>
+    <header>
+      <h1>fast16 as a Second-Order Subversion Attack</h1>
+      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-05-03 &middot; publication/preprint &middot; cc-by-4.0</p>
+    </header>
+    <div class="callout">
+      <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.20010246">https://doi.org/10.5281/zenodo.20010246</a><br>
+      <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/20010246/files/dyb-2026o-fast16%20as%20a%20Second-Order%20Subversion%20Attack-REL.pdf?download=1">open</a><br>
+    </div>
+    <h2>Abstract</h2>
+    <p>v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne&#39;s April 2026 disclosure of fast16, a precision sabotage framework compiled in August 2005, predates Stuxnet by five years and corrupts floating-point calculations in engineering simulation software via kernel-mode filesystem filtering. The infosec community described the mechanism accurately but did not classify the attack class. This paper applies the nth-order attackframework from Bilar (NATO CCDCOE, 2009) and argues fast16 is a second-order subversion attack: the high-precision research end system is reached through two successive ancillary systems, the OS kernel filesystem stack and the engineering simulation software above it. The wormlet is a delivery mechanism, not a distinct ancillary hop. fast16 is structurally comparable to Thompson&#39;s compiler trojan but one order lower and more covert: it operates at runtime below the application layer with no source-level or on-disk trace, defeating the reproducible-build defense that catches Thompson. Stuxnet, dr0wned, and FLAW3D are mapped at the same second order in different substrates, showing the taxonomy holds across software and physical manufacturing pipelines. The classification yields concrete defenses (hardware-rooted driver attestation, diverse independent toolchains across validation hosts, air-gapped reference baselines) that follow from the framework rather than the incident report.Companion to Bilar (2026), &quot;Volt Typhoon as Operational Realization of the nth-Order Bleeding Thesis&quot; (Zenodo 19739954).</p>
+    <h2>Keywords</h2>
+    <p class="kw">nth-order attacks &middot; subversion attack &middot; fast16 &middot; Stuxnet &middot; supply chain &middot; kernel rootkit engineering &middot; simulation &middot; FLAW3D &middot; CPU &middot; additive manufacturing &middot; Thompson &middot; LS-DYNA &middot; FPU &middot; corruption &middot; Highly Optimized Tolerance &middot; cyber-physical sabotage &middot; reproducible builds &middot; trusting trust</p>
+    <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>
+    <footer>
+        <p>&copy; 2026 Chokmah LLC &middot;
+        <a href="/">chokmah.me</a> &middot;
+        <a href="/research/">Research</a> &middot;
+        <a href="https://github.com/chokmah-me">GitHub</a></p>
+        <p>Records of version are hosted on <a href="https://zenodo.org">Zenodo</a>; mirrored to <a href="https://osf.io">OSF</a>.</p>
+    </footer>
+    </div>
+</body>
+</html>

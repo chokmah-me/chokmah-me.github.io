@@ -28,7 +28,7 @@ If you have a project or a case that fits this profile, kindly conisder booking 
 
 ## 📁 Selected Research (2026)
 
-Active publication pipeline across seven threads. Full index on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Bilar%2C%20Daniyel%20Yaacov%22&l=list&p=1&s=10&sort=newest) and [OSF](https://osf.io/fqxmu/)
+Active publication pipeline across seven threads. **Full catalog: [chokmah.me/research](https://chokmah.me/research/)** — also indexed on [Zenodo](https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Bilar%2C%20Daniyel%20Yaacov%22&l=list&p=1&s=10&sort=newest) (canonical DOIs) and [OSF](https://osf.io/fqxmu/). ORCID: [0000-0002-9040-6914](https://orcid.org/0000-0002-9040-6914).
 
 | Thread | Paper | DOI |
 |---|---|---|

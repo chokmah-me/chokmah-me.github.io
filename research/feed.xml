@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Chokmah Research</title>
+  <link href="https://chokmah.me/research/"/>
+  <link rel="self" href="https://chokmah.me/research/feed.xml"/>
+  <id>https://chokmah.me/research/</id>
+  <updated>2026-06-24T00:25:29Z</updated>
+  <author><name>Dr. Daniyel Yaacov Bilar</name></author>
+  <entry>
+    <title>chokmah-me/hashline: hashline 0.4.1</title>
+    <link href="https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/"/>
+    <id>https://doi.org/10.5281/zenodo.20766159</id>
+    <updated>2026-06-19T00:00:00Z</updated>
+    <summary>Patch release fixing two Windows / non-UTF-8 console encoding bugs in the CLI, found while using the harness on an emoji- and symbol-heavy repo: &#128027; hashline read crashed with UnicodeEncodeError when printing files containing non-cp1252 characters (≥, emoji, …). &#128027; hashline apply reading a patch f...</summary>
+  </entry>
+  <entry>
+    <title>Compressed by Discovery: Snapped Symbolic-Regression Primitives as Realizable, Verifiable Function Units on DSP-less FPGAs</title>
+    <link href="https://chokmah.me/research/compressed-by-discovery-snapped-symbolic-regression-primitiv-20745607/"/>
+    <id>https://doi.org/10.5281/zenodo.20745607</id>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <summary>Technical note reporting the hardware realization of argmax-snapped EML expression trees on Lattice iCE40 FPGAs. On fabric without DSP inference, snapped symbolic primitives (exp and ln) are simultaneously smaller and more accurate than every quantized MLP in a width/depth sweep, are bit-exact to...</summary>
+  </entry>
+  <entry>
+    <title>EML Expression Trees: Symbolic Regression, Basin Selection, and Hardware Realization on iCE40</title>
+    <link href="https://chokmah.me/research/eml-expression-trees-symbolic-regression-basin-selection-and-20748178/"/>
+    <id>https://doi.org/10.5281/zenodo.20748178</id>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <summary>Code, data, and technical notes for EML (exp-minus-ln) expression tree research. Includes symbolic regression experiments (snapping_v2_final.csv), basin-selection warm-start studies, and Track C hardware realization: fixed-point golden models, iCE40 RTL emitters, quantized-MLP and direct-ROM base...</summary>
+  </entry>
+  <entry>
+    <title>Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth</title>
+    <link href="https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/"/>
+    <id>https://doi.org/10.5281/zenodo.20671272</id>
+    <updated>2026-06-12T00:00:00Z</updated>
+    <summary>Technical note + data release accompanying Valid and False Snapping in EML Expression Trees: The Basin Selection Problem (DOI: 10.5281/zenodo.19790799; v2.3 at time of writing). The companion paper showed that three-phase temperature annealing (Adam on MAE, entropy-penalty ramp, temperature annea...</summary>
+  </entry>
+  <entry>
+    <title>Valid and False Snapping in EML Expression Trees: The Basin Selection Problem</title>
+    <link href="https://chokmah.me/research/valid-and-false-snapping-in-eml-expression-trees-the-basin-s-20671038/"/>
+    <id>https://doi.org/10.5281/zenodo.20671038</id>
+    <updated>2026-06-12T00:00:00Z</updated>
+    <summary>Training EML expression trees (Odrzywolek 2026) with gradient descent and then snapping soft input selectors to discrete choices should recover exact symbolic forms for elementary functions. Prior work reported commitment-based success criteria; we add a symbolic-correctness criterion and charact...</summary>
+  </entry>
+  <entry>
+    <title>Balance of Power 2026</title>
+    <link href="https://chokmah.me/research/balance-of-power-2026-20498785/"/>
+    <id>https://doi.org/10.5281/zenodo.20498785</id>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <summary>A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Models great-power competition across ten domains with eight major actors using stylized, rule-based AI and cascade dynamics.</summary>
+  </entry>
+  <entry>
+    <title>Claude Code Playbook v4.4.0</title>
+    <link href="https://chokmah.me/research/claude-code-playbook-v4-4-0-20481459/"/>
+    <id>https://doi.org/10.5281/zenodo.20481459</id>
+    <updated>2026-06-01T00:00:00Z</updated>
+    <summary>A token-efficient AI engineering system for Claude Code providing structured workflows, agentic patterns, three-layer context optimization (don&#39;t-load, compress, cache), path-scoped rules, output compression via Headroom, and supply-chain security hardening for software development teams. This re...</summary>
+  </entry>
+  <entry>
+    <title>The Computability Filter</title>
+    <link href="https://chokmah.me/research/the-computability-filter-20330532/"/>
+    <id>https://doi.org/10.5281/zenodo.20330532</id>
+    <updated>2026-05-21T00:00:00Z</updated>
+    <summary>The contribution is a perspective and a research direction, not a result.We argue that the map from string-theory compactification data to cosmological thermalisation outcome is well-defined as a function but not computable as one. Drawing on the undecidability of spectral gaps (Cubitt, Perez-Gar...</summary>
+  </entry>
+  <entry>
+    <title>chokmah-me/parabolic-fractal: v1.0.0</title>
+    <link href="https://chokmah.me/research/chokmah-me-parabolic-fractal-v1-0-0-20318458/"/>
+    <id>https://doi.org/10.5281/zenodo.20318458</id>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <summary>Fan-In Constructal Analysis release v1.0.0 Dual preprint + code release. Paper: https://doi.org/10.5281/zenodo.20313669 Key findings: agentic flattening effect (Gini 0.725 vs 0.882, p=0.0011), FastAPI confound resolved (p=0.0034), log-normal persistence (11/12 repos), longitudinal null. See https...</summary>
+  </entry>
+  <entry>
+    <title>Fan-In Distributions in Human-Written vs AI-Generated Python Codebases: A Constructal Law Analysis</title>
+    <link href="https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-20313669/"/>
+    <id>https://doi.org/10.5281/zenodo.20313669</id>
+    <updated>2026-05-20T00:00:00Z</updated>
+    <summary>Import fan-in, the count of intra-repo modules that import a given file, encodes hierarchical coupling structure. By analogy with Constructal flow systems (Bejan 1997), we hypothesize that finite networks shaped by iterative optimization develop log-normal, not power-law, size distributions. We m...</summary>
+  </entry>
+  <entry>
+    <title>AttestationRegimeClassifier — Ghidra Plugin for ICS/Embedded Firmware Attestation Regime Classification</title>
+    <link href="https://chokmah.me/research/attestationregimeclassifier-ghidra-plugin-for-ics-embedded-f-20218659/"/>
+    <id>https://doi.org/10.5281/zenodo.20218659</id>
+    <updated>2026-05-16T00:00:00Z</updated>
+    <summary>A Ghidra plugin that classifies embedded firmware functions into three attestation regimes (formally provable / statistically testable / adversarial input exposure) based on the Computability Filter framework (Bilar 2026). Supports ICS/embedded firmware triage with P-code analysis, call-graph pro...</summary>
+  </entry>
+  <entry>
+    <title>On the Necessary Void at the Center of Autonomous Governance</title>
+    <link href="https://chokmah.me/research/on-the-necessary-void-at-the-center-of-autonomous-governance-20190801/"/>
+    <id>https://doi.org/10.5281/zenodo.20190801</id>
+    <updated>2026-05-15T00:00:00Z</updated>
+    <summary>When states delegate exception-decisions to autonomous systems operating under latency constraints that preclude real-time human ratification, the sovereign position becomes formally unoccupiable. This paper derives the result from three independent impossibility constraints: Rice&#39;s theorem on be...</summary>
+  </entry>
+  <entry>
+    <title>Three Regimes of Capability Attestation for  Autonomous Agents</title>
+    <link href="https://chokmah.me/research/three-regimes-of-capability-attestation-for-autonomous-agent-20114610/"/>
+    <id>https://doi.org/10.5281/zenodo.20114610</id>
+    <updated>2026-05-11T00:00:00Z</updated>
+    <summary>The core thesis is simple but devastating: there is no single scientific method to verify whether an autonomous AI agent actually possesses a claimed capability. The right verification strategy depends entirely on the agent&#39;s computational model and strategic posture (honest vs. potentially decep...</summary>
+  </entry>
+  <entry>
+    <title>Recognition Channel Dynamics in the Shibboleth Lattice: A Simulation Study</title>
+    <link href="https://chokmah.me/research/recognition-channel-dynamics-in-the-shibboleth-lattice-a-sim-20090834/"/>
+    <id>https://doi.org/10.5281/zenodo.20090834</id>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <summary>Companion to The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination (Bilar 2026, doi:10.5281/zenodo.19652725). The parent paper proposes a binding operator B = (S, I, W, rho, chi) unifying coalition formation across five substrates, with recognition-channel pro...</summary>
+  </entry>
+  <entry>
+    <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
+    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
+    <id>https://doi.org/10.5281/zenodo.20089104</id>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <summary>A preprint unifying four documented cases of multi-agent coalition behavior (quantum-game entanglement, evolutionary covert-tag recognition, engineered handshake collusion, and emergent peer-preservation in frontier language models) under a single formal structure: the binding operator $B = (S, I...</summary>
+  </entry>
+  <entry>
+    <title>fast16 as a Second-Order Subversion Attack</title>
+    <link href="https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/"/>
+    <id>https://doi.org/10.5281/zenodo.20010246</id>
+    <updated>2026-05-03T00:00:00Z</updated>
+    <summary>v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne&#39;...</summary>
+  </entry>
+  <entry>
+    <title>Volt Typhoon as Operational Realization of the nth-Order Bleeding Thesis</title>
+    <link href="https://chokmah.me/research/volt-typhoon-as-operational-realization-of-the-nth-order-ble-19739954/"/>
+    <id>https://doi.org/10.5281/zenodo.19739954</id>
+    <updated>2026-04-24T00:00:00Z</updated>
+    <summary>In 2009, On nth Order Attacks (NATO CCDCOE, Responses to Cyber Terrorism) predicted that PLA shashoujian logic, read through the Highly Optimized Tolerance lens, would produce an operational signature in which state adversaries target the mission-sustaining ancillary systems of advanced computeri...</summary>
+  </entry>
+  <entry>
+    <title>How &#39;Stethoscopes&#39; Unmasked Correlated Noise in Quantum Processors</title>
+    <link href="https://chokmah.me/research/how-stethoscopes-unmasked-correlated-noise-in-quantum-proces-19651958/"/>
+    <id>https://doi.org/10.5281/zenodo.19651958</id>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <summary>For years, the quantum computing community has benchmarked its progress using simplified, independent noise models, leaving us to navigate the complexities of large-scale devices largely by feel. This commentary analyzes Google&#39;s recent out-of-time-order correlator (OTOC) experiments on the 65-qu...</summary>
+  </entry>
+  <entry>
+    <title>Software simulation: Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks</title>
+    <link href="https://chokmah.me/research/software-simulation-circular-leverage-in-bank-nbfi-synthetic-19651937/"/>
+    <id>https://doi.org/10.5281/zenodo.19651937</id>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <summary>Circular leverage in bank-NBFI SRT networks: simulation code</summary>
+  </entry>
+  <entry>
+    <title>Quantum-Safe Migration Playbook (Strategic &amp; Operational Guide)</title>
+    <link href="https://chokmah.me/research/quantum-safe-migration-playbook-strategic-operational-guide-19655682/"/>
+    <id>https://doi.org/10.5281/zenodo.19655682</id>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <summary>Version 1.2.0 is a major restructuring of the Quantum-Safe Migration Playbook with three goals: make the content usable as a retrieval-augmented AI knowledge base, tighten evaluation discipline, and update all dated facts to April 2026. What&#39;s new in v1.2.0 Structural changes Fact-ID indexing: ev...</summary>
+  </entry>
+  <entry>
+    <title>Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks</title>
+    <link href="https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-19632278/"/>
+    <id>https://doi.org/10.5281/zenodo.19632278</id>
+    <updated>2026-04-17T00:00:00Z</updated>
+    <summary>Synthetic Risk Transfers (SRTs) let banks shed credit risk to non-bank financial intermediaries while keeping the underlying loans on their balance sheets. A structural vulnerability arises when the same banks extend credit lines to the funds that buy their SRT protection, creating a circular lev...</summary>
+  </entry>
+  <entry>
+    <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation in the 2026 Iran War</title>
+    <link href="https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-19558494/"/>
+    <id>https://doi.org/10.5281/zenodo.19558494</id>
+    <updated>2026-04-13T00:00:00Z</updated>
+    <summary>The 2026 US-Israeli military campaign against Iran produced a 92% decline in Iranian ballistic missile launch rates within nine days. This paper asks whether that decline reflects physical destruction of transporter-erector-launcher (TEL) assets, degradation of command authority, or both. An agen...</summary>
+  </entry>
+  <entry>
+    <title>Companion Code and Data: Launcher Attrition Dominates Command Architecture</title>
+    <link href="https://chokmah.me/research/companion-code-and-data-launcher-attrition-dominates-command-19558036/"/>
+    <id>https://doi.org/10.5281/zenodo.19558036</id>
+    <updated>2026-04-13T00:00:00Z</updated>
+    <summary>v4.0 Magazine-Discipline Validation Paper v4.0 adds Section V-D reporting a 1,800-run re-simulation under post-conflict attrition profiles. The null result on launch-rate discrimination between C2 hypotheses is reproduced in 107 of 108 tests, confirming the conjecture advanced in v2/v3 and retrac...</summary>
+  </entry>
+  <entry>
+    <title>chokmah-me/lattice-GoldenDome-AOM: v1.0.0: Initial Release — Golden Dome AOM Falsification Suite</title>
+    <link href="https://chokmah.me/research/chokmah-me-lattice-goldendome-aom-v1-0-0-initial-release-gol-19368609/"/>
+    <id>https://doi.org/10.5281/zenodo.19368609</id>
+    <updated>2026-04-01T00:00:00Z</updated>
+    <summary>Initial release accompanying the position paper &quot;Golden Dome Latency Governance: Autonomous Operations Model Extended to Boost-Phase Intercept Timelines&quot; (Bilar 2026, DOI: 10.5281/zenodo.19368682 What&#39;s included simulate.py &amp;mdash; unified falsification suite (v5.0), five scenarios A-E requiremen...</summary>
+  </entry>
+  <entry>
+    <title>Golden Dome Latency Governance: Autonomous Operations Model Extended to Boost-Phase Intercept Timelines</title>
+    <link href="https://chokmah.me/research/golden-dome-latency-governance-autonomous-operations-model-e-19368682/"/>
+    <id>https://doi.org/10.5281/zenodo.19368682</id>
+    <updated>2026-03-31T00:00:00Z</updated>
+    <summary>This technical position paper extends the Autonomous Operations Model (AOM) to Golden Dome boost-phase and terminal-phase hypersonic glide vehicle (HGV) intercept timelines. It makes three contributions. First, it quantifies the combined propagation-delay and ground-station-availability argument...</summary>
+  </entry>
+  <entry>
+    <title>Anduril LatticeOS: Autonomous Operations Model: Schema, Counter-Narrative, and Implementation</title>
+    <link href="https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-19266807/"/>
+    <id>https://doi.org/10.5281/zenodo.19266807</id>
+    <updated>2026-03-27T00:00:00Z</updated>
+    <summary>LatticeOS is not an AI operating system. It is a data ontology enforcement layer with a tasking bus. This technical position note maps LatticeOS (SDK v4.4.0) onto a 4-layer Autonomous Operations Model (AOM) skeleton (cognitive, coordination, control, and governance) and identifies the gap between...</summary>
+  </entry>
+  <entry>
+    <title>Dragon&#39;s Teeth: The PLA&#39;s UCAV Arsenal and Taiwan Invasion Strategy</title>
+    <link href="https://chokmah.me/research/dragon-s-teeth-the-pla-s-ucav-arsenal-and-taiwan-invasion-st-19076694/"/>
+    <id>https://doi.org/10.5281/zenodo.19076694</id>
+    <updated>2026-03-17T00:00:00Z</updated>
+    <summary>This paper provides a comprehensive open-source intelligence assessment of the People&#39;s Liberation Army&#39;s unmanned combat aerial vehicle (UCAV) arsenal as it pertains to a potential Taiwan invasion scenario. It examines the PLA&#39;s key platforms (CH-901, GJ-2 Wing Loong II, ASN-301, GJ-1/WS-43, GJ-...</summary>
+  </entry>
+  <entry>
+    <title>Shahed-238 / Geran-3 UCAV Analysis: Companion Note to Dragon&#39;s Teeth (Second Edition, Revised March 2026)</title>
+    <link href="https://chokmah.me/research/shahed-238-geran-3-ucav-analysis-companion-note-to-dragon-s-19076587/"/>
+    <id>https://doi.org/10.5281/zenodo.19076587</id>
+    <updated>2026-03-17T00:00:00Z</updated>
+    <summary>This companion note analyzes the Shahed-238 jet-powered one-way attack UAV and its Russian-produced variants (Geran-3, Geran-4, Geran-5) as deployed in the Russia-Ukraine conflict through early 2026. It covers the platform&#39;s evolution from the Shahed-136, including propulsion (turbojet replacing...</summary>
+  </entry>
+  <entry>
+    <title>Software and Data: Empirical Validation of Shadow-Price-Guided Inlining in MIR</title>
+    <link href="https://chokmah.me/research/software-and-data-empirical-validation-of-shadow-price-guide-18890028/"/>
+    <id>https://doi.org/10.5281/zenodo.18890028</id>
+    <updated>2026-03-06T00:00:00Z</updated>
+    <summary>Complete experimental infrastructure supporting:Empirical Validation of Shadow-Price-Guided Inlining in MIR DOI: 10.5281/zenodo.18828679 Source code and analysis scripts for the empirical validation of the compiler-as-NUM (Network Utility Maximization) hypothesis using the MIR lightweight JIT com...</summary>
+  </entry>
+  <entry>
+    <title>Empirical Validation of Shadow-Price-Guided Inlining in MIR</title>
+    <link href="https://chokmah.me/research/empirical-validation-of-shadow-price-guided-inlining-in-mir-18828679/"/>
+    <id>https://doi.org/10.5281/zenodo.18828679</id>
+    <updated>2026-03-01T00:00:00Z</updated>
+    <summary>Full experimental validation of dual decomposition protocol for JIT compiler inlining on the MIR lightweight JIT compiler. Implements a three-phase pipeline: Phase 1 synthetic profiling (execution frequencies derived from benchmark structure), Phase 2 shadow-price-guided mutation pass (MIR_CALL &amp;...</summary>
+  </entry>
+  <entry>
+    <title>Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR</title>
+    <link href="https://chokmah.me/research/empirical-validation-of-the-compiler-as-num-hypothesis-a-sha-18736388/"/>
+    <id>https://doi.org/10.5281/zenodo.18736388</id>
+    <updated>2026-02-23T00:00:00Z</updated>
+    <summary>A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a run...</summary>
+  </entry>
+  <entry>
+    <title>The Compiler as a Decomposed Optimization System</title>
+    <link href="https://chokmah.me/research/the-compiler-as-a-decomposed-optimization-system-18715390/"/>
+    <id>https://doi.org/10.5281/zenodo.18715390</id>
+    <updated>2026-02-20T00:00:00Z</updated>
+    <summary>This paper revisits the central claim of Bilar (2007) that the structure of executables is the product of anengineered optimization process. We introduce the Network Utility Maximization (NUM) framework anddemonstrate that modern compiler architectures can be formally mapped onto distinct decompo...</summary>
+  </entry>
+  <entry>
+    <title>Modern Java 25 Thoughtbases (AI-native assets)</title>
+    <link href="https://chokmah.me/research/modern-java-25-thoughtbases-ai-native-assets-17740921/"/>
+    <id>https://doi.org/10.5281/zenodo.17740921</id>
+    <updated>2025-11-27T00:00:00Z</updated>
+    <summary>High-performance Thoughtbase for Modern Java (late 2025) Source material: Learning modern Java the playful way by Marit Van Dijk and Piotr Przybył The Modern Java talk by Marit Van Dijk and Piotr Przybył was parsed, and Thoughtbases iteratively constructed; structurally and semantically presented...</summary>
+  </entry>
+</feed>

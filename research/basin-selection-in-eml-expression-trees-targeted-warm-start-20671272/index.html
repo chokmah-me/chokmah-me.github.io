@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth | Chokmah Research</title>
+    <meta name="description" content="Technical note + data release accompanying Valid and False Snapping in EML Expression Trees: The Basin Selection Problem (DOI: 10.5281/zenodo.19790799; v2.3 at time of writing). The companion paper showed that three-phase temperature annealing (Adam on MAE, entropy-penalty ramp, temperature annea...">
+    <link rel="canonical" href="https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/">
+    <meta property="og:title" content="Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth">
+    <meta property="og:description" content="Technical note + data release accompanying Valid and False Snapping in EML Expression Trees: The Basin Selection Problem (DOI: 10.5281/zenodo.19790799; v2.3 at time of writing). The companion paper showed that three-phase temperature annealing (Adam on MAE, entropy-penalty ramp, temperature annea...">
+    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="citation_title" content="Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth">
+    <meta name="citation_author" content="Bilar, Daniyel Yaacov">
+    <meta name="citation_publication_date" content="2026-06-12">
+    <meta name="citation_doi" content="10.5281/zenodo.20671272">
+    <meta name="citation_publisher" content="Zenodo">
+    <meta name="citation_public_url" content="https://zenodo.org/records/20671272">
+    <meta name="citation_abstract_html_url" content="https://zenodo.org/records/20671272">
+    <meta name="citation_pdf_url" content="https://zenodo.org/records/20671272/files/basin_selection_warmstart_note.pdf?download=1">
+    <meta name="citation_keywords" content="symbolic regression; EML operator; neural symbolic; expression trees; basin selection; warm-start initialization; curriculum learning; temperature annealing; elementary functions">
+    <meta name="DC.title" content="Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth">
+    <meta name="DC.creator" content="Bilar, Daniyel Yaacov">
+    <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.20671272">
+    <meta name="DC.date" content="2026-06-12">
+    <meta name="DC.rights" content="cc-by-4.0">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "name": "Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth",
+  "headline": "Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth",
+  "url": "https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/",
+  "datePublished": "2026-06-12",
+  "inLanguage": "en",
+  "abstract": "Technical note + data release accompanying Valid and False Snapping in EML Expression Trees: The Basin Selection Problem (DOI: 10.5281/zenodo.19790799; v2.3 at time of writing). The companion paper showed that three-phase temperature annealing (Adam on MAE, entropy-penalty ramp, temperature anneal) solves selector commitment in balanced EML expression trees (every selector reaches a simplex vertex) but does not solve basin selection: the snapped expression is often the wrong symbolic form. Under the paper's strict validity criterion (vertex commitment plus post-snap MAE < 0.01), blind initialization recovers the correct form in only 25&ndash;35% of runs on the difficult cells: exp(x) at low depth, where the competing basin eml(x,x) (post-snap MAE 0.688) captures most seeds, and ln(x) at over-representational depth 5, where structurally near-miss forms dominate. Contribution This note shows that two cheap, symbolic-aware interventions at initialization rescue these cells completely, with no change to the training schedule, loss, architecture, or validity criterion. 1. Targeted Warm-Start (initialize_to_target) Selector logits are biased toward the known-good form, plus Gaussian exploration noise (0.4). Cell Result exp d=3 20/20 valid recovery, every run ending at eml(x,1) ln d=5 20/20 valid recovery, every run ending at eml(1,eml(eml(1,x),1)) Post-snap loss ~1e-8 in all cases. 2. Top-Aligned Curriculum (grow_from_shallow + reanneal_extra_capacity) Train at the representational depth, embed the trained solution top-aligned into the deeper tree so unused capacity dangles below as constant-biased branches, briefly re-anneal only the extra selectors (200 epochs, embedded block frozen), then fine-tune. Top alignment is the load-bearing choice: a balanced EML gate cannot act as an identity forwarder (no a, b &isin; {1, x, f} gives exp(a) &minus; ln(b) = f), so the naive bottom-aligned extension would embed exp(ln(x)) = x before training. The curriculum assumes only that the target is learnable at its representational depth &mdash; not that its deep-tree form is known &mdash; and also reaches 20/20 on both cells. A replay audit confirms every ln curriculum run used the genuine grow_from_shallow path rather than the driver's fallback. Blind Baselines (identical deterministic seeds) Cell Valid Recovery exp d=3 7/20 ln d=5 5/20 The results corroborate the companion paper's reframing of symbolic recovery as basin selection rather than commitment or representational power, and align with Odrzywolek's independent warm-start evidence (arXiv:2603.21852, SI Table S7) that correct solutions are stable attractors. Files in This Record File Description Note (PDF) Full technical note Figure 1 Grouped recovery-rate bars, both cells &times; three init modes basin_warmstart_v2.4_postfix.csv 120 rows: blind + warm controls basin_warmstart_v2.5_unbalanced.csv 120 rows: adds the top-aligned curriculum; blind/warm rows match v2.4_postfix run-for-run under identical seeding Both CSVs carry deterministic seeds and the auditable pretrain_form column. Code (eml_layer_v2.py, basin_warmstart.py) and exact reproduction commands are in the eml-ice40-cybenko repository, archived at 10.5281/zenodo.19736075. The note includes an AI Utilization Statement.",
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "DOI",
+    "value": "10.5281/zenodo.20671272"
+  },
+  "sameAs": [
+    "https://doi.org/10.5281/zenodo.20671272"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "@id": "https://chokmah.me/#person",
+      "name": "Dr. Daniyel Yaacov Bilar",
+      "sameAs": [
+        "https://orcid.org/0000-0002-9040-6914"
+      ]
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zenodo"
+  },
+  "isPartOf": {
+    "@id": "https://chokmah.me/research/#collection"
+  },
+  "keywords": [
+    "symbolic regression",
+    "EML operator",
+    "neural symbolic",
+    "expression trees",
+    "basin selection",
+    "warm-start initialization",
+    "curriculum learning",
+    "temperature annealing",
+    "elementary functions"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+    </script>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --deep-anthracite: #0f172a;
+            --slate-armor: #1e293b;
+            --signal-amber: #d97706;
+            --active-amber: #f59e0b;
+            --titanium-white: #f8fafc;
+            --cadet-grey: #cbd5e1;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--deep-anthracite);
+            color: var(--titanium-white);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+        a { color: var(--active-amber); }
+        .container { max-width: 900px; margin: 0 auto; padding: 60px 30px; }
+        .site-nav { font-size: 0.9rem; color: var(--cadet-grey); margin-bottom: 40px; }
+        .site-nav a { text-decoration: none; }
+        header { margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid var(--slate-armor); }
+        h1 { font-size: 2.2rem; margin-bottom: 14px; letter-spacing: 0.3px; line-height: 1.25; }
+        .tagline { color: var(--active-amber); font-weight: 600; }
+        h2 { font-size: 1.4rem; margin: 40px 0 14px; color: var(--signal-amber);
+             border-bottom: 2px solid var(--slate-armor); padding-bottom: 8px; }
+        h3 { font-size: 1.15rem; color: var(--active-amber); }
+        p, ul { margin-bottom: 16px; color: var(--cadet-grey); }
+        ul { margin-left: 24px; } li { margin-bottom: 8px; }
+        .meta { color: var(--cadet-grey); font-size: 0.95rem; margin-bottom: 24px; }
+        .meta span { color: var(--titanium-white); }
+        .callout { background-color: var(--slate-armor); border-left: 3px solid var(--signal-amber);
+                   border-radius: 6px; padding: 16px 20px; margin: 24px 0; font-size: 0.97rem; }
+        .callout a { font-weight: 600; }
+        .kw { color: var(--cadet-grey); font-size: 0.9rem; }
+        .card { background-color: var(--slate-armor); border-radius: 8px; padding: 22px 24px;
+                margin-bottom: 18px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
+        .card:hover { border-color: var(--signal-amber); }
+        .card h3 { margin-bottom: 6px; }
+        .card h3 a { text-decoration: none; }
+        .card .meta { margin-bottom: 8px; font-size: 0.85rem; }
+        .card p { margin-bottom: 0; font-size: 0.95rem; }
+        .year-head { color: var(--signal-amber); font-size: 1.1rem; margin: 36px 0 14px; }
+        footer { margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--slate-armor);
+                 color: var(--cadet-grey); font-size: 0.85rem; text-align: center; }
+        footer a { text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <nav class="site-nav"><a href="/">chokmah.me</a> / <a href="/research/">Research</a></nav>
+    <header>
+      <h1>Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth</h1>
+      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-06-12 &middot; publication/preprint &middot; cc-by-4.0</p>
+    </header>
+    <div class="callout">
+      <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.20671272">https://doi.org/10.5281/zenodo.20671272</a><br>
+      <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/20671272/files/basin_selection_warmstart_note.pdf?download=1">open</a><br>
+    </div>
+    <h2>Abstract</h2>
+    <p>Technical note + data release accompanying Valid and False Snapping in EML Expression Trees: The Basin Selection Problem (DOI: 10.5281/zenodo.19790799; v2.3 at time of writing). The companion paper showed that three-phase temperature annealing (Adam on MAE, entropy-penalty ramp, temperature anneal) solves selector commitment in balanced EML expression trees (every selector reaches a simplex vertex) but does not solve basin selection: the snapped expression is often the wrong symbolic form. Under the paper&#39;s strict validity criterion (vertex commitment plus post-snap MAE &lt; 0.01), blind initialization recovers the correct form in only 25&amp;ndash;35% of runs on the difficult cells: exp(x) at low depth, where the competing basin eml(x,x) (post-snap MAE 0.688) captures most seeds, and ln(x) at over-representational depth 5, where structurally near-miss forms dominate. Contribution This note shows that two cheap, symbolic-aware interventions at initialization rescue these cells completely, with no change to the training schedule, loss, architecture, or validity criterion. 1. Targeted Warm-Start (initialize_to_target) Selector logits are biased toward the known-good form, plus Gaussian exploration noise (0.4). Cell Result exp d=3 20/20 valid recovery, every run ending at eml(x,1) ln d=5 20/20 valid recovery, every run ending at eml(1,eml(eml(1,x),1)) Post-snap loss ~1e-8 in all cases. 2. Top-Aligned Curriculum (grow_from_shallow + reanneal_extra_capacity) Train at the representational depth, embed the trained solution top-aligned into the deeper tree so unused capacity dangles below as constant-biased branches, briefly re-anneal only the extra selectors (200 epochs, embedded block frozen), then fine-tune. Top alignment is the load-bearing choice: a balanced EML gate cannot act as an identity forwarder (no a, b &amp;isin; {1, x, f} gives exp(a) &amp;minus; ln(b) = f), so the naive bottom-aligned extension would embed exp(ln(x)) = x before training. The curriculum assumes only that the target is learnable at its representational depth &amp;mdash; not that its deep-tree form is known &amp;mdash; and also reaches 20/20 on both cells. A replay audit confirms every ln curriculum run used the genuine grow_from_shallow path rather than the driver&#39;s fallback. Blind Baselines (identical deterministic seeds) Cell Valid Recovery exp d=3 7/20 ln d=5 5/20 The results corroborate the companion paper&#39;s reframing of symbolic recovery as basin selection rather than commitment or representational power, and align with Odrzywolek&#39;s independent warm-start evidence (arXiv:2603.21852, SI Table S7) that correct solutions are stable attractors. Files in This Record File Description Note (PDF) Full technical note Figure 1 Grouped recovery-rate bars, both cells &amp;times; three init modes basin_warmstart_v2.4_postfix.csv 120 rows: blind + warm controls basin_warmstart_v2.5_unbalanced.csv 120 rows: adds the top-aligned curriculum; blind/warm rows match v2.4_postfix run-for-run under identical seeding Both CSVs carry deterministic seeds and the auditable pretrain_form column. Code (eml_layer_v2.py, basin_warmstart.py) and exact reproduction commands are in the eml-ice40-cybenko repository, archived at 10.5281/zenodo.19736075. The note includes an AI Utilization Statement.</p>
+    <h2>Keywords</h2>
+    <p class="kw">symbolic regression &middot; EML operator &middot; neural symbolic &middot; expression trees &middot; basin selection &middot; warm-start initialization &middot; curriculum learning &middot; temperature annealing &middot; elementary functions</p>
+    <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>
+    <footer>
+        <p>&copy; 2026 Chokmah LLC &middot;
+        <a href="/">chokmah.me</a> &middot;
+        <a href="/research/">Research</a> &middot;
+        <a href="https://github.com/chokmah-me">GitHub</a></p>
+        <p>Records of version are hosted on <a href="https://zenodo.org">Zenodo</a>; mirrored to <a href="https://osf.io">OSF</a>.</p>
+    </footer>
+    </div>
+</body>
+</html>
