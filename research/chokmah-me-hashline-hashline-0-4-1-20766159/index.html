@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chokmah-me/hashline: hashline 0.4.1 | Chokmah Research</title>
-    <meta name="description" content="Patch release fixing two Windows / non-UTF-8 console encoding bugs in the CLI, found while using the harness on an emoji- and symbol-heavy repo: &#128027; hashline read crashed with UnicodeEncodeError when printing files containing non-cp1252 characters (≥, emoji, …). &#128027; hashline apply reading a patch f...">
+    <meta name="description" content="hashline gives LLM coding agents stable, verifiable line edits: the model refers to changes by line-number ranges instead of re-quoting old code, and a 4-hex content-hash tag on every read rejects any patch built against stale content. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.">
     <link rel="canonical" href="https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/">
     <meta property="og:title" content="chokmah-me/hashline: hashline 0.4.1">
-    <meta property="og:description" content="Patch release fixing two Windows / non-UTF-8 console encoding bugs in the CLI, found while using the harness on an emoji- and symbol-heavy repo: &#128027; hashline read crashed with UnicodeEncodeError when printing files containing non-cp1252 characters (≥, emoji, …). &#128027; hashline apply reading a patch f...">
+    <meta property="og:description" content="hashline gives LLM coding agents stable, verifiable line edits: the model refers to changes by line-number ranges instead of re-quoting old code, and a 4-hex content-hash tag on every read rejects any patch built against stale content. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.">
     <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
@@ -34,7 +34,7 @@
   "url": "https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/",
   "datePublished": "2026-06-19",
   "inLanguage": "en",
-  "abstract": "Patch release fixing two Windows / non-UTF-8 console encoding bugs in the CLI, found while using the harness on an emoji- and symbol-heavy repo: 🐛 hashline read crashed with UnicodeEncodeError when printing files containing non-cp1252 characters (≥, emoji, …). 🐛 hashline apply reading a patch from stdin silently double-encoded non-ASCII content (em-dashes → mojibake) because stdin used the platform default encoding instead of UTF-8. Both fixed by forcing UTF-8 on stdin/stdout/stderr at CLI startup. Added subprocess regression tests pinning the read and stdin-apply paths under a simulated non-UTF-8 console. See CHANGELOG.md.",
+  "abstract": "hashline provides stable, verifiable line edits for LLM coding agents, replacing the usual fragile exact-string-replace approach. Instead of re-quoting old code byte-for-byte, the model reads a numbered, hash-tagged view of a file and expresses edits as line-number range operations (SWAP, DEL, INS) whose bodies contain only the new lines. Every read is tagged with a 4-hex hash of the file's content; when a patch is applied, hashline recomputes the hash and rejects the edit as \"stale\" if it no longer matches, so an edit never lands on content the model never saw. The core loop is read -> patch -> apply -> re-read, and the same rules work across Claude, Grok, DeepSeek, Gemini, Kimi, and any other tool-using model.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
@@ -127,7 +127,7 @@
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.20766159">https://doi.org/10.5281/zenodo.20766159</a><br>
     </div>
     <h2>Abstract</h2>
-    <p>Patch release fixing two Windows / non-UTF-8 console encoding bugs in the CLI, found while using the harness on an emoji- and symbol-heavy repo: &#128027; hashline read crashed with UnicodeEncodeError when printing files containing non-cp1252 characters (≥, emoji, …). &#128027; hashline apply reading a patch from stdin silently double-encoded non-ASCII content (em-dashes → mojibake) because stdin used the platform default encoding instead of UTF-8. Both fixed by forcing UTF-8 on stdin/stdout/stderr at CLI startup. Added subprocess regression tests pinning the read and stdin-apply paths under a simulated non-UTF-8 console. See CHANGELOG.md.</p>
+    <p>hashline provides stable, verifiable line edits for LLM coding agents, replacing the usual fragile exact-string-replace approach. Instead of re-quoting old code byte-for-byte, the model reads a numbered, hash-tagged view of a file and expresses edits as line-number range operations (SWAP, DEL, INS) whose bodies contain only the new lines. Every read is tagged with a 4-hex hash of the file&#39;s content; when a patch is applied, hashline recomputes the hash and rejects the edit as &quot;stale&quot; if it no longer matches, so an edit never lands on content the model never saw. The core loop is read -&gt; patch -&gt; apply -&gt; re-read, and the same rules work across Claude, Grok, DeepSeek, Gemini, Kimi, and any other tool-using model.</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>
     <footer>
         <p>&copy; 2026 Chokmah LLC &middot;

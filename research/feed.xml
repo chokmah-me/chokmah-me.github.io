@@ -4,14 +4,14 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-06-24T00:56:52Z</updated>
+  <updated>2026-06-24T01:12:03Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
     <title>chokmah-me/hashline: hashline 0.4.1</title>
     <link href="https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/"/>
     <id>https://doi.org/10.5281/zenodo.20766159</id>
     <updated>2026-06-19T00:00:00Z</updated>
-    <summary>Patch release fixing two Windows / non-UTF-8 console encoding bugs in the CLI, found while using the harness on an emoji- and symbol-heavy repo: &#128027; hashline read crashed with UnicodeEncodeError when printing files containing non-cp1252 characters (≥, emoji, …). &#128027; hashline apply reading a patch f...</summary>
+    <summary>hashline gives LLM coding agents stable, verifiable line edits: the model refers to changes by line-number ranges instead of re-quoting old code, and a 4-hex content-hash tag on every read rejects any patch built against stale content. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.</summary>
   </entry>
   <entry>
     <title>Compressed by Discovery: Snapped Symbolic-Regression Primitives as Realizable, Verifiable Function Units on DSP-less FPGAs</title>
