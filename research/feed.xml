@@ -4,8 +4,22 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-06-24T01:12:03Z</updated>
+  <updated>2026-07-30T14:58:43Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
+  <entry>
+    <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
+    <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21705469/"/>
+    <id>https://doi.org/10.5281/zenodo.21705469</id>
+    <updated>2026-07-30T00:00:00Z</updated>
+    <summary>The Mobius Bridge of Nasr and Carlini removes one guessed key byte from meet-in-the-middle attacks on 7-round AES by constructing a fingerprint invariant under the group action that survives the S-box. Their derivation is written for the AES S-box (field inversion followed by a GF(2)-affine map)....</summary>
+  </entry>
+  <entry>
+    <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension</title>
+    <link href="https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21443990/"/>
+    <id>https://doi.org/10.5281/zenodo.21443990</id>
+    <updated>2026-07-19T00:00:00Z</updated>
+    <summary>Locked before any July 7+ data coded. See paper/leg3_preregistration_v0_2.md. Full Changelog: https://github.com/chokmah-me/milcom-2026-iran-attrition/compare/v4.0...leg3-prereg-v0.2</summary>
+  </entry>
   <entry>
     <title>chokmah-me/hashline: hashline 0.4.1</title>
     <link href="https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/"/>
@@ -14,18 +28,18 @@
     <summary>hashline gives LLM coding agents stable, verifiable line edits: the model refers to changes by line-number ranges instead of re-quoting old code, and a 4-hex content-hash tag on every read rejects any patch built against stale content. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.</summary>
   </entry>
   <entry>
-    <title>Compressed by Discovery: Snapped Symbolic-Regression Primitives as Realizable, Verifiable Function Units on DSP-less FPGAs</title>
-    <link href="https://chokmah.me/research/compressed-by-discovery-snapped-symbolic-regression-primitiv-20745607/"/>
-    <id>https://doi.org/10.5281/zenodo.20745607</id>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <summary>Technical note reporting the hardware realization of argmax-snapped EML expression trees on Lattice iCE40 FPGAs. On fabric without DSP inference, snapped symbolic primitives (exp and ln) are simultaneously smaller and more accurate than every quantized MLP in a width/depth sweep, are bit-exact to...</summary>
-  </entry>
-  <entry>
     <title>EML Expression Trees: Symbolic Regression, Basin Selection, and Hardware Realization on iCE40</title>
     <link href="https://chokmah.me/research/eml-expression-trees-symbolic-regression-basin-selection-and-20748178/"/>
     <id>https://doi.org/10.5281/zenodo.20748178</id>
     <updated>2026-06-18T00:00:00Z</updated>
     <summary>Code, data, and technical notes for EML (exp-minus-ln) expression tree research. Includes symbolic regression experiments (snapping_v2_final.csv), basin-selection warm-start studies, and Track C hardware realization: fixed-point golden models, iCE40 RTL emitters, quantized-MLP and direct-ROM base...</summary>
+  </entry>
+  <entry>
+    <title>Compressed by Discovery: Snapped Symbolic-Regression Primitives as Realizable, Verifiable Function Units on DSP-less FPGAs</title>
+    <link href="https://chokmah.me/research/compressed-by-discovery-snapped-symbolic-regression-primitiv-20745607/"/>
+    <id>https://doi.org/10.5281/zenodo.20745607</id>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <summary>Technical note reporting the hardware realization of argmax-snapped EML expression trees on Lattice iCE40 FPGAs. On fabric without DSP inference, snapped symbolic primitives (exp and ln) are simultaneously smaller and more accurate than every quantized MLP in a width/depth sweep, are bit-exact to...</summary>
   </entry>
   <entry>
     <title>Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth</title>
@@ -98,18 +112,18 @@
     <summary>The core thesis is simple but devastating: there is no single scientific method to verify whether an autonomous AI agent actually possesses a claimed capability. The right verification strategy depends entirely on the agent&#39;s computational model and strategic posture (honest vs. potentially decep...</summary>
   </entry>
   <entry>
-    <title>Recognition Channel Dynamics in the Shibboleth Lattice: A Simulation Study</title>
-    <link href="https://chokmah.me/research/recognition-channel-dynamics-in-the-shibboleth-lattice-a-sim-20090834/"/>
-    <id>https://doi.org/10.5281/zenodo.20090834</id>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <summary>Companion to The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination (Bilar 2026, doi:10.5281/zenodo.19652725). The parent paper proposes a binding operator B = (S, I, W, rho, chi) unifying coalition formation across five substrates, with recognition-channel pro...</summary>
-  </entry>
-  <entry>
     <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
     <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
     <id>https://doi.org/10.5281/zenodo.20089104</id>
     <updated>2026-05-08T00:00:00Z</updated>
     <summary>A preprint unifying four documented cases of multi-agent coalition behavior (quantum-game entanglement, evolutionary covert-tag recognition, engineered handshake collusion, and emergent peer-preservation in frontier language models) under a single formal structure: the binding operator $B = (S, I...</summary>
+  </entry>
+  <entry>
+    <title>Recognition Channel Dynamics in the Shibboleth Lattice: A Simulation Study</title>
+    <link href="https://chokmah.me/research/recognition-channel-dynamics-in-the-shibboleth-lattice-a-sim-20090834/"/>
+    <id>https://doi.org/10.5281/zenodo.20090834</id>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <summary>Companion to The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination (Bilar 2026, doi:10.5281/zenodo.19652725). The parent paper proposes a binding operator B = (S, I, W, rho, chi) unifying coalition formation across five substrates, with recognition-channel pro...</summary>
   </entry>
   <entry>
     <title>fast16 as a Second-Order Subversion Attack</title>
@@ -126,6 +140,13 @@
     <summary>In 2009, On nth Order Attacks (NATO CCDCOE, Responses to Cyber Terrorism) predicted that PLA shashoujian logic, read through the Highly Optimized Tolerance lens, would produce an operational signature in which state adversaries target the mission-sustaining ancillary systems of advanced computeri...</summary>
   </entry>
   <entry>
+    <title>Quantum-Safe Migration Playbook (Strategic &amp; Operational Guide)</title>
+    <link href="https://chokmah.me/research/quantum-safe-migration-playbook-strategic-operational-guide-19655682/"/>
+    <id>https://doi.org/10.5281/zenodo.19655682</id>
+    <updated>2026-04-19T00:00:00Z</updated>
+    <summary>Version 1.2.0 is a major restructuring of the Quantum-Safe Migration Playbook with three goals: make the content usable as a retrieval-augmented AI knowledge base, tighten evaluation discipline, and update all dated facts to April 2026. What&#39;s new in v1.2.0 Structural changes Fact-ID indexing: ev...</summary>
+  </entry>
+  <entry>
     <title>How &#39;Stethoscopes&#39; Unmasked Correlated Noise in Quantum Processors</title>
     <link href="https://chokmah.me/research/how-stethoscopes-unmasked-correlated-noise-in-quantum-proces-19651958/"/>
     <id>https://doi.org/10.5281/zenodo.19651958</id>
@@ -140,13 +161,6 @@
     <summary>Circular leverage in bank-NBFI SRT networks: simulation code</summary>
   </entry>
   <entry>
-    <title>Quantum-Safe Migration Playbook (Strategic &amp; Operational Guide)</title>
-    <link href="https://chokmah.me/research/quantum-safe-migration-playbook-strategic-operational-guide-19655682/"/>
-    <id>https://doi.org/10.5281/zenodo.19655682</id>
-    <updated>2026-04-19T00:00:00Z</updated>
-    <summary>Version 1.2.0 is a major restructuring of the Quantum-Safe Migration Playbook with three goals: make the content usable as a retrieval-augmented AI knowledge base, tighten evaluation discipline, and update all dated facts to April 2026. What&#39;s new in v1.2.0 Structural changes Fact-ID indexing: ev...</summary>
-  </entry>
-  <entry>
     <title>Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks</title>
     <link href="https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-19632278/"/>
     <id>https://doi.org/10.5281/zenodo.19632278</id>
@@ -159,13 +173,6 @@
     <id>https://doi.org/10.5281/zenodo.19558494</id>
     <updated>2026-04-13T00:00:00Z</updated>
     <summary>The 2026 US-Israeli military campaign against Iran produced a 92% decline in Iranian ballistic missile launch rates within nine days. This paper asks whether that decline reflects physical destruction of transporter-erector-launcher (TEL) assets, degradation of command authority, or both. An agen...</summary>
-  </entry>
-  <entry>
-    <title>Companion Code and Data: Launcher Attrition Dominates Command Architecture</title>
-    <link href="https://chokmah.me/research/companion-code-and-data-launcher-attrition-dominates-command-19558036/"/>
-    <id>https://doi.org/10.5281/zenodo.19558036</id>
-    <updated>2026-04-13T00:00:00Z</updated>
-    <summary>v4.0 Magazine-Discipline Validation Paper v4.0 adds Section V-D reporting a 1,800-run re-simulation under post-conflict attrition profiles. The null result on launch-rate discrimination between C2 hypotheses is reproduced in 107 of 108 tests, confirming the conjecture advanced in v2/v3 and retrac...</summary>
   </entry>
   <entry>
     <title>chokmah-me/lattice-GoldenDome-AOM: v1.0.0: Initial Release — Golden Dome AOM Falsification Suite</title>

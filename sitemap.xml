@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://chokmah.me/</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://chokmah.me/cloud-security-intro/</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://chokmah.me/ai-ciso-training/</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://chokmah.me/research/</loc><lastmod>2026-06-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://chokmah.me/cloud-security-intro/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/ai-ciso-training/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/research/</loc><lastmod>2026-07-30</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21705469/</loc><lastmod>2026-07-30</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21443990/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/compressed-by-discovery-snapped-symbolic-regression-primitiv-20745607/</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/eml-expression-trees-symbolic-regression-basin-selection-and-20748178/</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/compressed-by-discovery-snapped-symbolic-regression-primitiv-20745607/</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/valid-and-false-snapping-in-eml-expression-trees-the-basin-s-20671038/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/balance-of-power-2026-20498785/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -17,16 +19,15 @@
   <url><loc>https://chokmah.me/research/attestationregimeclassifier-ghidra-plugin-for-ics-embedded-f-20218659/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/on-the-necessary-void-at-the-center-of-autonomous-governance-20190801/</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/three-regimes-of-capability-attestation-for-autonomous-agent-20114610/</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/recognition-channel-dynamics-in-the-shibboleth-lattice-a-sim-20090834/</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/recognition-channel-dynamics-in-the-shibboleth-lattice-a-sim-20090834/</loc><lastmod>2026-05-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/</loc><lastmod>2026-05-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/volt-typhoon-as-operational-realization-of-the-nth-order-ble-19739954/</loc><lastmod>2026-04-24</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/quantum-safe-migration-playbook-strategic-operational-guide-19655682/</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/how-stethoscopes-unmasked-correlated-noise-in-quantum-proces-19651958/</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/software-simulation-circular-leverage-in-bank-nbfi-synthetic-19651937/</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/quantum-safe-migration-playbook-strategic-operational-guide-19655682/</loc><lastmod>2026-04-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-19632278/</loc><lastmod>2026-04-17</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-19558494/</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/companion-code-and-data-launcher-attrition-dominates-command-19558036/</loc><lastmod>2026-04-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/chokmah-me-lattice-goldendome-aom-v1-0-0-initial-release-gol-19368609/</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/golden-dome-latency-governance-autonomous-operations-model-e-19368682/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-19266807/</loc><lastmod>2026-03-27</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
