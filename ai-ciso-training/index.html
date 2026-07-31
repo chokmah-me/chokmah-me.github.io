@@ -365,33 +365,58 @@
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      "@id": "https://chokmah.me/#website",
+      "url": "https://chokmah.me/",
+      "name": "Chokmah LLC",
+      "publisher": { "@id": "https://chokmah.me/#organization" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://chokmah.me/ai-ciso-training/#webpage",
+      "url": "https://chokmah.me/ai-ciso-training/",
+      "name": "Secure AI-Assisted Spec & Automation Training | Chokmah LLC",
+      "isPartOf": { "@id": "https://chokmah.me/#website" },
+      "about": { "@id": "https://chokmah.me/ai-ciso-training/#course" },
+      "mainEntity": { "@id": "https://chokmah.me/ai-ciso-training/#course" },
+      "hasPart": { "@id": "https://chokmah.me/ai-ciso-training/#faq" },
+      "description": "Private workshop for CISOs and security leaders: June 2026 edition v3.0. Four core modules (~5h 15m labs) plus capstone.",
+      "inLanguage": "en-US",
+      "dateModified": "2026-07-31"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://chokmah.me/#organization",
+      "name": "Chokmah LLC",
+      "url": "https://chokmah.me/",
+      "sameAs": ["https://chokmah.me/"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://chokmah.me/#person",
+      "name": "Dr. Daniyel Yaacov Bilar",
+      "jobTitle": "Principal & Subject Matter Expert",
+      "url": "https://chokmah.me/",
+      "sameAs": ["https://orcid.org/0000-0002-9040-6914"],
+      "affiliation": { "@id": "https://chokmah.me/#organization" }
+    },
+    {
       "@type": "Course",
       "@id": "https://chokmah.me/ai-ciso-training/#course",
       "name": "Secure AI-Assisted Spec & Automation Training",
       "description": "Private workshop for CISOs and security leaders on generating threat models, compliance mappings, technical specs, and automation with AI while managing prompt injection, hallucination, model supply-chain risk, pre-mortem discipline, and attestation/governance of AI outputs. June 2026 edition v3.0; four core modules (~5h 15m labs) plus capstone.",
       "url": "https://chokmah.me/ai-ciso-training/",
-      "provider": {
-        "@type": "Organization",
-        "@id": "https://chokmah.me/#organization",
-        "name": "Chokmah LLC",
-        "sameAs": "https://chokmah.me"
-      },
+      "provider": { "@id": "https://chokmah.me/#organization" },
+      "mainEntityOfPage": { "@id": "https://chokmah.me/ai-ciso-training/#webpage" },
+      "image": "https://chokmah.me/assets/ciso-training-card.png",
+      "inLanguage": "en-US",
       "hasCourseInstance": {
         "@type": "CourseInstance",
         "@id": "https://chokmah.me/ai-ciso-training/#instance",
         "courseMode": "Onsite",
         "name": "Private workshop delivery (June 2026 edition)",
         "courseWorkload": "PT5H15M",
-        "instructor": {
-          "@type": "Person",
-          "@id": "https://chokmah.me/#person",
-          "name": "Dr. Daniyel Yaacov Bilar",
-          "jobTitle": "Principal & Subject Matter Expert",
-          "url": "https://chokmah.me",
-          "sameAs": [
-            "https://orcid.org/0000-0002-9040-6914"
-          ]
-        }
+        "instructor": { "@id": "https://chokmah.me/#person" }
       }
     },
     {
@@ -401,19 +426,21 @@
       "description": "June 2026 private workshop: risk-aware AI for security artifacts—hardened prompting, threat modeling with human critique, pre-mortem and attestation governance, and automated compliance checks. Four core modules (~5h 15m lab time) plus integrated capstone; schedule arranged per engagement.",
       "image": "https://chokmah.me/assets/ciso-training-card.png",
       "brand": { "@id": "https://chokmah.me/#organization" },
+      "url": "https://chokmah.me/ai-ciso-training/",
+      "mainEntityOfPage": { "@id": "https://chokmah.me/ai-ciso-training/#webpage" },
       "offers": {
         "@type": "Offer",
+        "@id": "https://chokmah.me/ai-ciso-training/#offer",
         "availability": "https://schema.org/InStock",
         "url": "https://chokmah.me/ai-ciso-training/",
-        "priceCurrency": "USD",
-        "itemOffered": {
-          "@id": "https://chokmah.me/ai-ciso-training/#course"
-        }
+        "itemOffered": { "@id": "https://chokmah.me/ai-ciso-training/#course" }
       }
     },
     {
       "@type": "FAQPage",
       "@id": "https://chokmah.me/ai-ciso-training/#faq",
+      "url": "https://chokmah.me/ai-ciso-training/#faq",
+      "isPartOf": { "@id": "https://chokmah.me/ai-ciso-training/#webpage" },
       "mainEntity": [
         {
           "@type": "Question",

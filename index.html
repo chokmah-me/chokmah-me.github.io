@@ -32,7 +32,7 @@
     {
       "@type": "WebSite",
       "@id": "https://chokmah.me/#website",
-      "url": "https://chokmah.me",
+      "url": "https://chokmah.me/",
       "name": "Chokmah LLC",
       "description": "Sovereign Grade Competence in Cyber-Physical Defense & AI Solutions",
       "publisher": { "@id": "https://chokmah.me/#organization" },
@@ -41,17 +41,178 @@
     {
       "@type": "WebPage",
       "@id": "https://chokmah.me/#webpage",
-      "url": "https://chokmah.me",
+      "url": "https://chokmah.me/",
       "name": "Chokmah LLC – Technical Consulting, Cybersecurity & AI Solutions",
       "isPartOf": { "@id": "https://chokmah.me/#website" },
       "about": { "@id": "https://chokmah.me/#organization" },
+      "mainEntity": { "@id": "https://chokmah.me/#organization" },
+      "hasPart": { "@id": "https://chokmah.me/#faq" },
       "description": "Expert industrial cybersecurity, FuSA oversight, and AI engineering services by a Federal Court SME.",
-      "dateModified": "2026-07-31"
+      "dateModified": "2026-07-31",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://chokmah.me/#organization",
+      "name": "Chokmah LLC",
+      "legalName": "Chokmah LLC",
+      "url": "https://chokmah.me/",
+      "email": "info@chokmah.me",
+      "sameAs": [
+        "https://dyb.mataroa.blog/",
+        "https://github.com/chokmah-me"
+      ],
+      "image": "https://chokmah.me/assets/social-card.png",
+      "logo": "https://chokmah.me/icon.svg",
+      "priceRange": "$$$",
+      "founder": { "@id": "https://chokmah.me/#person" },
+      "employee": { "@id": "https://chokmah.me/#person" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "VT",
+        "addressCountry": "US"
+      },
+      "areaServed": "US",
+      "knowsAbout": [
+        "Threat Modeling (STRIDE/PASTA)",
+        "Agentic AI Safety",
+        "Context Engineering",
+        "Secure SDLC",
+        "Industrial Cybersecurity (OT/ICS)",
+        "Functional Safety (FuSA)",
+        "Cyber-Physical Systems (CPS)",
+        "Battery Energy Storage Safety (BESS)",
+        "Critical Infrastructure Protection (NERC-CIP)",
+        "OSCAL v1.1.2",
+        "Digital Forensics & Expert Witness",
+        "IEC 62443",
+        "NIST SP 800-53"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://chokmah.me/#catalog",
+        "name": "Chokmah Service Offerings",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-advisory",
+            "name": "Scientific & Technical Consulting",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "350.00",
+              "priceCurrency": "USD",
+              "unitCode": "HUR"
+            },
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://chokmah.me/#service-advisory",
+              "name": "Principal Advisory",
+              "description": "Architectural review, safety oversight, and expert witness services.",
+              "provider": { "@id": "https://chokmah.me/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-industrial",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://chokmah.me/#service-industrial",
+              "name": "Industrial Cybersecurity & FuSA",
+              "description": "Hazard analysis and defense for OT/ICS and BESS environments.",
+              "provider": { "@id": "https://chokmah.me/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-regulatory",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://chokmah.me/#service-regulatory",
+              "name": "Regulatory Engineering",
+              "description": "Automated NERC-CIP to OSCAL v1.1.2 transformation.",
+              "provider": { "@id": "https://chokmah.me/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-ai-ciso-training",
+            "url": "https://chokmah.me/ai-ciso-training/",
+            "itemOffered": {
+              "@type": "Course",
+              "@id": "https://chokmah.me/ai-ciso-training/#course",
+              "name": "Secure AI-Assisted Spec & Automation Training",
+              "description": "Private workshop on risk-aware AI for threat models, compliance mappings, specs, and automation—with pre-mortem, attestation, and model supply-chain governance.",
+              "provider": { "@id": "https://chokmah.me/#organization" },
+              "url": "https://chokmah.me/ai-ciso-training/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-cloud-security-intro",
+            "url": "https://chokmah.me/cloud-security-intro/",
+            "itemOffered": {
+              "@type": "Course",
+              "@id": "https://chokmah.me/cloud-security-intro/#course",
+              "name": "Cloud Security Intro: Serverless Specs",
+              "description": "AI-assisted, spec-driven cloud security for AWS and Azure serverless applications (~3.5 hours instructional).",
+              "provider": { "@id": "https://chokmah.me/#organization" },
+              "url": "https://chokmah.me/cloud-security-intro/"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://chokmah.me/#person",
+      "name": "Dr. Daniyel Yaacov Bilar",
+      "givenName": "Daniyel",
+      "familyName": "Bilar",
+      "honorificPrefix": "Dr.",
+      "jobTitle": "Principal & Subject Matter Expert",
+      "email": "info@chokmah.me",
+      "url": "https://chokmah.me/",
+      "image": "https://chokmah.me/assets/social-card.png",
+      "sameAs": [
+        "https://github.com/chokmah-me",
+        "https://dyb.mataroa.blog/",
+        "https://orcid.org/0000-0002-9040-6914"
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "https://orcid.org/0000-0002-9040-6914"
+      },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Dartmouth College" },
+        { "@type": "CollegeOrUniversity", "name": "Cornell University" },
+        { "@type": "CollegeOrUniversity", "name": "Brown University" }
+      ],
+      "description": "Principal Consultant at Chokmah LLC. Former Lead Cybersecurity Analyst at Visa Inc., Director of Research at Siege Technologies (DoD 6.1-6.3 R&D), and Tenure-Track Assistant Professor at University of New Orleans.",
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "name": "Federal Court recognized Subject Matter Expert (SME)",
+        "credentialCategory": "Expert Witness Qualification",
+        "description": "Qualified and recognized as an expert witness in U.S. Federal Court for digital forensics and code analysis under Docket 09-11145, Bankr. E.D. La."
+      },
+      "affiliation": { "@id": "https://chokmah.me/#organization" },
+      "worksFor": { "@id": "https://chokmah.me/#organization" }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://chokmah.me/#oscal-toolkit",
+      "name": "NERC-CIP to OSCAL Toolkit",
+      "description": "Automated engine converting unstructured NERC-CIP requirements to OSCAL v1.1.2 component definitions with NIST SP 800-53 mapping, JAMA integration, and 27 automated tests (delivered January 2026).",
+      "creator": { "@id": "https://chokmah.me/#organization" },
+      "datePublished": "2026-01-21",
+      "measurementTechnique": "AI Semantic Mapping",
+      "url": "https://chokmah.me/"
     },
     {
       "@type": "FAQPage",
       "@id": "https://chokmah.me/#faq",
       "url": "https://chokmah.me/#faq",
+      "isPartOf": { "@id": "https://chokmah.me/#webpage" },
       "mainEntity": [
         {
           "@type": "Question",
@@ -94,144 +255,6 @@
           }
         }
       ]
-    },
-    {
-      "@type": ["Organization", "ProfessionalService"],
-      "@id": "https://chokmah.me/#organization",
-      "name": "Chokmah LLC",
-      "legalName": "Chokmah LLC",
-      "url": "https://chokmah.me",
-      "email": "info@chokmah.me",
-      "sameAs": [
-        "https://dyb.mataroa.blog/",
-        "https://github.com/chokmah-me"
-      ],
-      "image": "https://chokmah.me/assets/social-card.png",
-      "priceRange": "$$$",
-      "founder": { "@id": "https://chokmah.me/#person" },
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "VT",
-        "addressCountry": "US"
-      },
-      "knowsAbout": [
-        "Threat Modeling (STRIDE/PASTA)",
-        "Agentic AI Safety",
-        "Context Engineering",
-        "Secure SDLC",
-        "Quantum Information & Computing",
-        "Post-Quantum Cryptography (PQC)",
-        "Critical Infrastructure Protection (NERC-CIP)",
-        "Zero-Knowledge Proofs",
-        "Industrial Cybersecurity (OT/ICS)",
-        "Functional Safety (FuSA)",
-        "Cyber-Physical Systems (CPS)",
-        "Battery Energy Storage Safety (BESS)",
-        "Agentic AI Coding",
-        "Regulatory Compliance (UL 1998, NERC CIP)",
-        "Digital Forensics & Expert Witness",
-        "OSCAL v1.1.2",
-        "UL 1998",
-        "UL 991",
-        "IEC 61508",
-        "IEC 62443",
-        "NIST SP 800-53",
-        "IEC 62933"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "@id": "https://chokmah.me/#catalog",
-        "name": "Chokmah Service Offerings",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Scientific & Technical Consulting",
-            "priceSpecification": {
-              "@type": "UnitPriceSpecification",
-              "price": "350.00",
-              "priceCurrency": "USD",
-              "unitCode": "HUR"
-            },
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Principal Advisory",
-              "description": "Architectural review, safety oversight, and expert witness services."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Industrial Cybersecurity & FuSA",
-              "description": "Hazard analysis and defense for OT/ICS and BESS environments."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Regulatory Engineering",
-              "description": "Automated NERC-CIP to OSCAL v1.1.2 transformation."
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Course",
-              "name": "Secure AI-Assisted Spec & Automation Training",
-              "description": "Private workshop on risk-aware AI for threat models, compliance mappings, specs, and automation—with pre-mortem, attestation, and model supply-chain governance.",
-              "provider": { "@id": "https://chokmah.me/#organization" },
-              "url": "https://chokmah.me/ai-ciso-training/"
-            }
-          }
-        ]
-      }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://chokmah.me/#person",
-      "name": "Dr. Daniyel Yaacov Bilar",
-      "givenName": "Daniyel",
-      "familyName": "Bilar",
-      "honorificPrefix": "Dr.",
-      "jobTitle": "Principal & Subject Matter Expert",
-      "email": "info@chokmah.me",
-      "url": "https://chokmah.me",
-      "image": "https://chokmah.me/assets/social-card.png",
-      "sameAs": [
-        "https://github.com/chokmah-me",
-        "https://dyb.mataroa.blog/",
-        "https://chokmah.me",
-        "https://orcid.org/0000-0002-9040-6914"
-      ],
-      "identifier": {
-        "@type": "PropertyValue",
-        "propertyID": "ORCID",
-        "value": "https://orcid.org/0000-0002-9040-6914"
-      },
-      "alumniOf": [
-        { "@type": "CollegeOrUniversity", "name": "Dartmouth College" },
-        { "@type": "CollegeOrUniversity", "name": "Cornell University" },
-        { "@type": "CollegeOrUniversity", "name": "Brown University" }
-      ],
-      "description": "Principal Consultant at Chokmah LLC. Former Lead Cybersecurity Analyst at Visa Inc., Director of Research at Siege Technologies (DoD 6.1-6.3 R&D), and Tenure-Track Assistant Professor at University of New Orleans.",
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "name": "Federal Court recognized Subject Matter Expert (SME)",
-        "credentialCategory": "Expert Witness Qualification",
-        "description": "Qualified and recognized as an expert witness in U.S. Federal Court for digital forensics and code analysis under Docket 09-11145, Bankr. E.D. La."
-      },
-      "affiliation": { "@id": "https://chokmah.me/#organization" }
-    },
-    {
-      "@type": "Dataset",
-      "@id": "https://chokmah.me/#oscal-toolkit",
-      "name": "NERC-CIP to OSCAL Toolkit",
-      "description": "Automated engine converting unstructured NERC-CIP requirements to OSCAL v1.1.2 component definitions.",
-      "creator": { "@id": "https://chokmah.me/#organization" },
-      "license": "https://chokmah.me/#terms", 
-      "datePublished": "2026-01-21",
-      "measurementTechnique": "AI Semantic Mapping"
     }
   ]
 }
@@ -450,16 +473,6 @@
 
             </div>
         </header>
-        <section class="card" style="margin-top: 0; margin-bottom: 40px;" aria-label="Verifiable facts" id="facts">
-            <h2 style="margin-top: 0; font-size: 1.25rem;">Facts models can quote</h2>
-            <ul>
-                <li><strong>Principal.</strong> Dr. Daniyel Yaacov Bilar is Principal of Chokmah LLC (Vermont, US). Researcher identifier: ORCID <a href="https://orcid.org/0000-0002-9040-6914" style="color: var(--active-amber);">0000-0002-9040-6914</a>.</li>
-                <li><strong>Federal Court SME.</strong> He is recognized in U.S. Federal Court for computer security, programming, code analysis, and digital forensics under Docket 09-11145, Bankr. E.D. La. (testimony dated June 1, 2010).</li>
-                <li><strong>NERC-CIP → OSCAL delivery.</strong> In January 2026 Chokmah delivered an automated engine that converts unstructured NERC-CIP requirements into OSCAL v1.1.2 (Open Security Controls Assessment Language) component definitions with NIST SP 800-53 mapping, JAMA requirements-manager integration, and 27 automated tests (first-party delivery claim on this site).</li>
-                <li><strong>Capacity (self-stated).</strong> For the Q2 2026–Q1 2027 window, remaining advisory capacity is about 5–8 hours per week; retained through February 2027 as stated on this page.</li>
-                <li><strong>Research catalog.</strong> Preprints, datasets, and software appear at <a href="/research/" style="color: var(--active-amber);">https://chokmah.me/research/</a> with Zenodo DOIs (mirrored to OSF), including works such as Claude Code Playbook v4.4.0 (DOI 10.5281/zenodo.20481459).</li>
-            </ul>
-        </section>
         <h4 class="services-intro-title">Services Include</h4>
         <ul class="services-quick-list">
             <li><span class="emoji">🛡️</span> <span><strong>Cybersecurity Architecture</strong> - STRIDE, PASTA, attack tree methodologies</span></li>

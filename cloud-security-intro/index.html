@@ -27,37 +27,64 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "WebSite",
+          "@id": "https://chokmah.me/#website",
+          "url": "https://chokmah.me/",
+          "name": "Chokmah LLC",
+          "publisher": { "@id": "https://chokmah.me/#organization" }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://chokmah.me/cloud-security-intro/#webpage",
+          "url": "https://chokmah.me/cloud-security-intro/",
+          "name": "Cloud Security Intro: AI-Assisted & Spec-Driven | Chokmah LLC",
+          "isPartOf": { "@id": "https://chokmah.me/#website" },
+          "about": { "@id": "https://chokmah.me/cloud-security-intro/#course" },
+          "mainEntity": { "@id": "https://chokmah.me/cloud-security-intro/#course" },
+          "hasPart": { "@id": "https://chokmah.me/cloud-security-intro/#faq" },
+          "description": "AI-assisted, spec-driven cloud security for AWS and Azure serverless applications. Three modules (~70 min each; ~3.5 hours instructional), 6 hands-on labs.",
+          "inLanguage": "en-US",
+          "dateModified": "2026-07-31"
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://chokmah.me/#organization",
+          "name": "Chokmah LLC",
+          "url": "https://chokmah.me/",
+          "sameAs": ["https://chokmah.me/"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://chokmah.me/#person",
+          "name": "Dr. Daniyel Yaacov Bilar",
+          "jobTitle": "Principal & Subject Matter Expert",
+          "url": "https://chokmah.me/",
+          "sameAs": ["https://orcid.org/0000-0002-9040-6914"],
+          "affiliation": { "@id": "https://chokmah.me/#organization" }
+        },
+        {
           "@type": "Course",
           "@id": "https://chokmah.me/cloud-security-intro/#course",
           "name": "Cloud Security Intro: Serverless Specs",
           "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications. Build a secure API with STRIDE threat models and pytest validation. Three modules (~70 min each; ~3.5 hours instructional), 6 hands-on labs, 14 automated validators (product design claim).",
           "url": "https://chokmah.me/cloud-security-intro/",
-          "provider": {
-            "@type": "Organization",
-            "@id": "https://chokmah.me/#organization",
-            "name": "Chokmah LLC",
-            "sameAs": "https://chokmah.me"
-          },
+          "provider": { "@id": "https://chokmah.me/#organization" },
+          "mainEntityOfPage": { "@id": "https://chokmah.me/cloud-security-intro/#webpage" },
+          "image": "https://chokmah.me/assets/cloud-intro-card.jpg",
+          "inLanguage": "en-US",
           "hasCourseInstance": {
             "@type": "CourseInstance",
             "@id": "https://chokmah.me/cloud-security-intro/#instance",
             "courseMode": "Online",
             "courseWorkload": "PT3H30M",
-            "instructor": {
-              "@type": "Person",
-              "@id": "https://chokmah.me/#person",
-              "name": "Dr. Daniyel Yaacov Bilar",
-              "jobTitle": "Principal & Subject Matter Expert",
-              "url": "https://chokmah.me",
-              "sameAs": [
-                "https://orcid.org/0000-0002-9040-6914"
-              ]
-            }
+            "instructor": { "@id": "https://chokmah.me/#person" }
           }
         },
         {
           "@type": "FAQPage",
           "@id": "https://chokmah.me/cloud-security-intro/#faq",
+          "url": "https://chokmah.me/cloud-security-intro/#faq",
+          "isPartOf": { "@id": "https://chokmah.me/cloud-security-intro/#webpage" },
           "mainEntity": [
             {
               "@type": "Question",
@@ -81,6 +108,14 @@
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Chokmah LLC. Instructor: Dr. Daniyel Yaacov Bilar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does “14 automated validators” mean?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is a product design claim for the lab harness count; the public page does not publish the full validator list (request syllabus for engagement details)."
               }
             }
           ]
