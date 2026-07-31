@@ -25,20 +25,38 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Course",
-      "name": "Cloud Security Intro: Serverless Specs",
-      "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications. Build a secure API with STRIDE threat models and pytest validation.",
-      "provider": {
-        "@type": "Organization",
-        "name": "Chokmah LLC",
-        "sameAs": "https://chokmah.me"
-      },
-      "educationalCredentialAwarded": "Certificate of Completion",
-      "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "Online",
-        "courseWorkload": "PT3H"
-      }
+      "@graph": [
+        {
+          "@type": "Course",
+          "@id": "https://chokmah.me/cloud-security-intro/#course",
+          "name": "Cloud Security Intro: Serverless Specs",
+          "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications. Build a secure API with STRIDE threat models and pytest validation. 3 hours, 6 hands-on labs, 14 automated validators.",
+          "url": "https://chokmah.me/cloud-security-intro/",
+          "provider": {
+            "@type": "Organization",
+            "@id": "https://chokmah.me/#organization",
+            "name": "Chokmah LLC",
+            "sameAs": "https://chokmah.me"
+          },
+          "educationalCredentialAwarded": "Certificate of Completion",
+          "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "@id": "https://chokmah.me/cloud-security-intro/#instance",
+            "courseMode": "Online",
+            "courseWorkload": "PT3H",
+            "instructor": {
+              "@type": "Person",
+              "@id": "https://chokmah.me/#person",
+              "name": "Dr. Daniyel Yaacov Bilar",
+              "jobTitle": "Principal & Subject Matter Expert",
+              "url": "https://chokmah.me",
+              "sameAs": [
+                "https://orcid.org/0000-0002-9040-6914"
+              ]
+            }
+          }
+        }
+      ]
     }
     </script>
 

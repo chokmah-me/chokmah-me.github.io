@@ -369,19 +369,28 @@
       "@id": "https://chokmah.me/ai-ciso-training/#course",
       "name": "Secure AI-Assisted Spec & Automation Training",
       "description": "Private workshop for CISOs and security leaders on generating threat models, compliance mappings, technical specs, and automation with AI while managing prompt injection, hallucination, model supply-chain risk, pre-mortem discipline, and attestation/governance of AI outputs.",
+      "url": "https://chokmah.me/ai-ciso-training/",
       "provider": {
         "@type": "Organization",
+        "@id": "https://chokmah.me/#organization",
         "name": "Chokmah LLC",
         "sameAs": "https://chokmah.me"
       },
       "hasCourseInstance": {
         "@type": "CourseInstance",
+        "@id": "https://chokmah.me/ai-ciso-training/#instance",
         "courseMode": "Onsite",
-        "name": "Private workshop delivery",
+        "name": "Private workshop delivery (June 2026 edition)",
+        "courseWorkload": "PT5H15M",
         "instructor": {
           "@type": "Person",
+          "@id": "https://chokmah.me/#person",
           "name": "Dr. Daniyel Yaacov Bilar",
-          "description": "Principal Consultant, Chokmah LLC"
+          "jobTitle": "Principal & Subject Matter Expert",
+          "url": "https://chokmah.me",
+          "sameAs": [
+            "https://orcid.org/0000-0002-9040-6914"
+          ]
         }
       }
     },
@@ -389,8 +398,9 @@
       "@type": "Product",
       "@id": "https://chokmah.me/ai-ciso-training/#product",
       "name": "Secure AI-Assisted Spec & Automation Training (Private Workshop)",
-      "description": "June 2026 private workshop: risk-aware AI for security artifacts—hardened prompting, threat modeling with human critique, pre-mortem and attestation governance, and automated compliance checks.",
+      "description": "June 2026 private workshop: risk-aware AI for security artifacts—hardened prompting, threat modeling with human critique, pre-mortem and attestation governance, and automated compliance checks. Four core modules (~5h 15m lab time) plus integrated capstone; schedule arranged per engagement.",
       "image": "https://chokmah.me/assets/ciso-training-card.png",
+      "brand": { "@id": "https://chokmah.me/#organization" },
       "offers": {
         "@type": "Offer",
         "availability": "https://schema.org/InStock",
@@ -415,7 +425,7 @@
             <p><span class="badge">June 2026 Edition · v3.0</span></p>
             <h1 class="hero-title">Secure AI-Assisted Spec &amp; Automation Training</h1>
             <p class="hero-tagline">Risk-aware generation for high-stakes security work</p>
-            <p class="hero-meta">Private workshop · Trainer: dyb · Chokmah LLC</p>
+            <p class="hero-meta">Private multi-session workshop · Four core modules (~5h 15m labs) + capstone · Trainer: dyb · Chokmah LLC</p>
         </div>
     </header>
 
@@ -511,7 +521,7 @@
 
             <article>
                 <details open>
-                    <summary>Module 2: Prompt Engineering &amp; Hardening</summary>
+                    <summary>Module 1: Prompt Engineering &amp; Hardening</summary>
                     <p class="muted">~60 minutes · Labs + reflection</p>
                     <ul class="bullets">
                         <li>Risks of LLMs when generating security artifacts</li>
@@ -524,7 +534,7 @@
             </article>
             <article>
                 <details>
-                    <summary>Module 3: Threat Modeling with AI</summary>
+                    <summary>Module 2: Threat Modeling with AI</summary>
                     <p class="muted">~75 minutes · Structured critique lab</p>
                     <ul class="bullets">
                         <li>Generate a high-quality threat model with hardened prompts</li>
@@ -537,7 +547,7 @@
             </article>
             <article>
                 <details>
-                    <summary>Module 4: Pre-Mortem, Attestation &amp; Governance</summary>
+                    <summary>Module 3: Pre-Mortem, Attestation &amp; Governance</summary>
                     <p class="muted">~90 minutes · Leadership + design lab</p>
                     <ul class="bullets">
                         <li>Run a structured pre-mortem on an AI/agentic system</li>
@@ -550,7 +560,7 @@
             </article>
             <article>
                 <details>
-                    <summary>Module 5: Automated Compliance Checks</summary>
+                    <summary>Module 4: Automated Compliance Checks</summary>
                     <p class="muted">~90 minutes · AI + PowerShell lab</p>
                     <ul class="bullets">
                         <li>Generate automated compliance check procedures with hardened prompts</li>

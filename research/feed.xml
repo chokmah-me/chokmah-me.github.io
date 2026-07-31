@@ -9,7 +9,7 @@
   <entry>
     <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
     <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21705469/"/>
-    <id>https://doi.org/10.5281/zenodo.21705469</id>
+    <id>https://doi.org/10.5281/zenodo.21705468</id>
     <updated>2026-07-30T00:00:00Z</updated>
     <summary>The Mobius Bridge of Nasr and Carlini removes one guessed key byte from meet-in-the-middle attacks on 7-round AES by constructing a fingerprint invariant under the group action that survives the S-box. Their derivation is written for the AES S-box (field inversion followed by a GF(2)-affine map)....</summary>
   </entry>
