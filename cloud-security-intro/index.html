@@ -41,10 +41,31 @@
           "isPartOf": { "@id": "https://chokmah.me/#website" },
           "about": { "@id": "https://chokmah.me/cloud-security-intro/#course" },
           "mainEntity": { "@id": "https://chokmah.me/cloud-security-intro/#course" },
-          "hasPart": { "@id": "https://chokmah.me/cloud-security-intro/#faq" },
-          "description": "AI-assisted, spec-driven cloud security for AWS and Azure serverless applications. Three modules (~70 min each; ~3.5 hours instructional), 6 hands-on labs.",
+          "hasPart": [
+            { "@id": "https://chokmah.me/cloud-security-intro/#faq" },
+            { "@id": "https://chokmah.me/cloud-security-intro/#breadcrumb" }
+          ],
+          "description": "AI-assisted, spec-driven cloud security for AWS and Azure serverless applications. Instructor Dr. Daniyel Yaacov Bilar (Chokmah LLC). Three modules (~70 min each; ~3.5 hours instructional), 6 hands-on labs mapped to modules.",
           "inLanguage": "en-US",
           "dateModified": "2026-07-31"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://chokmah.me/cloud-security-intro/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://chokmah.me/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Cloud Security Intro",
+              "item": "https://chokmah.me/cloud-security-intro/"
+            }
+          ]
         },
         {
           "@type": "Organization",
@@ -66,7 +87,7 @@
           "@type": "Course",
           "@id": "https://chokmah.me/cloud-security-intro/#course",
           "name": "Cloud Security Intro: Serverless Specs",
-          "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications. Build a secure API with STRIDE threat models and pytest validation. Three modules (~70 min each; ~3.5 hours instructional), 6 hands-on labs, 14 automated validators (product design claim).",
+          "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications with instructor Dr. Daniyel Yaacov Bilar. Build a secure API with STRIDE threat models and pytest validation. Three modules (~70 min each; ~3.5 hours instructional), 6 hands-on labs (2 per module), 14 automated validators (product design claim).",
           "url": "https://chokmah.me/cloud-security-intro/",
           "provider": { "@id": "https://chokmah.me/#organization" },
           "mainEntityOfPage": { "@id": "https://chokmah.me/cloud-security-intro/#webpage" },
@@ -91,7 +112,7 @@
               "name": "How long is Cloud Security Intro?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Three modules of about 70 minutes each, approximately 3.5 hours of instructional content, with six hands-on labs."
+                "text": "Three modules of about 70 minutes each, approximately 3.5 hours of instructional content, with six hands-on labs (two labs per module)."
               }
             },
             {
@@ -116,6 +137,14 @@
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "It is a product design claim for the lab harness count; the public page does not publish the full validator list (request syllabus for engagement details)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do the six labs map to modules?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Module 1: Labs 1–2 (spec generation and control embedding). Module 2: Labs 3–4 (requirements breakdown and traceability). Module 3: Labs 5–6 (STRIDE modeling and infrastructure tests)."
               }
             }
           ]
@@ -164,6 +193,32 @@
             font-size: 0.9rem;
         }
         .nav-back:hover { text-decoration: underline; }
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: var(--cadet-grey);
+            margin-bottom: 28px;
+        }
+        .breadcrumb a { color: var(--active-amber); text-decoration: none; font-weight: 600; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb .sep { margin: 0 0.4rem; opacity: 0.6; }
+        .instructor-line {
+            color: var(--cadet-grey);
+            font-size: 1rem;
+            margin: 12px 0 0;
+        }
+        .instructor-line strong { color: var(--titanium-white); }
+        pre.sample-spec {
+            background: var(--slate-armor);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 8px;
+            padding: 18px 20px;
+            overflow-x: auto;
+            font-size: 0.85rem;
+            line-height: 1.45;
+            color: var(--cadet-grey);
+            margin: 20px 0 8px;
+        }
+        pre.sample-spec code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
 
         /* The "Spec Sheet" Grid */
         .spec-grid {
@@ -269,11 +324,15 @@
 <body>
 
     <div class="container">
-        <a href="/" class="nav-back">&larr; Return to Headquarters</a>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Home</a><span class="sep" aria-hidden="true">›</span>
+            <span aria-current="page">Cloud Security Intro</span>
+        </nav>
 
         <header>
             <p style="text-transform: uppercase; letter-spacing: 1.5px; color: var(--active-amber); font-size: 0.9rem; margin-bottom: 10px;">Curriculum · Chokmah LLC</p>
             <h1>Cloud Security Intro: Serverless Specs</h1>
+            <p class="instructor-line"><strong>Instructor:</strong> Dr. Daniyel Yaacov Bilar · Chokmah LLC</p>
             <p style="font-size: 1.2rem; max-width: 700px; color: var(--cadet-grey);">
                 AI-assisted, spec-driven cloud security for AWS and Azure serverless applications.
                 Three modules of about 70 minutes each (~3.5 hours instructional) take you from vague requirements to
@@ -288,7 +347,7 @@
             </div>
             <div class="spec-card">
                 <span class="spec-value">6</span>
-                <span class="spec-label">Hands-On Labs</span>
+                <span class="spec-label">Labs (2 per module)</span>
             </div>
             <div class="spec-card">
                 <span class="spec-value">14</span>
@@ -309,13 +368,47 @@
                     <li><span>🧪</span> <strong>Infrastructure tests</strong> (Python/pytest; 10+ test cases in Module 3)</li>
                 </ul>
             </div>
+            <h3>Illustrative spec fragment (public sample)</h3>
+            <p>Non-sensitive excerpt of the control-embedding pattern used in Module 1 labs. Full workshop materials are larger and engagement-specific.</p>
+            <pre class="sample-spec" aria-label="Sample serverless API security spec fragment"><code># serverless-api-spec.yaml (illustrative fragment — not a complete course deliverable)
+api:
+  name: task-api
+  runtime: python3.12
+  auth: jwt
+controls:
+  - id: IAM-001
+    type: least-privilege
+    description: Function role scoped to task table read/write only
+  - id: SEC-002
+    type: secrets
+    description: No secrets in env; load from managed secret store
+  - id: LOG-003
+    type: logging
+    description: Structured request logs without PII in message body
+  - id: ENC-004
+    type: encryption
+    description: Data at rest encrypted with platform KMS key
+traceability:
+  - threat: overprivileged_role
+    control: IAM-001
+    test: test_role_policy_least_privilege</code></pre>
+        </section>
+
+        <section id="labs">
+            <h2>Six labs mapped to modules</h2>
+            <p>The course includes <strong>six hands-on labs</strong>—two per module—so the “6 labs” figure matches the three-module structure.</p>
+            <ul class="module-list">
+                <li><strong>Module 1 · Labs 1–2:</strong> Generate <code>serverless-api-spec.yaml</code> from natural language; embed IAM, secrets, logging, and encryption controls.</li>
+                <li><strong>Module 2 · Labs 3–4:</strong> Decompose OWASP Cloud-style threats into preventive controls; build a requirements → services → tests traceability matrix.</li>
+                <li><strong>Module 3 · Labs 5–6:</strong> Produce a STRIDE model for serverless paths; implement infrastructure security tests with <code>boto3</code> or the Azure SDK.</li>
+            </ul>
         </section>
 
         <section>
             <h2>Course Modules</h2>
 
             <h3>Module 1: AI-Powered Specifications (70 min)</h3>
-            <p>Transform vague requirements into precise, testable security specs. Learn to use Claude Code to embed IAM, secrets, and encryption controls directly into your design phase.</p>
+            <p>Transform vague requirements into precise, testable security specs. Use Claude Code to embed IAM, secrets, and encryption controls in the design phase. <strong>Labs 1–2.</strong></p>
             <ul class="module-list">
                 <li>Generate <code>serverless-api-spec.yaml</code> from natural language</li>
                 <li>Embed 12+ security controls (IAM, Secrets, Logging)</li>
@@ -323,19 +416,19 @@
             </ul>
 
             <h3>Module 2: Requirements Automation (70 min)</h3>
-            <p>Decompose OWASP Cloud Top 10 threats into actionable engineering tasks. Stop guessing what "secure" means and start proving it.</p>
+            <p>Decompose OWASP Cloud Top 10–class threats into actionable engineering tasks and prove coverage with a traceability matrix. <strong>Labs 3–4.</strong></p>
             <ul class="module-list">
                 <li>Break down vulnerabilities into preventive controls</li>
                 <li>Create traceability matrices (Reqs → Services → Tests)</li>
                 <li><strong>Deliverable:</strong> <code>cloud-security-requirements.yaml</code></li>
             </ul>
 
-            <h3>Module 3: Threat Modeling & Infra Testing (70 min)</h3>
-            <p>Apply STRIDE to serverless infrastructure and write the tests that prove you are safe. This is the "Secret Sauce" of high-velocity security teams.</p>
+            <h3>Module 3: Threat Modeling &amp; Infra Testing (70 min)</h3>
+            <p>Apply STRIDE to serverless infrastructure and write automated tests that check the controls you specified—so “secure” is demonstrated in CI, not only described in slides. <strong>Labs 5–6.</strong></p>
             <ul class="module-list">
-                <li>Identify cloud-specific attack vectors (Overprivileged Roles, Public Buckets)</li>
-                <li>Write infrastructure-as-code security tests using `boto3` or Azure SDK</li>
-                <li><strong>Deliverable:</strong> `test_cloud_security.py` (10+ test cases)</li>
+                <li>Identify cloud-specific attack vectors (overprivileged roles, public buckets)</li>
+                <li>Write infrastructure-as-code security tests using <code>boto3</code> or Azure SDK</li>
+                <li><strong>Deliverable:</strong> <code>test_cloud_security.py</code> (10+ test cases)</li>
             </ul>
         </section>
 
@@ -352,7 +445,9 @@
         <section id="faq">
             <h2>Frequently asked questions</h2>
             <h3>How long is Cloud Security Intro?</h3>
-            <p>Three modules of about 70 minutes each (~3.5 hours instructional), with six hands-on labs.</p>
+            <p>Three modules of about 70 minutes each (~3.5 hours instructional), with six hands-on labs (two per module).</p>
+            <h3>How do the six labs map to modules?</h3>
+            <p>Module 1: Labs 1–2 (spec + controls). Module 2: Labs 3–4 (requirements + traceability). Module 3: Labs 5–6 (STRIDE + infrastructure tests).</p>
             <h3>What will I build?</h3>
             <p>A secure serverless task API with YAML specs (12+ controls), traceability matrix, STRIDE model (9+ vectors), and pytest infrastructure tests (10+ cases in Module 3).</p>
             <h3>Who provides the course?</h3>
