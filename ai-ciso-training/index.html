@@ -3,80 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI-Powered CISO Training: Spec-Driven Security</title>
+    <title>Secure AI-Assisted Spec &amp; Automation Training | Chokmah LLC</title>
 
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
-   <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="canonical" href="https://chokmah.me/ai-ciso-training/">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-    /* SOVEREIGN ENGINE: Hard-Coded Layout */
     body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; margin: 0; line-height: 1.6; }
-    
-    /* FIX 1: Nav/Table of Contents (The Blue Bunching) */
+
     .nav-hardened { display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem; padding: 1rem; border-bottom: 1px solid #b45309; background: #0f172a; position: sticky; top: 0; z-index: 100; }
     .nav-hardened a { color: #3b82f6; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
     .nav-hardened a:hover { color: #fbbf24; }
 
-    /* FIX 2: Block Spacing (The Black Bunching) */
     main { max-width: 60rem; margin: 0 auto; padding: 2rem 1rem; }
     section { margin-bottom: 4rem; padding: 2.5rem; background: #0f172a; border-radius: 1rem; border: 1px solid #334155; }
     h2 { color: #f59e0b; text-align: center; margin-bottom: 2rem; font-size: 2.5rem; }
 
-    /* FIX 3: Buttons (Expand/Collapse) */
-    .btn-container { display: flex; justify-content: flex-start; gap: 10px; margin-bottom: 20px; }
-    .btn-amber { background: #d97706; color: #020617; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; }
+    .btn-container { display: flex; justify-content: flex-start; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .btn-amber { background: #d97706; color: #020617; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; text-decoration: none; display: inline-block; }
     .btn-slate { background: #334155; color: #fff; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer; }
 
-    /* Content Detail Styling */
     article { border-left: 4px solid #d97706; padding-left: 20px; margin-bottom: 30px; }
     summary { font-size: 1.5rem; font-weight: bold; color: #fbbf24; cursor: pointer; margin-bottom: 10px; }
 
-    /* Dashboard Grid Architecture */
-.dashboard-grid { 
-    display: grid; 
-    grid-template-columns: 1fr; 
-    gap: 20px; 
-    margin-top: 40px; 
-}
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    @media (min-width: 768px) {
+        .dashboard-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px) {
+        .dashboard-grid.outcomes { grid-template-columns: repeat(3, 1fr); }
+        .dashboard-grid.scenarios { grid-template-columns: repeat(3, 1fr); }
+    }
 
-/* Responsive Scaling: 4 columns on desktop */
-@media (min-width: 768px) {
-    .dashboard-grid { grid-template-columns: repeat(4, 1fr); }
-}
+    .stat-card {
+        background: #0f172a;
+        padding: 25px;
+        border-radius: 12px;
+        border: 1px solid rgba(180, 83, 9, 0.3);
+        text-align: left;
+        transition: transform 0.3s ease;
+    }
+    .stat-card:hover { transform: translateY(-5px); border-color: #f59e0b; }
+    .stat-label { font-weight: bold; color: #fbbf24; margin-bottom: 10px; font-size: 1.05rem; }
+    .stat-value { font-size: 1rem; color: #cbd5e1; margin: 0; }
 
-/* The Stat Card */
-.stat-card {
-    background: #0f172a;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid rgba(180, 83, 9, 0.3);
-    text-align: center;
-    transition: transform 0.3s ease;
-}
+    .badge {
+        display: inline-block;
+        background: rgba(217, 119, 6, 0.15);
+        color: #fbbf24;
+        border: 1px solid rgba(217, 119, 6, 0.4);
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+    }
 
-.stat-card:hover { transform: translateY(-5px); border-color: #f59e0b; }
-.stat-label { font-weight: bold; color: #fbbf24; margin-bottom: 15px; font-size: 1.1rem; }
-.stat-value { font-size: 1.5rem; font-weight: 800; margin: 15px 0; color: #fff; }
-.stat-savings { color: #4ade80; font-weight: bold; font-size: 1.2rem; }
-    
+    .teaser {
+        background: #020617;
+        border: 1px solid #334155;
+        border-left: 4px solid #d97706;
+        border-radius: 8px;
+        padding: 1.25rem 1.5rem;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        font-size: 0.85rem;
+        color: #cbd5e1;
+        overflow-x: auto;
+        white-space: pre-wrap;
+        line-height: 1.5;
+    }
+    .teaser .dim { color: #64748b; }
+    .teaser .hi { color: #fbbf24; }
+
+    .hidden { display: none; }
 </style>
 
-    <meta name="description" content="Transform traditional security specification writing into an AI-powered workflow for CISOs, saving hundreds of hours per cycle.">
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="AI-Powered CISO Training: Spec-Driven Security" />
-    <meta property="og:description" content="Transform traditional security specification writing into an AI-powered workflow for CISOs, saving hundreds of hours per cycle." />
+    <meta name="description" content="Private workshop for CISOs and security leaders: generate threat models, compliance mappings, and automation safely—while governing prompt injection, hallucination, and model supply-chain risk. June 2026 edition.">
+    <meta property="og:title" content="Secure AI-Assisted Spec &amp; Automation Training | Chokmah LLC" />
+    <meta property="og:description" content="Private workshop: risk-aware AI for high-stakes security artifacts—pre-mortem, attestation, sovereign model risk, and automated compliance. June 2026 edition." />
     <meta property="og:type" content="article" />
     <meta property="og:url" content="https://chokmah.me/ai-ciso-training/" />
     <meta property="og:image" content="https://chokmah.me/assets/ciso-training-card.png" />
 
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="AI-Powered CISO Training: Spec-Driven Security" />
-    <meta name="twitter:description" content="Transform traditional security specification writing into an AI-powered workflow for CISOs, saving hundreds of hours per cycle." />
+    <meta name="twitter:title" content="Secure AI-Assisted Spec &amp; Automation Training | Chokmah LLC" />
+    <meta name="twitter:description" content="Private workshop: risk-aware AI for high-stakes security artifacts—pre-mortem, attestation, sovereign model risk, and automated compliance." />
     <meta name="twitter:image" content="https://chokmah.me/assets/ciso-training-card.png" />
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -84,8 +106,8 @@
     {
       "@type": "Course",
       "@id": "https://chokmah.me/ai-ciso-training/#course",
-      "name": "AI-Powered CISO Training: Spec-Driven Security",
-      "description": "A 16-hour intensive training for CISOs to automate security specifications, compliance mapping, and threat modeling using AI tools.",
+      "name": "Secure AI-Assisted Spec & Automation Training",
+      "description": "Private workshop for CISOs and security leaders on generating threat models, compliance mappings, technical specs, and automation with AI while managing prompt injection, hallucination, model supply-chain risk, pre-mortem discipline, and attestation/governance of AI outputs.",
       "provider": {
         "@type": "Organization",
         "name": "Chokmah LLC",
@@ -93,27 +115,26 @@
       },
       "hasCourseInstance": {
         "@type": "CourseInstance",
-        "courseMode": "Online",
-        "courseWorkload": "PT16H",
+        "courseMode": "Onsite",
+        "name": "Private workshop delivery",
         "instructor": {
           "@type": "Person",
           "name": "Dr. Daniyel Yaacov Bilar",
-          "description": "Federal Court Recognized SME & Former DoD R&D Lead"
+          "description": "Principal Consultant, Chokmah LLC"
         }
       }
     },
     {
       "@type": "Product",
       "@id": "https://chokmah.me/ai-ciso-training/#product",
-      "name": "AI-Powered CISO Training Package",
-      "description": "A 16-hour intensive, spec-driven security training for CISOs. Save 440+ hours per development cycle by automating specifications, compliance mapping, and threat modeling with AI.",
+      "name": "Secure AI-Assisted Spec & Automation Training (Private Workshop)",
+      "description": "June 2026 private workshop: risk-aware AI for security artifacts—hardened prompting, threat modeling with human critique, pre-mortem and attestation governance, and automated compliance checks.",
       "image": "https://chokmah.me/assets/ciso-training-card.png",
       "offers": {
         "@type": "Offer",
-        "price": "5500.00",
-        "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
         "url": "https://chokmah.me/ai-ciso-training/",
+        "priceCurrency": "USD",
         "itemOffered": {
           "@id": "https://chokmah.me/ai-ciso-training/#course"
         }
@@ -125,8 +146,8 @@
 </head>
 <body class="bg-slate-950 text-slate-50 min-h-screen">
     <div style="max-width: 60rem; margin: 0 auto; padding: 24px 20px; text-align: left;">
-        <a href="/" style="color: #f59e0b; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: color 0.3s;" 
-           onmouseover="this.style.color='#fbbf24'" 
+        <a href="/" style="color: #f59e0b; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: color 0.3s;"
+           onmouseover="this.style.color='#fbbf24'"
            onmouseout="this.style.color='#f59e0b'">
             &larr; Return to Headquarters
         </a>
@@ -134,232 +155,267 @@
 
     <header class="bg-gradient-to-b from-slate-900 to-slate-950 py-16 px-4 md:px-8 border-b-4 border-amber-700">
         <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight">AI-Powered CISO Training Package</h1>
-            <p class="text-3xl mb-4">Spec-Driven Security</p>
-            <p class="text-2xl text-amber-500">Trainer: dyb | 16 hours | Investment: $5,500</p>
+            <p class="mb-4"><span class="badge">June 2026 Edition · v3.0</span></p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Secure AI-Assisted Spec &amp; Automation Training</h1>
+            <p class="text-2xl md:text-3xl mb-4 text-slate-200">Risk-aware generation for high-stakes security work</p>
+            <p class="text-xl text-amber-500">Private workshop · Trainer: dyb · Chokmah LLC</p>
         </div>
     </header>
 
-    <!-- Sticky Navigation -->
     <nav class="sticky top-0 bg-slate-900/90 backdrop-blur z-50 border-b border-amber-800 py-4">
         <div class="nav-hardened">
-            <a href="#overview" class="hover:text-amber-400 transition">Overview</a>
-            <a href="#sessions" class="hover:text-amber-400 transition">Sessions</a>
-            <a href="#compliance" class="hover:text-amber-400 transition">Compliance Objectives</a>
-            <a href="#time-saved" class="hover:text-amber-400 transition">Time Saved</a>
-            <a href="#impact" class="hover:text-amber-400 transition">Business Impact</a>
-            <a href="#key-facts" class="hover:text-amber-400 transition">Key Facts</a>
-            <a href="#cta" class="hover:text-amber-400 transition">Book Training</a>
+            <a href="#overview">Overview</a>
+            <a href="#why-2026">Why 2026</a>
+            <a href="#outcomes">Outcomes</a>
+            <a href="#modules">Modules</a>
+            <a href="#teaser">Sample</a>
+            <a href="#scenarios">Scenarios</a>
+            <a href="#audience">Audience</a>
+            <a href="#cta">Inquire</a>
         </div>
     </nav>
 
     <main class="max-w-4xl mx-auto py-16 px-4 md:px-8 space-y-20">
+
         <section id="overview" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
-            <h2 class="text-4xl font-semibold mb-8 text-center text-amber-500">Training Overview</h2>
-            <p class="text-xl leading-relaxed text-slate-200">This 16-hour program revolutionizes security specification writing by leveraging AI tools (Claude Code & Kimi for Coding). Participants generate precise, compliant specifications from natural language — <strong>without manual writing</strong>.</p>
-            <p class="text-2xl font-bold mt-8 text-center text-amber-400">Key Innovation: Weeks of work → seconds with AI.</p>
+            <h2 class="text-4xl font-semibold mb-8 text-center text-amber-500">What This Workshop Is</h2>
+            <p class="text-xl leading-relaxed text-slate-200">
+                A production-oriented private workshop for CISOs, security leaders, and security engineers who use AI to produce
+                <strong>threat models, compliance mappings, technical specs, and automation</strong>—and who need those outputs to be
+                <strong>defensible</strong>, not merely fast.
+            </p>
+            <p class="text-xl leading-relaxed text-slate-200 mt-6">
+                The program treats the AI generation process itself as an attack surface: prompt injection, hallucination in high-stakes
+                artifacts, model supply-chain and sovereign risk, weak validation, and missing pre-mortem discipline.
+            </p>
+            <p class="text-2xl font-bold mt-8 text-center text-amber-400">
+                Turn AI from a risky shortcut into a disciplined, auditable capability.
+            </p>
         </section>
 
-        <section id="sessions" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
-            <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Detailed Training Sessions</h2>
-            <!-- Expand/Collapse All Buttons -->
+        <section id="why-2026" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
+            <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Why This Matters in 2026</h2>
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Generation risks</div>
+                    <p class="stat-value">Prompt injection, hallucinated controls, and unvalidated mappings that look authoritative under deadline pressure.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Model supply chain</div>
+                    <p class="stat-value">Explicit handling of sovereign and provenance risk when choosing or mixing models (including non-US-hosted options).</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Pre-mortem discipline</div>
+                    <p class="stat-value">Structured failure forecasting embedded into prompts, artifacts, and automation—not a slide at the end of a project.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Attestation &amp; oversight</div>
+                    <p class="stat-value">Human-on-the-loop controls, validation gates, and evidence patterns so AI-assisted work can stand review.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="outcomes" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
+            <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Program Outcomes</h2>
+            <p class="text-lg text-slate-300 text-center mb-8 max-w-3xl mx-auto">
+                By the end of the workshop, participants can design, generate, validate, govern, and operationalize AI-assisted security artifacts while managing risks introduced by AI systems themselves.
+            </p>
+            <div class="dashboard-grid outcomes">
+                <div class="stat-card">
+                    <div class="stat-label">1. Risk-aware prompting</div>
+                    <p class="stat-value">Structured strategies for threat models, compliance, specs, and automation logic—with injection, hallucination, and supply-chain mitigations.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">2. Pre-mortem leadership</div>
+                    <p class="stat-value">Facilitate rigorous pre-mortems on AI/agentic systems and embed mitigation triggers into artifacts and process.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">3. Sovereign model judgment</div>
+                    <p class="stat-value">Evaluate model choice, provenance, and fallback posture; document assumptions that affect board and regulator trust.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">4. Validation &amp; attestation</div>
+                    <p class="stat-value">Design practical validation, attestation, and human-on-the-loop controls for generated outputs and pipelines.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">5. Compliance automation</div>
+                    <p class="stat-value">Build and critique AI-assisted automated checks with logging, evidence, and failure handling suitable for real environments.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">6. Executive communication</div>
+                    <p class="stat-value">Translate AI security risk and control design into clear language for technical teams, executives, and boards.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="modules" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
+            <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Curriculum Modules</h2>
             <div class="btn-container">
-    <button onclick="openAllDetails()" class="btn-amber">Expand All</button>
-    <button onclick="closeAllDetails()" class="btn-slate">Collapse All</button>
-</div>
+                <button type="button" onclick="openAllDetails()" class="btn-amber">Expand All</button>
+                <button type="button" onclick="closeAllDetails()" class="btn-slate">Collapse All</button>
+            </div>
             <div class="space-y-10">
-                <article class="border-l-4 border-amber-600 pl-8">
+                <article>
                     <details open>
-                        <summary class="text-3xl font-semibold mb-4 hover:text-amber-400 transition">Session 1: Architecture Mapping & Spec Foundation</summary>
+                        <summary>Module 2: Prompt Engineering &amp; Hardening</summary>
+                        <p class="text-slate-400 mb-3">~60 minutes · Labs + reflection</p>
                         <ul class="list-disc pl-8 space-y-3 text-xl text-slate-300">
-                            <li>Introduction to Claude and Kimi AI tools</li>
-                            <li>Live demo: Natural language → formal YAML spec</li>
-                            <li>Hands-on: Generate firmware update spec</li>
-                            <li>Validation, refinement, and common pitfalls</li>
-                            <li>Q&A and architecture discussion</li>
+                            <li>Risks of LLMs when generating security artifacts</li>
+                            <li>Universal header and task-specific hardened prompts</li>
+                            <li>Mitigating prompt injection, hallucination, supply-chain, and validation gaps</li>
+                            <li>Side-by-side baseline vs hardened generation</li>
                         </ul>
-                        <p class="mt-6 font-medium text-amber-400">Deliverables: claude-spec, kimi-spec tools + example firmware-spec.yaml</p>
+                        <p class="mt-6 font-medium text-amber-400">Deliverables: comparison, improved prompt pattern, short reflection</p>
                     </details>
                 </article>
-                <article class="border-l-4 border-amber-600 pl-8">
+                <article>
                     <details>
-                        <summary class="text-3xl font-semibold mb-4 hover:text-amber-400 transition">Session 2: Compliance & Control Mapping</summary>
+                        <summary>Module 3: Threat Modeling with AI</summary>
+                        <p class="text-slate-400 mb-3">~75 minutes · Structured critique lab</p>
                         <ul class="list-disc pl-8 space-y-3 text-xl text-slate-300">
-                            <li>Key frameworks overview (NERC-CIP, IEC-62443, etc.)</li>
-                            <li>Demo: AI multi-framework mapping</li>
-                            <li>Exercise: Map systems to regulations</li>
-                            <li>Gap analysis and evidence strategies</li>
-                            <li>Q&A</li>
+                            <li>Generate a high-quality threat model with hardened prompts</li>
+                            <li>Identify risks introduced by the generation process</li>
+                            <li>Apply pre-mortem and output validation checklists</li>
+                            <li>Iterate under human critique—not unattended “accept all”</li>
                         </ul>
-                        <p class="mt-6 font-medium text-amber-400">Deliverables: claude-compliance, kimi-compliance tools + mapping report</p>
+                        <p class="mt-6 font-medium text-amber-400">Deliverables: marked-up critique, improved entry, reflection</p>
                     </details>
                 </article>
-                <article class="border-l-4 border-amber-600 pl-8">
+                <article>
                     <details>
-                        <summary class="text-3xl font-semibold mb-4 hover:text-amber-400 transition">Session 3: Threat Modeling</summary>
+                        <summary>Module 4: Pre-Mortem, Attestation &amp; Governance</summary>
+                        <p class="text-slate-400 mb-3">~90 minutes · Leadership + design lab</p>
                         <ul class="list-disc pl-8 space-y-3 text-xl text-slate-300">
-                            <li>STRIDE, PASTA, attack trees overview</li>
-                            <li>Live AI threat modeling demo</li>
-                            <li>Hands-on modeling for critical infrastructure</li>
-                            <li>Mitigations and test case generation</li>
-                            <li>Q&A</li>
+                            <li>Run a structured pre-mortem on an AI/agentic system</li>
+                            <li>Design capability attestation and human-on-the-loop controls</li>
+                            <li>Embed governance requirements into prompts and artifacts</li>
+                            <li>Executive-facing summary of findings and decisions</li>
                         </ul>
-                        <p class="mt-6 font-medium text-amber-400">Deliverables: claude-threatmodel, kimi-threatmodel tools + full analysis</p>
+                        <p class="mt-6 font-medium text-amber-400">Deliverables: pre-mortem worksheet, governance design, 3-bullet executive summary</p>
                     </details>
                 </article>
-                <article class="border-l-4 border-amber-600 pl-8">
+                <article>
                     <details>
-                        <summary class="text-3xl font-semibold mb-4 hover:text-amber-400 transition">Session 4: Implementation & Automation</summary>
+                        <summary>Module 5: Automated Compliance Checks</summary>
+                        <p class="text-slate-400 mb-3">~90 minutes · AI + PowerShell lab</p>
                         <ul class="list-disc pl-8 space-y-3 text-xl text-slate-300">
-                            <li>Secure code generation overview</li>
-                            <li>Demo: Spec → FastAPI + Kubernetes manifests</li>
-                            <li>Hands-on implementation exercise</li>
-                            <li>Hardening, monitoring, and deployment best practices</li>
-                            <li>Final Q&A and roadmap</li>
+                            <li>Generate automated compliance check procedures with hardened prompts</li>
+                            <li>Implement scriptable checks with evidence and failure handling</li>
+                            <li>Add pre-mortem triggers, provenance, and attestation-oriented logging</li>
+                            <li>Critique AI-generated automation for hallucinated controls and edge cases</li>
                         </ul>
-                        <p class="mt-6 font-medium text-amber-400">Deliverables: claude-implement tool + 85% production-ready code</p>
+                        <p class="mt-6 font-medium text-amber-400">Deliverables: procedure, working check pattern, enhanced governance hooks, reflection</p>
+                    </details>
+                </article>
+                <article>
+                    <details>
+                        <summary>Capstone &amp; Assessment</summary>
+                        <p class="text-slate-400 mb-3">Integrated across the workshop</p>
+                        <ul class="list-disc pl-8 space-y-3 text-xl text-slate-300">
+                            <li>Apply the full stack to a chosen scenario under lightweight rubrics</li>
+                            <li>Self-assessment plus targeted human review</li>
+                            <li>Capstone presentation of risks, controls, and residual judgment</li>
+                        </ul>
+                        <p class="mt-6 font-medium text-amber-400">Focus: integrated risk judgment under uncertainty—not tool demos alone</p>
                     </details>
                 </article>
             </div>
+            <p class="mt-10 text-slate-400 text-center text-lg">
+                Full prompt library, secure automation harnesses, labs, and assessments are provided to workshop participants—not published as a free public kit.
+            </p>
         </section>
 
-        <section id="compliance" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
-            <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Direct Response to Common CISO Compliance Objectives</h2>
-            <!-- Expand/Collapse All for Compliance -->
-            <div class="btn-container">
-                <button onclick="openAllDetails()" class="btn-amber">Expand All</button>
-                <button onclick="closeAllDetails()" class="btn-slate">Collapse All</button>
-            </div>
-            <div class="space-y-12 text-xl">
-                <article class="border-l-4 border-amber-600 pl-8">
-                    <details open>
-                        <summary class="text-3xl font-semibold mb-6 hover:text-amber-400 transition">1. Core Compliance Goals</summary>
-                        <ol class="list-decimal pl-10 space-y-4 text-slate-200">
-                            <li>Collect every standard pushed by regulators (DoE, CISA, etc.)</li>
-                            <li>Collect each customer’s private cyber clauses</li>
-                            <li>Cross-correlate to maximize overlap (minimum investment, maximum coverage)</li>
-                            <li>Turn the resulting “golden” control set into formal product requirements</li>
-                            <li>Keep the mapping alive as standards and contracts evolve</li>
-                        </ol>
-                    </details>
-                </article>
-
-                <article class="bg-green-900/30 p-8 rounded-xl border border-green-700">
-                    <details open>
-                        <summary class="text-3xl font-semibold mb-6 hover:text-green-400 transition text-green-400">2. How This Training Already Delivers</summary>
-                        <ul class="list-none space-y-4">
-                            <li class="flex items-start"><span class="text-4xl text-green-500 mr-4">✔</span>Automate multi-framework mapping, gap analysis, and evidence strategy.</li>
-                            <li class="flex items-start"><span class="text-4xl text-green-500 mr-4">✔</span>Output is a YAML spec engineering can use directly as requirements.</li>
-                            <li class="flex items-start"><span class="text-4xl text-green-500 mr-4">✔</span>Tools accept arbitrary sources — feed them regulator docs, customer PDFs, or spreadsheets.</li>
-                        </ul>
-                    </details>
-                </article>
-
-                <article class="bg-amber-900/30 p-8 rounded-xl border border-amber-700">
-                    <details>
-                        <summary class="text-3xl font-semibold mb-6 hover:text-amber-400 transition text-amber-400">3. Optional Extensions</summary>
-                        <ul class="list-none space-y-4">
-                            <li class="flex items-start"><span class="text-4xl text-amber-500 mr-4">❖</span>Harvesting standards:Add guidance on sourcing regulator documents and extracting clauses.</li>
-                            <li class="flex items-start"><span class="text-4xl text-amber-500 mr-4">❖</span>Effort optimisation: Extend with prompts to score controls by implementation cost vs. coverage.</li>
-                            <li class="flex items-start"><span class="text-4xl text-amber-500 mr-4">❖</span>Prose normalisation: Add pre-processing step for contractual language.</li>
-                            <li class="flex items-start"><span class="text-4xl text-amber-500 mr-4">❖</span>Change tracking: Include version-diff and re-mapping patterns.</li>
-                        </ul>
-                    </details>
-                </article>
-            </div>
+        <section id="teaser" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
+            <h2 class="text-4xl font-semibold mb-6 text-center text-amber-500">Sample Teaser: Universal Header Constraints</h2>
+            <p class="text-lg text-slate-300 mb-6 text-center max-w-3xl mx-auto">
+                Every generation path in the workshop starts from a hardened universal header. Excerpt of the constraint pattern (illustrative—not the full delivery library):
+            </p>
+            <div class="teaser" role="region" aria-label="Sample prompt constraints teaser"><span class="dim"># Illustrative excerpt — workshop materials include the full library</span>
+<span class="hi">MANDATORY CONSTRAINTS</span> — apply to every high-stakes security generation:
+• Surface risks of the <span class="hi">AI generation process itself</span>
+  (prompt injection, hallucination, model supply chain, validation bypass)
+• For non-US / third-country models: explicit <span class="hi">sovereign</span>,
+  data-provenance, and supply-chain callouts
+• Every attack path or control includes a <span class="hi">pre-mortem trigger</span>
+  and a concrete validation / attestation step
+• Flag claims that need primary-source confirmation or human review
+• Prefer structured output with strict schemas where possible</div>
+            <p class="mt-6 text-slate-400 text-center">
+                Participants also receive task prompts (threat model, compliance, spec, implement, automated checks) and secure PowerShell harness patterns for controlled runs.
+            </p>
         </section>
 
-       <section id="time-saved">
-    <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Time Saved – Clearly Visible</h2>
-    
-    <div style="text-align: center; margin-bottom: 40px;">
-        <p style="font-size: 3rem; font-weight: bold; color: #4ade80; margin: 0;">Over 440 Hours Saved</p>
-        <p style="font-size: 1.5rem; color: #cbd5e1;">Per full security development cycle with AI workflow</p>
-    </div>
-
-    <div class="dashboard-grid">
-        <div class="stat-card">
-            <div class="stat-label">Specification Writing</div>
-            <div class="stat-value">40+ hours → 30s</div>
-            <div class="stat-savings">~40h saved</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-label">Compliance Mapping</div>
-            <div class="stat-value">2 weeks → 5 min</div>
-            <div class="stat-savings">~80h saved</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-label">Threat Modeling</div>
-            <div class="stat-value">1 week → 10 min</div>
-            <div class="stat-savings">~40h saved</div>
-        </div>
-
-        <div class="stat-card">
-            <div class="stat-label">Secure Implementation</div>
-            <div class="stat-value">8 weeks → 1 week</div>
-            <div class="stat-savings">~280h saved</div>
-        </div>
-    </div>
-</section>
-
-        <section id="impact" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
-            <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Additional Business Impact</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-3xl font-semibold mb-6 text-amber-400">Quality & Readiness</h3>
-                    <ul class="list-disc pl-8 space-y-4 text-xl text-slate-200">
-                        <li>88% automated test coverage</li>
-                        <li>90%+ compliance alignment</li>
-                        <li>85% production-ready code</li>
-                        <li>500%+ first-year ROI</li>
-                    </ul>
+        <section id="scenarios" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
+            <h2 class="text-4xl font-semibold mb-10 text-center text-amber-500">Workshop Scenarios</h2>
+            <p class="text-lg text-slate-300 text-center mb-8">Labs and samples span realistic operational domains:</p>
+            <div class="dashboard-grid scenarios">
+                <div class="stat-card">
+                    <div class="stat-label">BESS / energy storage</div>
+                    <p class="stat-value">Threat modeling and control reasoning for battery energy storage and related cyber-physical constraints.</p>
                 </div>
-                <div>
-                    <h3 class="text-3xl font-semibold mb-6 text-amber-400">Cost Efficiency</h3>
-                    <ul class="list-disc pl-8 space-y-4 text-xl text-slate-200">
-                        <li>60% development cost reduction</li>
-                        <li>50% compliance cost reduction</li>
-                        <li>Training investment: $5,500</li>
-                    </ul>
+                <div class="stat-card">
+                    <div class="stat-label">Defense ISR swarm</div>
+                    <p class="stat-value">Governance and attestation pressure where autonomy, latency, and exception-handling collide.</p>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">SOC automation</div>
+                    <p class="stat-value">AI-assisted detection and response automation with logging, failure modes, and human oversight.</p>
                 </div>
             </div>
         </section>
 
-        <section id="key-facts" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
-            <h2 class="text-4xl font-semibold mb-8 text-center text-amber-500">Key Facts</h2>
+        <section id="audience" class="bg-slate-800/50 backdrop-blur-sm p-10 rounded-2xl shadow-2xl border border-slate-700">
+            <h2 class="text-4xl font-semibold mb-8 text-center text-amber-500">Who This Is For</h2>
             <ul class="list-disc pl-10 space-y-4 text-xl text-slate-200 max-w-3xl mx-auto">
-                <li>Covers NERC-CIP, UL-1998, IEC-62443, EU-CRA, AU-SOCI and more</li>
-                <li>Applicable to critical infrastructure systems</li>
-                <li>Success metrics: Specs in &lt;5 min, &gt;90% quality, &gt;95% compliance</li>
-                <li>Deployment roadmap: Training → Pilot → Production → Scale</li>
+                <li>Current and aspiring CISOs</li>
+                <li>Security engineering leaders</li>
+                <li>Teams responsible for threat modeling, compliance automation, or AI governance</li>
+                <li>Organizations evaluating or already using AI tools (Claude, Kimi, and others) for security work—and needing model-risk discipline</li>
             </ul>
+            <div class="mt-12 grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-amber-400">Delivery</h3>
+                    <ul class="list-disc pl-8 space-y-3 text-lg text-slate-300">
+                        <li>Private workshop (team or closed cohort)</li>
+                        <li>Live facilitation with hands-on labs</li>
+                        <li>Schedule and scope arranged per engagement</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-amber-400">What you leave with</h3>
+                    <ul class="list-disc pl-8 space-y-3 text-lg text-slate-300">
+                        <li>Hardened prompt patterns and critique habits</li>
+                        <li>Pre-mortem and attestation design practice</li>
+                        <li>Automation check patterns with governance hooks</li>
+                        <li>Scenario-grounded artifacts from the labs</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-       <!-- Updated Prominent CTA Section -->
         <section id="cta" class="bg-gradient-to-br from-amber-900/20 to-slate-900 p-12 rounded-3xl shadow-2xl border-4 border-amber-700 text-center">
-            <h2 class="text-5xl font-bold mb-8 text-amber-400">Ready to Transform Your Security Workflow?</h2>
-            <p class="text-2xl mb-10 text-slate-200">Book your 16-hour AI-powered training and start saving hundreds of hours per compliance cycle.</p>
-           <div class="btn-container" style="justify-content: center; margin-top: 40px; flex-wrap: wrap;">
-    <a href="mailto:info@chokmah.me?subject=Inquiry:%20AI-Powered%20CISO%20Training&body=Hi%20dyb,%0D%0A%0D%0AI'd%20like%20to%20learn%20more%20about%20the%2016-hour%20AI-powered%20CISO%20training%20package."
-       class="btn-amber" style="font-size: 1.25rem; padding: 15px 30px;">
-        Open Email Client →
-    </a>
-
-    <button onclick="copyEmail()" 
-            class="btn-slate" style="font-size: 1.25rem; padding: 15px 30px; display: flex; items-center; gap: 10px;">
-        <span>Copy Email Address</span>
-        <span id="copied" class="hidden" style="color: #4ade80;">✓</span>
-    </button>
-</div>
-            <p class="mt-8 text-xl text-slate-300">Email: <span class="font-mono text-amber-400 selectable">info@chokmah.me</span></p>
-            <p class="mt-4 text-lg text-slate-400">Limited slots available – reach out today to secure your session.</p>
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-amber-400">Inquire About a Private Workshop</h2>
+            <p class="text-2xl mb-10 text-slate-200">
+                Discuss fit, team size, scenario focus, and delivery window for the June 2026 Secure AI-Assisted Spec &amp; Automation program.
+            </p>
+            <div class="btn-container" style="justify-content: center; margin-top: 40px;">
+                <a href="mailto:info@chokmah.me?subject=Inquiry:%20Secure%20AI-Assisted%20CISO%20Workshop%20(v3)&body=Hi%20dyb,%0D%0A%0D%0AI'd%20like%20to%20discuss%20a%20private%20workshop%20for%20the%20Secure%20AI-Assisted%20Spec%20%26%20Automation%20Training%20(v3%20/%20June%202026).%0D%0A%0D%0ATeam%20size%3A%0D%0APreferred%20focus%20(scenarios%2Fmodules)%3A%0D%0ATiming%3A%0D%0A"
+                   class="btn-amber" style="font-size: 1.25rem; padding: 15px 30px;">
+                    Open Email Client →
+                </a>
+                <button type="button" onclick="copyEmail()"
+                        class="btn-slate" style="font-size: 1.25rem; padding: 15px 30px; display: flex; align-items: center; gap: 10px;">
+                    <span>Copy Email Address</span>
+                    <span id="copied" class="hidden" style="color: #4ade80;">✓</span>
+                </button>
+            </div>
+            <p class="mt-8 text-xl text-slate-300">Email: <span class="font-mono text-amber-400">info@chokmah.me</span></p>
+            <p class="mt-4 text-lg text-slate-400">Private delivery only — limited calendar availability.</p>
         </section>
     </main>
 
     <footer class="bg-slate-900 text-slate-400 py-8 px-4 text-center border-t-4 border-amber-700">
-        <p class="text-xl">Trainer: dyb | <a href="mailto:info@chokmah.me" class="text-amber-400 hover:underline">Contact: info@chokmah.me</a></p>
+        <p class="text-xl">Trainer: dyb · <a href="mailto:info@chokmah.me" class="text-amber-400 hover:underline">info@chokmah.me</a> · <a href="/" class="text-amber-400 hover:underline">chokmah.me</a></p>
     </footer>
 
     <script>
@@ -369,7 +425,6 @@
         function closeAllDetails() {
             document.querySelectorAll('details').forEach(detail => { detail.open = false; });
         }
-
         function copyEmail() {
             navigator.clipboard.writeText('info@chokmah.me');
             const copiedMsg = document.getElementById('copied');

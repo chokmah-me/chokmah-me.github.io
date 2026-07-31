@@ -11,7 +11,7 @@ Sovereign-grade competence in **cyber-physical defense**, **industrial cybersecu
 
 - **Industrial Cybersecurity & OT/ICS Defense** — IEC 62443, IEC 61508, UL 991 / 5500
 - **Functional Safety (FuSA) Oversight** — Hazard analysis for BESS and AI-integrated Safety Instrumented Systems
-- **AI CISO Training: Spec-Driven Security** — 16-hour program generating compliant specs from natural language (Claude Code)
+- **[Secure AI-Assisted Spec & Automation Training](https://chokmah.me/ai-ciso-training/)** — Private workshop: risk-aware AI for threat models, compliance, and automation (pre-mortem, attestation, model supply-chain governance)
 - **Threat Modeling for Agentic AI** — STRIDE/PASTA adapted for autonomous systems
 - **Federal Court Expert Witness Services** — Recognized SME in computer security, forensics, and risk profiling
 
