@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Security Intro: AI-Assisted & Spec-Driven | Chokmah LLC</title>
-    <meta name="description" content="A 3-hour intensive course on building secure serverless applications (AWS/Azure) using AI-driven specifications. Generate production-ready security controls, threat models, and infrastructure tests.">
+    <meta name="description" content="~3.5-hour intensive (three 70-min modules) on building secure serverless applications (AWS/Azure) using AI-driven specifications. Generate production-ready security controls, threat models, and infrastructure tests. 6 labs; 14 automated validators (design claim).">
     <link rel="canonical" href="https://chokmah.me/cloud-security-intro/">
     <meta name="author" content="Chokmah LLC">
     <meta property="article:published_time" content="2026-01-19T08:00:00+00:00">
@@ -18,7 +18,7 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/cloud-security-intro/">
     <meta property="og:title" content="Cloud Security Intro: Spec-Driven & AI-Assisted">
-    <meta property="og:description" content="Build secure serverless apps with AI. 3 Hours. 6 Labs. Production-ready YAML specs, STRIDE threat models, and automated pytest validation.">
+    <meta property="og:description" content="Build secure serverless apps with AI. ~3.5 hours (3×70 min). 6 Labs. Production-ready YAML specs, STRIDE threat models, and automated pytest validation.">
     <meta property="og:image" content="https://chokmah.me/assets/cloud-intro-card.jpg">
     <meta name="twitter:image" content="https://chokmah.me/assets/cloud-intro-card.jpg">
 
@@ -30,7 +30,7 @@
           "@type": "Course",
           "@id": "https://chokmah.me/cloud-security-intro/#course",
           "name": "Cloud Security Intro: Serverless Specs",
-          "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications. Build a secure API with STRIDE threat models and pytest validation. 3 hours, 6 hands-on labs, 14 automated validators.",
+          "description": "Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure Serverless Applications. Build a secure API with STRIDE threat models and pytest validation. Three modules (~70 min each; ~3.5 hours instructional), 6 hands-on labs, 14 automated validators (product design claim).",
           "url": "https://chokmah.me/cloud-security-intro/",
           "provider": {
             "@type": "Organization",
@@ -42,7 +42,7 @@
             "@type": "CourseInstance",
             "@id": "https://chokmah.me/cloud-security-intro/#instance",
             "courseMode": "Online",
-            "courseWorkload": "PT3H",
+            "courseWorkload": "PT3H30M",
             "instructor": {
               "@type": "Person",
               "@id": "https://chokmah.me/#person",
@@ -54,6 +54,36 @@
               ]
             }
           }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://chokmah.me/cloud-security-intro/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How long is Cloud Security Intro?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Three modules of about 70 minutes each, approximately 3.5 hours of instructional content, with six hands-on labs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What will I build?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A secure serverless task management API with YAML cloud security specs (12+ embedded controls), a traceability matrix, a STRIDE threat model (9+ cloud-specific attack vectors), and Python/pytest infrastructure tests."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who provides the course?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Chokmah LLC. Instructor: Dr. Daniyel Yaacov Bilar."
+              }
+            }
+          ]
         }
       ]
     }
@@ -207,18 +237,19 @@
         <a href="/" class="nav-back">&larr; Return to Headquarters</a>
 
         <header>
-            <p style="text-transform: uppercase; letter-spacing: 1.5px; color: var(--active-amber); font-size: 0.9rem; margin-bottom: 10px;">New Curriculum</p>
+            <p style="text-transform: uppercase; letter-spacing: 1.5px; color: var(--active-amber); font-size: 0.9rem; margin-bottom: 10px;">Curriculum · Chokmah LLC</p>
             <h1>Cloud Security Intro: Serverless Specs</h1>
             <p style="font-size: 1.2rem; max-width: 700px; color: var(--cadet-grey);">
-                Learn AI-Assisted, Spec-Driven Cloud Security for AWS & Azure. 
-                Move from "vague requirements" to <strong>production-ready infrastructure tests</strong> in 3 hours.
+                AI-assisted, spec-driven cloud security for AWS and Azure serverless applications.
+                Three modules of about 70 minutes each (~3.5 hours instructional) take you from vague requirements to
+                <strong>production-oriented infrastructure tests</strong>.
             </p>
         </header>
 
         <div class="spec-grid">
             <div class="spec-card">
-                <span class="spec-value">3 Hrs</span>
-                <span class="spec-label">Intensive Training</span>
+                <span class="spec-value">~3.5h</span>
+                <span class="spec-label">Instructional (3×70 min)</span>
             </div>
             <div class="spec-card">
                 <span class="spec-value">6</span>
@@ -226,22 +257,21 @@
             </div>
             <div class="spec-card">
                 <span class="spec-value">14</span>
-                <span class="spec-label">Automated Validators</span>
+                <span class="spec-label">Validators (design claim)</span>
             </div>
         </div>
 
         <section>
-            <h2>Build It Securely. From Scratch.</h2>
-            <p>Most cloud security courses teach you how to audit <em>someone else's</em> mess. This course teaches you how to <strong>build it right the first time</strong>.</p>
-            <p>Using <strong>Claude Code</strong> and <strong>AI-Assisted workflows</strong>, you will generate and validate a secure serverless task management API. This is not a toy project—your deliverables will include <strong>300-400+ lines</strong> of production-ready code.</p>
-            
+            <h2>Build it securely from scratch</h2>
+            <p><strong>Cloud Security Intro</strong> (Chokmah LLC) teaches engineers to generate and validate a secure serverless task management API with Claude Code and AI-assisted workflows—not only to audit someone else’s stack.</p>
+            <p>Deliverables are designed as production-oriented artifacts (target band <strong>300–400+ lines</strong> of course code, design claim), not throwaway demos.</p>
             <div class="deliverables-box">
-                <h3 style="margin-top: 0; margin-bottom: 15px; color: var(--active-amber);">📦 What You Will Build (Deliverables)</h3>
+                <h3 style="margin-top: 0; margin-bottom: 15px; color: var(--active-amber);">What you will build (deliverables)</h3>
                 <ul class="check-list">
-                    <li><span>📄</span> <strong>Cloud Security Specs (YAML)</strong> with 12+ embedded controls</li>
-                    <li><span>🔗</span> <strong>Traceability Matrix</strong> mapping vulnerabilities to AWS/Azure services</li>
-                    <li><span>🛡️</span> <strong>STRIDE Threat Model</strong> identifying 9+ cloud-specific attack vectors</li>
-                    <li><span>🧪</span> <strong>Infrastructure Tests</strong> (Python/pytest) validating your architecture</li>
+                    <li><span>📄</span> <strong>Cloud security specs (YAML)</strong> with 12+ embedded controls (IAM, secrets, logging)</li>
+                    <li><span>🔗</span> <strong>Traceability matrix</strong> mapping vulnerabilities to AWS/Azure services</li>
+                    <li><span>🛡️</span> <strong>STRIDE threat model</strong> listing 9+ cloud-specific attack vectors</li>
+                    <li><span>🧪</span> <strong>Infrastructure tests</strong> (Python/pytest; 10+ test cases in Module 3)</li>
                 </ul>
             </div>
         </section>
@@ -284,11 +314,23 @@
             </ul>
         </section>
 
+        <section id="faq">
+            <h2>Frequently asked questions</h2>
+            <h3>How long is Cloud Security Intro?</h3>
+            <p>Three modules of about 70 minutes each (~3.5 hours instructional), with six hands-on labs.</p>
+            <h3>What will I build?</h3>
+            <p>A secure serverless task API with YAML specs (12+ controls), traceability matrix, STRIDE model (9+ vectors), and pytest infrastructure tests (10+ cases in Module 3).</p>
+            <h3>Who provides the course?</h3>
+            <p>Chokmah LLC. Instructor: Dr. Daniyel Yaacov Bilar.</p>
+            <h3>What does “14 automated validators” mean?</h3>
+            <p>It is a product design claim for the lab harness count; the public page does not publish the full validator list (request syllabus for engagement details).</p>
+        </section>
+
         <section class="cta-section">
-            <h2 style="margin-top: 0; border-bottom: none;">Ready to Deploy?</h2>
-            <p>Stop manually writing boilerplate. Start engineering defensible security.</p>
-            <a href="mailto:info@chokmah.me?subject=Request: Cloud Security Syllabus" class="cta-button">Request Full Syllabus & Pricing</a>
-            <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">Available for individual engineers and corporate workshops.</p>
+            <h2 style="margin-top: 0; border-bottom: none;">Request syllabus</h2>
+            <p>Available for individual engineers and corporate workshops. Email for syllabus and pricing.</p>
+            <a href="mailto:info@chokmah.me?subject=Request: Cloud Security Syllabus" class="cta-button">Request Full Syllabus &amp; Pricing</a>
+            <p style="font-size: 0.9rem; margin-top: 15px; opacity: 0.7;">Contact: info@chokmah.me</p>
         </section>
 
     </div>
