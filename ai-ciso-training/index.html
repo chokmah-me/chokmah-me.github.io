@@ -40,6 +40,28 @@
         font-size: 1.05rem;
     }
     .back-bar a:hover { color: #fbbf24; }
+    .breadcrumb {
+        max-width: 60rem;
+        margin: 0 auto;
+        padding: 0.25rem 1.25rem 0;
+        font-size: 0.9rem;
+        color: #94a3b8;
+    }
+    .breadcrumb a {
+        color: #f59e0b;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .breadcrumb a:hover { color: #fbbf24; text-decoration: underline; }
+    .breadcrumb .sep { margin: 0 0.4rem; opacity: 0.65; }
+    .related-curriculum {
+        max-width: 60rem;
+        margin: 0 auto 2rem;
+        padding: 0 1.25rem;
+        color: #cbd5e1;
+        font-size: 0.98rem;
+    }
+    .related-curriculum a { font-weight: 600; }
 
     .page-header {
         background: linear-gradient(to bottom, #0f172a, #020617);
@@ -379,10 +401,31 @@
       "isPartOf": { "@id": "https://chokmah.me/#website" },
       "about": { "@id": "https://chokmah.me/ai-ciso-training/#course" },
       "mainEntity": { "@id": "https://chokmah.me/ai-ciso-training/#course" },
-      "hasPart": { "@id": "https://chokmah.me/ai-ciso-training/#faq" },
-      "description": "Private workshop for CISOs and security leaders: June 2026 edition v3.0. Four core modules (~5h 15m labs) plus capstone.",
+      "hasPart": [
+        { "@id": "https://chokmah.me/ai-ciso-training/#faq" },
+        { "@id": "https://chokmah.me/ai-ciso-training/#breadcrumb" }
+      ],
+      "description": "Private workshop for CISOs and security leaders: June 2026 edition v3.0. Instructor Dr. Daniyel Yaacov Bilar (Chokmah LLC). Four core modules (~5h 15m labs) plus capstone.",
       "inLanguage": "en-US",
       "dateModified": "2026-07-31"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://chokmah.me/ai-ciso-training/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://chokmah.me/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Secure AI-Assisted Spec & Automation Training",
+          "item": "https://chokmah.me/ai-ciso-training/"
+        }
+      ]
     },
     {
       "@type": "Organization",
@@ -408,7 +451,7 @@
       "url": "https://chokmah.me/ai-ciso-training/",
       "provider": { "@id": "https://chokmah.me/#organization" },
       "mainEntityOfPage": { "@id": "https://chokmah.me/ai-ciso-training/#webpage" },
-      "image": "https://chokmah.me/assets/ciso-training-card.png",
+      "image": "https://chokmah.me/assets/ciso-training-card.jpg",
       "inLanguage": "en-US",
       "hasCourseInstance": {
         "@type": "CourseInstance",
@@ -424,7 +467,7 @@
       "@id": "https://chokmah.me/ai-ciso-training/#product",
       "name": "Secure AI-Assisted Spec & Automation Training (Private Workshop)",
       "description": "June 2026 private workshop: risk-aware AI for security artifacts—hardened prompting, threat modeling with human critique, pre-mortem and attestation governance, and automated compliance checks. Four core modules (~5h 15m lab time) plus integrated capstone; schedule arranged per engagement.",
-      "image": "https://chokmah.me/assets/ciso-training-card.png",
+      "image": "https://chokmah.me/assets/ciso-training-card.jpg",
       "brand": { "@id": "https://chokmah.me/#organization" },
       "url": "https://chokmah.me/ai-ciso-training/",
       "mainEntityOfPage": { "@id": "https://chokmah.me/ai-ciso-training/#webpage" },
@@ -481,6 +524,10 @@
 </script>
 </head>
 <body>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="sep" aria-hidden="true">›</span>
+        <span aria-current="page">Secure AI-Assisted Spec &amp; Automation Training</span>
+    </nav>
     <div class="back-bar">
         <a href="/">&larr; Return to Headquarters</a>
     </div>
@@ -490,7 +537,7 @@
             <p><span class="badge">June 2026 Edition · v3.0</span></p>
             <h1 class="hero-title">Secure AI-Assisted Spec &amp; Automation Training</h1>
             <p class="hero-tagline">Risk-aware generation for high-stakes security work</p>
-            <p class="hero-meta">Private multi-session workshop · Four core modules (~5h 15m labs) + capstone · Trainer: dyb · Chokmah LLC</p>
+            <p class="hero-meta">Private multi-session workshop · Four core modules (~5h 15m labs) + capstone · Instructor: Dr. Daniyel Yaacov Bilar (dyb) · Chokmah LLC</p>
         </div>
     </header>
 
@@ -520,9 +567,9 @@
                 artifacts, model supply-chain and sovereign risk, weak validation, and missing pre-mortem discipline.
             </p>
             <div class="stat-card" style="margin: 1.5rem 0; text-align: left;">
-                <div class="stat-label">Machine-citable facts (on this page)</div>
+                <div class="stat-label">Workshop facts</div>
                 <ul class="bullets" style="margin: 0.75rem 0 0;">
-                    <li>Provider: Chokmah LLC · Trainer: Dr. Daniyel Yaacov Bilar (dyb)</li>
+                    <li>Provider: Chokmah LLC · Instructor: Dr. Daniyel Yaacov Bilar (dyb)</li>
                     <li>Edition: June 2026 · v3.0 · private workshop only</li>
                     <li>Four core modules ≈ 5h 15m labs (60 + 75 + 90 + 90 min) + integrated capstone</li>
                     <li>Focus domains: BESS/energy, defense ISR swarm, SOC automation scenarios</li>
@@ -703,6 +750,10 @@
                     <p class="stat-value">AI-assisted detection and response automation with logging, failure modes, and human oversight.</p>
                 </div>
             </div>
+            <p class="related-curriculum">
+                Related curriculum: <a href="/cloud-security-intro/">Cloud Security Intro: Serverless Specs</a>
+                (~3.5 hours, AWS/Azure, AI-assisted specs and infrastructure tests).
+            </p>
         </section>
 
         <section id="audience">
