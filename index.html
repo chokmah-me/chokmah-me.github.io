@@ -48,7 +48,7 @@
       "mainEntity": { "@id": "https://chokmah.me/#organization" },
       "hasPart": { "@id": "https://chokmah.me/#faq" },
       "description": "Expert industrial cybersecurity, FuSA oversight, and AI engineering services by a Federal Court SME.",
-      "dateModified": "2026-07-31",
+      "dateModified": "2026-08-05",
       "inLanguage": "en-US"
     },
     {
@@ -157,6 +157,19 @@
               "description": "AI-assisted, spec-driven cloud security for AWS and Azure serverless applications (~3.5 hours instructional).",
               "provider": { "@id": "https://chokmah.me/#organization" },
               "url": "https://chokmah.me/cloud-security-intro/"
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-secure-sdlc-ai",
+            "url": "https://chokmah.me/training/secure-sdlc-ai/",
+            "itemOffered": {
+              "@type": "Course",
+              "@id": "https://chokmah.me/training/secure-sdlc-ai/#course",
+              "name": "Secure SDLC & AI-Assisted Engineering",
+              "description": "Private tailored curriculum on secure SDLC with AI coding assistants: review discipline, threat modeling for generated code, and domain-compliant automation.",
+              "provider": { "@id": "https://chokmah.me/#organization" },
+              "url": "https://chokmah.me/training/secure-sdlc-ai/"
             }
           }
         ]
@@ -349,7 +362,12 @@
         }
         @media (min-width: 768px) {
             .training-grid {
-                grid-template-columns: 1fr 1fr; 
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (min-width: 1100px) {
+            .training-grid {
+                grid-template-columns: 1fr 1fr 1fr;
             }
         }
         .course-meta {
@@ -527,7 +545,24 @@
             <a href="/cloud-security-intro/" class="cta-button" style="background-color: var(--active-amber); color: var(--deep-anthracite); padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; display: block; text-align: center;">Request Syllabus &raquo;</a>
         </p>
     </section>
+
+    <section class="card" style="border-left: 4px solid var(--signal-amber); margin-top: 0;">
+        <h3 style="margin-top: 0;">🛠️ Secure SDLC &amp; AI Engineering</h3>
+        <p class="tagline" style="font-size: 0.95rem; margin-bottom: 15px;">Tailored private curriculum</p>
+        <p><strong>Secure SDLC &amp; AI-Assisted Engineering</strong> is a private, hyper-customized curriculum for teams using AI coding assistants inside a defensible secure SDLC—review discipline, threat modeling for generated code, and domain-compliant automation. Scope and schedule arranged per engagement.</p>
+
+        <div class="course-meta">
+            <div><span>Delivery:</span> <span style="color: var(--active-amber);">Private / tailored</span></div>
+            <div><span>Focus:</span> <span>Secure SDLC + AI tools</span></div>
+            <div><span>Catalog:</span> <span><a href="/training/" style="color: var(--active-amber);">All courses</a></span></div>
+        </div>
+
+        <p style="margin-top: auto;">
+            <a href="/training/secure-sdlc-ai/" class="cta-button" style="background-color: var(--active-amber); color: var(--deep-anthracite); padding: 8px 16px; text-decoration: none; border-radius: 4px; font-weight: bold; display: block; text-align: center;">View Curriculum &raquo;</a>
+        </p>
+    </section>
 </div>
+<p style="margin: 8px 0 24px; font-size: 0.95rem; color: var(--cadet-grey);">Full catalog: <a href="/training/" style="color: var(--active-amber); font-weight: 600;">chokmah.me/training</a></p>
         <section class="card" style="border-left: 4px solid #10b981; margin-bottom: 50px; background: linear-gradient(to right, var(--slate-armor), rgba(16, 185, 129, 0.05));">
             <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;">
                 <h3 style="margin-top: 0; font-size: 1.4rem; color: #10b981;">🏗️ Featured Deployment: NERC-CIP to OSCAL Toolkit</h3>
@@ -591,7 +626,7 @@
             <h3>Practice context engineering for token-efficient AI coding</h3>
             <p><strong>Context engineering</strong> means structuring retrieval and rules <em>before</em> the prompt layer so models load less noise and reuse cacheable context. Public release metrics for one Chokmah system—Claude Code Playbook v4.4.0—are stated on the research landing (Headroom 47–92% dynamic context reduction; path-scoped rules 41% overhead reduction; DOI 10.5281/zenodo.20481459) as author-reported release figures, not client guarantees.</p>
             <h3>Deliver professional training and curriculum design</h3>
-            <p>Chokmah designs private workshops and custom curricula covering secure SDLC, AI coding assistants, threat modeling, and compliance-oriented automation. Flagship public product pages: <a href="/ai-ciso-training/" style="color: var(--active-amber);">Secure AI-Assisted Spec &amp; Automation Training</a> (June 2026 v3) and <a href="/cloud-security-intro/" style="color: var(--active-amber);">Cloud Security Intro</a>.</p>
+            <p>Chokmah designs private workshops and custom curricula covering secure SDLC, AI coding assistants, threat modeling, and compliance-oriented automation. Catalog: <a href="/training/" style="color: var(--active-amber);">Training</a> — <a href="/ai-ciso-training/" style="color: var(--active-amber);">Secure AI-Assisted Spec &amp; Automation Training</a> (June 2026 v3), <a href="/cloud-security-intro/" style="color: var(--active-amber);">Cloud Security Intro</a>, and <a href="/training/secure-sdlc-ai/" style="color: var(--active-amber);">Secure SDLC &amp; AI-Assisted Engineering</a>.</p>
             <h3>Provide federal court expert witness services</h3>
             <p>Subject-matter expertise covers computer security, digital forensics, programming/code analysis, risk profiling, and log interpretation. Engagement types include testimony, independent reports, and court-preparatory consulting under the docket qualification noted above.</p>
         </section>

@@ -10,7 +10,10 @@ This is a GitHub Pages static website for Chokmah LLC (chokmah.me), a profession
 
 ### Core Pages Structure
 - **index.html** - Main landing page featuring services, company background, and contact information
-- **ai-ciso-training/index.html** - Dedicated training curriculum page with structured JSON-LD schema markup
+- **training/index.html** - Training catalog hub with Google Course-list `ItemList` (≥3 courses)
+- **training/secure-sdlc-ai/index.html** - Secure SDLC & AI-Assisted Engineering (private tailored curriculum)
+- **ai-ciso-training/index.html** - Secure AI-Assisted Spec & Automation Training (Course JSON-LD; no Product without public price)
+- **cloud-security-intro/index.html** - Cloud Security Intro course page
 - **theme.html** - Brand color palette reference and Tailwind config documentation
 
 ### Key Design Elements
