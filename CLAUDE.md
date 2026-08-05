@@ -28,7 +28,7 @@ This is a GitHub Pages static website for Chokmah LLC (chokmah.me), a profession
 
 ### SEO & Schema Markup
 Both main pages include comprehensive structured data:
-- **Schema.org JSON-LD** for Organization, Person, ProfessionalService, Course, Product
+- **Schema.org JSON-LD** for Organization, Person, ProfessionalService, Course (training is Course-only; no Product without a public price)
 - **Open Graph** meta tags with social card images
 - **Twitter Card** meta tags with large image preview
 - Canonical URLs and multiple favicon formats (ICO, PNG, Apple Touch Icon)
