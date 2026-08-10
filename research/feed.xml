@@ -4,8 +4,15 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-07-30T14:58:43Z</updated>
+  <updated>2026-08-09T00:00:00Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
+  <entry>
+    <title>Below the Masking Threshold: Observable Command-and-Control Discrimination in a Residual IRGC Missile Force</title>
+    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-c-21865794/"/>
+    <id>https://doi.org/10.5281/zenodo.21865793</id>
+    <updated>2026-08-09T00:00:00Z</updated>
+    <summary>Phase II companion to the v4 launcher-attrition paper. Under residual force and sparse provocation, attribution correlation separates active from pre-programmed C2 while launch rate stays null; under dense July hostilities the proxy hits H_ceiling. Version of record concept DOI 10.5281/zenodo.21865793; v0.2 pin 10.5281/zenodo.21865794; OSF 10.17605/OSF.IO/C8RGZ.</summary>
+  </entry>
   <entry>
     <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
     <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21705469/"/>
