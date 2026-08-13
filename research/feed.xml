@@ -4,21 +4,35 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-08-09T00:00:00Z</updated>
+  <updated>2026-08-13T01:13:05Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
+    <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
+    <link href="https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-21910875/"/>
+    <id>https://doi.org/10.5281/zenodo.21910875</id>
+    <updated>2026-08-12T00:00:00Z</updated>
+    <summary>Legal systems governed by rule of law are, structurally, rule systems. Like any rule system, they contain gaps between specification and intent, concentrated in the deliberately under-specified provisions that legal philosophers call &quot;open texture.&quot; Those gaps have always been exploitable, but ex...</summary>
+  </entry>
+  <entry>
     <title>Below the Masking Threshold: Observable Command-and-Control Discrimination in a Residual IRGC Missile Force</title>
-    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-c-21865794/"/>
-    <id>https://doi.org/10.5281/zenodo.21865793</id>
-    <updated>2026-08-09T00:00:00Z</updated>
-    <summary>Phase II companion to the v4 launcher-attrition paper. Under residual force and sparse provocation, attribution correlation separates active from pre-programmed C2 while launch rate stays null; under dense July hostilities the proxy hits H_ceiling. Version of record concept DOI 10.5281/zenodo.21865793; v0.2 pin 10.5281/zenodo.21865794; OSF 10.17605/OSF.IO/C8RGZ.</summary>
+    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21865794/"/>
+    <id>https://doi.org/10.5281/zenodo.21865794</id>
+    <updated>2026-08-10T00:00:00Z</updated>
+    <summary>Artifact claim. Phase II companion preprint (v0.2): in a residual IRGC missile force after high week-one attrition, an open-source attribution-correlation proxy can discriminate active from pre-programmed C2 under sparse provocation; dense provocation saturates that proxy (H_ceiling). Context. Th...</summary>
   </entry>
   <entry>
     <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
-    <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21705469/"/>
-    <id>https://doi.org/10.5281/zenodo.21705468</id>
-    <updated>2026-07-30T00:00:00Z</updated>
-    <summary>The Mobius Bridge of Nasr and Carlini removes one guessed key byte from meet-in-the-middle attacks on 7-round AES by constructing a fingerprint invariant under the group action that survives the S-box. Their derivation is written for the AES S-box (field inversion followed by a GF(2)-affine map)....</summary>
+    <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/"/>
+    <id>https://doi.org/10.5281/zenodo.21765164</id>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <summary>Version 1.0.5: Lean 4 formalization of Theorem 3.1 (class bridge), Corollary 3.2 (class fingerprint invariance), and Section 5 bad-index set; Appendix A.2 correspondence corrected. Exhaustive GF(2^8) checks remain in Python. The Mobius Bridge of Nasr and Carlini removes one guessed key byte from...</summary>
+  </entry>
+  <entry>
+    <title>aria-moebius: Lean formalization and class-bridge verifier</title>
+    <link href="https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-21765202/"/>
+    <id>https://doi.org/10.5281/zenodo.21765202</id>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <summary>v1.0.3 — full class bridge formalization Lean spine for the published note (paper v1.0.5): Theorem 3.1: class_bridge / class_bridge&#39; / class_bridge_with_key Corollary 3.2: J_class_invariant (via J_affine_invariant) &#167;5 bad indices: L1_inv_zero, IsBadIndex, bad_index_set Pairwise β-cancel: class_br...</summary>
   </entry>
   <entry>
     <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension</title>
@@ -119,18 +133,18 @@
     <summary>The core thesis is simple but devastating: there is no single scientific method to verify whether an autonomous AI agent actually possesses a claimed capability. The right verification strategy depends entirely on the agent&#39;s computational model and strategic posture (honest vs. potentially decep...</summary>
   </entry>
   <entry>
-    <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
-    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
-    <id>https://doi.org/10.5281/zenodo.20089104</id>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <summary>A preprint unifying four documented cases of multi-agent coalition behavior (quantum-game entanglement, evolutionary covert-tag recognition, engineered handshake collusion, and emergent peer-preservation in frontier language models) under a single formal structure: the binding operator $B = (S, I...</summary>
-  </entry>
-  <entry>
     <title>Recognition Channel Dynamics in the Shibboleth Lattice: A Simulation Study</title>
     <link href="https://chokmah.me/research/recognition-channel-dynamics-in-the-shibboleth-lattice-a-sim-20090834/"/>
     <id>https://doi.org/10.5281/zenodo.20090834</id>
     <updated>2026-05-08T00:00:00Z</updated>
     <summary>Companion to The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination (Bilar 2026, doi:10.5281/zenodo.19652725). The parent paper proposes a binding operator B = (S, I, W, rho, chi) unifying coalition formation across five substrates, with recognition-channel pro...</summary>
+  </entry>
+  <entry>
+    <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
+    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
+    <id>https://doi.org/10.5281/zenodo.20089104</id>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <summary>A preprint unifying four documented cases of multi-agent coalition behavior (quantum-game entanglement, evolutionary covert-tag recognition, engineered handshake collusion, and emergent peer-preservation in frontier language models) under a single formal structure: the binding operator $B = (S, I...</summary>
   </entry>
   <entry>
     <title>fast16 as a Second-Order Subversion Attack</title>
