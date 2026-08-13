@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://chokmah.me/</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://chokmah.me/cloud-security-intro/</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://chokmah.me/ai-ciso-training/</loc><lastmod>2026-08-12</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://chokmah.me/research/</loc><lastmod>2026-08-12</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-21910875/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21865794/</loc><lastmod>2026-08-10</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/</loc><lastmod>2026-08-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://chokmah.me/cloud-security-intro/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/ai-ciso-training/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/research/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21925910/</loc><lastmod>2026-08-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-21918637/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21925896/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-21924075/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-21765202/</loc><lastmod>2026-08-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21443990/</loc><lastmod>2026-07-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/</loc><lastmod>2026-08-03</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/eml-expression-trees-symbolic-regression-basin-selection-and-20748178/</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/compressed-by-discovery-snapped-symbolic-regression-primitiv-20745607/</loc><lastmod>2026-06-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>

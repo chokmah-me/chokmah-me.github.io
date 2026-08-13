@@ -4,28 +4,35 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-08-13T20:00:00Z</updated>
+  <updated>2026-08-13T23:06:33Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
-    <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
-    <link href="https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-21910875/"/>
-    <id>https://doi.org/10.5281/zenodo.21910874</id>
+    <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension</title>
+    <link href="https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21925910/"/>
+    <id>https://doi.org/10.5281/zenodo.21925910</id>
+    <updated>2026-08-14T00:00:00Z</updated>
+    <summary>Paper v0.3: https://doi.org/10.5281/zenodo.21925896 (concept 10.5281/zenodo.21865793) Software 0.6.1: https://doi.org/10.5281/zenodo.21925901 (concept 10.5281/zenodo.19210120) Table I H1/H2/H3 D_win levels now match data_phase2/phase2_discrimination.csv (200-seed). Do not merge paper PDF and soft...</summary>
+  </entry>
+  <entry>
+    <title>patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap</title>
+    <link href="https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-21918637/"/>
+    <id>https://doi.org/10.5281/zenodo.21918637</id>
     <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Legal systems governed by rule of law are, structurally, rule systems. Like any rule system, they contain gaps between specification and intent, concentrated in the deliberately under-specified provisions that legal philosophers call &quot;open texture.&quot; Those gaps have always been exploitable, but ex...</summary>
+    <summary>What this is. A Python, stdlib-only synthetic companion that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph. The patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements. Paper this illustra...</summary>
   </entry>
   <entry>
     <title>Below the Masking Threshold: Observable Command-and-Control Discrimination in a Residual IRGC Missile Force</title>
-    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21865794/"/>
-    <id>https://doi.org/10.5281/zenodo.21865794</id>
-    <updated>2026-08-10T00:00:00Z</updated>
+    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21925896/"/>
+    <id>https://doi.org/10.5281/zenodo.21925896</id>
+    <updated>2026-08-13T00:00:00Z</updated>
     <summary>Artifact claim. Phase II companion preprint (v0.2): in a residual IRGC missile force after high week-one attrition, an open-source attribution-correlation proxy can discriminate active from pre-programmed C2 under sparse provocation; dense provocation saturates that proxy (H_ceiling). Context. Th...</summary>
   </entry>
   <entry>
-    <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
-    <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/"/>
-    <id>https://doi.org/10.5281/zenodo.21765164</id>
-    <updated>2026-08-03T00:00:00Z</updated>
-    <summary>Version 1.0.5: Lean 4 formalization of Theorem 3.1 (class bridge), Corollary 3.2 (class fingerprint invariance), and Section 5 bad-index set; Appendix A.2 correspondence corrected. Exhaustive GF(2^8) checks remain in Python. The Mobius Bridge of Nasr and Carlini removes one guessed key byte from...</summary>
+    <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
+    <link href="https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-21924075/"/>
+    <id>https://doi.org/10.5281/zenodo.21924075</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>Legal systems governed by rule of law are, structurally, rule systems. Like any rule system, they contain gaps between specification and intent, concentrated in the deliberately under-specified provisions that legal philosophers call &quot;open texture.&quot; Those gaps have always been exploitable, but ex...</summary>
   </entry>
   <entry>
     <title>aria-moebius: Lean formalization and class-bridge verifier</title>
@@ -35,11 +42,11 @@
     <summary>v1.0.3 — full class bridge formalization Lean spine for the published note (paper v1.0.5): Theorem 3.1: class_bridge / class_bridge&#39; / class_bridge_with_key Corollary 3.2: J_class_invariant (via J_affine_invariant) &#167;5 bad indices: L1_inv_zero, IsBadIndex, bad_index_set Pairwise β-cancel: class_br...</summary>
   </entry>
   <entry>
-    <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension</title>
-    <link href="https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21443990/"/>
-    <id>https://doi.org/10.5281/zenodo.21443990</id>
-    <updated>2026-07-19T00:00:00Z</updated>
-    <summary>Locked before any July 7+ data coded. See paper/leg3_preregistration_v0_2.md. Full Changelog: https://github.com/chokmah-me/milcom-2026-iran-attrition/compare/v4.0...leg3-prereg-v0.2</summary>
+    <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
+    <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/"/>
+    <id>https://doi.org/10.5281/zenodo.21765164</id>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <summary>Version 1.0.5: Lean 4 formalization of Theorem 3.1 (class bridge), Corollary 3.2 (class fingerprint invariance), and Section 5 bad-index set; Appendix A.2 correspondence corrected. Exhaustive GF(2^8) checks remain in Python. The Mobius Bridge of Nasr and Carlini removes one guessed key byte from...</summary>
   </entry>
   <entry>
     <title>chokmah-me/hashline: hashline 0.4.1</title>
