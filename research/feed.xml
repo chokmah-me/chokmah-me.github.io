@@ -4,7 +4,7 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-08-13T23:06:33Z</updated>
+  <updated>2026-08-13T23:23:15Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
     <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension</title>
@@ -22,10 +22,10 @@
   </entry>
   <entry>
     <title>Below the Masking Threshold: Observable Command-and-Control Discrimination in a Residual IRGC Missile Force</title>
-    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21925896/"/>
-    <id>https://doi.org/10.5281/zenodo.21925896</id>
+    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21926014/"/>
+    <id>https://doi.org/10.5281/zenodo.21926014</id>
     <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Artifact claim. Phase II companion preprint (v0.2): in a residual IRGC missile force after high week-one attrition, an open-source attribution-correlation proxy can discriminate active from pre-programmed C2 under sparse provocation; dense provocation saturates that proxy (H_ceiling). Context. Th...</summary>
+    <summary>1. Artifact claim. This deposit is the Phase II companion preprint (v0.3 PDF): an empirical-and-simulation argument that, in a residual IRGC missile force after high week-one attrition, an open-source attribution-correlation proxy can discriminate active from pre-programmed C2 under sparse provoc...</summary>
   </entry>
   <entry>
     <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
