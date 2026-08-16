@@ -4,8 +4,15 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-08-13T23:23:15Z</updated>
+  <updated>2026-08-16T22:00:00Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
+  <entry>
+    <title>Balance of Power 2026</title>
+    <link href="https://chokmah.me/research/balance-of-power-2026-21970518/"/>
+    <id>https://doi.org/10.5281/zenodo.21970518</id>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <summary>A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Models great-power competition across thirteen domains with eight major actors using stylized, rule-based AI and cascade dynamics.</summary>
+  </entry>
   <entry>
     <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension</title>
     <link href="https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21925910/"/>

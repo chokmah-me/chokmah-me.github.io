@@ -35,7 +35,7 @@ Active publication pipeline across seven threads. **Full catalog: [chokmah.me/re
 | Autonomous Governance | On the Necessary Void at the Center of Autonomous Governance | [10.5281/zenodo.20190801](https://doi.org/10.5281/zenodo.20190801) |
 | Autonomous Governance | The Governance Patch-Gap | [10.5281/zenodo.21910874](https://doi.org/10.5281/zenodo.21910874) |
 | Software Architecture | Fan-In Distributions in Human vs AI Python: A Constructal Law Analysis | [10.5281/zenodo.20313669](https://doi.org/10.5281/zenodo.20313669) |
-| Crisis Simulation | Balance of Power 2026 (v2.0.6) | [10.5281/zenodo.20395851](https://doi.org/10.5281/zenodo.20395851) |
+| Crisis Simulation | Balance of Power 2026 (v2.13.2) | [10.5281/zenodo.21970518](https://doi.org/10.5281/zenodo.21970518) |
 | Agent Verification | Three Regimes of Capability Attestation for Autonomous Agents | [10.5281/zenodo.20114610](https://doi.org/10.5281/zenodo.20114610) |
 | Security / TCS | The Computability Filter | [10.5281/zenodo.19818321](https://doi.org/10.5281/zenodo.19818321) |
 | Security / Info Theory | The Shibboleth Lattice | [10.5281/zenodo.19652725](https://doi.org/10.5281/zenodo.19652725) |
