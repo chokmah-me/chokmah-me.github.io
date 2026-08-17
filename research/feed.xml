@@ -25,7 +25,7 @@
     <link href="https://chokmah.me/research/balance-of-power-2026-21970518/"/>
     <id>https://doi.org/10.5281/zenodo.21970518</id>
     <updated>2026-08-16T00:00:00Z</updated>
-    <summary>A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Models great-power competition across thirteen domains with eight major actors using stylized, rule-based AI and cascade dynamics.</summary>
+    <summary>A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Eight scenarios across thirteen domains and eight actors; browser wargame and headless Oracle API for batch runs and counterfactuals. Stylized, rule-based AI with cascade dynamics.</summary>
   </entry>
   <entry>
     <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension</title>
