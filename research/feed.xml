@@ -4,14 +4,14 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-08-17T01:02:51Z</updated>
+  <updated>2026-08-17T01:48:04Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
     <title>Anduril LatticeOS: Autonomous Operations Model: Schema, Counter-Narrative, and Implementation</title>
-    <link href="https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-21971428/"/>
-    <id>https://doi.org/10.5281/zenodo.21971428</id>
+    <link href="https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-21971668/"/>
+    <id>https://doi.org/10.5281/zenodo.21971668</id>
     <updated>2026-08-16T00:00:00Z</updated>
-    <summary>August 2026 revision of the LatticeOS Autonomous Operations Model note: SDK pin moved to v4.24.0; Schema Registry, CancelTask, StreamTasks, and agent-authored SDK skills recorded; contract-cadence claim made conditional.</summary>
+    <summary>Cite-hygiene revision (v4.1) of the LatticeOS AOM note: JIATF-401 order pinned at USD 87 million; Maven PoR and Golden Dome consortium cites split onto the articles that actually say them.</summary>
   </entry>
   <entry>
     <title>Golden Dome Latency Governance: Autonomous Operations Model Extended to Boost-Phase Intercept Timelines</title>
