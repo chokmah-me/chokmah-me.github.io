@@ -4,8 +4,15 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-08-17T00:22:01Z</updated>
+  <updated>2026-08-17T01:02:51Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
+  <entry>
+    <title>Anduril LatticeOS: Autonomous Operations Model: Schema, Counter-Narrative, and Implementation</title>
+    <link href="https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-21971428/"/>
+    <id>https://doi.org/10.5281/zenodo.21971428</id>
+    <updated>2026-08-16T00:00:00Z</updated>
+    <summary>August 2026 revision of the LatticeOS Autonomous Operations Model note: SDK pin moved to v4.24.0; Schema Registry, CancelTask, StreamTasks, and agent-authored SDK skills recorded; contract-cadence claim made conditional.</summary>
+  </entry>
   <entry>
     <title>Golden Dome Latency Governance: Autonomous Operations Model Extended to Boost-Phase Intercept Timelines</title>
     <link href="https://chokmah.me/research/golden-dome-latency-governance-autonomous-operations-model-e-21971208/"/>
@@ -28,6 +35,13 @@
     <summary>1. Artifact claim. Companion code and data for the v4 launcher-attrition paper and the Phase II residual-force C2 observability extension (milcom-2026-iran-attrition 0.6.1). 2. Problem / scientific context. Implements the agent-based model, Phase II residual/provocation extension, claim gates, an...</summary>
   </entry>
   <entry>
+    <title>Below the Masking Threshold: Observable Command-and-Control Discrimination in a Residual IRGC Missile Force</title>
+    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21926014/"/>
+    <id>https://doi.org/10.5281/zenodo.21926014</id>
+    <updated>2026-08-13T00:00:00Z</updated>
+    <summary>1. Artifact claim. This deposit is the Phase II companion preprint (v0.3 PDF): an empirical-and-simulation argument that, in a residual IRGC missile force after high week-one attrition, an open-source attribution-correlation proxy can discriminate active from pre-programmed C2 under sparse provoc...</summary>
+  </entry>
+  <entry>
     <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
     <link href="https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-21924075/"/>
     <id>https://doi.org/10.5281/zenodo.21924075</id>
@@ -40,13 +54,6 @@
     <id>https://doi.org/10.5281/zenodo.21918637</id>
     <updated>2026-08-13T00:00:00Z</updated>
     <summary>What this is. A Python, stdlib-only synthetic companion that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph. The patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements. Paper this illustra...</summary>
-  </entry>
-  <entry>
-    <title>Below the Masking Threshold: Observable Command-and-Control Discrimination in a Residual IRGC Missile Force</title>
-    <link href="https://chokmah.me/research/below-the-masking-threshold-observable-command-and-control-d-21926014/"/>
-    <id>https://doi.org/10.5281/zenodo.21926014</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>1. Artifact claim. This deposit is the Phase II companion preprint (v0.3 PDF): an empirical-and-simulation argument that, in a residual IRGC missile force after high week-one attrition, an open-source attribution-correlation proxy can discriminate active from pre-programmed C2 under sparse provoc...</summary>
   </entry>
   <entry>
     <title>aria-moebius: Lean formalization and class-bridge verifier</title>
@@ -84,18 +91,18 @@
     <summary>Code, data, and technical notes for EML (exp-minus-ln) expression tree research. Includes symbolic regression experiments (snapping_v2_final.csv), basin-selection warm-start studies, and Track C hardware realization: fixed-point golden models, iCE40 RTL emitters, quantized-MLP and direct-ROM base...</summary>
   </entry>
   <entry>
-    <title>Valid and False Snapping in EML Expression Trees: The Basin Selection Problem</title>
-    <link href="https://chokmah.me/research/valid-and-false-snapping-in-eml-expression-trees-the-basin-s-20671038/"/>
-    <id>https://doi.org/10.5281/zenodo.20671038</id>
-    <updated>2026-06-12T00:00:00Z</updated>
-    <summary>Training EML expression trees (Odrzywolek 2026) with gradient descent and then snapping soft input selectors to discrete choices should recover exact symbolic forms for elementary functions. Prior work reported commitment-based success criteria; we add a symbolic-correctness criterion and charact...</summary>
-  </entry>
-  <entry>
     <title>Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth</title>
     <link href="https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/"/>
     <id>https://doi.org/10.5281/zenodo.20671272</id>
     <updated>2026-06-12T00:00:00Z</updated>
     <summary>Technical note + data release accompanying Valid and False Snapping in EML Expression Trees: The Basin Selection Problem (DOI: 10.5281/zenodo.19790799; v2.3 at time of writing). The companion paper showed that three-phase temperature annealing (Adam on MAE, entropy-penalty ramp, temperature annea...</summary>
+  </entry>
+  <entry>
+    <title>Valid and False Snapping in EML Expression Trees: The Basin Selection Problem</title>
+    <link href="https://chokmah.me/research/valid-and-false-snapping-in-eml-expression-trees-the-basin-s-20671038/"/>
+    <id>https://doi.org/10.5281/zenodo.20671038</id>
+    <updated>2026-06-12T00:00:00Z</updated>
+    <summary>Training EML expression trees (Odrzywolek 2026) with gradient descent and then snapping soft input selectors to discrete choices should recover exact symbolic forms for elementary functions. Prior work reported commitment-based success criteria; we add a symbolic-correctness criterion and charact...</summary>
   </entry>
   <entry>
     <title>Claude Code Playbook v4.4.0</title>
@@ -147,18 +154,18 @@
     <summary>The core thesis is simple but devastating: there is no single scientific method to verify whether an autonomous AI agent actually possesses a claimed capability. The right verification strategy depends entirely on the agent&#39;s computational model and strategic posture (honest vs. potentially decep...</summary>
   </entry>
   <entry>
-    <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
-    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
-    <id>https://doi.org/10.5281/zenodo.20089104</id>
-    <updated>2026-05-08T00:00:00Z</updated>
-    <summary>A preprint unifying four documented cases of multi-agent coalition behavior (quantum-game entanglement, evolutionary covert-tag recognition, engineered handshake collusion, and emergent peer-preservation in frontier language models) under a single formal structure: the binding operator $B = (S, I...</summary>
-  </entry>
-  <entry>
     <title>Recognition Channel Dynamics in the Shibboleth Lattice: A Simulation Study</title>
     <link href="https://chokmah.me/research/recognition-channel-dynamics-in-the-shibboleth-lattice-a-sim-20090834/"/>
     <id>https://doi.org/10.5281/zenodo.20090834</id>
     <updated>2026-05-08T00:00:00Z</updated>
     <summary>Companion to The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination (Bilar 2026, doi:10.5281/zenodo.19652725). The parent paper proposes a binding operator B = (S, I, W, rho, chi) unifying coalition formation across five substrates, with recognition-channel pro...</summary>
+  </entry>
+  <entry>
+    <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
+    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
+    <id>https://doi.org/10.5281/zenodo.20089104</id>
+    <updated>2026-05-08T00:00:00Z</updated>
+    <summary>A preprint unifying four documented cases of multi-agent coalition behavior (quantum-game entanglement, evolutionary covert-tag recognition, engineered handshake collusion, and emergent peer-preservation in frontier language models) under a single formal structure: the binding operator $B = (S, I...</summary>
   </entry>
   <entry>
     <title>fast16 as a Second-Order Subversion Attack</title>
@@ -215,13 +222,6 @@
     <id>https://doi.org/10.5281/zenodo.19368609</id>
     <updated>2026-04-01T00:00:00Z</updated>
     <summary>Initial release accompanying the position paper &quot;Golden Dome Latency Governance: Autonomous Operations Model Extended to Boost-Phase Intercept Timelines&quot; (Bilar 2026, DOI: 10.5281/zenodo.19368682 What&#39;s included simulate.py &amp;mdash; unified falsification suite (v5.0), five scenarios A-E requiremen...</summary>
-  </entry>
-  <entry>
-    <title>Anduril LatticeOS: Autonomous Operations Model: Schema, Counter-Narrative, and Implementation</title>
-    <link href="https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-19266807/"/>
-    <id>https://doi.org/10.5281/zenodo.19266807</id>
-    <updated>2026-03-27T00:00:00Z</updated>
-    <summary>LatticeOS is not an AI operating system. It is a data ontology enforcement layer with a tasking bus. This technical position note maps LatticeOS (SDK v4.4.0) onto a 4-layer Autonomous Operations Model (AOM) skeleton (cognitive, coordination, control, and governance) and identifies the gap between...</summary>
   </entry>
   <entry>
     <title>Dragon&#39;s Teeth: The PLA&#39;s UCAV Arsenal and Taiwan Invasion Strategy</title>
