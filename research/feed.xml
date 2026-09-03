@@ -7,6 +7,20 @@
   <updated>2026-09-03T12:00:00Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
+    <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
+    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
+    <id>https://doi.org/10.5281/zenodo.20089104</id>
+    <updated>2026-09-03T00:00:00Z</updated>
+    <summary>v3.2: binding operator B with W-capture, W-degradation, role-identity I, and substrate non-separability. Blinded witness-set substitution remains untested. Concept DOI 10.5281/zenodo.19595987; this version 10.5281/zenodo.22279984.</summary>
+  </entry>
+  <entry>
+    <title>Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks</title>
+    <link href="https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-19632278/"/>
+    <id>https://doi.org/10.5281/zenodo.19632277</id>
+    <updated>2026-08-18T00:00:00Z</updated>
+    <summary>v2 preprint. Circular leverage in bank-NBFI SRT networks; lambda* approximately 0.95; Osberghaus and Schepens 2026; five of six cockpit metrics in stress as of Q2/Q3 2026.</summary>
+  </entry>
+  <entry>
     <title>Anduril LatticeOS: Autonomous Operations Model: Schema, Counter-Narrative, and Implementation</title>
     <link href="https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-21971668/"/>
     <id>https://doi.org/10.5281/zenodo.21971668</id>
@@ -161,13 +175,6 @@
     <summary>Companion to The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination (Bilar 2026, concept doi:10.5281/zenodo.19595987). The parent paper proposes a binding operator B unifying coalition formation across five substrates, with recognition-channel pro...</summary>
   </entry>
   <entry>
-    <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
-    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
-    <id>https://doi.org/10.5281/zenodo.20089104</id>
-    <updated>2026-09-03T00:00:00Z</updated>
-    <summary>v3.2: binding operator B with W-capture, W-degradation, role-identity I, and substrate non-separability. Blinded witness-set substitution remains untested. Concept DOI 10.5281/zenodo.19595987; this version 10.5281/zenodo.22279984.</summary>
-  </entry>
-  <entry>
     <title>fast16 as a Second-Order Subversion Attack</title>
     <link href="https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/"/>
     <id>https://doi.org/10.5281/zenodo.20010246</id>
@@ -201,13 +208,6 @@
     <id>https://doi.org/10.5281/zenodo.19651937</id>
     <updated>2026-04-19T00:00:00Z</updated>
     <summary>Circular leverage in bank-NBFI SRT networks: simulation code</summary>
-  </entry>
-  <entry>
-    <title>Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks</title>
-    <link href="https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-19632278/"/>
-    <id>https://doi.org/10.5281/zenodo.19632277</id>
-    <updated>2026-08-18T00:00:00Z</updated>
-    <summary>v2 preprint. Circular leverage in bank-NBFI SRT networks; lambda* approximately 0.95; Osberghaus and Schepens 2026; five of six cockpit metrics in stress as of Q2/Q3 2026.</summary>
   </entry>
   <entry>
     <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation in the 2026 Iran War</title>
