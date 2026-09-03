@@ -38,7 +38,7 @@ Active publication pipeline across seven threads. **Full catalog: [chokmah.me/re
 | Crisis Simulation | Balance of Power 2026 (v2.13.2) | [10.5281/zenodo.21970518](https://doi.org/10.5281/zenodo.21970518) |
 | Agent Verification | Three Regimes of Capability Attestation for Autonomous Agents | [10.5281/zenodo.20114610](https://doi.org/10.5281/zenodo.20114610) |
 | Security / TCS | The Computability Filter | [10.5281/zenodo.19818321](https://doi.org/10.5281/zenodo.19818321) |
-| Security / Info Theory | The Shibboleth Lattice | [10.5281/zenodo.19652725](https://doi.org/10.5281/zenodo.19652725) |
+| Security / Info Theory | The Shibboleth Lattice | [10.5281/zenodo.19595987](https://doi.org/10.5281/zenodo.19595987) |
 | Cryptography / formal methods | Mobius Bridges for the Invert-and-Affine S-box Class (ARIA) | [10.5281/zenodo.21705468](https://doi.org/10.5281/zenodo.21705468) |
 
 *Threads: EML/FPGA · Compiler-as-NUM · Autonomous C2 · Financial Networks · Security/InfoSec · Agent Verification · Software Architecture · Cryptography*
