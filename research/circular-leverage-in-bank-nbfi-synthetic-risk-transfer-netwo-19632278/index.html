@@ -10,9 +10,9 @@
     <meta property="og:url" content="https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-19632278/">
     <meta property="og:title" content="Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks">
     <meta property="og:description" content="Synthetic Risk Transfers (SRTs) let banks shed credit risk to non-bank financial intermediaries while keeping the underlying loans on their balance sheets. A structural vulnerability arises when the same banks extend credit lines to the funds that buy their SRT protection, creating a circular lev...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:image" content="https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png">
     <meta name="citation_title" content="Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-08-18">
@@ -76,7 +76,8 @@
     "Basel III",
     "Pillar 3"
   ],
-  "license": "https://creativecommons.org/licenses/by/4.0/"
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "image": "https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png"
 }
     </script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -118,6 +119,10 @@
         .callout { background-color: var(--slate-armor); border-left: 3px solid var(--signal-amber);
                    border-radius: 6px; padding: 18px 22px; margin: 26px 0; font-size: 1.1rem; }
         .callout a { font-weight: 600; }
+        .poster { margin: 28px 0 8px; text-align: center; }
+        .poster img { max-width: min(840px, 100%); height: auto; border-radius: 8px;
+                      border: 1px solid rgba(255,255,255,0.08); background: #fff; }
+        .poster .cap { color: var(--cadet-grey); font-size: 1rem; margin-top: 12px; }
         .kw { color: var(--cadet-grey); font-size: 1.05rem; }
         .card { background-color: var(--slate-armor); border-radius: 8px; padding: 24px 26px;
                 margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
@@ -144,6 +149,13 @@
       <strong>This version (v2):</strong> <a href="https://doi.org/10.5281/zenodo.21995468">https://doi.org/10.5281/zenodo.21995468</a><br>
       <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/21995468/files/dyb-2026k-circular-nw-risk-v2.pdf?download=1">open</a><br>
       <strong>v1 pin:</strong> <a href="https://doi.org/10.5281/zenodo.19632278">10.5281/zenodo.19632278</a>
+    </div>
+    <div class="poster">
+      <a href="https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png">
+        <img src="https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png" width="1680" height="1140"
+             alt="Figure 1: mean cascade size versus self-funding fraction lambda, with grey two-stage transition window between lambda onset and lambda star">
+      </a>
+      <p class="cap">Figure 1. Two-stage cascade transition as self-funding fraction &lambda; rises (CC BY 4.0). <a href="https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
     <p>Synthetic Risk Transfers (SRTs) let banks shed credit risk to non-bank financial intermediaries while keeping the underlying loans on their balance sheets. A structural vulnerability arises when the same banks extend credit lines to the funds that buy their SRT protection, creating a circular leverage loop in which the capital relief is partly self-funded. We formalize this loop as a single parameter, &amp;lambda;, the fraction of total SRT protection weight financed by the originating bank or its affiliates. Using a directed network model of bank-NBFI SRT relationships, we simulate contagion cascades across 1,000 random network realizations for each &amp;lambda; value. The simulation shows a two-stage phase transition: cascade size first departs meaningfully from its baseline at &amp;lambda;_onset &amp;asymp; 0.85&amp;ndash;0.95, then jumps sharply at &amp;lambda;* &amp;asymp; 0.95 where Dragon King events emerge from the loop mechanism itself. The transition location is invariant across network density, investor concentration, shock size, and tranche thickness; what density controls is cascade magnitude at high &amp;lambda;, which scales from 0.18 to 0.61 across the tested range. Because &amp;lambda; is not disclosed, we cannot place the real market on this phase diagram. Instead, we propose six publicly observable proxy metrics, computable without proprietary data, ranked by sensitivity-weighted ordinal position relative to &amp;lambda;*. As of Q2/Q3 2026, five of six proxy metrics show stress; SOFR–OIS remains green. A v2 re-run at the empirical median junior tranche thickness leaves &amp;lambda;* at 0.95. One number, &amp;lambda;, would let supervisors place banks on the phase diagram. It is already known to each originating bank and is not reported.</p>
