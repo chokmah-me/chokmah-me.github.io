@@ -7,7 +7,7 @@
     
     <title>Cyber-Physical Defense, Industrial Cybersecurity & AI Safety | Chokmah LLC</title>
     
-    <meta name="description" content="Sovereign-grade cybersecurity, AI solutions, and industrial safety oversight. Expert threat modeling, OT/ICS defense, functional safety (FuSA), and token-efficient AI coding. Expert witness services, hazard analysis (BESS), and specialized advisory for cyber-physical systems.">
+    <meta name="description" content="Sovereign-grade cybersecurity, governed AI capability, and industrial safety oversight. Expert threat modeling, OT/ICS defense, functional safety (FuSA), and token-efficient AI coding. Expert witness services, hazard analysis (BESS), and specialized advisory for cyber-physical systems.">
     
     <link rel="canonical" href="https://chokmah.me/">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -47,8 +47,8 @@
       "about": { "@id": "https://chokmah.me/#organization" },
       "mainEntity": { "@id": "https://chokmah.me/#organization" },
       "hasPart": { "@id": "https://chokmah.me/#faq" },
-      "description": "Expert industrial cybersecurity, FuSA oversight, and AI engineering services by a Federal Court SME.",
-      "dateModified": "2026-08-05",
+      "description": "Expert industrial cybersecurity, FuSA oversight, governed AI capability, and AI engineering services by a Federal Court SME.",
+      "dateModified": "2026-09-14",
       "inLanguage": "en-US"
     },
     {
@@ -76,6 +76,10 @@
       "knowsAbout": [
         "Threat Modeling (STRIDE/PASTA)",
         "Agentic AI Safety",
+        "AI Agent Identity & Governance",
+        "Memory-Safe Migration (C/C++ to Rust)",
+        "Governed AI capability",
+        "AI output attestation and claim gates",
         "Context Engineering",
         "Secure SDLC",
         "Industrial Cybersecurity (OT/ICS)",
@@ -131,6 +135,55 @@
               "name": "Regulatory Engineering",
               "description": "Automated NERC-CIP to OSCAL v1.1.2 transformation.",
               "provider": { "@id": "https://chokmah.me/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-agent-governance",
+            "url": "https://chokmah.me/#ai-services",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://chokmah.me/#service-agent-governance",
+              "name": "Agent Identity & Governance",
+              "description": "Least-privilege scoping, cryptographic identity, and full audit logging for AI agents operating inside the enterprise, aligned to IEC 61508 / NIST 800-series traceability requirements.",
+              "provider": { "@id": "https://chokmah.me/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-continuous-verification",
+            "url": "https://chokmah.me/#ai-services",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://chokmah.me/#service-continuous-verification",
+              "name": "Continuous Verification Program Design",
+              "description": "Architecture for AI-accelerated, continuously-run threat modeling and remediation loops: objective function, claim-gate/review checkpoints, and tooling selection. Design only; the client or its operator runs the program.",
+              "provider": { "@id": "https://chokmah.me/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-memory-safe-migration",
+            "url": "https://chokmah.me/#industrial",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://chokmah.me/#service-memory-safe-migration",
+              "name": "Memory-Safe Migration Advisory",
+              "description": "Spec-first risk triage and prioritization for legacy C/C++ to Rust migration in OT/ICS estates, with an artifact trail for behavioral equivalence. Advisory and triage; not a full migration build-out.",
+              "provider": { "@id": "https://chokmah.me/#organization" }
+            }
+          },
+          {
+            "@type": "Offer",
+            "@id": "https://chokmah.me/#offer-governed-capability",
+            "url": "https://chokmah.me/#governed-capability",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://chokmah.me/#service-governed-capability",
+              "name": "Governed Capability (AI custody advisory)",
+              "description": "Advisory and private workshops that install governed AI capability: authority edges, evidence boundaries, independent review, and claim gates so AI-assisted work does not launder unverified claims into deliverables. Not a compliance certification.",
+              "provider": { "@id": "https://chokmah.me/#organization" },
+              "url": "https://chokmah.me/#governed-capability"
             }
           },
           {
@@ -265,6 +318,22 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Preprints, datasets, and software are catalogued at https://chokmah.me/research/ with Zenodo DOIs, mirrored to OSF."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is governed capability?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Governed capability is Chokmah's name for AI-assisted work under custody: authority edges, evidence boundaries, independent review, and claim gates that refuse false certainty. It is advisory and workshop practice—not a compliance certificate or a claim that models never err."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you help govern AI agents operating inside our systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Chokmah treats every AI agent as an insider requiring a scoped identity, least-privilege access, and full audit logging, expressed as machine-readable, independently checkable artifacts consistent with the firm's OSCAL-based traceability practice."
           }
         }
       ]
@@ -472,8 +541,8 @@
     <div class="container">
        <header>
             <h1>Chokmah LLC – Technical Consulting, Cybersecurity & AI Solutions</h1>
-            <p class="tagline">Industrial Cybersecurity. Functional Safety. AI-Driven Engineering.</p>
-            <p class="sub-tagline">Sovereign Grade Competence: industrial cybersecurity, functional safety (FuSA), and AI engineering led by a U.S. Federal Court–recognized SME with prior DoD R&amp;D leadership and Fortune 500 fintech experience.</p>
+            <p class="tagline">Machine-Speed Defense. Sovereign-Grade Evidence.</p>
+            <p class="sub-tagline">Exploited vulnerabilities are now attacked same-day 87% of the time, up from 23% in 2020 (<a href="https://x.com/a16z/status/2096682353712320826" target="_blank" rel="noopener" style="color: var(--active-amber);">a16z</a>). Patch-cycle defense no longer closes that gap. Chokmah helps critical-infrastructure and regulated teams move to continuous, AI-accelerated verification — where every security claim ships with a computationally checkable artifact, not an adjective.</p>
             
             <div style="margin-top: 25px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
                 
@@ -496,6 +565,9 @@
             <li><span class="emoji">🛡️</span> <span><strong>Cybersecurity Architecture</strong> - STRIDE, PASTA, attack tree methodologies</span></li>
             <li><span class="emoji">🤖</span> <span><strong>AI-Enhanced Security Ops</strong> - Anomaly detection, automated triage</span></li>
             <li><span class="emoji">📊</span> <span><strong>Context Engineering</strong> - Architectural reduction of context-window waste and LLM spend</span></li>
+            <li><span class="emoji">🧾</span> <span><a href="#governed-capability" style="color: inherit; text-decoration: underline;"><strong>Governed Capability</strong></a> - AI that will not pretend unverified work is verified</span></li>
+            <li><span class="emoji">🔑</span> <span><strong>Agent Identity &amp; Governance</strong> - Least-privilege scoping, identity, and audit logging for AI agents</span></li>
+            <li><span class="emoji">⚙️</span> <span><strong>Continuous Verification Program Design</strong> - Architecture for AI-accelerated, continuously-run threat modeling</span></li>
             <li><span class="emoji">🎓</span> <span><strong>Tailored Training</strong> - Secure SDLC, effective AI 'vibe coding'</span></li>
             <li><span class="emoji">✨</span> <span><strong>Curriculum Design</strong> - Hyper-customized, domain compliant AI and security courses</span></li>
             <li><span class="emoji">⚖️</span> <span><strong>Expert Witness Services</strong> - Federal court SME testimony and technical reports</span></li>
@@ -511,7 +583,54 @@
     <li><span class="emoji">⚠️</span> <span><strong>Functional Safety (FuSA)</strong> - Hazard Analysis for High-Risk Systems</span></li>
     <li><span class="emoji">🔋</span> <span><strong>Hazard Analysis</strong> - BESS & Energy Storage Safety</span></li>
     <li><span class="emoji">📝</span> <span><strong>Regulatory Strategy</strong> - UL 1998/5500 & NERC CIP Compliance</span></li>
+    <li><span class="emoji">🦀</span> <span><strong>Memory-Safe Migration Advisory</strong> - Spec-first triage for legacy C/C++ &rarr; Rust in OT/ICS estates</span></li>
 </ul>
+
+        <section id="governed-capability" class="card" style="border-left: 4px solid var(--active-amber); margin-bottom: 40px; background: linear-gradient(to right, var(--slate-armor), rgba(245, 158, 11, 0.06));" aria-labelledby="governed-capability-heading">
+            <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1.4px; color: var(--active-amber); font-weight: 700; margin-bottom: 8px;">Wedge offer · AI custody</p>
+            <h2 id="governed-capability-heading" style="margin-top: 0; font-size: 1.55rem; color: var(--titanium-white);">Governed Capability</h2>
+            <p class="tagline" style="font-size: 1.15rem; margin-bottom: 16px; color: var(--active-amber);">We don’t sell a smarter agent. We sell an agent that won’t pretend.</p>
+            <p>Most AI products sell more capability. Chokmah sells <strong>governed capability</strong> — AI-assisted workflows with <strong>authority edges</strong>, <strong>evidence boundaries</strong>, <strong>independent review</strong>, and <strong>claim gates</strong> so consequential work does not launder uncertainty into a deliverable. If it wasn’t verified, we will not dress it up as verified.</p>
+            <p style="color: var(--cadet-grey); font-size: 0.95rem;">Awkward on purpose. Useful after the first confident mistake. This is advisory and workshop practice — <strong>not</strong> a compliance certificate, and not a claim that models never err.</p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 8px;" aria-label="Practice stamps">
+                <span style="font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(245, 158, 11, 0.45); color: var(--active-amber); background: rgba(245, 158, 11, 0.08);">UNVERIFIED</span>
+                <span style="font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(245, 158, 11, 0.45); color: var(--active-amber); background: rgba(245, 158, 11, 0.08);">BLOCKED AT INTAKE</span>
+                <span style="font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(245, 158, 11, 0.45); color: var(--active-amber); background: rgba(245, 158, 11, 0.08);">REVIEWER DISAGREES</span>
+                <span style="font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.72rem; letter-spacing: 0.04em; padding: 4px 10px; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.45); color: #10b981; background: rgba(16, 185, 129, 0.08);">CLAIM GATE PASSED</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 24px 0;">
+                <div style="background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(148, 163, 184, 0.25); border-radius: 8px; padding: 16px;">
+                    <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--cadet-grey); font-weight: 700; margin-bottom: 6px;">Authority edges</div>
+                    <p style="margin: 0; font-size: 0.92rem; color: var(--titanium-white);">Draft and prepare inside the request. Sending, buying, deleting, and compliance status stay human-gated.</p>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(148, 163, 184, 0.25); border-radius: 8px; padding: 16px;">
+                    <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--cadet-grey); font-weight: 700; margin-bottom: 6px;">Evidence boundaries</div>
+                    <p style="margin: 0; font-size: 0.92rem; color: var(--titanium-white);">Observed, inferred, and unverified stay labeled. No costume certainty for the board packet.</p>
+                </div>
+                <div style="background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(148, 163, 184, 0.25); border-radius: 8px; padding: 16px;">
+                    <div style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; color: var(--cadet-grey); font-weight: 700; margin-bottom: 6px;">Review + claim gates</div>
+                    <p style="margin: 0; font-size: 0.92rem; color: var(--titanium-white);">Independent critique and executable checks where numbers matter. Green only when the check actually ran.</p>
+                </div>
+            </div>
+
+            <p style="font-size: 0.95rem; color: var(--cadet-grey); border-left: 2px solid var(--active-amber); padding-left: 15px; margin: 20px 0 24px;">
+                <em>That block wasn’t a bug. That was the product.</em> Start with the private CISO workshop, a scoping call, or a paper-backed study — not a skill catalog tour.
+            </p>
+
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: stretch;">
+                <a href="/ai-ciso-training/" class="cta-button" style="background-color: var(--active-amber); color: var(--deep-anthracite); padding: 10px 18px; text-decoration: none; border-radius: 4px; font-weight: bold; text-align: center; flex: 1 1 200px;">View CISO Workshop &raquo;</a>
+                <a href="https://cal.com/chokmah-dyb/30min" target="_blank" rel="noopener" class="cta-button" style="background-color: transparent; color: var(--active-amber); padding: 10px 18px; text-decoration: none; border-radius: 4px; font-weight: bold; text-align: center; border: 1px solid var(--active-amber); flex: 1 1 200px;">Book a 30-min scoping call</a>
+                <a href="mailto:info@chokmah.me?subject=Inquiry%3A%20Governed%20Capability&body=Hi%20dyb%2C%0D%0A%0D%0AI%27d%20like%20to%20discuss%20governed%20capability%20for%20our%20AI-assisted%20work.%0D%0A%0D%0AContext%3A%0D%0A" style="background-color: transparent; color: var(--cadet-grey); padding: 10px 18px; text-decoration: none; border-radius: 4px; font-weight: 600; text-align: center; border: 1px solid rgba(148, 163, 184, 0.45); flex: 1 1 200px;">Email info@chokmah.me</a>
+            </div>
+        </section>
+
+        <p style="text-align: center; margin: -20px 0 40px; font-size: 0.95rem; color: var(--cadet-grey);">
+            <strong style="color: var(--active-amber);">Limited advisory capacity during the defender's window:</strong> retained through Feb 2027, ~5–8 hrs/week remaining.
+            <a href="https://cal.com/chokmah-dyb/30min" target="_blank" rel="noopener" style="color: var(--active-amber); font-weight: 600;">Book a call &rarr;</a>
+        </p>
+
        <div class="training-grid">
     
     <section class="card" style="border-left: 4px solid var(--active-amber); margin-top: 0;">
@@ -619,6 +738,12 @@
        
         <section id="ai-services">
             <h2>Core service offerings (AI, security, training, expert witness)</h2>
+            <h3>Install governed capability for AI-assisted work</h3>
+            <p>Chokmah helps teams put <a href="#governed-capability" style="color: var(--active-amber);">authority edges, evidence boundaries, independent review, and claim gates</a> around consequential AI use so unverified output is not treated as a finished deliverable. Delivery is advisory and private workshop practice—not a compliance certification.</p>
+            <h3>Give AI agents an identity, not a blank check</h3>
+            <p>An agent with standing access and no audit trail is an unmonitored insider. Chokmah extends its audit-first, OSCAL-based traceability practice to agent permissions and actions — every agent gets a scoped identity, a least-privilege boundary, and a log that survives a federal audit, aligned to your existing IEC 61508 / NIST 800-series requirements.</p>
+            <h3>Design continuous verification programs (co-scaling)</h3>
+            <p>Chokmah architects the co-scaling loop — the objective function, the claim-gate/review checkpoints, the tooling selection — so your team or operations partner can run continuous AI-assisted threat modeling and remediation without drowning in agent-generated alerts. We design the loop; your team or chosen operator runs it.</p>
             <h3>Adapt threat modeling for agentic AI workflows</h3>
             <p>Chokmah LLC applies STRIDE, PASTA, and attack-tree methods to agentic AI systems so risk is expressed as measurable exposure—not only red/green checklists. Secure software development lifecycle (SDLC) automation is part of the same engagement pattern.</p>
             <h3>Design AI-enhanced security operations</h3>
@@ -641,6 +766,9 @@
 
     <h3 style="color: var(--active-amber);">Oversee industrial AI safety and functional safety (FuSA)</h3>
     <p><strong>FuSA (functional safety)</strong> oversight covers hazard analysis and logic-level verification for AI-integrated Safety Instrumented Systems (SIS) in high-hazard zones such as battery energy storage (BESS), chemical, and power. Spec-driven checks aim to keep AI-assisted operations from overriding hardware safety constraints.</p>
+
+    <h3 style="color: var(--active-amber);">Advise on memory-safe migration (C/C++ &rarr; Rust)</h3>
+    <p>Roughly 70% of serious vulnerabilities trace to memory-unsafe code — a legacy of C/C++ written when compute was scarce, not a fact of nature. Chokmah applies its spec-driven method here: write the formal behavior spec first, then scope and prioritize which legacy OT/ICS modules justify AI-assisted Rust migration, with an artifact trail proving behavioral equivalence. This is advisory and triage — not a full migration build-out.</p>
             <div style="margin-top: 25px; padding-top: 15px; border-top: 1px dashed rgba(16, 185, 129, 0.3); text-align: right;">
         <span style="color: var(--cadet-grey); font-size: 0.85rem; margin-right: 10px;">Deep Dive:</span>
         <a href="https://dyb.mataroa.blog/blog/cue-for-safety-critical-infrastructure-validation/" target="_blank" style="color: #10b981; text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: opacity 0.2s ease;">
@@ -662,7 +790,7 @@
     <p>We practice the architectural minimization of information waste. By structuring retrieval paths <em>before</em> the prompt layer, we trade "hallucination" for maximum clarity. We "buff" messy engineering signals into high-resolution executive narratives that leadership can act upon immediately without interpretation.</p>
 
     <h3 style="color: var(--active-amber); font-size: 1.1rem; margin-top: 25px;">4. SME Force Multiplier</h3>
-    <p>We act as the "invisible architect" who makes leadership appear high-velocity and proactive. We frame technical implementation as <strong>Roadmap Protection</strong> and Cross-Functional Enablement, providing the sovereign technical foundation that allows leadership to focus on high-level stakeholder alignment and strategic execution.</p>
+    <p>We act as the "invisible architect" who makes leadership appear high-velocity and proactive. We frame technical implementation as <strong>Roadmap Protection</strong> and Cross-Functional Enablement, providing the sovereign technical foundation that allows leadership to focus on high-level stakeholder alignment and strategic execution. Cyber-physical convergence — OT/ICS, functional safety, and enterprise cyber under one practice — is not a pitch here; it is already how Chokmah operates.</p>
 
     <h3 style="color: var(--active-amber); font-size: 1.1rem; margin-top: 25px;">5. Supply Chain Autonomy ("Black-Box-Elimination")</h3>
     <p>We maintain a relentless bias toward provable transparency. We identify "binary blobs" or proprietary backdoors as disqualifying risks, pivoting to auditable, open-source solutions to eliminate vendor-managed opacity. Sovereign competence means maintaining <strong>full Software Bill of Materials (SBOM) transparency</strong>; your security posture should never rely on unverified vendor claims.</p>
@@ -710,6 +838,10 @@
             <p>As stated for Q2 2026–Q1 2027: retained through February 2027 with about 5–8 hours per week remaining.</p>
             <h3 style="font-size: 1.05rem;">Where are research publications listed?</h3>
             <p>At <a href="/research/" style="color: var(--active-amber);">https://chokmah.me/research/</a> with Zenodo DOIs (OSF mirrors).</p>
+            <h3 style="font-size: 1.05rem;">What is governed capability?</h3>
+            <p>Governed capability is Chokmah’s name for AI-assisted work under custody: authority edges, evidence boundaries, independent review, and claim gates that refuse false certainty. It is advisory and workshop practice—not a compliance certificate or a claim that models never err. See <a href="#governed-capability" style="color: var(--active-amber);">Governed Capability</a>.</p>
+            <h3 style="font-size: 1.05rem;">Do you help govern AI agents operating inside our systems?</h3>
+            <p>Yes. We treat every agent as an insider requiring identity, least-privilege access, and audit logging—expressed the same way we express NERC-CIP/OSCAL component definitions: machine-readable and independently checkable.</p>
         </section>
 
         <!-- ADVISORY AVAILABILITY & SCOPING -->
