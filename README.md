@@ -68,7 +68,7 @@ Principal Consultant, Chokmah LLC
 ---
 
 
-**Last Updated:** May 27, 2026  
+**Last Updated:** September 14, 2026  
 **Canonical Home:** [https://chokmah.me](https://chokmah.me)
 
 
