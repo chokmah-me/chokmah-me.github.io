@@ -10,11 +10,10 @@ This is a GitHub Pages static website for Chokmah LLC (chokmah.me), a profession
 
 ### Core Pages Structure
 - **index.html** - Main landing page featuring services, company background, and contact information
-- **training/index.html** - Training catalog hub with Google Course-list `ItemList` (≥3 courses)
-- **training/secure-sdlc-ai/index.html** - Secure SDLC & AI-Assisted Engineering (private tailored curriculum)
-- **ai-ciso-training/index.html** - Secure AI-Assisted Spec & Automation Training (Course JSON-LD; no Product without public price)
-- **cloud-security-intro/index.html** - Cloud Security Intro course page
 - **theme.html** - Brand color palette reference and Tailwind config documentation
+
+### Demoted pages (not linked from nav/homepage as of 2026-09-14)
+- **training/index.html**, **training/secure-sdlc-ai/index.html**, **ai-ciso-training/index.html**, **cloud-security-intro/index.html** — detailed course/curriculum pages from a training offering that was never actually delivered. Demoted to a single low-key "training available on inquiry" mention on the homepage (see `#ai-services`); removed from `sitemap.xml`, the homepage training-grid, and the JSON-LD `hasOfferCatalog`. The files themselves are left in place and still reachable by direct URL (not deleted, not redirected) so existing links don't 404, but their curriculum/edition content should not be treated as current or actively maintained. Don't re-link them from index.html or CLAUDE.md instructions below without checking with the user first — this was a deliberate business decision, not an oversight.
 
 ### Key Design Elements
 - **Color Scheme** (Sovereign Competence Theme):
@@ -68,10 +67,8 @@ Services are in `index.html` in multiple locations:
 
 When updating services, maintain consistency between both locations.
 
-#### Update Training Curriculum
-Training details are in `ai-ciso-training/index.html`. Session content uses `<details>` elements for expand/collapse functionality. Update both:
-1. HTML content in the sessions section
-2. JSON-LD schema at lines 30-96 to maintain SEO accuracy
+#### Training pages
+Demoted as of 2026-09-14 (see "Demoted pages" above) — not actively maintained. If the user asks to revive the training offering, treat it as reinstating a service, not a routine content update: re-add to sitemap.xml, homepage, and JSON-LD offer catalog deliberately.
 
 #### Color Scheme Changes
 1. Update CSS variables in both `index.html` (lines 137-144) and `theme.html` (lines 13-20)
@@ -82,7 +79,8 @@ Training details are in `ai-ciso-training/index.html`. Session content uses `<de
 
 #### Update Sitemap
 Edit `sitemap.xml` when adding/removing pages. Current structure:
-- Main pages: priority 1.0 (homepage), 0.9 (training page)
+- Main pages: priority 1.0 (homepage), 0.9 (research hub)
+- Training pages are intentionally excluded (see "Demoted pages" above)
 - Only includes direct site pages (not external GitHub repositories)
 - Update `<lastmod>` dates in YYYY-MM-DD format when making content changes
 
