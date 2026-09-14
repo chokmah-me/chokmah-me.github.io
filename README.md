@@ -52,7 +52,7 @@ Active publication pipeline across seven threads. **Full catalog: [chokmah.me/re
 Principal Consultant, Chokmah LLC  
 
 - Federal Court Recognized SME (computer security, digital forensics, programming, risk profiling)  
-- Former Lead Cybersecurity Analyst, Visa Inc. (F500 fintech)  
+- Former Senior Cybersecurity Engineer and Lead Analyst, Visa Inc. (F500 fintech)  
 - Former Director of Research, Siege Technologies (DoD 6.1-6.3 OCO R&D Lead & Principal Investigator)  
 - Former Tenure-Track Assistant Professor, University of New Orleans (NSA CAE-R designation)  
   
