@@ -85,7 +85,7 @@ Edit `sitemap.xml` when adding/removing pages. Current structure:
 - Update `<lastmod>` dates in YYYY-MM-DD format when making content changes
 
 #### robots.txt Configuration
-Currently blocks GPTBot while allowing general crawling. Modify `robots.txt` to adjust crawler permissions.
+Currently allows general crawling with no bot-specific blocks (disallows only `/404.html` and `/assets/`). Modify `robots.txt` to adjust crawler permissions.
 
 ## Important Constraints
 
