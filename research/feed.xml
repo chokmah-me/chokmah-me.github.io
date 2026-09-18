@@ -4,9 +4,23 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-09-07T12:00:00Z</updated>
+  <updated>2026-09-18T12:00:00Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
+    <entry>
+    <title>A Numerical Test of the Quadratic Estimate in arXiv:2609.04176v1</title>
+    <link href="https://chokmah.me/research/a-numerical-test-of-the-quadratic-estimate-in-arxiv-2609-22830611/"/>
+    <id>https://doi.org/10.5281/zenodo.22830611</id>
+    <updated>2026-09-18T00:00:00Z</updated>
+    <summary>v1.4.0 numerical test of Sun arXiv:2609.04176v1 Theorem 9.1 quadratic estimate. Measured B^2 coefficient ~+1.85 vs required ≤ -0.0097; refutes proof route. Concept DOI 10.5281/zenodo.22830610. Companion software 10.5281/zenodo.22830201.</summary>
+  </entry>
   <entry>
+    <title>catalan-sun-lean: Lean formalization slice of Sun's Catalan preprint</title>
+    <link href="https://chokmah.me/research/catalan-sun-lean-lean-formalization-slice-of-sun-catalan-22830202/"/>
+    <id>https://doi.org/10.5281/zenodo.22830202</id>
+    <updated>2026-09-18T00:00:00Z</updated>
+    <summary>v0.1.0 Lean 4 / Mathlib formalization of Thm 2.1, Lemma 5.4, Thm 5.1, Lemma 5.5, Cor 5.2 section 5 content. Does not claim Theorem 1.1. Concept DOI 10.5281/zenodo.22830201.</summary>
+  </entry>
+<entry>
     <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
     <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
     <id>https://doi.org/10.5281/zenodo.20089104</id>
