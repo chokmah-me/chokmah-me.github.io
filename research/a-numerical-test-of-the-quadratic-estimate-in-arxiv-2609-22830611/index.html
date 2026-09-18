@@ -10,9 +10,9 @@
     <meta property="og:url" content="https://chokmah.me/research/a-numerical-test-of-the-quadratic-estimate-in-arxiv-2609-22830611/">
     <meta property="og:title" content="A Numerical Test of the Quadratic Estimate in arXiv:2609.04176v1">
     <meta property="og:description" content="v1.4.0: Numerical evaluation of Sun arXiv:2609.04176v1 Theorem 9.1's quadratic estimate. At B=200…1200 the measured B² coefficient is ~+1.85 where the proof needs ≤ −0.0097, refuting the proof route (not the rationality claim). Companion Lean software DOI 10.5281/zenodo.22830201.">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-22830611.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-22830611.png">
     <meta name="citation_title" content="A Numerical Test of the Quadratic Estimate in arXiv:2609.04176v1">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-09-18">
@@ -46,6 +46,7 @@
     "https://doi.org/10.5281/zenodo.22830611",
     "https://doi.org/10.5281/zenodo.22830610"
   ],
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-22830611.png",
   "author": [
     {
       "@type": "Person",
@@ -113,6 +114,10 @@
         .callout { background-color: var(--slate-armor); border-left: 3px solid var(--signal-amber);
                    border-radius: 6px; padding: 18px 22px; margin: 26px 0; font-size: 1.1rem; }
         .callout a { font-weight: 600; }
+        .poster { margin: 28px 0 8px; text-align: center; }
+        .poster img { max-width: min(563px, 100%); height: auto; border-radius: 8px;
+                      border: 1px solid rgba(255,255,255,0.08); }
+        .poster .cap { color: var(--cadet-grey); font-size: 1rem; margin-top: 12px; }
         .kw { color: var(--cadet-grey); font-size: 1.05rem; }
         .card { background-color: var(--slate-armor); border-radius: 8px; padding: 24px 26px;
                 margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
@@ -141,6 +146,13 @@
       <strong>Companion software:</strong> <a href="https://doi.org/10.5281/zenodo.22830201">10.5281/zenodo.22830201</a>
       (<a href="https://chokmah.me/research/catalan-sun-lean-lean-formalization-slice-of-sun-catalan-22830202/">catalog</a>)<br>
       <strong>OSF mirror:</strong> <a href="https://osf.io/yhf8t/">osf.io/yhf8t</a>
+    </div>
+    <div class="poster">
+      <a href="https://chokmah.me/assets/sketchnote-zenodo-22830611.png">
+        <img src="https://chokmah.me/assets/sketchnote-zenodo-22830611.png" width="563" height="845"
+             alt="Sketchnote for PAPER1 v1.4.0: Sun arXiv:2609.04176v1 Theorem 9.1 chain through (3.5), (5.13), (5.24); measured B-squared coefficient about +1.85 versus required at most -0.0097; two gaps including v2(F_B) log 2 and Remark 9.3 constant 221 times too small; companion Lean software DOI">
+      </a>
+      <p class="cap">Sketchnote for v1.4.0 (CC BY 4.0). <a href="https://chokmah.me/assets/sketchnote-zenodo-22830611.png">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
     <p>Zhi-Wei Sun&#39;s preprint arXiv:2609.04176v1 claims that Catalan&#39;s constant is irrational. Its final step, Theorem 9.1, asserts that a height quantity built from a fixed scalar is bounded above by an exponential of a negative multiple of B<sup>2</sup>. Evaluating the preprint&#39;s own chain through equations (3.5), (5.13) and (5.24) at B = 200, 400, 800, 1000, 1200 yields a positive B<sup>2</sup> coefficient converging near +1.85, where the chain needs a value below −0.0097. Because (5.24) bounds the height from above, this refutes the <em>proof route</em> rather than the rationality assertion. Companion Lean 4 formalization of structural lemmas from Sections 2–5: <a href="https://doi.org/10.5281/zenodo.22830201">10.5281/zenodo.22830201</a>. Source: <a href="https://github.com/chokmah-me/catalan-sun-lean">github.com/chokmah-me/catalan-sun-lean</a>. This record is the paper PDF only.</p>
