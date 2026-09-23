@@ -10,9 +10,9 @@
     <meta property="og:url" content="https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-22908061/">
     <meta property="og:title" content="Fan-In Distributions in Human-Written vs AI-Generated Python Codebases: A Constructal Law Analysis">
     <meta property="og:description" content="Import fan-in, the number of intra-repo modules importing a file, encodes hierarchical coupling structure. By analogy with Constructal flow systems (Bejan 1997), we hypothesize that finite networks shaped by iterative optimization develop log-normal, not power-law, size distributions. We measure...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:image" content="https://chokmah.me/assets/fig3-gini-boxplot-zenodo-22908061.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/fig3-gini-boxplot-zenodo-22908061.png">
     <meta name="citation_title" content="Fan-In Distributions in Human-Written vs AI-Generated Python Codebases: A Constructal Law Analysis">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-09-23">
@@ -45,6 +45,7 @@
   "sameAs": [
     "https://doi.org/10.5281/zenodo.22908061"
   ],
+  "image": "https://chokmah.me/assets/fig3-gini-boxplot-zenodo-22908061.png",
   "author": [
     {
       "@type": "Person",
@@ -119,6 +120,10 @@
         .callout { background-color: var(--slate-armor); border-left: 3px solid var(--signal-amber);
                    border-radius: 6px; padding: 18px 22px; margin: 26px 0; font-size: 1.1rem; }
         .callout a { font-weight: 600; }
+        .poster { margin: 28px 0 8px; text-align: center; }
+        .poster img { max-width: min(750px, 100%); height: auto; border-radius: 8px;
+                      border: 1px solid rgba(255,255,255,0.08); }
+        .poster .cap { color: var(--cadet-grey); font-size: 1rem; margin-top: 12px; }
         .kw { color: var(--cadet-grey); font-size: 1.05rem; }
         .card { background-color: var(--slate-armor); border-radius: 8px; padding: 24px 26px;
                 margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
@@ -145,6 +150,13 @@
       <strong>All versions (concept):</strong> <a href="https://doi.org/10.5281/zenodo.20313668">10.5281/zenodo.20313668</a> &middot; v1.0.0 (superseded): <a href="https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-20313669/">20313669</a><br>
       <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/22908061/files/dyb-2026q-AI-Python-constructal-v1.1-REL.pdf?download=1">open</a><br>
       <strong>Code and data (v1.1.0):</strong> <a href="https://chokmah.me/research/parabolic-fractal-v1-1-0-code-and-data-for-fan-in-distributio-22908056/">10.5281/zenodo.22908056</a> &middot; <a href="https://github.com/chokmah-me/parabolic-fractal">GitHub</a><br>
+    </div>
+    <div class="poster">
+      <a href="https://chokmah.me/assets/fig3-gini-boxplot-zenodo-22908061.png">
+        <img src="https://chokmah.me/assets/fig3-gini-boxplot-zenodo-22908061.png" width="750" height="600"
+             alt="Box plot of fan-in Gini coefficient by group: the 12 fitted agentic (AI-attributed) repos have a median near 0.73 and a lower whisker at 0.46; the 15 baseline (mature human-written) repos have a median near 0.90.">
+      </a>
+      <p class="cap">Figure 3 (v1.1): Fan-in Gini coefficient by group. The agentic group (n=12 fitted repos) shows systematically lower concentration than the baseline group (n=15); Mann-Whitney p=0.0011 on the means 0.725 vs 0.882. CC BY 4.0.</p>
     </div>
     <h2>Abstract</h2>
     <p>Import fan-in, the number of intra-repo modules importing a file, encodes hierarchical coupling structure. By analogy with Constructal flow systems (Bejan 1997), we hypothesize that finite networks shaped by iterative optimization develop log-normal, not power-law, size distributions. We measure fan-in across 15 mature Python OSS projects (Cohort A) and 22 AI-attributed repositories created 2024-2026 (Cohort B, identified by AI attribution signals; skewing toward single-author, short-lived projects). In Cohort A, 14/15 show log-normal fan-in (model-selection z &gt; 1.96, Gini mean 0.882). In Cohort B, three repos show zero intra-repo imports (Gini=0.000), 7 more are too small or inaccessible to fit, and among 12 fitted repos Gini mean is 0.725 (Mann-Whitney p = 0.0011, r = -0.744); the Gini gap holds without the ten Cohort A repos carrying declared AI signals (p=0.027). We term this the agentic flattening effect. We note a partial framework confound: at least three Cohort B repos are FastAPI-style backends whose thin-router design independently reduces intra-repo coupling. An exploratory longitudinal pilot on the eight mature repos that meet its inclusion criteria detects no Gini decline after declared AI adoption (Gini rose in 6 of 8; pooled exact Wilcoxon p=0.195) over 2 to 12 post-adoption months, and the log-normal signal moves in no consistent direction. Without a matched control group, the pilot cannot separate a structural-genesis explanation (flattening confined to new projects) from a null effect on mature codebases. If confirmed in larger samples, the cross-sectional flattening implies that maintainability risk from AI coding concentrates at project inception.</p>
