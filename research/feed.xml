@@ -4,9 +4,23 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-09-18T12:00:00Z</updated>
+  <updated>2026-09-23T12:00:00Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
     <entry>
+    <title>parabolic-fractal v1.1.0: code and data for “Fan-In Distributions in Human-Written vs AI-Generated Python Codebases”</title>
+    <link href="https://chokmah.me/research/parabolic-fractal-v1-1-0-code-and-data-for-fan-in-distributio-22908056/"/>
+    <id>https://doi.org/10.5281/zenodo.22908056</id>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <summary>v1.1.0 code and data for paper v1.1 (10.5281/zenodo.22908061): corrected adoption dates, first-parent snapshots, eight-repo longitudinal pilot, snapshot-scoped AI-signal audit, and check_paper_claims.py, which recomputes every number in the paper and exits nonzero on any mismatch. Concept DOI 10.5281/zenodo.20318457. MIT.</summary>
+  </entry>
+  <entry>
+    <title>Fan-In Distributions in Human-Written vs AI-Generated Python Codebases: A Constructal Law Analysis</title>
+    <link href="https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-22908061/"/>
+    <id>https://doi.org/10.5281/zenodo.22908061</id>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <summary>v1.1 correction release: eight errata, longitudinal pilot extended to all eight eligible repos (no Gini decline; Gini rose in 6 of 8, pooled exact Wilcoxon p=0.195), post-release audit. Cross-sectional result holds (Gini 0.882 vs 0.725, p=0.0011; p=0.027 without AI-signal Cohort A repos). Concept DOI 10.5281/zenodo.20313668. Code and data 10.5281/zenodo.22908056.</summary>
+  </entry>
+  <entry>
     <title>A Numerical Test of the Quadratic Estimate in arXiv:2609.04176v1</title>
     <link href="https://chokmah.me/research/a-numerical-test-of-the-quadratic-estimate-in-arxiv-2609-22830611/"/>
     <id>https://doi.org/10.5281/zenodo.22830611</id>
@@ -145,20 +159,6 @@
     <id>https://doi.org/10.5281/zenodo.20330532</id>
     <updated>2026-05-21T00:00:00Z</updated>
     <summary>The contribution is a perspective and a research direction, not a result.We argue that the map from string-theory compactification data to cosmological thermalisation outcome is well-defined as a function but not computable as one. Drawing on the undecidability of spectral gaps (Cubitt, Perez-Gar...</summary>
-  </entry>
-  <entry>
-    <title>chokmah-me/parabolic-fractal: v1.0.0</title>
-    <link href="https://chokmah.me/research/chokmah-me-parabolic-fractal-v1-0-0-20318458/"/>
-    <id>https://doi.org/10.5281/zenodo.20318458</id>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <summary>Fan-In Constructal Analysis release v1.0.0 Dual preprint + code release. Paper: https://doi.org/10.5281/zenodo.20313669 Key findings: agentic flattening effect (Gini 0.725 vs 0.882, p=0.0011), FastAPI confound resolved (p=0.0034), log-normal persistence (11/12 repos), longitudinal null. See https...</summary>
-  </entry>
-  <entry>
-    <title>Fan-In Distributions in Human-Written vs AI-Generated Python Codebases: A Constructal Law Analysis</title>
-    <link href="https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-20313669/"/>
-    <id>https://doi.org/10.5281/zenodo.20313669</id>
-    <updated>2026-05-20T00:00:00Z</updated>
-    <summary>Import fan-in, the count of intra-repo modules that import a given file, encodes hierarchical coupling structure. By analogy with Constructal flow systems (Bejan 1997), we hypothesize that finite networks shaped by iterative optimization develop log-normal, not power-law, size distributions. We m...</summary>
   </entry>
   <entry>
     <title>AttestationRegimeClassifier — Ghidra Plugin for ICS/Embedded Firmware Attestation Regime Classification</title>

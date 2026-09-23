@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://chokmah.me/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://chokmah.me/research/</loc><lastmod>2026-09-18</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/research/</loc><lastmod>2026-09-23</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://chokmah.me/research/a-numerical-test-of-the-quadratic-estimate-in-arxiv-2609-22830611/</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/catalan-sun-lean-lean-formalization-slice-of-sun-catalan-22830202/</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-21971668/</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -22,8 +22,10 @@
   <url><loc>https://chokmah.me/research/valid-and-false-snapping-in-eml-expression-trees-the-basin-s-20671038/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/claude-code-playbook-v4-4-0-20481459/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/the-computability-filter-20330532/</loc><lastmod>2026-05-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/chokmah-me-parabolic-fractal-v1-0-0-20318458/</loc><lastmod>2026-05-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-20313669/</loc><lastmod>2026-05-20</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/parabolic-fractal-v1-1-0-code-and-data-for-fan-in-distributio-22908056/</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/chokmah-me-parabolic-fractal-v1-0-0-20318458/</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-22908061/</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-20313669/</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://chokmah.me/research/attestationregimeclassifier-ghidra-plugin-for-ics-embedded-f-20218659/</loc><lastmod>2026-05-16</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/on-the-necessary-void-at-the-center-of-autonomous-governance-20190801/</loc><lastmod>2026-05-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/three-regimes-of-capability-attestation-for-autonomous-agent-20114610/</loc><lastmod>2026-05-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
