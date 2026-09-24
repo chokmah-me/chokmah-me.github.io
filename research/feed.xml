@@ -4,8 +4,16 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-09-23T12:00:00Z</updated>
+  <updated>2026-09-24T12:00:00Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
+  <entry>
+    <title>Trust, but Replay: Auditing Published Mathematical Claims</title>
+    <link href="https://chokmah.me/research/trust-but-replay-auditing-published-mathematical-claims-22926996/"/>
+    <id>https://doi.org/10.5281/zenodo.22926996</id>
+    <updated>2026-09-23T12:00:00Z</updated>
+    <summary>v1.0.1 methods companion to fragile-proof-audit: disposition taxonomy (BREAK/GAP/PASS/SKIP/UNKNOWN), attack types A-G, evidentiary disciplines, 25-gate verdict lock (17 BREAK / 8 PASS). Concept DOI 10.5281/zenodo.22926995. OSF mirror osf.io/ukmjp.</summary>
+  </entry>
+
     <entry>
     <title>parabolic-fractal v1.1.0: code and data for “Fan-In Distributions in Human-Written vs AI-Generated Python Codebases”</title>
     <link href="https://chokmah.me/research/parabolic-fractal-v1-1-0-code-and-data-for-fan-in-distributio-22908056/"/>
