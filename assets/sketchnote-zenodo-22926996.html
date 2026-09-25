@@ -24,133 +24,92 @@
   }
   .page {
     width: 832px; height: 1248px;
-    padding: 11px 14px 8px;
+    padding: 18px 20px 16px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
-    justify-content: space-between;
-    background:
-      radial-gradient(circle at 10% 6%, rgba(27,79,114,0.05), transparent 42%),
-      radial-gradient(circle at 90% 94%, rgba(211,84,0,0.06), transparent 38%),
-      var(--bg);
+    gap: 10px;
   }
-  .title {
-    text-align: center;
-    border-bottom: 3px solid var(--blue);
-    padding-bottom: 6px;
-    flex: 0 0 auto;
-  }
+  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 8px; }
   .title h1 {
     margin: 0;
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 36px;
-    letter-spacing: 1.8px;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    letter-spacing: 1.5px;
     color: var(--blue);
-    font-weight: 700;
-    line-height: 1.02;
-    text-shadow: 1px 1px 0 rgba(27,79,114,0.12);
+    line-height: 1.05;
   }
-  .title .sub {
-    margin: 4px 0 0;
-    font-size: 14.5px;
-    font-weight: 700;
-    color: var(--ink);
-  }
-  .title .by {
-    margin: 2px 0 0;
-    font-size: 11.5px;
-    color: #555;
-  }
+  .title .sub { margin: 4px 0 0; font-size: 14px; font-weight: 700; }
+  .title .by { margin: 3px 0 0; font-size: 11.5px; color: #555; }
   .motto {
     margin: 0;
     text-align: center;
     font-family: Georgia, serif;
     font-style: italic;
-    font-size: 14.5px;
+    font-size: 15px;
     color: var(--orange);
     font-weight: 700;
-    flex: 0 0 auto;
   }
 
-  .row { display: flex; gap: 8px; flex: 0 0 auto; }
+  .row { display: flex; gap: 10px; }
   .col { flex: 1; min-width: 0; }
-  .grow { flex: 1 1 auto; display: flex; flex-direction: column; gap: 7px; min-height: 0; justify-content: space-between; }
 
   .box {
     border: 2.5px solid var(--ink);
-    border-radius: 11px;
-    padding: 8px 10px 9px;
-    background: rgba(255,255,255,0.48);
-    position: relative;
+    border-radius: 10px;
+    padding: 10px 12px;
+    background: rgba(255,255,255,0.5);
   }
   .box h2 {
-    margin: 0 0 5px;
-    font-size: 13.5px;
+    margin: 0 0 6px;
+    font-size: 13px;
     font-weight: 800;
-    letter-spacing: 0.25px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    display: flex; align-items: center; gap: 5px;
   }
-  .box p, .box li { margin: 0; font-size: 11px; line-height: 1.38; }
-  .box ul { margin: 0; padding-left: 15px; }
-  .box li { margin-bottom: 2px; }
-  .tiny { font-size: 10px; line-height: 1.32; color: #444; }
-  .ico {
-    display: inline-flex; width: 17px; height: 17px;
-    align-items: center; justify-content: center;
-    font-size: 13px; flex-shrink: 0;
-  }
+  .box p, .box li { margin: 0; font-size: 12px; line-height: 1.4; }
+  .box ul { margin: 0; padding-left: 16px; }
+  .box li { margin-bottom: 3px; }
+  .tiny { font-size: 11px; color: #444; line-height: 1.35; }
 
-  .prob { border-color: var(--blue); background: rgba(27,79,114,0.09); }
+  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
   .prob h2 { color: var(--blue); }
-  .insight { border-color: var(--orange); background: rgba(211,84,0,0.11); border-width: 3px; }
+  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
   .insight h2 { color: var(--orange); }
-  .check { border-color: var(--green); background: rgba(30,132,73,0.09); }
+  .check { border-color: var(--green); background: rgba(30,132,73,0.08); }
   .check h2 { color: var(--green); }
-  .disp { border-color: var(--purple); background: rgba(108,52,131,0.09); }
+  .disp { border-color: var(--purple); background: rgba(108,52,131,0.08); }
   .disp h2 { color: var(--purple); }
-  .attack { border-color: var(--blue); background: rgba(27,79,114,0.07); }
+  .attack { border-color: var(--blue); background: rgba(27,79,114,0.06); }
   .attack h2 { color: var(--blue); }
-  .disc { border-color: var(--green); background: rgba(30,132,73,0.08); }
+  .disc { border-color: var(--green); background: rgba(30,132,73,0.07); }
   .disc h2 { color: var(--green); }
-  .strata { border-color: var(--orange); background: rgba(211,84,0,0.08); }
+  .strata { border-color: var(--orange); background: rgba(211,84,0,0.07); }
   .strata h2 { color: var(--orange); }
   .lock {
-    border-color: var(--red); background: rgba(192,57,43,0.11);
+    border-color: var(--red); background: rgba(192,57,43,0.10);
     border-width: 3px; text-align: center;
   }
   .lock h2 { color: var(--red); justify-content: center; }
-  .cases { border-color: var(--purple); background: rgba(108,52,131,0.08); }
-  .cases h2 { color: var(--purple); }
-  .limits { border-color: var(--red); background: rgba(192,57,43,0.07); }
-  .limits h2 { color: var(--red); }
-  .takeaway {
-    border-color: var(--blue); background: rgba(27,79,114,0.08);
-    border-style: dashed;
-  }
-  .takeaway h2 { color: var(--blue); }
+  .bottom { border-color: #666; background: rgba(0,0,0,0.03); }
+  .bottom h2 { color: #444; }
 
   .burst {
-    position: absolute;
-    top: -8px; right: 12px;
+    float: right;
     background: var(--orange);
     color: #fff;
     font-size: 9.5px;
     font-weight: 800;
     padding: 2px 8px;
     border-radius: 10px;
-    letter-spacing: 0.4px;
+    margin: -2px 0 4px 8px;
   }
 
-  .check-items { display: flex; flex-direction: column; gap: 5px; margin-top: 2px; }
   .check-item {
-    display: flex; gap: 7px; align-items: flex-start;
-    font-size: 11px; line-height: 1.32;
+    display: flex; gap: 8px; align-items: center;
+    font-size: 12px; margin-bottom: 5px;
   }
-  .check-item .badge {
+  .badge {
     flex-shrink: 0;
-    width: 20px; height: 20px;
+    min-width: 22px; height: 22px; padding: 0 4px;
     border-radius: 5px;
     border: 2px solid var(--green);
     display: flex; align-items: center; justify-content: center;
@@ -158,113 +117,95 @@
     color: var(--green); background: #fff;
   }
 
-  .disp-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5px 10px;
-    margin-top: 3px;
-  }
-  .disp-item { font-size: 10.5px; line-height: 1.32; }
-  .break-c { color: var(--red); }
-  .pass-c { color: var(--green); }
-  .gap-c { color: var(--orange); }
-  .skip-c { color: #7D6608; }
-  .unk-c { color: #5D6D7E; }
+  .disp-line { font-size: 12px; line-height: 1.45; }
+  .break-c { color: var(--red); font-weight: 800; }
+  .pass-c { color: var(--green); font-weight: 800; }
+  .gap-c { color: var(--orange); font-weight: 800; }
+  .skip-c { color: #7D6608; font-weight: 800; }
+  .unk-c { color: #5D6D7E; font-weight: 800; }
 
   .polarity {
-    margin-top: 7px;
-    padding: 6px 8px;
+    margin-top: 8px;
+    padding: 7px 9px;
     border: 1.5px dashed var(--purple);
     border-radius: 7px;
-    background: rgba(255,255,255,0.6);
-    font-size: 10.5px;
-    line-height: 1.35;
+    background: rgba(255,255,255,0.65);
+    font-size: 11.5px;
+    line-height: 1.4;
   }
-  .polarity strong { color: var(--purple); }
 
-  .attack-grid {
+  .atk-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4px 12px;
-    margin-top: 3px;
+    gap: 4px 14px;
+    font-size: 12px;
+    line-height: 1.35;
   }
-  .atk { font-size: 10.5px; line-height: 1.3; }
   .atk b {
     color: var(--blue);
-    font-family: Consolas, "Cascadia Mono", monospace;
-    font-size: 11px;
+    font-family: Consolas, monospace;
   }
-  .atk .ex { color: #555; font-size: 10px; }
 
-  .disc-list li { margin-bottom: 4px; font-size: 11px; }
-  .disc-list strong { color: var(--green); }
+  .disc ul li { font-size: 12px; margin-bottom: 4px; }
+  .disc strong { color: var(--green); }
 
   .strata-cols {
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
-    gap: 7px;
+    grid-template-columns: 1fr 1.15fr 1fr;
+    gap: 8px;
     margin-top: 4px;
   }
   .stratum {
     border-radius: 8px;
     border: 1.5px solid var(--ink);
-    padding: 6px 7px;
-    background: rgba(255,255,255,0.58);
+    padding: 8px;
+    background: #fff;
   }
-  .stratum .lab { font-size: 10.5px; font-weight: 800; margin-bottom: 2px; }
-  .stratum .num {
-    font-family: Georgia, serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.1;
-  }
-  .stratum .detail { font-size: 10px; line-height: 1.28; color: #444; margin-top: 3px; }
+  .stratum .lab { font-size: 11px; font-weight: 800; margin-bottom: 3px; }
+  .stratum .num { font-family: Georgia, serif; font-size: 18px; font-weight: 700; }
+  .stratum .detail { font-size: 11px; line-height: 1.3; color: #444; margin-top: 3px; }
   .s-hist .lab { color: var(--blue); }
   .s-live .lab { color: var(--orange); }
-  .s-live { border-color: var(--orange); border-width: 2.5px; background: rgba(211,84,0,0.13); }
+  .s-live { border-color: var(--orange); border-width: 2.5px; background: rgba(211,84,0,0.12); }
   .s-low .lab { color: var(--green); }
 
   .lock .big {
     font-family: Georgia, serif;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--red);
-    margin: 2px 0 0;
-    letter-spacing: 0.4px;
+    margin: 2px 0 4px;
   }
-  .lock .subline { font-size: 12.5px; font-weight: 700; margin-top: 3px; }
-  .lock .note { font-size: 10px; color: #555; margin-top: 3px; font-style: italic; }
+  .lock .subline { font-size: 13px; font-weight: 700; }
+  .lock .note { font-size: 11px; color: #555; margin-top: 4px; font-style: italic; }
 
-  .cases li, .limits li { font-size: 10.5px; margin-bottom: 3px; }
-
-  .take-grid {
+  .bottom-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 6px;
-    margin-top: 3px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
-  .take-card {
-    border: 1.5px solid var(--blue);
-    border-radius: 7px;
-    padding: 5px 6px;
-    background: #fff;
-    font-size: 10px;
-    line-height: 1.3;
+  .bottom-grid h3 {
+    margin: 0 0 4px;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--purple);
   }
-  .take-card strong { color: var(--blue); display: block; margin-bottom: 2px; font-size: 10.5px; }
+  .bottom-grid .lim h3 { color: var(--red); }
+  .bottom-grid li { font-size: 11.5px; }
 
   .footer {
-    flex: 0 0 auto;
+    margin-top: 4px;
     text-align: center;
-    font-size: 10.5px;
-    color: #555;
     border-top: 2.5px solid var(--blue);
-    padding-top: 6px;
-    line-height: 1.35;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.45;
+    color: #444;
   }
   .footer .doi {
     font-family: Consolas, monospace;
-    font-size: 11px;
+    font-size: 12px;
     color: var(--blue);
     font-weight: 700;
   }
@@ -273,10 +214,9 @@
     font-style: italic;
     color: var(--orange);
     font-weight: 700;
-    font-size: 12.5px;
-    margin-top: 2px;
+    font-size: 14px;
+    margin-top: 4px;
   }
-  code { font-family: Consolas, monospace; font-size: 0.95em; }
 </style>
 </head>
 <body>
@@ -289,140 +229,121 @@
   </header>
   <p class="motto">“Gates refute routes, not theorems.”</p>
 
-  <div class="grow">
-
   <div class="row">
     <div class="col box prob">
-      <h2><span class="ico">🔎</span> THE PROBLEM</h2>
+      <h2>🔎 THE PROBLEM</h2>
       <p>Peer review checks <strong>reasoning</strong>, not <strong>computation</strong>.</p>
-      <p class="tiny" style="margin-top:5px">Certificates vanish. Personal pages die. Scripts go un-replayed. Trust fills the gap where checksums should live.</p>
-      <p class="tiny" style="margin-top:4px">Six calendar days · 2026-09-18 → 09-23 · hostile prior on published claims · AI agents under human direction.</p>
+      <p class="tiny" style="margin-top:6px">Certificates vanish. Scripts go un-replayed. Trust fills the gap where checksums should live.</p>
     </div>
-    <div class="col box insight" style="flex:1.2">
+    <div class="col box insight" style="flex:1.15">
       <span class="burst">KEY INSIGHT</span>
-      <h2><span class="ico">💡</span> HOSTILE PRIOR</h2>
+      <h2>💡 HOSTILE PRIOR</h2>
       <p><strong>Trust is not a verification method.</strong></p>
-      <p style="margin-top:5px">Every locked gate is built to produce the <em>opposite</em> verdict where the opposite is correct. CI fails loudly on drift either way.</p>
-      <p class="tiny" style="margin-top:5px">The contribution is the <strong>playbook</strong>, not the verdicts. PASS carries the same weight as BREAK — the method does not grade on a curve.</p>
+      <p style="margin-top:6px">Every locked gate is built to produce the opposite verdict where that is correct. CI fails loudly on drift either way. PASS weighs the same as BREAK.</p>
     </div>
   </div>
 
   <div class="row">
     <div class="col box check">
-      <h2><span class="ico">📋</span> CHECKLISTS</h2>
-      <div class="check-items">
-        <div class="check-item"><span class="badge">5</span><span><strong>Dispositions</strong> — BREAK · GAP · PASS · SKIP · UNKNOWN</span></div>
-        <div class="check-item"><span class="badge">7</span><span><strong>Attack types A–G</strong> — by mechanism, not subject area</span></div>
-        <div class="check-item"><span class="badge">🔒</span><span><strong>Verdict lock</strong> — 25 gates in CI; drift fails the build</span></div>
-      </div>
-      <p class="tiny" style="margin-top:6px">Hash-pinned inputs · paper-first gating · fail-closed replay lanes · append-only history</p>
+      <h2>📋 CHECKLISTS</h2>
+      <div class="check-item"><span class="badge">5</span><span><strong>Dispositions</strong> — BREAK · GAP · PASS · SKIP · UNKNOWN</span></div>
+      <div class="check-item"><span class="badge">7</span><span><strong>Attack types A–G</strong> — by mechanism</span></div>
+      <div class="check-item"><span class="badge">🔒</span><span><strong>Verdict lock</strong> — 25 gates in CI</span></div>
     </div>
-    <div class="col box disp" style="flex:1.4">
-      <h2><span class="ico">⚖️</span> DISPOSITION TAXONOMY</h2>
-      <div class="disp-grid">
-        <div class="disp-item"><strong class="break-c">BREAK</strong> — route refuted by gated, controlled witness</div>
-        <div class="disp-item"><strong class="gap-c">GAP</strong> — inference broken; statement not falsified</div>
-        <div class="disp-item"><strong class="pass-c">PASS</strong> — gate claim independently confirmed</div>
-        <div class="disp-item"><strong class="skip-c">SKIP</strong> — not auditable as stated</div>
-        <div class="disp-item" style="grid-column:1/-1"><strong class="unk-c">UNKNOWN</strong> — artifacts OK; kernel not re-checkable on our toolchain</div>
-      </div>
+    <div class="col box disp" style="flex:1.35">
+      <h2>⚖️ DISPOSITIONS</h2>
+      <p class="disp-line">
+        <span class="break-c">BREAK</span> route refuted ·
+        <span class="gap-c">GAP</span> inference broken ·
+        <span class="pass-c">PASS</span> confirmed ·
+        <span class="skip-c">SKIP</span> not auditable ·
+        <span class="unk-c">UNKNOWN</span> kernel blocked
+      </p>
       <div class="polarity">
-        <strong>Polarity rule:</strong> gate verdict ≠ route verdict.
-        Lamé 1847: gates <span class="pass-c"><strong>PASS</strong></span> on <em>h</em>(ℚ(ζ<sub>23</sub>))=3 — that confirmed fact kills the route (<span class="break-c"><strong>BREAK</strong></span>).
+        <strong>Polarity:</strong> gate verdict ≠ route verdict.
+        Lamé 1847 gates <span class="pass-c">PASS</span> on <em>h</em>=3 — that fact kills the route (<span class="break-c">BREAK</span>).
       </div>
     </div>
   </div>
 
   <div class="box attack">
-    <h2><span class="ico">⚔️</span> ATTACK TYPES A–G <span class="tiny" style="font-weight:600;color:#555">(mechanism-classified · append-only)</span></h2>
-    <div class="attack-grid">
-      <div class="atk"><b>A</b> Scalar gate — best-constant / numerical kill<br><span class="ex">ex: Tang–Zhang Schatten → BREAK (dual arithmetics)</span></div>
-      <div class="atk"><b>B</b> Base-case kill — induction never starts<br><span class="ex">ex: Suman ζ(5) Eq.(48) solutions exist → BREAK</span></div>
-      <div class="atk"><b>C</b> WZ-certificate audit — re-verify certificate pairs<br><span class="ex">ex: Jana–Karmakar → PASS (Pochhammer trap caught)</span></div>
-      <div class="atk"><b>D</b> Finite q-expansion — term-by-term to stated depth<br><span class="ex">ex: PDN1 Du–Yao → PASS (6,747 divisibility pts)</span></div>
-      <div class="atk"><b>E</b> CAS-transcript replay — the session <em>is</em> the proof<br><span class="ex">ex: q-TSPP → tooling-limited; Lean spine instead</span></div>
-      <div class="atk"><b>F</b> Counterexample search — one witness ends the claim<br><span class="ex">ex: Baste domination → BREAK (50-vertex; control caught bug)</span></div>
-      <div class="atk" style="grid-column:1/-1"><b>G</b> Logical-gap exposure — isolate premise; smallest failing instance · “Claim (route, not the theorem)”<br><span class="ex">ex: Lamé at p=23 · Sun Catalan CAT-G · FRK-UC / LEG-NS prose GAPs</span></div>
+    <h2>⚔️ ATTACK TYPES A–G</h2>
+    <div class="atk-grid">
+      <div><b>A</b> Scalar / best-constant</div>
+      <div><b>B</b> Base-case kill</div>
+      <div><b>C</b> WZ-certificate audit</div>
+      <div><b>D</b> Finite q-expansion</div>
+      <div><b>E</b> CAS-transcript replay</div>
+      <div><b>F</b> Counterexample search</div>
+      <div style="grid-column:1/-1"><b>G</b> Logical-gap exposure — isolate premise; smallest failing instance</div>
     </div>
   </div>
 
   <div class="box disc">
-    <h2><span class="ico">🛡️</span> EVIDENTIARY DISCIPLINES <span class="tiny" style="font-weight:600;color:#555">(scar tissue from real failures)</span></h2>
-    <ul class="disc-list">
-      <li><strong>Paper-first:</strong> pin SHA-256 of the version of record; never gate a dossier paraphrase (Sárközy lesson — wrong threshold).</li>
-      <li><strong>Discrimination control:</strong> a check that cannot fail is not evidence; controls caught real bugs (Baste hardcoded <code>n=NUM_VERTICES</code>).</li>
-      <li><strong>Gate-before-prove:</strong> no Lean scaffold until a numeric gate decides the statement is worth proving.</li>
-      <li><strong>Fail-closed replay:</strong> hash-pinned inputs; any mismatch fails the lane — no “close enough,” no partial passes.</li>
-      <li><strong>Dual anchors:</strong> brute-force tiny cases + second independent implementation (Polya sieve 91/91 chunks; p=2 bug caught).</li>
+    <h2>🛡️ DISCIPLINES</h2>
+    <ul>
+      <li><strong>Paper-first</strong> — pin the version of record; never gate a paraphrase</li>
+      <li><strong>Discrimination control</strong> — a check that cannot fail is not evidence</li>
+      <li><strong>Gate-before-prove</strong> — no Lean until a numeric gate decides</li>
+      <li><strong>Fail-closed + dual anchors</strong> — hash pins; two independent implementations</li>
     </ul>
   </div>
 
   <div class="box strata">
-    <h2><span class="ico">📊</span> THREE STRATA — different evidentiary weight (no pooled base-rate claim)</h2>
+    <h2>📊 THREE STRATA</h2>
     <div class="strata-cols">
       <div class="stratum s-hist">
-        <div class="lab">Historical calibration</div>
+        <div class="lab">Historical</div>
         <div class="num">4 gates</div>
-        <div class="detail">2 BREAK / 2 PASS<br>Kempe–Fritsch · Tait–Tutte · Lamé (×2)<br><em>Proves the gates aim true.</em></div>
+        <div class="detail">2 BREAK / 2 PASS<br>Gates aim true.</div>
       </div>
       <div class="stratum s-live">
-        <div class="lab">Current · live literature</div>
-        <div class="num">12 gates:</div>
-        <div class="detail" style="font-size:12px;font-weight:800;color:var(--orange)">8 BREAK / 4 PASS</div>
-        <div class="detail">Where a BREAK is evidence about published math. One claimed-proof kill (Sun Catalan); seven conjecture counterexamples already in print.</div>
+        <div class="lab">Live literature</div>
+        <div class="num">12 gates</div>
+        <div class="detail" style="font-size:13px;font-weight:800;color:var(--orange)">8 BREAK / 4 PASS</div>
+        <div class="detail">Where published math is tested.</div>
       </div>
       <div class="stratum s-low">
-        <div class="lab">Low-stakes preprints</div>
+        <div class="lab">Low-stakes</div>
         <div class="num">8 gates</div>
-        <div class="detail">7 BREAK / 1 PASS<br>Withdrawn / never-trusted<br><em>Training kills — machinery runs.</em></div>
+        <div class="detail">7 BREAK / 1 PASS<br>Machinery runs.</div>
       </div>
     </div>
-    <p class="tiny" style="margin-top:5px;text-align:center">+ 1 infrastructure oracle (<code>giuga_oracle</code>, standing PASS) · targets selected for fragility, not sampled at random</p>
   </div>
 
   <div class="box lock">
-    <h2><span class="ico">🔐</span> VERDICT LOCK</h2>
+    <h2>🔐 VERDICT LOCK</h2>
     <div class="big">25 gates · 17 BREAK / 8 PASS</div>
-    <div class="subline"><code>EXPECTED_VERDICT</code> in CI · drift either way fails the build</div>
-    <div class="note">GAPs / SKIPs / UNKNOWNs are prose dispositions — off the lock. A PASS that stops passing is drift too.</div>
+    <div class="subline"><code>EXPECTED_VERDICT</code> in CI — drift either way fails the build</div>
+    <div class="note">GAP / SKIP / UNKNOWN stay off the lock (prose only).</div>
   </div>
 
-  <div class="row" style="flex:1">
-    <div class="col box cases" style="display:flex;flex-direction:column">
-      <h2><span class="ico">📁</span> CASE STUDIES</h2>
-      <ul style="flex:1">
-        <li><strong>Refutation replay</strong> — recompute witness from pinned claim artifact (Track D style)</li>
-        <li><strong>Execution-verified confirmation</strong> — Gomila Λ-bound, 3,149,013/3,149,013 rows across 15 shards</li>
-        <li><strong>Canonization</strong> — Polya sieve, dual-impl 91/91 chunks</li>
-        <li><strong>Unfinished formalization</strong> — q-TSPP Lean spine; recurrence coeffs blocked on authors</li>
-      </ul>
-    </div>
-    <div class="col box limits" style="display:flex;flex-direction:column">
-      <h2><span class="ico">⚠️</span> LIMITS</h2>
-      <ul style="flex:1">
-        <li>Selected for fragility — not a random sample of the literature</li>
-        <li>Short campaign (6 days); claim is method reproducibility, not longevity</li>
-        <li>Type E limited by unavailable CAS tooling / HolonomicFunctions</li>
-        <li>UNKNOWN when the authors’ kernel cannot be re-run</li>
-        <li>No discipline closes every residue — Sec. 6 states what remains open</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="box takeaway">
-    <h2><span class="ico">🎯</span> TAKEAWAYS</h2>
-    <div class="take-grid">
-      <div class="take-card"><strong>Playbook travels</strong>A reader who disputes every verdict can still re-run every gate, check every control, and re-derive every disposition from pinned artifacts.</div>
-      <div class="take-card"><strong>Live weight sits in the middle</strong>Historical = aim true. Low-stakes = machinery runs. Live literature (12 gates) is where published math is tested.</div>
-      <div class="take-card"><strong>Trust the replay</strong>Including ours. Method failures are published beside successes. Who audited the auditors? The artifact.</div>
+  <div class="box bottom">
+    <div class="bottom-grid">
+      <div>
+        <h3>📁 Cases</h3>
+        <ul>
+          <li>Refutation replay from pinned claim</li>
+          <li>Gomila confirmation (fail-closed shards)</li>
+          <li>Polya canonization (91/91 dual-impl)</li>
+          <li>q-TSPP Lean spine (coeffs blocked)</li>
+        </ul>
+      </div>
+      <div class="lim">
+        <h3>⚠️ Limits</h3>
+        <ul>
+          <li>Selected for fragility — not a sample</li>
+          <li>Six-day campaign; method claim only</li>
+          <li>Type E limited by missing CAS tooling</li>
+          <li>No discipline closes every residue</li>
+        </ul>
+      </div>
     </div>
   </div>
-
-  </div><!-- /.grow -->
 
   <footer class="footer">
-    <div class="doi">doi:10.5281/zenodo.22926995 · concept DOI (always-latest PDF)</div>
-    <div>version pin 10.5281/zenodo.22933576 · github.com/chokmah-me/fragile-proof-audit · CC BY 4.0</div>
+    <div class="doi">doi:10.5281/zenodo.22926995 · always-latest PDF</div>
+    <div>version 10.5281/zenodo.22933576 · github.com/chokmah-me/fragile-proof-audit · CC BY 4.0</div>
     <div class="close">Trust the replay, not the resume.</div>
   </footer>
 
