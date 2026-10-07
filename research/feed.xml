@@ -108,9 +108,9 @@
   <entry>
     <title>aria-moebius: Lean formalization and class-bridge verifier</title>
     <link href="https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-21765202/"/>
-    <id>https://doi.org/10.5281/zenodo.21765202</id>
+    <id>https://doi.org/10.5281/zenodo.23215647</id>
     <updated>2026-10-07T00:00:00Z</updated>
-    <summary>Lean 4 + exhaustive GF(2^8) Python verifier for the invert-and-affine Möbius class bridge (ARIA four maps). Companion to paper v1.0.5. Prefer software concept DOI 10.5281/zenodo.21705939. No attack complexities claimed.</summary>
+    <summary>v1.0.4 Lean 4 + exhaustive GF(2^8) Python verifier for the invert-and-affine Möbius class bridge (ARIA four maps), plus independent-kernel accept. Companion to paper v1.0.5. Prefer software concept DOI 10.5281/zenodo.21705939. No attack complexities claimed.</summary>
   </entry>
   <entry>
     <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>

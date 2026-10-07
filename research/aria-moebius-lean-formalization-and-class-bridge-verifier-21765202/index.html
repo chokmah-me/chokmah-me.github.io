@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aria-moebius: Lean formalization and class-bridge verifier | Chokmah Research</title>
-    <meta name="description" content="v1.0.3 Lean 4 + Python verifier for the invert-and-affine Möbius class bridge (ARIA four maps). Companion to paper v1.0.5. Prefer software concept DOI 10.5281/zenodo.21705939. No attack complexities claimed.">
+    <meta name="description" content="v1.0.4 Lean 4 + Python verifier for the invert-and-affine Möbius class bridge (ARIA four maps), plus independent-kernel accept. Companion to paper v1.0.5. Prefer software concept DOI 10.5281/zenodo.21705939. No attack complexities claimed.">
     <link rel="canonical" href="https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-21765202/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-21765202/">
     <meta property="og:title" content="aria-moebius: Lean formalization and class-bridge verifier">
-    <meta property="og:description" content="v1.0.3 Lean 4 + Python verifier for the invert-and-affine Möbius class bridge (ARIA four maps). Companion to paper v1.0.5. Prefer software concept DOI 10.5281/zenodo.21705939. No attack complexities claimed.">
+    <meta property="og:description" content="v1.0.4 Lean 4 + Python verifier for the invert-and-affine Möbius class bridge (ARIA four maps), plus independent-kernel accept. Companion to paper v1.0.5. Prefer software concept DOI 10.5281/zenodo.21705939. No attack complexities claimed.">
     <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-21765202.png?v=1">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-21765202.png?v=1">
     <meta name="citation_title" content="aria-moebius: Lean formalization and class-bridge verifier">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
-    <meta name="citation_publication_date" content="2026-08-03">
-    <meta name="citation_doi" content="10.5281/zenodo.21765202">
+    <meta name="citation_publication_date" content="2026-10-07">
+    <meta name="citation_doi" content="10.5281/zenodo.23215647">
     <meta name="citation_publisher" content="Zenodo">
-    <meta name="citation_public_url" content="https://zenodo.org/records/21765202">
-    <meta name="citation_abstract_html_url" content="https://zenodo.org/records/21765202">
-    <meta name="citation_keywords" content="ARIA; block cipher; Mobius Bridge; GF(2^8); Frobenius; Lean 4; S-box; formal verification; mathlib; invert-and-affine; class bridge; fingerprint invariance; meet-in-the-middle; cryptanalysis; axiom audit">
+    <meta name="citation_public_url" content="https://zenodo.org/records/23215647">
+    <meta name="citation_abstract_html_url" content="https://zenodo.org/records/23215647">
+    <meta name="citation_keywords" content="ARIA; block cipher; Mobius Bridge; GF(2^8); Frobenius; Lean 4; S-box; formal verification; mathlib; invert-and-affine; class bridge; fingerprint invariance; meet-in-the-middle; cryptanalysis; axiom audit; con-leche; independent kernel">
     <meta name="DC.title" content="aria-moebius: Lean formalization and class-bridge verifier">
     <meta name="DC.creator" content="Bilar, Daniyel Yaacov">
-    <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.21765202">
-    <meta name="DC.date" content="2026-08-03">
+    <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.23215647">
+    <meta name="DC.date" content="2026-10-07">
     <meta name="DC.rights" content="cc-by-4.0">
     <script type="application/ld+json">
 {
@@ -33,17 +33,17 @@
   "name": "aria-moebius: Lean formalization and class-bridge verifier",
   "headline": "aria-moebius: Lean formalization and class-bridge verifier",
   "url": "https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-21765202/",
-  "datePublished": "2026-08-03",
+  "datePublished": "2026-10-07",
   "inLanguage": "en",
-  "version": "v1.0.3",
-  "abstract": "Lean 4 formalization and exhaustive GF(2^8) Python verifier for the invert-and-affine Möbius class bridge. The Nasr–Carlini construction holds for every S-box S = L2 ∘ Frob^j ∘ inv ∘ L1; ARIA instantiates four class members. This record is the GitHub Release v1.0.3 zip (Bridge.lean, AriaMobius.lean, verify_bridge_class.py). Prefer software concept DOI 10.5281/zenodo.21705939 for always-latest zip. Companion paper: 10.5281/zenodo.21705468. No attack complexities for ARIA are claimed.",
+  "version": "v1.0.4",
+  "abstract": "Lean 4 formalization and exhaustive GF(2^8) Python verifier for the invert-and-affine Möbius class bridge, plus an independent-kernel accept of the Bridge export. The Nasr–Carlini construction holds for every S-box S = L2 ∘ Frob^j ∘ inv ∘ L1; ARIA instantiates four class members. This record is the GitHub Release v1.0.4 zip (Bridge.lean, AriaMobius.lean, verify_bridge_class.py; con-leche --verified CHECK_EXIT=0). Prefer software concept DOI 10.5281/zenodo.21705939 for always-latest zip. Companion paper: 10.5281/zenodo.21705468. No attack complexities for ARIA are claimed.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
-    "value": "10.5281/zenodo.21765202"
+    "value": "10.5281/zenodo.23215647"
   },
   "sameAs": [
-    "https://doi.org/10.5281/zenodo.21765202",
+    "https://doi.org/10.5281/zenodo.23215647",
     "https://doi.org/10.5281/zenodo.21705939",
     "https://github.com/chokmah-me/aria-moebius"
   ],
@@ -81,7 +81,9 @@
     "fingerprint invariance",
     "meet-in-the-middle",
     "cryptanalysis",
-    "axiom audit"
+    "axiom audit",
+    "con-leche",
+    "independent kernel"
   ],
   "license": "https://creativecommons.org/licenses/by/4.0/"
 }
@@ -141,28 +143,28 @@
     <header>
       <h1>aria-moebius: Lean formalization and class-bridge verifier</h1>
       <p class="tagline">No attack complexities for ARIA are claimed.</p>
-      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-08-03 &middot; v1.0.3 &middot; software &middot; cc-by-4.0</p>
+      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-10-07 &middot; v1.0.4 &middot; software &middot; cc-by-4.0</p>
     </header>
     <div class="callout">
-      <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.21765202">https://doi.org/10.5281/zenodo.21765202</a><br>
+      <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.23215647">https://doi.org/10.5281/zenodo.23215647</a><br>
       <strong>Concept DOI (always latest zip):</strong> <a href="https://doi.org/10.5281/zenodo.21705939">https://doi.org/10.5281/zenodo.21705939</a><br>
-      <strong>GitHub:</strong> <a href="https://github.com/chokmah-me/aria-moebius">github.com/chokmah-me/aria-moebius</a> (release <a href="https://github.com/chokmah-me/aria-moebius/releases/tag/v1.0.3">v1.0.3</a>)<br>
-      <strong>Download zip (Zenodo):</strong> <a href="https://zenodo.org/records/21765202/files/chokmah-me/aria-moebius-v1.0.3.zip?download=1">open</a><br>
+      <strong>GitHub:</strong> <a href="https://github.com/chokmah-me/aria-moebius">github.com/chokmah-me/aria-moebius</a> (release <a href="https://github.com/chokmah-me/aria-moebius/releases/tag/v1.0.4">v1.0.4</a>)<br>
+      <strong>Download zip (Zenodo):</strong> <a href="https://zenodo.org/records/23215647/files/chokmah-me/aria-moebius-v1.0.4.zip?download=1">open</a><br>
       <strong>Companion paper (concept):</strong> <a href="https://doi.org/10.5281/zenodo.21705468">10.5281/zenodo.21705468</a> (PDF v1.0.5 <a href="https://doi.org/10.5281/zenodo.21765164">…164</a>)<br>
       <strong>Paper catalog:</strong> <a href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/">chokmah.me research page</a>
     </div>
     <div class="poster">
       <a href="https://chokmah.me/assets/sketchnote-zenodo-21765202.png?v=1">
         <img src="https://chokmah.me/assets/sketchnote-zenodo-21765202.png?v=1" width="563" height="845"
-             alt="Sketchnote for aria-moebius v1.0.3: Lean class-bridge map, five GF(2^8) Python checks, axiom audit, no attack complexities claimed">
+             alt="Sketchnote for aria-moebius: Lean class-bridge map, five GF(2^8) Python checks, axiom audit, no attack complexities claimed">
       </a>
-      <p class="cap">Sketchnote for software v1.0.3 (CC BY 4.0). <a href="https://chokmah.me/assets/sketchnote-zenodo-21765202.png?v=1">Full-size PNG</a>.</p>
+      <p class="cap">Sketchnote for the software catalog (CC BY 4.0). <a href="https://chokmah.me/assets/sketchnote-zenodo-21765202.png?v=1">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
     <p>This deposit is the Lean 4 and Python companion to <em>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</em> (paper v1.0.5). The Nasr–Carlini Möbius Bridge is not specific to the AES S-box: it holds for every S-box of the form S = L<sub>2</sub> ∘ Frob<sup>j</sup> ∘ inv ∘ L<sub>1</sub>, with the Frobenius exponent j as the only degree of freedom. ARIA instantiates four members of that class at once (S1, S2, S1<sup>−1</sup>, S2<sup>−1</sup> at j = 0, 3, 0, 5).</p>
-    <p>The v1.0.3 zip contains <code>Bridge.lean</code> / <code>AriaMobius.lean</code> (Lean 4.32.2, mathlib v4.32.2) formalizing Theorem 3.1, Corollary 3.2, and the §5 bad-index set, plus <code>verify_bridge_class.py</code>, which runs five exhaustive GF(2<sup>8</sup>) checks (0/64770 mismatches per ARIA Table 1 row with published A, B, a=0x63, b=0xE2). Axiom set: propext, Classical.choice, Quot.sound; no <code>sorry</code>. Prefer the software concept DOI for the always-latest zip. Cite the paper for the theorem. No attack complexities for ARIA are claimed.</p>
+    <p>The v1.0.4 zip contains <code>Bridge.lean</code> / <code>AriaMobius.lean</code> (Lean 4.32.2, mathlib v4.32.2) formalizing Theorem 3.1, Corollary 3.2, and the §5 bad-index set, plus <code>verify_bridge_class.py</code>, which runs five exhaustive GF(2<sup>8</sup>) checks (0/64770 mismatches per ARIA Table 1 row with published A, B, a=0x63, b=0xE2). Axiom set: propext, Classical.choice, Quot.sound; no <code>sorry</code>. Independent kernel: <code>con-leche --verified</code> accepted the <code>Bridge</code> export (<code>CHECK_EXIT=0</code>). Prefer the software concept DOI for the always-latest zip. Cite the paper for the theorem. No attack complexities for ARIA are claimed.</p>
     <h2>Keywords</h2>
-    <p class="kw">ARIA &middot; block cipher &middot; Mobius Bridge &middot; GF(2^8) &middot; Frobenius &middot; Lean 4 &middot; S-box &middot; formal verification &middot; mathlib &middot; invert-and-affine &middot; class bridge &middot; fingerprint invariance &middot; meet-in-the-middle &middot; cryptanalysis &middot; axiom audit</p>
+    <p class="kw">ARIA &middot; block cipher &middot; Mobius Bridge &middot; GF(2^8) &middot; Frobenius &middot; Lean 4 &middot; S-box &middot; formal verification &middot; mathlib &middot; invert-and-affine &middot; class bridge &middot; fingerprint invariance &middot; meet-in-the-middle &middot; cryptanalysis &middot; axiom audit &middot; con-leche &middot; independent kernel</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>
     <footer>
         <p>&copy; 2026 Chokmah LLC &middot;
