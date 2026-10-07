@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>aria-moebius — software sketchnote</title>
+<style>
+  :root {
+    --bg: #FAF8F0;
+    --ink: #2D2D2D;
+    --blue: #1B4F72;
+    --orange: #D35400;
+    --green: #1E8449;
+    --purple: #6C3483;
+    --red: #C0392B;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 832px; height: 1248px;
+    background: var(--bg);
+    overflow: hidden;
+    color: var(--ink);
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  }
+  .page {
+    width: 832px; height: 1248px;
+    padding: 16px 18px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 6px; }
+  .title h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    color: var(--blue);
+    line-height: 1.05;
+  }
+  .title .sub { margin: 4px 0 0; font-size: 13.5px; font-weight: 700; }
+  .title .by { margin: 3px 0 0; font-size: 11.5px; color: #555; }
+  .motto {
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .row { display: flex; gap: 8px; }
+  .col { flex: 1; min-width: 0; }
+  .box {
+    border: 2.5px solid var(--ink);
+    border-radius: 10px;
+    padding: 8px 10px;
+    background: rgba(255,255,255,0.5);
+  }
+  .box h2 {
+    margin: 0 0 5px;
+    font-size: 12.5px;
+    font-weight: 800;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .box p, .box li { margin: 0; font-size: 11.5px; line-height: 1.38; }
+  .box ul { margin: 0; padding-left: 16px; }
+  .box li { margin-bottom: 2px; }
+  .tiny { font-size: 11px; color: #444; line-height: 1.32; }
+  .mono { font-family: Consolas, "Courier New", monospace; font-size: 11px; }
+  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
+  .prob h2 { color: var(--blue); }
+  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
+  .insight h2 { color: var(--orange); }
+  .zip { border-color: var(--green); background: rgba(30,132,73,0.08); }
+  .zip h2 { color: var(--green); }
+  .map { border-color: var(--purple); background: rgba(108,52,131,0.08); }
+  .map h2 { color: var(--purple); }
+  .check { border-color: var(--green); background: rgba(30,132,73,0.10); }
+  .check h2 { color: var(--green); }
+  .ax { border-color: var(--blue); background: rgba(27,79,114,0.07); }
+  .ax h2 { color: var(--blue); }
+  .lim { border-color: var(--red); background: rgba(192,57,43,0.08); flex: 1; }
+  .lim h2 { color: var(--red); }
+  .burst {
+    float: right;
+    background: var(--orange);
+    color: #fff;
+    font-size: 9.5px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin: -2px 0 4px 8px;
+  }
+  table.mapt {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11.5px;
+    margin-top: 3px;
+  }
+  table.mapt th {
+    text-align: left;
+    font-size: 10.5px;
+    color: var(--purple);
+    border-bottom: 1.5px solid var(--purple);
+    padding: 2px 4px;
+  }
+  table.mapt td {
+    padding: 3px 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-size: 11.5px;
+  }
+  table.mapt td:last-child { font-family: Consolas, monospace; font-size: 11px; }
+  .check-item {
+    display: flex; gap: 8px; align-items: flex-start;
+    font-size: 11.5px; margin-bottom: 4px;
+  }
+  .badge {
+    flex-shrink: 0;
+    min-width: 22px; height: 22px; padding: 0 5px;
+    border-radius: 5px;
+    border: 2px solid var(--green);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 800;
+    color: var(--green); background: #fff;
+  }
+  .pill {
+    display: inline-block;
+    background: #fff;
+    border: 1.5px solid var(--ink);
+    border-radius: 6px;
+    padding: 2px 7px;
+    font-family: Consolas, monospace;
+    font-size: 11px;
+    margin: 2px 3px 2px 0;
+  }
+  .footer {
+    margin-top: auto;
+    text-align: center;
+    border-top: 2.5px solid var(--blue);
+    padding-top: 8px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    color: #444;
+  }
+  .footer .doi {
+    font-family: Consolas, monospace;
+    font-size: 12px;
+    color: var(--blue);
+    font-weight: 700;
+  }
+  .footer .close {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="title">
+    <h1>ARIA-MOEBIUS</h1>
+    <p class="sub">Lean formalization and class-bridge verifier</p>
+    <p class="by">Daniyel Yaacov Bilar · Chokmah LLC · 2026 · software v1.0.3</p>
+  </header>
+  <p class="motto">“No attack complexities for ARIA are claimed.”</p>
+
+  <div class="row">
+    <div class="col box prob">
+      <h2>📦 WHAT THIS ZIP IS</h2>
+      <p>Machine-checked companion to the v1.0.5 note: Lean 4 spine + exhaustive GF(2<sup>8</sup>) Python oracle for the invert-and-affine Möbius class bridge.</p>
+      <p class="tiny" style="margin-top:5px">GitHub Release v1.0.3 → this version DOI. Prefer the software <strong>concept</strong> DOI for always-latest zip.</p>
+    </div>
+    <div class="col box insight" style="flex:1.15">
+      <span class="burst">PAIRS WITH</span>
+      <h2>💡 THE PAPER CLAIM</h2>
+      <p>Nasr–Carlini’s bridge is not AES-specific. It holds for every</p>
+      <p class="mono" style="margin-top:5px;text-align:center;font-weight:700;color:var(--purple);font-size:12.5px">S = L2 ∘ Frob^j ∘ inv ∘ L1</p>
+      <p class="tiny" style="margin-top:5px">ARIA instantiates four members (S1, S2, S1<sup>−1</sup>, S2<sup>−1</sup> at j = 0, 3, 0, 5). Cite the paper for the theorem; this DOI for the replay.</p>
+    </div>
+  </div>
+
+  <div class="box zip">
+    <h2>📁 IN THE v1.0.3 ARCHIVE</h2>
+    <p>
+      <span class="pill">Bridge.lean</span>
+      <span class="pill">AriaMobius.lean</span>
+      <span class="pill">verify_bridge_class.py</span>
+      <span class="pill">lakefile.toml</span>
+      <span class="pill">lean-toolchain 4.32.2</span>
+    </p>
+    <p class="tiny" style="margin-top:5px">Mathlib v4.32.2. Five Python checks auto-write <span class="mono">results/verify_bridge_class_meta.json</span>. Legacy <span class="mono">verify_aria_bridge.py</span> is superseded (pre-reciprocal).</p>
+  </div>
+
+  <div class="box map">
+    <h2>🗺️ PAPER ↔ LEAN (LOAD-BEARING)</h2>
+    <table class="mapt">
+      <thead>
+        <tr><th>Paper</th><th>Lean</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Inner reciprocal chart</td><td>bridge_identity / bridge_frobenius</td></tr>
+        <tr><td>Theorem 3.1 class bridge</td><td>class_bridge / class_bridge' / class_bridge_with_key</td></tr>
+        <tr><td>Pairwise β-cancel</td><td>class_bridge_pair_diff</td></tr>
+        <tr><td>Corollary 3.2 fingerprint</td><td>J_class_invariant → J_affine_invariant</td></tr>
+        <tr><td>§5 bad indices {L<sub>1</sub><sup>−1</sup>(0), s}</td><td>L1_inv_zero / IsBadIndex / bad_index_set</td></tr>
+        <tr><td>ARIA S2 / S2<sup>−1</sup> exponents</td><td>pow_247_eq / aria_S2inv_exponent</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="col box check">
+      <h2>✓ FIVE GF(2^8) CHECKS</h2>
+      <div class="check-item"><span class="badge">1</span><span>Class identity, all 8 Frobenius exponents, random affine bijections</span></div>
+      <div class="check-item"><span class="badge">2</span><span>Four ARIA maps with published A, B, a=0x63, b=0xE2 — <strong>0 / 64770</strong> per row</span></div>
+      <div class="check-item"><span class="badge">3</span><span>x<sup>247</sup>=(x<sup>−1</sup>)<sup>8</sup> and x<sup>223</sup>=(x<sup>−1</sup>)<sup>32</sup></span></div>
+      <div class="check-item"><span class="badge">4</span><span>Bad indices at 0x00, 0x00, 0x63, 0xE2</span></div>
+      <div class="check-item"><span class="badge">5</span><span>I(m,n) power-sum ratio invariant across 255 admissible s</span></div>
+    </div>
+    <div class="col box ax">
+      <h2>🔒 AXIOM AUDIT</h2>
+      <p>Both Lean files build clean.</p>
+      <p style="margin-top:6px"><strong>Axioms used:</strong></p>
+      <ul>
+        <li>propext</li>
+        <li>Classical.choice</li>
+        <li>Quot.sound</li>
+      </ul>
+      <p class="tiny" style="margin-top:6px">No <span class="mono">sorry</span>. No <span class="mono">native_decide</span>. Exhaustive Table 1 stays in Python.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col box zip">
+      <h2>▶️ REPLAY ON A LAPTOP</h2>
+      <p class="mono">python verify_bridge_class.py</p>
+      <p class="tiny">exit 0 iff all five checks pass (seed 5785; ~5s).</p>
+      <p class="mono" style="margin-top:6px">lake exe cache get && lake build</p>
+      <p class="tiny">Lean 4.32.2 / mathlib v4.32.2. Both AriaMobius.lean and Bridge.lean build clean.</p>
+    </div>
+    <div class="col box insight">
+      <h2>📎 CITE SPLIT</h2>
+      <p><strong>Claim / PDF:</strong> paper concept 10.5281/zenodo.21705468 (always latest).</p>
+      <p style="margin-top:4px"><strong>Replay / zip:</strong> software concept 10.5281/zenodo.21705939.</p>
+      <p class="tiny" style="margin-top:5px">This version DOI pins GitHub Release v1.0.3. Two concepts; do not merge.</p>
+    </div>
+  </div>
+
+  <div class="box lim">
+    <h2>🚧 LIMITS OF THIS VERSION DOI</h2>
+    <ul>
+      <li>This zip is the <strong>v1.0.3</strong> GitHub snapshot; later HEAD-only kernel-export notes are not in it.</li>
+      <li>No 7-round ARIA attack complexities are claimed.</li>
+      <li>Paper PDF lives under a <strong>separate</strong> Zenodo concept (10.5281/zenodo.21705468).</li>
+      <li>Exhaustive Table 1 stays in Python; <code>verify_aria_bridge.py</code> is superseded.</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div class="doi">doi:10.5281/zenodo.21705939 · always-latest software zip</div>
+    <div>v1.0.3 10.5281/zenodo.21765202 · paper 10.5281/zenodo.21705468 · CC BY 4.0</div>
+    <div class="close">Replay the zip; cite the note.</div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Möbius Bridges — paper sketchnote</title>
+<style>
+  :root {
+    --bg: #FAF8F0;
+    --ink: #2D2D2D;
+    --blue: #1B4F72;
+    --orange: #D35400;
+    --green: #1E8449;
+    --purple: #6C3483;
+    --red: #C0392B;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 832px; height: 1248px;
+    background: var(--bg);
+    overflow: hidden;
+    color: var(--ink);
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  }
+  .page {
+    width: 832px; height: 1248px;
+    padding: 16px 18px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 6px; }
+  .title h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    letter-spacing: 1.2px;
+    color: var(--blue);
+    line-height: 1.05;
+  }
+  .title .sub { margin: 4px 0 0; font-size: 13px; font-weight: 700; }
+  .title .by { margin: 3px 0 0; font-size: 11.5px; color: #555; }
+  .motto {
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .row { display: flex; gap: 8px; }
+  .col { flex: 1; min-width: 0; }
+  .box {
+    border: 2.5px solid var(--ink);
+    border-radius: 10px;
+    padding: 8px 10px;
+    background: rgba(255,255,255,0.5);
+  }
+  .box h2 {
+    margin: 0 0 5px;
+    font-size: 12.5px;
+    font-weight: 800;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .box p, .box li { margin: 0; font-size: 11.5px; line-height: 1.38; }
+  .box ul { margin: 0; padding-left: 16px; }
+  .box li { margin-bottom: 2px; }
+  .tiny { font-size: 11px; color: #444; line-height: 1.32; }
+  .mono { font-family: Consolas, "Courier New", monospace; }
+  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
+  .prob h2 { color: var(--blue); }
+  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
+  .insight h2 { color: var(--orange); }
+  .aria { border-color: var(--green); background: rgba(30,132,73,0.08); }
+  .aria h2 { color: var(--green); }
+  .bad { border-color: var(--red); background: rgba(192,57,43,0.08); }
+  .bad h2 { color: var(--red); }
+  .method { border-color: var(--purple); background: rgba(108,52,131,0.08); }
+  .method h2 { color: var(--purple); }
+  .result { border-color: var(--green); background: rgba(30,132,73,0.10); border-width: 3px; }
+  .result h2 { color: var(--green); }
+  .lim { border-color: var(--red); background: rgba(192,57,43,0.07); flex: 1; }
+  .lim h2 { color: var(--red); }
+  .burst {
+    float: right;
+    background: var(--orange);
+    color: #fff;
+    font-size: 9.5px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin: -2px 0 4px 8px;
+  }
+  table.maps {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11.5px;
+    margin-top: 4px;
+  }
+  table.maps th {
+    text-align: left;
+    font-size: 10.5px;
+    color: var(--green);
+    border-bottom: 1.5px solid var(--green);
+    padding: 2px 4px;
+  }
+  table.maps td {
+    padding: 3px 4px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    font-family: Consolas, monospace;
+    font-size: 11.5px;
+  }
+  .eq {
+    margin: 6px 0 0;
+    padding: 7px 9px;
+    background: #fff;
+    border: 1.5px dashed var(--orange);
+    border-radius: 7px;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    text-align: center;
+    color: var(--purple);
+    font-weight: 700;
+  }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pill {
+    display: inline-block;
+    background: #fff;
+    border: 1.5px solid var(--green);
+    border-radius: 6px;
+    padding: 2px 7px;
+    font-weight: 800;
+    font-size: 12px;
+    color: var(--green);
+    margin-right: 4px;
+  }
+  .footer {
+    margin-top: auto;
+    text-align: center;
+    border-top: 2.5px solid var(--blue);
+    padding-top: 8px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    color: #444;
+  }
+  .footer .doi {
+    font-family: Consolas, monospace;
+    font-size: 12px;
+    color: var(--blue);
+    font-weight: 700;
+  }
+  .footer .close {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="title">
+    <h1>MÖBIUS BRIDGES</h1>
+    <p class="sub">Invert-and-Affine S-box Class, with the Four ARIA Instantiations</p>
+    <p class="by">Daniyel Yaacov Bilar · Chokmah LLC · 2026 · paper v1.0.5</p>
+  </header>
+  <p class="motto">“No attack complexities for ARIA are claimed.”</p>
+
+  <div class="row">
+    <div class="col box prob">
+      <h2>🔎 THE PROBLEM</h2>
+      <p>Nasr–Carlini’s Möbius Bridge drops one guessed key byte from 7-round AES MitM by a fingerprint that <strong>survives the S-box</strong>.</p>
+      <p class="tiny" style="margin-top:5px">The derivation is written for the AES S-box: field inversion, then a GF(2)-affine map. ARIA is not that shape.</p>
+    </div>
+    <div class="col box insight" style="flex:1.2">
+      <span class="burst">KEY INSIGHT</span>
+      <h2>💡 CLASS, NOT AES</h2>
+      <p>The construction holds for every invert-and-affine S-box. The Frobenius exponent <strong>j</strong> is the only degree of freedom.</p>
+      <div class="eq">S = L<sub>2</sub> ∘ Frob<sup>j</sup> ∘ inv ∘ L<sub>1</sub></div>
+      <p class="tiny" style="margin-top:5px">L<sub>1</sub>, L<sub>2</sub> are GF(2)-affine bijections. AES is j = 0 with L<sub>1</sub> = id.</p>
+    </div>
+  </div>
+
+  <div class="box aria">
+    <h2>🔐 ARIA INSTANTIATES FOUR CLASS MEMBERS AT ONCE</h2>
+    <table class="maps">
+      <thead>
+        <tr><th>Map</th><th>j</th><th>shape</th><th>L<sub>1</sub><sup>−1</sup>(0)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>S1</td><td>0</td><td>AES (a = 0x63)</td><td>0x00</td></tr>
+        <tr><td>S2</td><td>3</td><td>x<sup>247</sup> = (x<sup>−1</sup>)<sup>8</sup></td><td>0x00</td></tr>
+        <tr><td>S1<sup>−1</sup></td><td>0</td><td>inverse of S1</td><td>0x63</td></tr>
+        <tr><td>S2<sup>−1</sup></td><td>5</td><td>x<sup>223</sup> = (x<sup>−1</sup>)<sup>32</sup></td><td>0xe2</td></tr>
+      </tbody>
+    </table>
+    <p class="tiny" style="margin-top:5px">Published affine maps A, B and constants a = 0x63, b = 0xE2. Each map has its own offline multiset.</p>
+  </div>
+
+  <div class="box bad">
+    <h2>⚠️ BAD INDICES MOVE WITH L1</h2>
+    <p>Where <span class="mono">inv(0) = 0</span> breaks the identity, the hole sits at <strong>{ L<sub>1</sub><sup>−1</sup>(0), s }</strong>, not at {0, s}.</p>
+    <p class="tiny" style="margin-top:4px">For ARIA’s inverse S-boxes those holes are the affine constants. The published AES bad-index treatment does not port unchanged.</p>
+  </div>
+
+  <div class="row">
+    <div class="col box method">
+      <h2>🔁 THE BRIDGE MOVE</h2>
+      <p>The same reciprocal-and-reparametrize step as Nasr–Carlini yields an affine bridge identity:</p>
+      <ul style="margin-top:4px">
+        <li>both parameters raised to the 2<sup>j</sup> power</li>
+        <li>the multiplier remains the square of the translation</li>
+        <li>the key byte κ cancels in every pairwise difference</li>
+      </ul>
+    </div>
+    <div class="col box result">
+      <h2>🧷 FINGERPRINT (Cor. 3.2)</h2>
+      <p>Online class-S-box fingerprint equals the offline multiset fingerprint. Power-sum ratio <span class="mono">I(m,n) = P<sub>m</sub><sup>n</sup> / P<sub>n</sub><sup>m</sup></span> is invariant across all 255 admissible reference values s (checked at (m,n)=(7,11) and three other pairs).</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col box method">
+      <h2>📐 LEAN SPINE (v1.0.5)</h2>
+      <ul>
+        <li><strong>Thm 3.1</strong> class_bridge / class_bridge' / class_bridge_with_key</li>
+        <li><strong>Cor 3.2</strong> J_class_invariant via J_affine_invariant</li>
+        <li><strong>§5</strong> L1_inv_zero · IsBadIndex · bad_index_set</li>
+        <li>Pairwise β-cancel: class_bridge_pair_diff</li>
+      </ul>
+      <p class="tiny" style="margin-top:5px">Lean 4.32.2 / mathlib v4.32.2. Axioms: propext · Classical.choice · Quot.sound. No sorry.</p>
+    </div>
+    <div class="col box result">
+      <h2>✓ PYTHON ORACLE</h2>
+      <p><span class="pill">5/5</span> <span class="pill">0 / 64770</span></p>
+      <p style="margin-top:6px">Exhaustive GF(2<sup>8</sup>) checks stay in <span class="mono">verify_bridge_class.py</span>.</p>
+      <ul style="margin-top:5px">
+        <li>class identity, all 8 exponents</li>
+        <li>four ARIA maps, published A, B, a, b</li>
+        <li>S2 / S2<sup>−1</sup> exponent facts</li>
+        <li>bad-index locations</li>
+        <li>I(m,n) fingerprint invariance</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box lim">
+    <h2>🚧 LIMITS</h2>
+    <p>This note is a <strong>class identity</strong>, not an attack.</p>
+    <ul style="margin-top:4px">
+      <li>No 7-round ARIA complexities are claimed.</li>
+      <li>Exhaustive Table 1 stays in Python; Lean carries the algebraic spine.</li>
+      <li>Paper PDF and software zip are <strong>separate Zenodo concepts</strong>.</li>
+      <li>AES-style bad-index treatment does not port to ARIA inverses.</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div class="doi">doi:10.5281/zenodo.21705468 · always-latest PDF</div>
+    <div>v1.0.5 10.5281/zenodo.21765164 · software 10.5281/zenodo.21705939 · CC BY 4.0</div>
+    <div class="close">Cite the paper for the claim; the zip for the replay.</div>
+  </footer>
+
+</div>
+</body>
+</html>

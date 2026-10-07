@@ -4,7 +4,7 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-10-06T12:00:00Z</updated>
+  <updated>2026-10-07T12:00:00Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
     <title>Trust, but Replay: Auditing Published Mathematical Claims</title>
@@ -109,15 +109,15 @@
     <title>aria-moebius: Lean formalization and class-bridge verifier</title>
     <link href="https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-21765202/"/>
     <id>https://doi.org/10.5281/zenodo.21765202</id>
-    <updated>2026-08-03T00:00:00Z</updated>
-    <summary>v1.0.3 — full class bridge formalization Lean spine for the published note (paper v1.0.5): Theorem 3.1: class_bridge / class_bridge&#39; / class_bridge_with_key Corollary 3.2: J_class_invariant (via J_affine_invariant) &#167;5 bad indices: L1_inv_zero, IsBadIndex, bad_index_set Pairwise β-cancel: class_br...</summary>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <summary>Lean 4 + exhaustive GF(2^8) Python verifier for the invert-and-affine Möbius class bridge (ARIA four maps). Companion to paper v1.0.5. Prefer software concept DOI 10.5281/zenodo.21705939. No attack complexities claimed.</summary>
   </entry>
   <entry>
     <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
     <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/"/>
     <id>https://doi.org/10.5281/zenodo.21765164</id>
-    <updated>2026-08-03T00:00:00Z</updated>
-    <summary>Version 1.0.5: Lean 4 formalization of Theorem 3.1 (class bridge), Corollary 3.2 (class fingerprint invariance), and Section 5 bad-index set; Appendix A.2 correspondence corrected. Exhaustive GF(2^8) checks remain in Python. The Mobius Bridge of Nasr and Carlini removes one guessed key byte from...</summary>
+    <updated>2026-10-07T00:00:00Z</updated>
+    <summary>The Möbius Bridge holds for every invert-and-affine S-box S = L2 ∘ Frob^j ∘ inv ∘ L1; j is the only degree of freedom. ARIA instantiates four class members. Lean 4 + exhaustive GF(2^8). No attack complexities claimed.</summary>
   </entry>
   <entry>
     <title>chokmah-me/hashline: hashline 0.4.1</title>
