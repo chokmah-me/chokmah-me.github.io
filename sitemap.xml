@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://chokmah.me/</loc><lastmod>2026-09-14</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://chokmah.me/research/</loc><lastmod>2026-10-07</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/research/</loc><lastmod>2026-10-08</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://chokmah.me/research/the-computability-filter-23232339/</loc><lastmod>2026-10-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/trust-but-replay-auditing-published-mathematical-claims-22926996/</loc><lastmod>2026-10-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/a-numerical-test-of-the-quadratic-estimate-in-arxiv-2609-22830611/</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/catalan-sun-lean-lean-formalization-slice-of-sun-catalan-22830202/</loc><lastmod>2026-09-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -23,7 +24,7 @@
   <url><loc>https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/valid-and-false-snapping-in-eml-expression-trees-the-basin-s-20671038/</loc><lastmod>2026-06-12</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/claude-code-playbook-v4-4-0-20481459/</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://chokmah.me/research/the-computability-filter-20330532/</loc><lastmod>2026-05-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://chokmah.me/research/the-computability-filter-20330532/</loc><lastmod>2026-10-08</lastmod><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://chokmah.me/research/parabolic-fractal-v1-1-0-code-and-data-for-fan-in-distributio-22908056/</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://chokmah.me/research/chokmah-me-parabolic-fractal-v1-0-0-20318458/</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-22908061/</loc><lastmod>2026-09-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
