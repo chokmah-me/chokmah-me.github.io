@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Governance Patch-Gap — sketchnote</title>
+<style>
+  :root {
+    --bg: #FAF8F0;
+    --ink: #2D2D2D;
+    --blue: #1B4F72;
+    --orange: #D35400;
+    --green: #1E8449;
+    --purple: #6C3483;
+    --red: #C0392B;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 832px; height: 1248px;
+    background: var(--bg);
+    overflow: hidden;
+    color: var(--ink);
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  }
+  .page {
+    width: 832px; height: 1248px;
+    padding: 16px 18px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 6px; }
+  .title h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    letter-spacing: 0.4px;
+    color: var(--blue);
+    line-height: 1.12;
+  }
+  .title .sub { margin: 3px 0 0; font-size: 13px; font-weight: 700; }
+  .title .by { margin: 2px 0 0; font-size: 11px; color: #555; }
+  .motto {
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .row { display: flex; gap: 8px; }
+  .col { flex: 1; min-width: 0; }
+  .box {
+    border: 2.5px solid var(--ink);
+    border-radius: 10px;
+    padding: 8px 10px;
+    background: rgba(255,255,255,0.5);
+  }
+  .box h2 {
+    margin: 0 0 5px;
+    font-size: 12.5px;
+    font-weight: 800;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .box p, .box li { margin: 0; font-size: 11.5px; line-height: 1.35; }
+  .box ul { margin: 0; padding-left: 15px; }
+  .box li { margin-bottom: 2px; }
+  .tiny { font-size: 10.5px; color: #444; line-height: 1.3; }
+  .eq {
+    font-family: "Courier New", Consolas, monospace;
+    font-size: 13px;
+    color: var(--purple);
+    font-weight: 700;
+    background: rgba(108,52,131,0.08);
+    border: 1.5px dashed var(--purple);
+    border-radius: 7px;
+    padding: 6px 8px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
+  .prob h2 { color: var(--blue); }
+  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
+  .insight h2 { color: var(--orange); }
+  .math { border-color: var(--purple); background: rgba(108,52,131,0.08); }
+  .math h2 { color: var(--purple); }
+  .method { border-color: var(--green); background: rgba(30,132,73,0.08); }
+  .method h2 { color: var(--green); }
+  .case { border-color: var(--orange); background: rgba(211,84,0,0.07); }
+  .case h2 { color: var(--orange); }
+  .pred { border-color: var(--blue); background: rgba(27,79,114,0.06); }
+  .pred h2 { color: var(--blue); }
+  .lim { border-color: var(--red); background: rgba(192,57,43,0.08); }
+  .lim h2 { color: var(--red); }
+  .burst {
+    float: right;
+    background: var(--orange);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin: -2px 0 4px 8px;
+  }
+  .actors {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .actor {
+    border: 1.5px solid var(--ink);
+    border-radius: 8px;
+    padding: 6px;
+    background: #fff;
+  }
+  .actor .lab { font-size: 10.5px; font-weight: 800; color: var(--green); }
+  .actor .detail { font-size: 10.5px; line-height: 1.3; color: #444; margin-top: 2px; }
+  .regimes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .reg {
+    border-radius: 8px;
+    border: 1.5px solid var(--ink);
+    padding: 6px;
+    background: #fff;
+    text-align: center;
+  }
+  .reg .lab { font-size: 10px; font-weight: 800; }
+  .reg .num { font-family: Georgia, serif; font-size: 18px; font-weight: 700; }
+  .reg .detail { font-size: 10px; color: #444; margin-top: 2px; }
+  .r1 .lab, .r1 .num { color: var(--green); }
+  .r2 .lab, .r2 .num { color: var(--orange); }
+  .r3 { border-color: var(--red); border-width: 2.5px; background: rgba(192,57,43,0.10); }
+  .r3 .lab, .r3 .num { color: var(--red); }
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 4px;
+  }
+  .split .pane {
+    border: 1.5px dashed var(--blue);
+    border-radius: 7px;
+    padding: 6px 8px;
+    background: #fff;
+  }
+  .split h3 { margin: 0 0 3px; font-size: 11px; color: var(--blue); }
+  .nums {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 10px;
+    font-size: 11px;
+    margin-top: 4px;
+  }
+  .nums b { color: var(--orange); }
+  .open { color: var(--orange); font-weight: 800; }
+  .footer {
+    margin-top: auto;
+    text-align: center;
+    border-top: 2.5px solid var(--blue);
+    padding-top: 8px;
+    font-size: 11.5px;
+    line-height: 1.4;
+    color: #444;
+  }
+  .footer .doi {
+    font-family: Consolas, monospace;
+    font-size: 11.5px;
+    color: var(--blue);
+    font-weight: 700;
+  }
+  .footer .close {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 13px;
+    margin-top: 3px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="title">
+    <h1>THE GOVERNANCE PATCH-GAP</h1>
+    <p class="sub">Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</p>
+    <p class="by">Daniyel Yaacov Bilar · Chokmah LLC · October 2026 · v1.2 · Zenodo preprint</p>
+  </header>
+  <p class="motto">“The holes were always there. What changed is the cost to find them.”</p>
+
+  <div class="row">
+    <div class="col box prob">
+      <h2>🔎 THE PROBLEM</h2>
+      <p>Legal systems are rule systems. Open texture (“reasonable,” “undue burden”) is a design feature for judges — and search space for an optimizer.</p>
+      <p class="tiny" style="margin-top:5px">Hart’s penumbra is the attack surface. Schmitt’s exception names who fills it. Repair still runs on a legislative clock.</p>
+    </div>
+    <div class="col box insight" style="flex:1.15">
+      <span class="burst">KEY INSIGHT</span>
+      <h2>⚡ RATE, NOT REFUSAL</h2>
+      <p><strong>AI collapses discovery cost. Repair does not.</strong></p>
+      <p style="margin-top:5px">Not a better system prompt. The asset at risk is the <em>stock</em> of known-but-unpatched ambiguities. Discovery and execution are two different problems.</p>
+    </div>
+  </div>
+
+  <div class="box math">
+    <h2>📐 DEFINITION (not a fitted model)</h2>
+    <div class="eq">G = R<sub>d</sub> / R<sub>p</sub> &nbsp;&nbsp;·&nbsp;&nbsp; dS/dt = R<sub>d</sub> − R<sub>p</sub></div>
+    <p class="tiny" style="margin-top:5px">G is a ratio of rates. Regime labels are heuristics. HOT / robust-yet-fragile: fragility concentrates at the specification boundary, not in the core. Catala-class formalization shrinks the core, not the penumbra.</p>
+    <div class="regimes">
+      <div class="reg r1"><div class="lab">near-parity</div><div class="num">G ≈ 2</div><div class="detail">human-speed search</div></div>
+      <div class="reg r2"><div class="lab">tool-assisted</div><div class="num">G ~ 10²</div><div class="detail">cheap corpus crawl</div></div>
+      <div class="reg r3"><div class="lab">agentic</div><div class="num">G ~ 10³+</div><div class="detail">stock grows anyway</div></div>
+    </div>
+  </div>
+
+  <div class="box method">
+    <h2>🧩 THREE ACTORS · TWO PROBLEMS</h2>
+    <div class="actors">
+      <div class="actor"><div class="lab">🏢 Corporate</div><div class="detail">Repeat player. Disclosure can reach them.</div></div>
+      <div class="actor"><div class="lab">🏛 State</div><div class="detail">Arbitrage across jurisdictions and time.</div></div>
+      <div class="actor"><div class="lab">🤖 Unsupervised</div><div class="detail">No principal. Disclosure misses them.</div></div>
+    </div>
+    <div class="split">
+      <div class="pane"><h3>🔍 Discovery</h3><p>Tool-governance: access, audit of comment corpora, AI-use disclosure in filings.</p></div>
+      <div class="pane"><h3>⚙️ Execution</h3><p>Agency and liability: who is the principal; HITL above dollar / class / border.</p></div>
+    </div>
+  </div>
+
+  <div class="box case">
+    <h2>📊 LIVE CASE · BCBSA §5.4 (auxiliary, not P2)</h2>
+    <div class="nums">
+      <div><b>37% → 40%</b> complex hospital cases</div>
+      <div><b>$942M</b> two-year total</div>
+      <div><b>$653M</b> of that from 55k+ secondary dx</div>
+      <div>anemia 13.7% vs 9.9% · transfusion 16.9% vs 19.3%</div>
+    </div>
+    <p class="tiny" style="margin-top:5px">Payer-association attribution of coding-intensity to AI revenue-cycle tools. Open-textured term is the fight. Not an enforcement record. Glasswing: 75 of 530 disclosed bugs patched (code column, first public measurement).</p>
+  </div>
+
+  <div class="row">
+    <div class="col box pred">
+      <h2>🎯 PREDICTIONS (all open, Oct 2026)</h2>
+      <ul>
+        <li><strong>P1</strong> end-2027: ≥5% fully AI-generated substantive comments in one U.S. rulemaking. FCC so far ~1.4%.</li>
+        <li><strong>P2</strong> end-2027: attributed in-production exploit. BCBSA is auxiliary only.</li>
+        <li><strong>P3</strong> mid-2028: two governments or the EU publish legislative red-team reports. Estonia/Italy do not qualify.</li>
+      </ul>
+    </div>
+    <div class="col box lim">
+      <h2>⚠️ NON-CLAIMS</h2>
+      <ul>
+        <li>G is a definition, not dynamics</li>
+        <li>SocioHack unreplicated (κ 0.55 → 0.86, different protocol)</li>
+        <li>A1/VERITE: 36 already-vulnerable contracts</li>
+        <li>Rice / FLP / attestation: analogical</li>
+        <li>Companion toy is a <em>separate</em> Zenodo concept</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="box method">
+    <h2>🛡️ THREE DEFENSES (all bounded)</h2>
+    <p>① Red-team draft text before enactment — useful, not exhaustive. ② Formal methods — core only. ③ Rate-limits (HITL, disclosure) — buy time, do not close G. Software v0.2.0 gates the algebra: Lean stock identities, §4.4 arithmetic, 162-cell frozen sweep.</p>
+  </div>
+
+  <footer class="footer">
+    <div class="doi">concept doi:10.5281/zenodo.21910874 · always-latest PDF</div>
+    <div>v1.2 10.5281/zenodo.23262565 · software 10.5281/zenodo.23262639 · CC BY 4.0</div>
+    <div class="close">Rate-limit execution. Do not buy formally verified law as a complete close.</div>
+  </footer>
+
+</div>
+</body>
+</html>
