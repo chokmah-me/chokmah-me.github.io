@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Golden Dome Latency Governance — sketchnote</title>
+<style>
+  :root {
+    --bg: #FAF8F0;
+    --ink: #2D2D2D;
+    --blue: #1B4F72;
+    --orange: #D35400;
+    --green: #1E8449;
+    --purple: #6C3483;
+    --red: #C0392B;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 832px; height: 1248px;
+    background: var(--bg);
+    overflow: hidden;
+    color: var(--ink);
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  }
+  .page {
+    width: 832px; height: 1248px;
+    padding: 14px 16px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 5px; }
+  .title h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+    color: var(--blue);
+    line-height: 1.08;
+  }
+  .title .sub { margin: 2px 0 0; font-size: 12.5px; font-weight: 700; }
+  .title .by { margin: 2px 0 0; font-size: 11px; color: #555; }
+  .motto {
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .row { display: flex; gap: 7px; }
+  .col { flex: 1; min-width: 0; }
+  .box {
+    border: 2.5px solid var(--ink);
+    border-radius: 10px;
+    padding: 7px 9px;
+    background: rgba(255,255,255,0.5);
+  }
+  .box h2 {
+    margin: 0 0 4px;
+    font-size: 12px;
+    font-weight: 800;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .box p, .box li { margin: 0; font-size: 11px; line-height: 1.32; }
+  .box ul { margin: 0; padding-left: 14px; }
+  .box li { margin-bottom: 2px; }
+  .tiny { font-size: 10.5px; color: #444; line-height: 1.28; }
+  .eq {
+    font-family: "Courier New", Consolas, monospace;
+    font-size: 12px;
+    color: var(--purple);
+    font-weight: 700;
+    background: rgba(108,52,131,0.08);
+    border: 1.5px dashed var(--purple);
+    border-radius: 7px;
+    padding: 5px 7px;
+    margin-top: 4px;
+    text-align: center;
+  }
+  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
+  .prob h2 { color: var(--blue); }
+  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
+  .insight h2 { color: var(--orange); }
+  .method { border-color: var(--green); background: rgba(30,132,73,0.08); }
+  .method h2 { color: var(--green); }
+  .math { border-color: var(--purple); background: rgba(108,52,131,0.08); }
+  .math h2 { color: var(--purple); }
+  .res { border-color: var(--orange); background: rgba(211,84,0,0.07); }
+  .res h2 { color: var(--orange); }
+  .lim { border-color: var(--red); background: rgba(192,57,43,0.08); }
+  .lim h2 { color: var(--red); }
+  .burst {
+    float: right;
+    background: var(--orange);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin: -1px 0 3px 8px;
+  }
+  .phys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 4px;
+  }
+  .phys .cell {
+    border: 1.5px solid var(--blue);
+    border-radius: 7px;
+    padding: 4px 5px;
+    background: #fff;
+    text-align: center;
+  }
+  .phys .num { font-family: Georgia, serif; font-size: 16px; font-weight: 700; color: var(--blue); }
+  .phys .lab { font-size: 9.5px; color: #444; line-height: 1.2; }
+  .checks {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-top: 4px;
+  }
+  .chk {
+    border: 1.5px solid var(--green);
+    border-radius: 7px;
+    padding: 4px 4px 5px;
+    background: #fff;
+    text-align: center;
+    min-height: 78px;
+  }
+  .chk .n {
+    display: inline-block;
+    min-width: 16px; height: 16px;
+    border-radius: 4px;
+    background: var(--green);
+    color: #fff;
+    font-size: 10px; font-weight: 800;
+    line-height: 16px;
+    margin-bottom: 2px;
+  }
+  .chk .name { font-size: 9.5px; font-weight: 800; color: var(--green); line-height: 1.15; }
+  .chk .detail { font-size: 9px; color: #444; line-height: 1.2; margin-top: 2px; }
+  .bars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .bar {
+    border-radius: 8px;
+    border: 1.5px solid var(--ink);
+    padding: 6px;
+    background: #fff;
+    text-align: center;
+  }
+  .bar .lab { font-size: 10px; font-weight: 800; }
+  .bar .num { font-family: Georgia, serif; font-size: 22px; font-weight: 700; line-height: 1.1; }
+  .bar .detail { font-size: 9.5px; color: #444; margin-top: 2px; line-height: 1.2; }
+  .track {
+    height: 8px;
+    border-radius: 4px;
+    background: #e8e4d8;
+    margin: 5px 4px 0;
+    overflow: hidden;
+  }
+  .fill { height: 100%; border-radius: 4px; }
+  .b1 .lab, .b1 .num { color: var(--green); }
+  .b1 .fill { width: 99%; background: var(--green); }
+  .b2 .lab, .b2 .num { color: var(--orange); }
+  .b2 .fill { width: 89%; background: var(--orange); }
+  .b3 { border-color: var(--red); border-width: 2.5px; background: rgba(192,57,43,0.08); }
+  .b3 .lab, .b3 .num { color: var(--red); }
+  .b3 .fill { width: 62%; background: var(--red); }
+  .swap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-top: 4px;
+  }
+  .pane {
+    border: 1.5px dashed var(--green);
+    border-radius: 7px;
+    padding: 5px 7px;
+    background: #fff;
+  }
+  .pane h3 { margin: 0 0 2px; font-size: 11px; color: var(--green); }
+  .tiers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 4px;
+  }
+  .tier {
+    border: 1.5px solid var(--ink);
+    border-radius: 7px;
+    padding: 5px 6px;
+    background: #fff;
+  }
+  .tier .lab { font-size: 10.5px; font-weight: 800; }
+  .tier .win { font-family: Georgia, serif; font-size: 13px; font-weight: 700; color: var(--blue); }
+  .tier .detail { font-size: 9.5px; color: #444; line-height: 1.22; margin-top: 2px; }
+  .t-hgv { border-color: var(--orange); border-width: 2.5px; background: rgba(211,84,0,0.10); }
+  .t-hgv .lab, .t-hgv .win { color: var(--orange); }
+  .scen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-top: 4px;
+  }
+  .sc {
+    border: 1.5px solid var(--purple);
+    border-radius: 7px;
+    padding: 5px 6px;
+    background: #fff;
+  }
+  .sc .lab { font-size: 10.5px; font-weight: 800; color: var(--purple); }
+  .sc .detail { font-size: 9.5px; color: #444; line-height: 1.22; margin-top: 2px; }
+  .footer {
+    text-align: center;
+    border-top: 2.5px solid var(--blue);
+    padding-top: 6px;
+    font-size: 11px;
+    line-height: 1.35;
+    color: #444;
+  }
+  .footer .doi {
+    font-family: Consolas, monospace;
+    font-size: 11px;
+    color: var(--blue);
+    font-weight: 700;
+  }
+  .footer .close {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 12.5px;
+    margin-top: 2px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="title">
+    <h1>GOLDEN DOME LATENCY GOVERNANCE</h1>
+    <p class="sub">Autonomous Operations Model Extended to Boost-Phase Intercept Timelines</p>
+    <p class="by">Daniyel Yaacov Bilar · Chokmah LLC · October 2026 · v8.2 · technical note</p>
+  </header>
+  <p class="motto">“The AOM cannot change the physics.”</p>
+
+  <div class="row">
+    <div class="col box prob">
+      <h2>⚡ THE PHYSICS CLOSE</h2>
+      <p>HGV terminal window is <strong>5–15 s</strong>. Track prediction dies with time. HITL needs a ground path that is both fast and present.</p>
+      <div class="phys">
+        <div class="cell"><div class="num">474 ms</div><div class="lab">GEO relay RTT<br>irreducible</div></div>
+        <div class="cell"><div class="num">~8%</div><div class="lab">LEO duty cycle<br>one ground station</div></div>
+        <div class="cell"><div class="num">ISL</div><div class="lab">mesh not fielded<br>Aug 2026</div></div>
+      </div>
+      <p class="tiny" style="margin-top:5px">Together, GEO delay and sparse downlink close HITL. The engagement window opens at the adversary’s choosing.</p>
+    </div>
+    <div class="col box insight" style="flex:1.12">
+      <span class="burst">KEY INSIGHT</span>
+      <h2>🎯 AUTHORIZE AT THE EDGE</h2>
+      <p><strong>Move the decision to where latency is compute, not light.</strong></p>
+      <p style="margin-top:4px">Hub authors a signed Mission Intent Object (MIO) on human timescales. Edge node: track in ~40 ms, 7-check gate in &lt;5 ms, act without hub ACK. Full post-hoc audit mandatory.</p>
+      <p class="tiny" style="margin-top:4px">Tier 1-E matches governance to the decision timescale. Dual-auth MIO, UTC windows, zero-collateral geo-fence. Operators stay in the outer loop — MIO authoring and after-action — where human judgment works.</p>
+    </div>
+  </div>
+
+  <div class="box method">
+    <h2>🧩 7-CHECK GATING MATRIX · &lt; 5 ms on rad-tolerant edge</h2>
+    <p class="tiny">Operational checks first (cheap, high reject volume). Adversarial layer on the remainder. Cryptographic trace commit last. Timing windows are notional; Phase GD-0 must validate on target FPGA/CGRA.</p>
+    <div class="checks">
+      <div class="chk"><div class="n">1</div><div class="name">Schema</div><div class="detail">IntentCapsule vs canonical schema. Fixed-point only.</div></div>
+      <div class="chk"><div class="n">2</div><div class="name">MIO hash</div><div class="detail">Active pre-loaded MIO. HALT if expired/broken.</div></div>
+      <div class="chk"><div class="n">3</div><div class="name">Physics</div><div class="detail">3a kinematics · 3b IR/optical Mahalanobis</div></div>
+      <div class="chk"><div class="n">4</div><div class="name">Temporal</div><div class="detail">Pop-in filter + 500 ms TTL. Needs t_auth.</div></div>
+      <div class="chk"><div class="n">5</div><div class="name">PINN</div><div class="detail">Conf ≥0.95 + chaotic-quantized PINN</div></div>
+      <div class="chk"><div class="n">6</div><div class="name">Geo+quorum</div><div class="detail">Zero-collateral zone · 2/3 local ISL</div></div>
+      <div class="chk"><div class="n">7</div><div class="name">Commit</div><div class="detail">Tamper-evident log before actuation</div></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col box math">
+      <h2>📐 GATES AND NUMBERS</h2>
+      <div class="eq">detect ⇔ any of 7 checks fires</div>
+      <p class="tiny" style="margin-top:4px">Check 3b at 50 m pop-in: FP32 score <strong>1.25</strong> vs threshold <strong>3.9</strong> — 3b does not catch cold-start. Coherence (Check 4) fires above ~<strong>80 m</strong>.</p>
+      <p class="tiny" style="margin-top:3px">Auditor latency under SEU jitter: P99 = 4.61 ms · P99.9 = <strong>4.82 ms</strong> inside the 5 ms budget. Staleness is a step function: Δt ≤ −500 ms → 100% bypass unless the clock is authenticated.</p>
+      <p class="tiny" style="margin-top:3px">Sim entropy tape is version-stable AR(1) PRNG (v8.2). Production seed is a satellite radiation-event counter — physically uncloneable from the ground.</p>
+    </div>
+    <div class="col box res">
+      <h2>📊 COMBINED DETECTION (parametric MC)</h2>
+      <p class="tiny">50,000 trials / level · 20 levels · seed 42. Same per-check models as the analytical curves. Model uncertainty is <em>not</em> quantified.</p>
+      <div class="bars">
+        <div class="bar b1">
+          <div class="lab">s = 0.74</div>
+          <div class="num">~99%</div>
+          <div class="track"><div class="fill"></div></div>
+          <div class="detail">nation-state</div>
+        </div>
+        <div class="bar b2">
+          <div class="lab">s = 1.0</div>
+          <div class="num">~89%</div>
+          <div class="track"><div class="fill"></div></div>
+          <div class="detail">+ calibration</div>
+        </div>
+        <div class="bar b3">
+          <div class="lab">PINN-zeroed</div>
+          <div class="num">~62%</div>
+          <div class="track"><div class="fill"></div></div>
+          <div class="detail">s = 1.0, 6 checks</div>
+        </div>
+      </div>
+      <p class="tiny" style="margin-top:4px">s is a modeling convenience, not a threat taxonomy. PINN adds ~27 pp at s=1.0; little at low s.</p>
+    </div>
+  </div>
+
+  <div class="box method">
+    <h2>⏱️ DUAL-AXIS TIER MATRIX · latency budget + cognitive budget</h2>
+    <div class="tiers">
+      <div class="tier">
+        <div class="lab">Boost-phase ICBM</div>
+        <div class="win">180–300 s</div>
+        <div class="detail">Tier 2 HITL preferred. Tier 1-E fallback if uplink degraded.</div>
+      </div>
+      <div class="tier t-hgv">
+        <div class="lab">HGV terminal</div>
+        <div class="win">5–15 s</div>
+        <div class="detail">Tier 1-E. HITL physically excluded. Pre-signed MIO + 5 ms gate.</div>
+      </div>
+      <div class="tier">
+        <div class="lab">Ballistic MaRV</div>
+        <div class="win">10–30 s</div>
+        <div class="detail">Tier 1-E. Local 2–3 node ISL quorum if links healthy (3–34 ms).</div>
+      </div>
+      <div class="tier">
+        <div class="lab">C-UAS / cruise</div>
+        <div class="win">&gt; 60 s</div>
+        <div class="detail">Tier 2 unchanged. Original AOM matrix applies.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box math">
+    <h2>🧪 FALSIFICATION · simulate.py · three attack scenarios</h2>
+    <div class="scen">
+      <div class="sc">
+        <div class="lab">A · Ghost clock</div>
+        <div class="detail">Stale-state injection. Δt ≤ −500 ms → 100% staleness bypass. Defense is authenticated t_auth, not a tighter TTL.</div>
+      </div>
+      <div class="sc">
+        <div class="lab">B · INT8 spoof</div>
+        <div class="detail">Quantization gap. Unit-scale zero-knowledge bypass ~0.06%. Raw sensor range (3–4 orders) widens the gap without normalization.</div>
+      </div>
+      <div class="sc">
+        <div class="lab">C · Lethal compliance</div>
+        <div class="detail">Mach 5–15, sub-10g, cold-start pop-in. 3a and 3b pass; Check 4 catches jumps above ~80 m. Sweet spot below that.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box method">
+    <h2>🔄 HUB-TIER MODEL SWAP · survive provider severance</h2>
+    <div class="swap">
+      <div class="pane">
+        <h3>🧱 Schema, not vendor</h3>
+        <p>Model-Abstraction Layer: edge parser reads canonical MIO schema. Replacing the hub model does not break the auditor. 4-hour TTL is the dead-man’s switch during swap.</p>
+      </div>
+      <div class="pane">
+        <h3>🧪 Certify in deployed precision</h3>
+        <p>Shadow mode → 2σ confidence vs ejected baseline → Step 4b INT8/FP4 vs FP32 (quant-conditioned backdoors) → 95% drift separation → 72 h advisory → restore.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box lim">
+    <h2>⚠️ LIMITS · Phase GD-0 is the gate</h2>
+    <ul>
+      <li>All thresholds (5 ms, 0.95 floor, 80 m coherence, 2σ swap gate) are engineering defaults, not hardware measurements.</li>
+      <li>Headline detection rates rest on parametric per-check models, not measured failure rates.</li>
+      <li>Feature normalization is a hard requirement for Check 3b; unit-scale sim understates the INT8 gap.</li>
+      <li>Residuals that stay: physics-compliant spoof below ~80 m · FLP under ISL jam · MIO authoring error · clock-trust under GPS+ISL denial.</li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div class="doi">concept doi:10.5281/zenodo.19368681 · always-latest PDF</div>
+    <div>v8.2 10.5281/zenodo.23334956 · companion suite 10.5281/zenodo.19368609 · CC BY 4.0</div>
+    <div class="close">At the far end of the dial, for HGV terminal intercept, there is no human position on it.</div>
+  </footer>
+
+</div>
+</body>
+</html>
