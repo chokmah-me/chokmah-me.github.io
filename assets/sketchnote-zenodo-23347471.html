@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Quantum-Safe Migration Playbook — sketchnote</title>
+<style>
+  :root {
+    --bg: #FAF8F0;
+    --ink: #2D2D2D;
+    --blue: #1B4F72;
+    --orange: #D35400;
+    --green: #1E8449;
+    --purple: #6C3483;
+    --red: #C0392B;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    width: 832px; height: auto;
+    background: var(--bg);
+    overflow: visible;
+    color: var(--ink);
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  }
+  .page {
+    width: 832px; height: auto;
+    padding: 12px 14px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 4px; }
+  .title h1 {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    letter-spacing: 0.2px;
+    color: var(--blue);
+    line-height: 1.08;
+  }
+  .title .sub { margin: 2px 0 0; font-size: 12px; font-weight: 700; }
+  .title .by { margin: 1px 0 0; font-size: 11px; color: #555; }
+  .motto {
+    margin: 0;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--orange);
+    font-weight: 700;
+  }
+  .row { display: flex; gap: 6px; }
+  .col { flex: 1; min-width: 0; }
+  .box {
+    border: 2.5px solid var(--ink);
+    border-radius: 10px;
+    padding: 6px 8px;
+    background: rgba(255,255,255,0.5);
+  }
+  .box h2 {
+    margin: 0 0 3px;
+    font-size: 11.5px;
+    font-weight: 800;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .box p, .box li { margin: 0; font-size: 10.5px; line-height: 1.28; }
+  .box ul { margin: 0; padding-left: 13px; }
+  .box li { margin-bottom: 1px; }
+  .tiny { font-size: 10px; color: #444; line-height: 1.24; }
+  .eq {
+    font-family: "Courier New", Consolas, monospace;
+    font-size: 11.5px;
+    color: var(--purple);
+    font-weight: 700;
+    background: rgba(108,52,131,0.08);
+    border: 1.5px dashed var(--purple);
+    border-radius: 7px;
+    padding: 4px 6px;
+    margin-top: 3px;
+    text-align: center;
+  }
+  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
+  .prob h2 { color: var(--blue); }
+  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
+  .insight h2 { color: var(--orange); }
+  .method { border-color: var(--green); background: rgba(30,132,73,0.08); }
+  .method h2 { color: var(--green); }
+  .math { border-color: var(--purple); background: rgba(108,52,131,0.08); }
+  .math h2 { color: var(--purple); }
+  .res { border-color: var(--orange); background: rgba(211,84,0,0.07); }
+  .res h2 { color: var(--orange); }
+  .lim { border-color: var(--red); background: rgba(192,57,43,0.08); }
+  .lim h2 { color: var(--red); }
+  .burst {
+    float: right;
+    background: var(--orange);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 10px;
+    margin: -1px 0 3px 8px;
+  }
+  .phys {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4px;
+    margin-top: 3px;
+  }
+  .phys .cell {
+    border: 1.5px solid var(--blue);
+    border-radius: 7px;
+    padding: 3px 4px;
+    background: #fff;
+    text-align: center;
+  }
+  .phys .num { font-family: Georgia, serif; font-size: 14px; font-weight: 700; color: var(--blue); }
+  .phys .lab { font-size: 9px; color: #444; line-height: 1.15; }
+  .gaps {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+    margin-top: 3px;
+  }
+  .gap {
+    border: 1.5px solid var(--green);
+    border-radius: 7px;
+    padding: 4px 5px;
+    background: #fff;
+    min-height: 72px;
+  }
+  .gap .n {
+    display: inline-block;
+    min-width: 15px; height: 15px;
+    border-radius: 4px;
+    background: var(--green);
+    color: #fff;
+    font-size: 10px; font-weight: 800;
+    line-height: 15px;
+    text-align: center;
+    margin-bottom: 2px;
+  }
+  .gap .name { font-size: 10px; font-weight: 800; color: var(--green); line-height: 1.1; }
+  .gap .detail { font-size: 9px; color: #444; line-height: 1.18; margin-top: 2px; }
+  .bars {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top: 3px;
+  }
+  .bar {
+    border-radius: 8px;
+    border: 1.5px solid var(--ink);
+    padding: 5px 6px;
+    background: #fff;
+    text-align: center;
+  }
+  .bar .lab { font-size: 9.5px; font-weight: 800; }
+  .bar .num { font-family: Georgia, serif; font-size: 20px; font-weight: 700; line-height: 1.05; }
+  .bar .detail { font-size: 9px; color: #444; margin-top: 1px; line-height: 1.18; }
+  .track {
+    height: 7px;
+    border-radius: 4px;
+    background: #e8e4d8;
+    margin: 4px 2px 0;
+    overflow: hidden;
+  }
+  .fill { height: 100%; border-radius: 4px; }
+  .b1 .lab, .b1 .num { color: var(--green); }
+  .b1 .fill { width: 70%; background: var(--green); }
+  .b2 .lab, .b2 .num { color: var(--orange); }
+  .b2 .fill { width: 15%; background: var(--orange); }
+  .dates {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4px;
+    margin-top: 3px;
+  }
+  .dt {
+    border: 1.5px solid var(--purple);
+    border-radius: 7px;
+    padding: 4px 5px;
+    background: #fff;
+  }
+  .dt .when { font-family: Georgia, serif; font-size: 12px; font-weight: 700; color: var(--purple); }
+  .dt .what { font-size: 9px; color: #444; line-height: 1.18; }
+  .dt.hot { border-color: var(--orange); border-width: 2.5px; background: rgba(211,84,0,0.10); }
+  .dt.hot .when { color: var(--orange); }
+  .secs {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+    margin-top: 3px;
+  }
+  .sec {
+    border: 1.5px solid var(--green);
+    border-radius: 6px;
+    padding: 3px 4px;
+    background: #fff;
+    text-align: center;
+    font-size: 9px;
+    line-height: 1.15;
+  }
+  .sec strong { display: block; color: var(--green); font-size: 10px; }
+  .eval {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top: 3px;
+  }
+  .pane {
+    border: 1.5px dashed var(--green);
+    border-radius: 7px;
+    padding: 4px 6px;
+    background: #fff;
+  }
+  .pane h3 { margin: 0 0 2px; font-size: 10.5px; color: var(--green); }
+  .xpane { border-color: var(--red); }
+  .xpane h3 { color: var(--red); }
+  .footer {
+    text-align: center;
+    border-top: 2.5px solid var(--blue);
+    padding-top: 5px;
+    font-size: 10.5px;
+    line-height: 1.3;
+    color: #444;
+  }
+  .footer .doi {
+    font-family: Consolas, monospace;
+    font-size: 10.5px;
+    color: var(--blue);
+    font-weight: 700;
+  }
+  .footer .close {
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 12px;
+    margin-top: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="title">
+    <h1>QUANTUM-SAFE MIGRATION PLAYBOOK</h1>
+    <p class="sub">Strategic &amp; Operational Guide · Type D knowledge base</p>
+    <p class="by">Daniyel Yaacov Bilar · Chokmah LLC · 13 Oct 2026 · v1.3.0 · technical note · CC BY 4.0</p>
+  </header>
+  <p class="motto">“Success is continued normality — no outage, no headline, no late harvest.”</p>
+
+  <div class="row">
+    <div class="col box prob">
+      <h2>⏳ THE HNDL CLOCK</h2>
+      <p>Adversaries archive ciphertext today and decrypt when a CRQC arrives. Cost is storage. Loss is the long-lived secrets.</p>
+      <div class="phys">
+        <div class="cell"><div class="num">10–20y</div><div class="lab">secrets that still<br>matter after Q-Day</div></div>
+        <div class="cell"><div class="num">2030/33</div><div class="lab">CNSA 2.0 floors<br>sign / browse</div></div>
+        <div class="cell"><div class="num">2029</div><div class="lab">Cloudflare &amp; Google<br>internal PQ target</div></div>
+      </div>
+      <p class="tiny" style="margin-top:4px">Prior playbooks sold a single “by 2030.” CNSA 2.0 is category-dated. Q-Day year is out of scope; compressed industry targets are planning inputs.</p>
+    </div>
+    <div class="col box insight" style="flex:1.12">
+      <span class="burst">KEY INSIGHT</span>
+      <h2>🎯 FOUR GAPS + A FILING LAYER</h2>
+      <p><strong>Own hardware, handshake weight, vendor proof, and discovery — or you do not have a program.</strong></p>
+      <p style="margin-top:3px">v1.3.0 adds the civilian obligation that did not exist at v1.2.0: EO 14412 (22 Jun) + OMB M-26-15 (24 Jun) → agency PQC plans due <strong>22 Oct 2026</strong> to OMB + ONCD.</p>
+      <p class="tiny" style="margin-top:3px">Key agreement first (HNDL bites there). Authentication can lag. Hybrid X25519+ML-KEM is the safety net: either half can fail later.</p>
+    </div>
+  </div>
+
+  <div class="box method">
+    <h2>🧩 THE FOUR OPERATIONAL GAPS</h2>
+    <div class="gaps">
+      <div class="gap"><div class="n">1</div><div class="name">Hardware</div><div class="detail">HSMs, bootloader trust stores, RSA/ECC ASICs. Refresh, not a patch.</div></div>
+      <div class="gap"><div class="n">2</div><div class="name">Handshake</div><div class="detail">kB-scale ML-KEM/ML-DSA vs tens of bytes. Extra RTT past one packet. PQ certs are the heavy half.</div></div>
+      <div class="gap"><div class="n">3</div><div class="name">Vendors</div><div class="detail">Named algs, hybrid mode, agility, CBOM, FIPS 140-3 + CAVP IDs. “Quantum-safe” is a red flag.</div></div>
+      <div class="gap"><div class="n">4</div><div class="name">Discovery</div><div class="detail">Cron, mesh, OT, pinned agents. Generate a CBOM and diff it. Inventory sets duration.</div></div>
+    </div>
+  </div>
+
+  <div class="box math">
+    <h2>📐 STANDARDS PIN · corpus §1.2</h2>
+    <div class="eq">FIPS 203 ML-KEM · 204 ML-DSA · 205 SLH-DSA &nbsp;(13 Aug 2024)&nbsp; · &nbsp;HQC 11 Mar 2025&nbsp; · &nbsp;FIPS 206 unpublished Oct 2026</div>
+    <p class="tiny" style="margin-top:3px">TLS 1.3 text of record is RFC 9846 (Jul 2026). NIST IR 8547 is an initial public draft. NSS run CNSA 2.0 / NSPM-12, not M-26-15.</p>
+  </div>
+
+  <div class="row">
+    <div class="col box res">
+      <h2>📊 DEPLOYMENT SPLIT · §2.1 Sep 2026</h2>
+      <div class="bars">
+        <div class="bar b1">
+          <div class="lab">Browser-generated</div>
+          <div class="num">~70%</div>
+          <div class="detail">PQ hybrid key agreement<br>on Cloudflare visibility</div>
+          <div class="track"><div class="fill"></div></div>
+        </div>
+        <div class="bar b2">
+          <div class="lab">Origin connections</div>
+          <div class="num">~15%</div>
+          <div class="detail">still classical-majority<br>auth / PQ certs lag</div>
+          <div class="track"><div class="fill"></div></div>
+        </div>
+      </div>
+      <p class="tiny" style="margin-top:4px">One operator’s Radar, not a census. Jump from browser defaults + iOS 26. v1.2.0 figure was 52% human-initiated (Dec 2025).</p>
+    </div>
+    <div class="col box method">
+      <h2>📋 CORPUS · 10 sections · 42 fact IDs</h2>
+      <div class="secs">
+        <div class="sec"><strong>§1</strong> urgency</div>
+        <div class="sec"><strong>§2</strong> deploy</div>
+        <div class="sec"><strong>§3</strong> HNDL</div>
+        <div class="sec"><strong>§4</strong> weight</div>
+        <div class="sec"><strong>§5</strong> hardware</div>
+        <div class="sec"><strong>§6</strong> CBOM</div>
+        <div class="sec"><strong>§7</strong> skills</div>
+        <div class="sec"><strong>§8</strong> pilot</div>
+        <div class="sec"><strong>§9</strong> RFP</div>
+        <div class="sec"><strong>§10</strong> practice</div>
+      </div>
+      <div class="eval">
+        <div class="pane"><h3>✓ Golden A1–F3 (15)</h3><p class="tiny">Pass and fail criteria. Gate ≥90%. B1 = Sep 2026 70/15 split, not Dec 2025 52%.</p></div>
+        <div class="pane xpane"><h3>✗ Distractors X1–X6</h3><p class="tiny">Refuse physics, QKD, vendor names, exact Q-Day, legal advice, generic ECC tutorials.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box insight">
+    <h2>🗓 FEDERAL FILING LAYER · new in v1.3.0</h2>
+    <div class="dates">
+      <div class="dt"><div class="when">22 Jun</div><div class="what">EO 14412 signed. HVA/HIS key-est by 31 Dec 2030; signatures 2031.</div></div>
+      <div class="dt"><div class="when">24 Jun</div><div class="what">M-26-15 issued. Five-phase civilian schedule through 2035.</div></div>
+      <div class="dt hot"><div class="when">22 Oct</div><div class="what">Agency plans due OMB + ONCD. PQC@omb.eop.gov. 120 days.</div></div>
+      <div class="dt"><div class="when">6 Oct</div><div class="what">GAO-27-108740: none of 24 CFO Act agencies finished inventory, funding, or testing.</div></div>
+    </div>
+    <p class="tiny" style="margin-top:4px">Kit: <strong>Plan_Template.md</strong> (Appendix B order, nine sections, role table, funding/personnel scaffold) · <strong>Federal_Timeline.md</strong> (primary-read EO + memo 13 Oct) · <strong>Filer_Checklist.md</strong>. IR 8547 cited as IPD. FAR proposed rule 19 Dec 2026 is the contractor on-ramp.</p>
+  </div>
+
+  <div class="row">
+    <div class="col box method">
+      <h2>🧪 PILOT · §8</h2>
+      <p>Internal, dual-owned, low-criticality surface. Enable hybrid X25519+ML-KEM. Collect p50/p95/p99 handshake, CPU/RAM, fallback, MTU drops. Write the post-mortem. Real numbers beat vendor slides.</p>
+    </div>
+    <div class="col box method">
+      <h2>📜 RFP MINIMUMS · §9</h2>
+      <p>Hybrid key agreement. Algorithm agility without firmware swap. Dated FIPS 203/204/205 roadmap. CBOM on request. FIPS 140-3 module + CAVP IDs. Production references. QKD sold as PQC is a walk-away.</p>
+    </div>
+    <div class="col box method">
+      <h2>🤖 RAG INGEST</h2>
+      <p>Load <strong>Corpus.md</strong> whole (~5K tokens) with INTEGRATION.md prompt. Cite §N.M. Honor Scope. Do not mix training data when the corpus covers the question. Re-check §1.4 and §2.1 quarterly.</p>
+    </div>
+  </div>
+
+  <div class="box lim">
+    <h2>⚠ NON-CLAIMS · Scope block is authoritative</h2>
+    <p>Out of scope: quantum physics / error correction · QKD and quantum networks · named product shopping · legal opinions for a jurisdiction · exact Q-Day calendar dates. Cloudflare shares are one vantage. Hybrid cert format at CA/B Forum unfinished. FIPS 206 unpublished. M-26-15 does not cover NSS.</p>
+  </div>
+
+  <div class="footer">
+    <div class="doi">concept 10.5281/zenodo.19655681 · this version 10.5281/zenodo.23347471 · chokmah.me</div>
+    <div>Pilot hybrid on an internal dual-owned surface. Measure p50/p95/p99, CPU/RAM, fallback, MTU. Re-check §1.4 and §2.1 quarterly.</div>
+    <div class="close">Preventive engineering. Quiet success. The algorithm you will need to swap in later.</div>
+  </div>
+
+</div>
+</body>
+</html>
