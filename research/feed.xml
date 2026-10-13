@@ -4,113 +4,119 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-10-09T12:00:00Z</updated>
+  <updated>2026-10-13T08:22:44Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
-    <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
-    <link href="https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-23262565/"/>
-    <id>https://doi.org/10.5281/zenodo.23262565</id>
-    <updated>2026-10-09T12:00:00Z</updated>
-    <summary>v1.2 evidence update: October 2026 sources, §4.4 filter arithmetic, §5.4 BCBSA live case, prediction status, companion gates in software v0.2.0. Concept DOI 10.5281/zenodo.21910874.</summary>
+    <title>Golden Dome Latency Governance: Autonomous Operations Model Extended to Boost-Phase Intercept Timelines</title>
+    <link href="https://chokmah.me/research/golden-dome-latency-governance-autonomous-operations-model-e-23334956/"/>
+    <id>https://doi.org/10.5281/zenodo.23334956</id>
+    <updated>2026-10-13T00:00:00Z</updated>
+    <summary>October 2026 remint of Golden Dome Latency Governance: version-stable AR(1) entropy tape, check-3b FP32 score 1.25, companion env pin. Architecture and detection outcome unchanged.</summary>
   </entry>
   <entry>
     <title>patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap</title>
     <link href="https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-23262639/"/>
     <id>https://doi.org/10.5281/zenodo.23262639</id>
-    <updated>2026-10-09T12:00:00Z</updated>
-    <summary>v0.2.0: Lean 4 stock-algebra proofs, §4.4 regime-arithmetic gate, frozen 162-cell searcher sweep, source/prediction ledger. Companion to paper v1.2. Concept DOI 10.5281/zenodo.21918091.</summary>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <summary>1. Artifact claim. This deposit is a Python, stdlib-only toy that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph; the patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements.2. Problem / sc...</summary>
+  </entry>
+  <entry>
+    <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
+    <link href="https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-23262565/"/>
+    <id>https://doi.org/10.5281/zenodo.23262565</id>
+    <updated>2026-10-09T00:00:00Z</updated>
+    <summary>1. Artifact claim. This deposit is the v1.2 preprint PDF of The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair. It defines the governance patch-gap as the rate ratio G = Rd/Rp and a stock S with dS/dt = Rd − Rp: AI collapses the cost of discovering legal op...</summary>
   </entry>
   <entry>
     <title>The Computability Filter</title>
     <link href="https://chokmah.me/research/the-computability-filter-23232339/"/>
     <id>https://doi.org/10.5281/zenodo.23232339</id>
-    <updated>2026-10-08T12:00:00Z</updated>
-    <summary>v1.5: Independence and (if C is infinite) uncomputability of the compactification-to-thermalisation map; anthropic patch as a conjectural computability filter (1b), independent of 1a. Concept DOI 10.5281/zenodo.19818320. OSF archive osf.io/xeuvp.</summary>
+    <updated>2026-10-08T00:00:00Z</updated>
+    <summary>Independence and (if C is infinite) uncomputability of the compactification-to-thermalisation map; anthropic patch as a conjectural computability filter (1b), independent of 1a.</summary>
   </entry>
   <entry>
     <title>aria-moebius: Lean formalization and class-bridge verifier</title>
-    <link href="https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-21765202/"/>
+    <link href="https://chokmah.me/research/aria-moebius-lean-formalization-and-class-bridge-verifier-23215647/"/>
     <id>https://doi.org/10.5281/zenodo.23215647</id>
     <updated>2026-10-07T00:00:00Z</updated>
-    <summary>v1.0.4 Lean 4 + exhaustive GF(2^8) Python verifier for the invert-and-affine Möbius class bridge (ARIA four maps), plus independent-kernel accept. Companion to paper v1.0.5. Prefer software concept DOI 10.5281/zenodo.21705939. No attack complexities claimed.</summary>
+    <summary>The Nasr–Carlini M&#246;bius Bridge is not specific to the AES S-box. It holds for every S-box of the form S = L2 ∘ Frobj ∘ inv ∘ L1, with L1, L2 GF(2)-affine bijections and the Frobenius exponent j as the only degree of freedom. ARIA instantiates four members of that class at once (S1, S2, S1−1, S2−1...</summary>
   </entry>
   <entry>
-    <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
-    <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/"/>
-    <id>https://doi.org/10.5281/zenodo.21765164</id>
+    <title>fragile-proof-audit: gate-locked replay of published mathematical claims</title>
+    <link href="https://chokmah.me/research/fragile-proof-audit-gate-locked-replay-of-published-mathemat-23200768/"/>
+    <id>https://doi.org/10.5281/zenodo.23200768</id>
     <updated>2026-10-07T00:00:00Z</updated>
-    <summary>The Möbius Bridge holds for every invert-and-affine S-box S = L2 ∘ Frob^j ∘ inv ∘ L1; j is the only degree of freedom. ARIA instantiates four class members. Lean 4 + exhaustive GF(2^8). No attack complexities claimed.</summary>
+    <summary>Software snapshot matching paper v1.0.4: 32-gate verdict lock (17 BREAK / 15 PASS). GitHub→Zenodo archival of the campaign repository. Paper PDF stays on the separate paper concept 10.5281/zenodo.22926995 (this version 10.5281/zenodo.23200273).</summary>
   </entry>
   <entry>
     <title>Trust, but Replay: Auditing Published Mathematical Claims</title>
-    <link href="https://chokmah.me/research/trust-but-replay-auditing-published-mathematical-claims-22926996/"/>
+    <link href="https://chokmah.me/research/trust-but-replay-auditing-published-mathematical-claims-23200273/"/>
     <id>https://doi.org/10.5281/zenodo.23200273</id>
-    <updated>2026-10-06T12:00:00Z</updated>
-    <summary>v1.0.4 methods companion to fragile-proof-audit: disposition taxonomy (BREAK/GAP/PASS/SKIP/UNKNOWN), attack types A-G, evidentiary disciplines, 32-gate verdict lock (17 BREAK / 15 PASS). Concept DOI 10.5281/zenodo.22926995. OSF mirror osf.io/ukmjp.</summary>
-  </entry>
-
-    <entry>
-    <title>parabolic-fractal v1.1.0: code and data for “Fan-In Distributions in Human-Written vs AI-Generated Python Codebases”</title>
-    <link href="https://chokmah.me/research/parabolic-fractal-v1-1-0-code-and-data-for-fan-in-distributio-22908056/"/>
-    <id>https://doi.org/10.5281/zenodo.22908056</id>
-    <updated>2026-09-23T00:00:00Z</updated>
-    <summary>v1.1.0 code and data for paper v1.1 (10.5281/zenodo.22908061): corrected adoption dates, first-parent snapshots, eight-repo longitudinal pilot, snapshot-scoped AI-signal audit, and check_paper_claims.py, which recomputes every number in the paper and exits nonzero on any mismatch. Concept DOI 10.5281/zenodo.20318457. MIT.</summary>
+    <updated>2026-10-06T00:00:00Z</updated>
+    <summary>Published mathematics is trusted far more than it is independently replayed. Peer review checks reasoning, not computation - and increasingly, part of the proof is a computation. This paper describes a short, intensive audit campaign (six calendar days, 2026-09-18 through 2026-09-23) that replays...</summary>
   </entry>
   <entry>
     <title>Fan-In Distributions in Human-Written vs AI-Generated Python Codebases: A Constructal Law Analysis</title>
     <link href="https://chokmah.me/research/fan-in-distributions-in-human-written-vs-ai-generated-python-22908061/"/>
     <id>https://doi.org/10.5281/zenodo.22908061</id>
     <updated>2026-09-23T00:00:00Z</updated>
-    <summary>v1.1 correction release: eight errata, longitudinal pilot extended to all eight eligible repos (no Gini decline; Gini rose in 6 of 8, pooled exact Wilcoxon p=0.195), post-release audit. Cross-sectional result holds (Gini 0.882 vs 0.725, p=0.0011; p=0.027 without AI-signal Cohort A repos). Concept DOI 10.5281/zenodo.20313668. Code and data 10.5281/zenodo.22908056.</summary>
+    <summary>Import fan-in, the number of intra-repo modules importing a file, encodes hierarchical coupling structure. By analogy with Constructal flow systems (Bejan 1997), we hypothesize that finite networks shaped by iterative optimization develop log-normal, not power-law, size distributions. We measure...</summary>
+  </entry>
+  <entry>
+    <title>parabolic-fractal: code and data for &quot;Fan-In Distributions in Human-Written vs AI-Generated Python Codebases: A Constructal Law Analysis&quot;</title>
+    <link href="https://chokmah.me/research/parabolic-fractal-code-and-data-for-fan-in-distributions-in-22908056/"/>
+    <id>https://doi.org/10.5281/zenodo.22908056</id>
+    <updated>2026-09-23T00:00:00Z</updated>
+    <summary>Code, data, and figures for the paper Fan-In Distributions in Human-Written vs AI-Generated Python Codebases: A Constructal Law Analysis (paper, all versions: 10.5281/zenodo.20313668).v1.1.0 accompanies paper v1.1, which corrects eight errors in v1.0.0, extends the longitudinal pilot from two rep...</summary>
   </entry>
   <entry>
     <title>A Numerical Test of the Quadratic Estimate in arXiv:2609.04176v1</title>
-    <link href="https://chokmah.me/research/a-numerical-test-of-the-quadratic-estimate-in-arxiv-2609-22830611/"/>
+    <link href="https://chokmah.me/research/a-numerical-test-of-the-quadratic-estimate-in-arxiv-2609-041-22830611/"/>
     <id>https://doi.org/10.5281/zenodo.22830611</id>
     <updated>2026-09-18T00:00:00Z</updated>
-    <summary>v1.4.0 numerical test of Sun arXiv:2609.04176v1 Theorem 9.1 quadratic estimate. Measured B^2 coefficient ~+1.85 vs required ≤ -0.0097; refutes proof route. Concept DOI 10.5281/zenodo.22830610. Companion software 10.5281/zenodo.22830201.</summary>
+    <summary>Zhi-Wei Sun&#39;s preprint arXiv:2609.04176v1 claims that Catalan&#39;s constant is irrational. Its final step, Theorem 9.1, asserts that a height quantity built from a fixed scalar is bounded above by an exponential of a negative multiple of B2. The preprint proves that assertion along one chain, throug...</summary>
   </entry>
   <entry>
-    <title>catalan-sun-lean: Lean formalization slice of Sun's Catalan preprint</title>
-    <link href="https://chokmah.me/research/catalan-sun-lean-lean-formalization-slice-of-sun-catalan-22830202/"/>
+    <title>chokmah-me/catalan-sun-lean: v0.1.0: Thm 5.1 + Lemma 5.5 + Cor 5.2 Lean slice (Sun Catalan)</title>
+    <link href="https://chokmah.me/research/chokmah-me-catalan-sun-lean-v0-1-0-thm-5-1-lemma-5-5-cor-5-2-22830202/"/>
     <id>https://doi.org/10.5281/zenodo.22830202</id>
     <updated>2026-09-18T00:00:00Z</updated>
-    <summary>v0.1.0 Lean 4 / Mathlib formalization of Thm 2.1, Lemma 5.4, Thm 5.1, Lemma 5.5, Cor 5.2 section 5 content. Does not claim Theorem 1.1. Concept DOI 10.5281/zenodo.22830201.</summary>
+    <summary>catalan-sun-lean v0.1.0 First software release: Lean 4 / Mathlib formalization of high-ROI structural lemmas from Zhi-Wei Sun, Catalan&#39;s constant is irrational (arXiv:2609.04176v1). Proved in this release Theorem 2.1 and Corollary 2.1 (absolute) Det-level Lemma 5.4 Pascal–Cauchy / Newton / Struct...</summary>
   </entry>
-<entry>
+  <entry>
     <title>The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination</title>
-    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-20089104/"/>
-    <id>https://doi.org/10.5281/zenodo.20089104</id>
+    <link href="https://chokmah.me/research/the-shibboleth-lattice-recognition-channels-and-the-universa-22643579/"/>
+    <id>https://doi.org/10.5281/zenodo.22643579</id>
     <updated>2026-09-07T00:00:00Z</updated>
-    <summary>v3.3: specification divergence; Paglieri covert-subset scope limit. Blinded witness-set substitution remains untested. Concept DOI 10.5281/zenodo.19595987; this version 10.5281/zenodo.22643579.</summary>
+    <summary>Coalition behavior in multi-agent systems appears across four canonical substrates: quantum entanglement, evolutionary covert-tag recognition, engineered handshake codes, and emergent relational memory in frontier language models, plus two boundary cases. These are treated as instances of one str...</summary>
   </entry>
   <entry>
     <title>Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks</title>
-    <link href="https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-19632278/"/>
-    <id>https://doi.org/10.5281/zenodo.19632277</id>
+    <link href="https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-21995468/"/>
+    <id>https://doi.org/10.5281/zenodo.21995468</id>
     <updated>2026-08-18T00:00:00Z</updated>
-    <summary>v2 preprint. Circular leverage in bank-NBFI SRT networks; lambda* approximately 0.95; Osberghaus and Schepens 2026; five of six cockpit metrics in stress as of Q2/Q3 2026.</summary>
+    <summary>Synthetic Risk Transfers (SRTs) let banks shed credit risk to non-bank financial intermediaries (NBFIs) while keeping the underlying loans on their balance sheets. A structural vulnerability arises when the same banks extend credit lines to the funds that buy their SRT protection, creating a circ...</summary>
+  </entry>
+  <entry>
+    <title>lattice-GoldenDome-AOM: Golden Dome AOM falsification suite</title>
+    <link href="https://chokmah.me/research/lattice-goldendome-aom-golden-dome-aom-falsification-suite-21979227/"/>
+    <id>https://doi.org/10.5281/zenodo.21979227</id>
+    <updated>2026-08-17T00:00:00Z</updated>
+    <summary>Software 1.0.1 Paper stays v8.1 (Zenodo 10.5281/zenodo.21971208). This tag is software only — do not merge into the paper concept. What changed Executed A-E claim gate (claim-manifest.json, claims/verify_*.py) Scenario A cliff matches the paper (payload spoof Δt ≤ −500 ms → 100% bypass) Check 4 r...</summary>
   </entry>
   <entry>
     <title>Anduril LatticeOS: Autonomous Operations Model: Schema, Counter-Narrative, and Implementation</title>
     <link href="https://chokmah.me/research/anduril-latticeos-autonomous-operations-model-schema-counter-21971668/"/>
     <id>https://doi.org/10.5281/zenodo.21971668</id>
     <updated>2026-08-16T00:00:00Z</updated>
-    <summary>Cite-hygiene revision (v4.1) of the LatticeOS AOM note: JIATF-401 order pinned at USD 87 million; Maven PoR and Golden Dome consortium cites split onto the articles that actually say them.</summary>
-  </entry>
-  <entry>
-    <title>Golden Dome Latency Governance: Autonomous Operations Model Extended to Boost-Phase Intercept Timelines</title>
-    <link href="https://chokmah.me/research/golden-dome-latency-governance-autonomous-operations-model-e-21971208/"/>
-    <id>https://doi.org/10.5281/zenodo.21971208</id>
-    <updated>2026-08-16T00:00:00Z</updated>
-    <summary>August 2026 revision of Golden Dome Latency Governance: the program office now describes the automation dial this paper specified; the ISL mesh is still a target state, not a fielded path.</summary>
+    <summary>Version 4.1 (16 August 2026). Cite-hygiene revision of 10.5281/zenodo.21971428 (v4). Concept DOI (always latest PDF): 10.5281/zenodo.19265271. Architecture, overlay, and analysis are unchanged. What changed since v4 First JIATF-401 task order stated as USD 87 million and pinned to DefenseScoop an...</summary>
   </entry>
   <entry>
     <title>Balance of Power 2026</title>
     <link href="https://chokmah.me/research/balance-of-power-2026-21970518/"/>
     <id>https://doi.org/10.5281/zenodo.21970518</id>
     <updated>2026-08-16T00:00:00Z</updated>
-    <summary>A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Eight scenarios across thirteen domains and eight actors; browser wargame and headless Oracle API for batch runs and counterfactuals. Stylized, rule-based AI with cascade dynamics.</summary>
+    <summary>Balance of Power 2026 is a turn-based multipolar crisis simulation for international-relations research and war-studies pedagogy. Eight actors (US, China, EU, Russia, India, the Gulf Bloc, Iran, North Korea) compete across thirteen domains: military, economic, cyber, information, diplomatic, dome...</summary>
   </entry>
   <entry>
     <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension</title>
@@ -127,18 +133,11 @@
     <summary>1. Artifact claim. This deposit is the Phase II companion preprint (v0.3 PDF): an empirical-and-simulation argument that, in a residual IRGC missile force after high week-one attrition, an open-source attribution-correlation proxy can discriminate active from pre-programmed C2 under sparse provoc...</summary>
   </entry>
   <entry>
-    <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
-    <link href="https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-21924075/"/>
-    <id>https://doi.org/10.5281/zenodo.21924075</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>Legal systems governed by rule of law are, structurally, rule systems. Like any rule system, they contain gaps between specification and intent, concentrated in the deliberately under-specified provisions that legal philosophers call &quot;open texture.&quot; Those gaps have always been exploitable, but ex...</summary>
-  </entry>
-  <entry>
-    <title>patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap</title>
-    <link href="https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-21918637/"/>
-    <id>https://doi.org/10.5281/zenodo.21918637</id>
-    <updated>2026-08-13T00:00:00Z</updated>
-    <summary>What this is. A Python, stdlib-only synthetic companion that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph. The patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements. Paper this illustra...</summary>
+    <title>Mobius Bridges for the Invert-and-Affine S-box Class, with the Four ARIA Instantiations</title>
+    <link href="https://chokmah.me/research/mobius-bridges-for-the-invert-and-affine-s-box-class-with-th-21765164/"/>
+    <id>https://doi.org/10.5281/zenodo.21765164</id>
+    <updated>2026-08-03T00:00:00Z</updated>
+    <summary>This version (v1.0.5, 2026-08-03). Lean 4 formalization of Theorem 3.1 (class bridge), Corollary 3.2 (class fingerprint invariance), and Section 5 bad-index set; Appendix A.2 correspondence corrected. Exhaustive GF(28) checks remain in Python. This record is the paper PDF only. Prefer concept DOI...</summary>
   </entry>
   <entry>
     <title>chokmah-me/hashline: hashline 0.4.1</title>
@@ -148,13 +147,6 @@
     <summary>hashline gives LLM coding agents stable, verifiable line edits: the model refers to changes by line-number ranges instead of re-quoting old code, and a 4-hex content-hash tag on every read rejects any patch built against stale content. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.</summary>
   </entry>
   <entry>
-    <title>Compressed by Discovery: Snapped Symbolic-Regression Primitives as Realizable, Verifiable Function Units on DSP-less FPGAs</title>
-    <link href="https://chokmah.me/research/compressed-by-discovery-snapped-symbolic-regression-primitiv-20745607/"/>
-    <id>https://doi.org/10.5281/zenodo.20745607</id>
-    <updated>2026-06-18T00:00:00Z</updated>
-    <summary>Technical note reporting the hardware realization of argmax-snapped EML expression trees on Lattice iCE40 FPGAs. On fabric without DSP inference, snapped symbolic primitives (exp and ln) are simultaneously smaller and more accurate than every quantized MLP in a width/depth sweep, are bit-exact to...</summary>
-  </entry>
-  <entry>
     <title>EML Expression Trees: Symbolic Regression, Basin Selection, and Hardware Realization on iCE40</title>
     <link href="https://chokmah.me/research/eml-expression-trees-symbolic-regression-basin-selection-and-20748178/"/>
     <id>https://doi.org/10.5281/zenodo.20748178</id>
@@ -162,11 +154,11 @@
     <summary>Code, data, and technical notes for EML (exp-minus-ln) expression tree research. Includes symbolic regression experiments (snapping_v2_final.csv), basin-selection warm-start studies, and Track C hardware realization: fixed-point golden models, iCE40 RTL emitters, quantized-MLP and direct-ROM base...</summary>
   </entry>
   <entry>
-    <title>Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth</title>
-    <link href="https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/"/>
-    <id>https://doi.org/10.5281/zenodo.20671272</id>
-    <updated>2026-06-12T00:00:00Z</updated>
-    <summary>Technical note + data release accompanying Valid and False Snapping in EML Expression Trees: The Basin Selection Problem (DOI: 10.5281/zenodo.19790799; v2.3 at time of writing). The companion paper showed that three-phase temperature annealing (Adam on MAE, entropy-penalty ramp, temperature annea...</summary>
+    <title>Compressed by Discovery: Snapped Symbolic-Regression Primitives as Realizable, Verifiable Function Units on DSP-less FPGAs</title>
+    <link href="https://chokmah.me/research/compressed-by-discovery-snapped-symbolic-regression-primitiv-20745607/"/>
+    <id>https://doi.org/10.5281/zenodo.20745607</id>
+    <updated>2026-06-18T00:00:00Z</updated>
+    <summary>Technical note reporting the hardware realization of argmax-snapped EML expression trees on Lattice iCE40 FPGAs. On fabric without DSP inference, snapped symbolic primitives (exp and ln) are simultaneously smaller and more accurate than every quantized MLP in a width/depth sweep, are bit-exact to...</summary>
   </entry>
   <entry>
     <title>Valid and False Snapping in EML Expression Trees: The Basin Selection Problem</title>
@@ -176,18 +168,18 @@
     <summary>Training EML expression trees (Odrzywolek 2026) with gradient descent and then snapping soft input selectors to discrete choices should recover exact symbolic forms for elementary functions. Prior work reported commitment-based success criteria; we add a symbolic-correctness criterion and charact...</summary>
   </entry>
   <entry>
+    <title>Basin Selection in EML Expression Trees: Targeted Warm-Start and Top-Aligned Curriculum Achieve Full Valid Recovery for exp and ln, Including at Over-Representational Depth</title>
+    <link href="https://chokmah.me/research/basin-selection-in-eml-expression-trees-targeted-warm-start-20671272/"/>
+    <id>https://doi.org/10.5281/zenodo.20671272</id>
+    <updated>2026-06-12T00:00:00Z</updated>
+    <summary>Technical note + data release accompanying Valid and False Snapping in EML Expression Trees: The Basin Selection Problem (DOI: 10.5281/zenodo.19790799; v2.3 at time of writing). The companion paper showed that three-phase temperature annealing (Adam on MAE, entropy-penalty ramp, temperature annea...</summary>
+  </entry>
+  <entry>
     <title>Claude Code Playbook v4.4.0</title>
     <link href="https://chokmah.me/research/claude-code-playbook-v4-4-0-20481459/"/>
     <id>https://doi.org/10.5281/zenodo.20481459</id>
     <updated>2026-06-01T00:00:00Z</updated>
     <summary>A token-efficient AI engineering system for Claude Code providing structured workflows, agentic patterns, three-layer context optimization (don&#39;t-load, compress, cache), path-scoped rules, output compression via Headroom, and supply-chain security hardening for software development teams. This re...</summary>
-  </entry>
-  <entry>
-    <title>The Computability Filter</title>
-    <link href="https://chokmah.me/research/the-computability-filter-20330532/"/>
-    <id>https://doi.org/10.5281/zenodo.20330532</id>
-    <updated>2026-05-21T00:00:00Z</updated>
-    <summary>The contribution is a perspective and a research direction, not a result.We argue that the map from string-theory compactification data to cosmological thermalisation outcome is well-defined as a function but not computable as one. Drawing on the undecidability of spectral gaps (Cubitt, Perez-Gar...</summary>
   </entry>
   <entry>
     <title>AttestationRegimeClassifier — Ghidra Plugin for ICS/Embedded Firmware Attestation Regime Classification</title>
@@ -215,7 +207,7 @@
     <link href="https://chokmah.me/research/recognition-channel-dynamics-in-the-shibboleth-lattice-a-sim-20090834/"/>
     <id>https://doi.org/10.5281/zenodo.20090834</id>
     <updated>2026-05-08T00:00:00Z</updated>
-    <summary>Companion to The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination (Bilar 2026, concept doi:10.5281/zenodo.19595987). The parent paper proposes a binding operator B unifying coalition formation across five substrates, with recognition-channel pro...</summary>
+    <summary>Companion to The Shibboleth Lattice: Recognition Channels and the Universality of In-Group Coordination (Bilar 2026, doi:10.5281/zenodo.19595987). The parent paper proposes a binding operator B = (S, I, W, rho, chi) unifying coalition formation across five substrates, with recognition-channel pro...</summary>
   </entry>
   <entry>
     <title>fast16 as a Second-Order Subversion Attack</title>
@@ -232,11 +224,11 @@
     <summary>In 2009, On nth Order Attacks (NATO CCDCOE, Responses to Cyber Terrorism) predicted that PLA shashoujian logic, read through the Highly Optimized Tolerance lens, would produce an operational signature in which state adversaries target the mission-sustaining ancillary systems of advanced computeri...</summary>
   </entry>
   <entry>
-    <title>Quantum-Safe Migration Playbook (Strategic &amp; Operational Guide)</title>
-    <link href="https://chokmah.me/research/quantum-safe-migration-playbook-strategic-operational-guide-19655682/"/>
-    <id>https://doi.org/10.5281/zenodo.19655682</id>
+    <title>Software simulation: Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks</title>
+    <link href="https://chokmah.me/research/software-simulation-circular-leverage-in-bank-nbfi-synthetic-19651937/"/>
+    <id>https://doi.org/10.5281/zenodo.19651937</id>
     <updated>2026-04-19T00:00:00Z</updated>
-    <summary>Version 1.2.0 is a major restructuring of the Quantum-Safe Migration Playbook with three goals: make the content usable as a retrieval-augmented AI knowledge base, tighten evaluation discipline, and update all dated facts to April 2026. What&#39;s new in v1.2.0 Structural changes Fact-ID indexing: ev...</summary>
+    <summary>Circular leverage in bank-NBFI SRT networks: simulation code</summary>
   </entry>
   <entry>
     <title>How &#39;Stethoscopes&#39; Unmasked Correlated Noise in Quantum Processors</title>
@@ -246,11 +238,11 @@
     <summary>For years, the quantum computing community has benchmarked its progress using simplified, independent noise models, leaving us to navigate the complexities of large-scale devices largely by feel. This commentary analyzes Google&#39;s recent out-of-time-order correlator (OTOC) experiments on the 65-qu...</summary>
   </entry>
   <entry>
-    <title>Software simulation: Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks</title>
-    <link href="https://chokmah.me/research/software-simulation-circular-leverage-in-bank-nbfi-synthetic-19651937/"/>
-    <id>https://doi.org/10.5281/zenodo.19651937</id>
+    <title>Quantum-Safe Migration Playbook (Strategic &amp; Operational Guide)</title>
+    <link href="https://chokmah.me/research/quantum-safe-migration-playbook-strategic-operational-guide-19655682/"/>
+    <id>https://doi.org/10.5281/zenodo.19655682</id>
     <updated>2026-04-19T00:00:00Z</updated>
-    <summary>Circular leverage in bank-NBFI SRT networks: simulation code</summary>
+    <summary>Version 1.2.0 is a major restructuring of the Quantum-Safe Migration Playbook with three goals: make the content usable as a retrieval-augmented AI knowledge base, tighten evaluation discipline, and update all dated facts to April 2026. What&#39;s new in v1.2.0 Structural changes Fact-ID indexing: ev...</summary>
   </entry>
   <entry>
     <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation in the 2026 Iran War</title>
@@ -258,13 +250,6 @@
     <id>https://doi.org/10.5281/zenodo.19558494</id>
     <updated>2026-04-13T00:00:00Z</updated>
     <summary>The 2026 US-Israeli military campaign against Iran produced a 92% decline in Iranian ballistic missile launch rates within nine days. This paper asks whether that decline reflects physical destruction of transporter-erector-launcher (TEL) assets, degradation of command authority, or both. An agen...</summary>
-  </entry>
-  <entry>
-    <title>chokmah-me/lattice-GoldenDome-AOM: v1.0.0: Initial Release — Golden Dome AOM Falsification Suite</title>
-    <link href="https://chokmah.me/research/chokmah-me-lattice-goldendome-aom-v1-0-0-initial-release-gol-19368609/"/>
-    <id>https://doi.org/10.5281/zenodo.19368609</id>
-    <updated>2026-04-01T00:00:00Z</updated>
-    <summary>Initial release accompanying the position paper &quot;Golden Dome Latency Governance: Autonomous Operations Model Extended to Boost-Phase Intercept Timelines&quot; (Bilar 2026, DOI: 10.5281/zenodo.19368682 What&#39;s included simulate.py &amp;mdash; unified falsification suite (v5.0), five scenarios A-E requiremen...</summary>
   </entry>
   <entry>
     <title>Dragon&#39;s Teeth: The PLA&#39;s UCAV Arsenal and Taiwan Invasion Strategy</title>

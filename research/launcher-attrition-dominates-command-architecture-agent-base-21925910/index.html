@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension | Chokmah Research</title>
-    <meta name="description" content="Paper v0.3: https://doi.org/10.5281/zenodo.21925896 (concept 10.5281/zenodo.21865793) Software 0.6.1: https://doi.org/10.5281/zenodo.21925901 (concept 10.5281/zenodo.19210120) Table I H1/H2/H3 D_win levels now match data_phase2/phase2_discrimination.csv (200-seed). Do not merge paper PDF and soft...">
+    <meta name="description" content="1. Artifact claim. Companion code and data for the v4 launcher-attrition paper and the Phase II residual-force C2 observability extension (milcom-2026-iran-attrition 0.6.1). 2. Problem / scientific context. Implements the agent-based model, Phase II residual/provocation extension, claim gates, an...">
     <link rel="canonical" href="https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21925910/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21925910/">
     <meta property="og:title" content="Launcher Attrition Dominates Command Architecture: Agent-Based Analysis of IRGC Missile C2 Degradation, with Phase II Residual-Force C2 Observability Extension">
-    <meta property="og:description" content="Paper v0.3: https://doi.org/10.5281/zenodo.21925896 (concept 10.5281/zenodo.21865793) Software 0.6.1: https://doi.org/10.5281/zenodo.21925901 (concept 10.5281/zenodo.19210120) Table I H1/H2/H3 D_win levels now match data_phase2/phase2_discrimination.csv (200-seed). Do not merge paper PDF and soft...">
+    <meta property="og:description" content="1. Artifact claim. Companion code and data for the v4 launcher-attrition paper and the Phase II residual-force C2 observability extension (milcom-2026-iran-attrition 0.6.1). 2. Problem / scientific context. Implements the agent-based model, Phase II residual/provocation extension, claim gates, an...">
     <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
@@ -35,7 +35,7 @@
   "url": "https://chokmah.me/research/launcher-attrition-dominates-command-architecture-agent-base-21925910/",
   "datePublished": "2026-08-14",
   "inLanguage": "en",
-  "abstract": "Paper v0.3: https://doi.org/10.5281/zenodo.21925896 (concept 10.5281/zenodo.21865793) Software 0.6.1: https://doi.org/10.5281/zenodo.21925901 (concept 10.5281/zenodo.19210120) Table I H1/H2/H3 D_win levels now match data_phase2/phase2_discrimination.csv (200-seed). Do not merge paper PDF and software zip.",
+  "abstract": "1. Artifact claim. Companion code and data for the v4 launcher-attrition paper and the Phase II residual-force C2 observability extension (milcom-2026-iran-attrition 0.6.1). 2. Problem / scientific context. Implements the agent-based model, Phase II residual/provocation extension, claim gates, and locked data_phase2/ table that grounds Table I D_win means. 3. Contents. simulation/ (c2_core.py, phase2_runner.py, leg3_null_sim.py), verify_*.py, claim-manifest.json, integrity-manifest.json, data/, data_phase2/ (including mean_H*_D_win columns), and figures. This deposit is the software zip only. No paper PDF. 4. Reproduce. Python 3.8+, standard library only. python verify_milcom_claims.py; python verify_phase2_claims.py; full grid simulation/phase2_runner.py. 5. Relation to papers. Software concept 10.5281/zenodo.19210120. Phase II paper concept 10.5281/zenodo.21865793, this PDF pin 10.5281/zenodo.21926014. Parent paper 10.5281/zenodo.19210451 / 10.5281/zenodo.19558494. Leg 3 prereg stamp remains 10.5281/zenodo.21443990. 6. Limitations / non-claims. Thin Monte Carlo gates are not the 200-seed paper grid. Empirical 0.64 / 0.500 are hand-coded and are not in this zip as a machine-readable coding table. Not a targeting tool. 7. This version (0.6.1). Adds D_win mean columns to the 200-seed discrimination CSV and binds Table I. 8. Citation. Prefer software concept DOI 10.5281/zenodo.19210120. Pin this zip with 10.5281/zenodo.21925910. Cite the PDF separately.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
@@ -115,6 +115,10 @@
         .callout { background-color: var(--slate-armor); border-left: 3px solid var(--signal-amber);
                    border-radius: 6px; padding: 18px 22px; margin: 26px 0; font-size: 1.1rem; }
         .callout a { font-weight: 600; }
+        .poster { margin: 28px 0 8px; text-align: center; }
+        .poster img { max-width: min(563px, 100%); height: auto; border-radius: 8px;
+                      border: 1px solid rgba(255,255,255,0.08); }
+        .poster .cap { color: var(--cadet-grey); font-size: 1rem; margin-top: 12px; }
         .kw { color: var(--cadet-grey); font-size: 1.05rem; }
         .card { background-color: var(--slate-armor); border-radius: 8px; padding: 24px 26px;
                 margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
@@ -140,7 +144,7 @@
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.21925910">https://doi.org/10.5281/zenodo.21925910</a><br>
     </div>
     <h2>Abstract</h2>
-    <p>Paper v0.3: https://doi.org/10.5281/zenodo.21925896 (concept 10.5281/zenodo.21865793) Software 0.6.1: https://doi.org/10.5281/zenodo.21925901 (concept 10.5281/zenodo.19210120) Table I H1/H2/H3 D_win levels now match data_phase2/phase2_discrimination.csv (200-seed). Do not merge paper PDF and software zip.</p>
+    <p>1. Artifact claim. Companion code and data for the v4 launcher-attrition paper and the Phase II residual-force C2 observability extension (milcom-2026-iran-attrition 0.6.1). 2. Problem / scientific context. Implements the agent-based model, Phase II residual/provocation extension, claim gates, and locked data_phase2/ table that grounds Table I D_win means. 3. Contents. simulation/ (c2_core.py, phase2_runner.py, leg3_null_sim.py), verify_*.py, claim-manifest.json, integrity-manifest.json, data/, data_phase2/ (including mean_H*_D_win columns), and figures. This deposit is the software zip only. No paper PDF. 4. Reproduce. Python 3.8+, standard library only. python verify_milcom_claims.py; python verify_phase2_claims.py; full grid simulation/phase2_runner.py. 5. Relation to papers. Software concept 10.5281/zenodo.19210120. Phase II paper concept 10.5281/zenodo.21865793, this PDF pin 10.5281/zenodo.21926014. Parent paper 10.5281/zenodo.19210451 / 10.5281/zenodo.19558494. Leg 3 prereg stamp remains 10.5281/zenodo.21443990. 6. Limitations / non-claims. Thin Monte Carlo gates are not the 200-seed paper grid. Empirical 0.64 / 0.500 are hand-coded and are not in this zip as a machine-readable coding table. Not a targeting tool. 7. This version (0.6.1). Adds D_win mean columns to the 200-seed discrimination CSV and binds Table I. 8. Citation. Prefer software concept DOI 10.5281/zenodo.19210120. Pin this zip with 10.5281/zenodo.21925910. Cite the PDF separately.</p>
     <h2>Keywords</h2>
     <p class="kw">ballistic missile defense &middot; agent-based modeling &middot; command and control &middot; launcher attrition &middot; Iran &middot; OSINT &middot; Monte Carlo simulation &middot; magazine discipline &middot; contested ISR &middot; attribution correlation &middot; C2 observability</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>

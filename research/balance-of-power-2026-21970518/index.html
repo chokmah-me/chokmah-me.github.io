@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balance of Power 2026 (v2.13.2) | Chokmah Research</title>
-    <meta name="description" content="A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Eight scenarios across thirteen domains and eight actors; browser wargame and headless Oracle API for batch runs and counterfactuals. Stylized, rule-based AI with cascade dynamics.">
+    <title>Balance of Power 2026 | Chokmah Research</title>
+    <meta name="description" content="Balance of Power 2026 is a turn-based multipolar crisis simulation for international-relations research and war-studies pedagogy. Eight actors (US, China, EU, Russia, India, the Gulf Bloc, Iran, North Korea) compete across thirteen domains: military, economic, cyber, information, diplomatic, dome...">
     <link rel="canonical" href="https://chokmah.me/research/balance-of-power-2026-21970518/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/balance-of-power-2026-21970518/">
-    <meta property="og:title" content="Balance of Power 2026 (v2.13.2)">
-    <meta property="og:description" content="A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Eight scenarios across thirteen domains and eight actors; browser wargame and headless Oracle API for batch runs and counterfactuals. Stylized, rule-based AI with cascade dynamics.">
-    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-21970518.png?v=7">
+    <meta property="og:title" content="Balance of Power 2026">
+    <meta property="og:description" content="Balance of Power 2026 is a turn-based multipolar crisis simulation for international-relations research and war-studies pedagogy. Eight actors (US, China, EU, Russia, India, the Gulf Bloc, Iran, North Korea) compete across thirteen domains: military, economic, cyber, information, diplomatic, dome...">
+    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-21970518.png?v=7">
+    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
     <meta name="citation_title" content="Balance of Power 2026">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-08-16">
@@ -20,7 +20,7 @@
     <meta name="citation_publisher" content="Zenodo">
     <meta name="citation_public_url" content="https://zenodo.org/records/21970518">
     <meta name="citation_abstract_html_url" content="https://zenodo.org/records/21970518">
-    <meta name="citation_keywords" content="international relations; crisis simulation; wargaming; multipolarity; Taiwan Strait; Iran nuclear; South China Sea; supply chain; autonomous weapons; sensitivity analysis; pedagogy; Korean Peninsula; North Korea; DPRK; brinkmanship; space domain; urban operations; financial contagion; EMP; biological weapons">
+    <meta name="citation_keywords" content="international relations; crisis simulation; wargaming; multipolarity; Taiwan Strait; Iran nuclear; South China Sea; supply chain; autonomous weapons; sensitivity analysis; pedagogy; Korean Peninsula; North Korea; DPRK; brinkmanship; space domain; urban operations; financial contagion; EMP; biological weapons; escalation dynamics; parameter sensitivity; agent-based modeling; cascade effects; war studies; latency governance; AOM; technology development; arms race">
     <meta name="DC.title" content="Balance of Power 2026">
     <meta name="DC.creator" content="Bilar, Daniyel Yaacov">
     <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.21970518">
@@ -32,23 +32,18 @@
   "@type": "SoftwareSourceCode",
   "name": "Balance of Power 2026",
   "headline": "Balance of Power 2026",
-  "softwareVersion": "2.13.2",
-  "codeRepository": "https://github.com/chokmah-me/BoP2026",
   "url": "https://chokmah.me/research/balance-of-power-2026-21970518/",
   "datePublished": "2026-08-16",
   "inLanguage": "en",
-  "abstract": "A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Eight scenarios across thirteen domains and eight actors; browser wargame and headless Oracle API for batch runs and counterfactuals. Stylized, rule-based AI with cascade dynamics.",
+  "abstract": "Balance of Power 2026 is a turn-based multipolar crisis simulation for international-relations research and war-studies pedagogy. Eight actors (US, China, EU, Russia, India, the Gulf Bloc, Iran, North Korea) compete across thirteen domains: military, economic, cyber, information, diplomatic, domestic, supply chain, autonomous systems, biological, EMP, space, urban, and technology. Each turn, AI-driven powers select actions from risk tolerance, patience, and domain priorities. Actions cascade through first- through fourth-order effects, with probabilistic second-order outcomes and systemic threshold events (financial fragmentation, debt spiral, domestic fragility, pandemic outbreak, C4ISR collapse, Kessler debris cascade, urban quagmire, compound crises). Eight playable scenarios ship with the engine &mdash; Taiwan Strait 2026, Iran Nuclear Threshold 2026, South China Sea 2026, Korean Peninsula 2026, Sovereignty Void 2026, Orbital Warfare 2026, Megacity Siege 2026, and Financial Contagion 2026 &mdash; covering all seven of Krepinevich&rsquo;s 7 Deadly Scenarios. Five doctrines (MAGA, TWELVER, EU_FATALISM, MING, JUCHE) set ratification time and personality. Sovereignty Void operationalizes the AOM latency-governance framework (paper concept 10.5281/zenodo.19368682): when doctrinal ratification time (t_rat) exceeds the boost-phase intercept window (t_event), the system resolves before the player&rsquo;s action registers. The engine is designed for two uses: Classroom / wargame &mdash; open index.html in a browser; no server, no build, no npm. Play any scenario; Save Log / auto-save writes a post-mortem JSON; the Research panel runs in-browser batches. Research companion &mdash; headless Node.js (18+) batch runs, parameter sweeps (--cn-risk, --us-patience, --cascade-scale), counterfactual branching via the Oracle API (BoP.init / step / run / runBatch, getState / setState, NPC and player overrides). Output is bop2026-analytics-v1 (per-turn state deltas, relationship shifts, crisis levels, systemic-risk index) for Python or R. Optional DeepSeek LLM NPC backend (heuristic fallback; symmetric AOM prompt by default). Also in this deposit: perishable intelligence (quality decay + perception drift), a delayed-payoff technology / R&D ledger with arms-race catch-up, posture-stable heuristic AI (escalate / hold / de-escalate / consolidate; compound-crisis avoidance; escalation lock), and a 27-test engine contract suite under npm test. Calibrated for face validity against open-source IR literature (Fearon 1995, Jervis 1976, Waltz 1979), not regression-fitted to history. Not intended for forecasting or policy prescription. What it can do honestly: show how crises cascade; let a researcher ask &ldquo;what if China is more risk-tolerant&rdquo; under a fixed seed; generate synthetic trajectories for method work; exercise latency-governance (t_rat vs t_event) as a structural constraint rather than a tunable knob. Those uses need internal consistency, not empirical fit. This version (v2.13.2): BoP.init({ seed }) now actually patches the mulberry32 stream before State.init (the documented option was dead, so Oracle examples and sensitivity-sweep.js were not reproducible). Repeated BoP.seed() no longer makes unseed() restore a seeded closure. No game-logic or baseline change versus v2.13.0. Cite the software concept DOI for &ldquo;latest&rdquo;: 10.5281/zenodo.20370929. Pin this version: 10.5281/zenodo.21970518. Source: https://github.com/chokmah-me/BoP2026.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
     "value": "10.5281/zenodo.21970518"
   },
   "sameAs": [
-    "https://doi.org/10.5281/zenodo.21970518",
-    "https://doi.org/10.5281/zenodo.20370929",
-    "https://github.com/chokmah-me/BoP2026"
+    "https://doi.org/10.5281/zenodo.21970518"
   ],
-  "image": "https://chokmah.me/assets/sketchnote-zenodo-21970518.png?v=7",
   "author": [
     {
       "@type": "Person",
@@ -86,7 +81,16 @@
     "urban operations",
     "financial contagion",
     "EMP",
-    "biological weapons"
+    "biological weapons",
+    "escalation dynamics",
+    "parameter sensitivity",
+    "agent-based modeling",
+    "cascade effects",
+    "war studies",
+    "latency governance",
+    "AOM",
+    "technology development",
+    "arms race"
   ]
 }
     </script>
@@ -134,6 +138,14 @@
                       border: 1px solid rgba(255,255,255,0.08); }
         .poster .cap { color: var(--cadet-grey); font-size: 1rem; margin-top: 12px; }
         .kw { color: var(--cadet-grey); font-size: 1.05rem; }
+        .card { background-color: var(--slate-armor); border-radius: 8px; padding: 24px 26px;
+                margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
+        .card:hover { border-color: var(--signal-amber); }
+        .card h3 { margin-bottom: 8px; }
+        .card h3 a { text-decoration: none; }
+        .card .meta { margin-bottom: 10px; font-size: 1rem; }
+        .card p { margin-bottom: 0; font-size: 1.08rem; }
+        .year-head { color: var(--signal-amber); font-size: 1.35rem; margin: 40px 0 16px; }
         footer { margin-top: 64px; padding-top: 26px; border-top: 1px solid var(--slate-armor);
                  color: var(--cadet-grey); font-size: 1rem; text-align: center; }
         footer a { text-decoration: none; }
@@ -144,24 +156,15 @@
     <nav class="site-nav"><a href="/">chokmah.me</a> / <a href="/research/">Research</a></nav>
     <header>
       <h1>Balance of Power 2026</h1>
-      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-08-16 &middot; software v2.13.2 &middot; mit-license</p>
+      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-08-16 &middot; software &middot; mit-license</p>
     </header>
     <div class="callout">
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.21970518">https://doi.org/10.5281/zenodo.21970518</a><br>
-      <strong>Concept DOI (always latest):</strong> <a href="https://doi.org/10.5281/zenodo.20370929">https://doi.org/10.5281/zenodo.20370929</a><br>
-      <strong>Source:</strong> <a href="https://github.com/chokmah-me/BoP2026">github.com/chokmah-me/BoP2026</a>
-    </div>
-    <div class="poster">
-      <a href="https://chokmah.me/assets/sketchnote-zenodo-21970518.png?v=7">
-        <img src="https://chokmah.me/assets/sketchnote-zenodo-21970518.png?v=7" width="563" height="845"
-             alt="Sketchnote for Balance of Power 2026: multipolar reboot of Crawford 1985; browser wargame and headless research instrument; eight actors, thirteen domains, eight scenarios">
-      </a>
-      <p class="cap">Sketchnote for v2.13.2 (CC BY 4.0). <a href="https://chokmah.me/assets/sketchnote-zenodo-21970518.png?v=7">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
-    <p>A turn-based multipolar crisis simulation for IR research and war studies pedagogy. Eight scenarios across thirteen domains and eight actors; browser wargame and headless Oracle API for batch runs and counterfactuals. Stylized, rule-based AI with cascade dynamics.</p>
+    <p>Balance of Power 2026 is a turn-based multipolar crisis simulation for international-relations research and war-studies pedagogy. Eight actors (US, China, EU, Russia, India, the Gulf Bloc, Iran, North Korea) compete across thirteen domains: military, economic, cyber, information, diplomatic, domestic, supply chain, autonomous systems, biological, EMP, space, urban, and technology. Each turn, AI-driven powers select actions from risk tolerance, patience, and domain priorities. Actions cascade through first- through fourth-order effects, with probabilistic second-order outcomes and systemic threshold events (financial fragmentation, debt spiral, domestic fragility, pandemic outbreak, C4ISR collapse, Kessler debris cascade, urban quagmire, compound crises). Eight playable scenarios ship with the engine &amp;mdash; Taiwan Strait 2026, Iran Nuclear Threshold 2026, South China Sea 2026, Korean Peninsula 2026, Sovereignty Void 2026, Orbital Warfare 2026, Megacity Siege 2026, and Financial Contagion 2026 &amp;mdash; covering all seven of Krepinevich&amp;rsquo;s 7 Deadly Scenarios. Five doctrines (MAGA, TWELVER, EU_FATALISM, MING, JUCHE) set ratification time and personality. Sovereignty Void operationalizes the AOM latency-governance framework (paper concept 10.5281/zenodo.19368682): when doctrinal ratification time (t_rat) exceeds the boost-phase intercept window (t_event), the system resolves before the player&amp;rsquo;s action registers. The engine is designed for two uses: Classroom / wargame &amp;mdash; open index.html in a browser; no server, no build, no npm. Play any scenario; Save Log / auto-save writes a post-mortem JSON; the Research panel runs in-browser batches. Research companion &amp;mdash; headless Node.js (18+) batch runs, parameter sweeps (--cn-risk, --us-patience, --cascade-scale), counterfactual branching via the Oracle API (BoP.init / step / run / runBatch, getState / setState, NPC and player overrides). Output is bop2026-analytics-v1 (per-turn state deltas, relationship shifts, crisis levels, systemic-risk index) for Python or R. Optional DeepSeek LLM NPC backend (heuristic fallback; symmetric AOM prompt by default). Also in this deposit: perishable intelligence (quality decay + perception drift), a delayed-payoff technology / R&amp;D ledger with arms-race catch-up, posture-stable heuristic AI (escalate / hold / de-escalate / consolidate; compound-crisis avoidance; escalation lock), and a 27-test engine contract suite under npm test. Calibrated for face validity against open-source IR literature (Fearon 1995, Jervis 1976, Waltz 1979), not regression-fitted to history. Not intended for forecasting or policy prescription. What it can do honestly: show how crises cascade; let a researcher ask &amp;ldquo;what if China is more risk-tolerant&amp;rdquo; under a fixed seed; generate synthetic trajectories for method work; exercise latency-governance (t_rat vs t_event) as a structural constraint rather than a tunable knob. Those uses need internal consistency, not empirical fit. This version (v2.13.2): BoP.init({ seed }) now actually patches the mulberry32 stream before State.init (the documented option was dead, so Oracle examples and sensitivity-sweep.js were not reproducible). Repeated BoP.seed() no longer makes unseed() restore a seeded closure. No game-logic or baseline change versus v2.13.0. Cite the software concept DOI for &amp;ldquo;latest&amp;rdquo;: 10.5281/zenodo.20370929. Pin this version: 10.5281/zenodo.21970518. Source: https://github.com/chokmah-me/BoP2026.</p>
     <h2>Keywords</h2>
-    <p class="kw">international relations &middot; crisis simulation &middot; wargaming &middot; multipolarity &middot; Taiwan Strait &middot; Iran nuclear &middot; South China Sea &middot; supply chain &middot; autonomous weapons &middot; sensitivity analysis &middot; pedagogy &middot; Korean Peninsula &middot; North Korea &middot; DPRK &middot; brinkmanship &middot; space domain &middot; urban operations &middot; financial contagion &middot; EMP &middot; biological weapons</p>
+    <p class="kw">international relations &middot; crisis simulation &middot; wargaming &middot; multipolarity &middot; Taiwan Strait &middot; Iran nuclear &middot; South China Sea &middot; supply chain &middot; autonomous weapons &middot; sensitivity analysis &middot; pedagogy &middot; Korean Peninsula &middot; North Korea &middot; DPRK &middot; brinkmanship &middot; space domain &middot; urban operations &middot; financial contagion &middot; EMP &middot; biological weapons &middot; escalation dynamics &middot; parameter sensitivity &middot; agent-based modeling &middot; cascade effects &middot; war studies &middot; latency governance &middot; AOM &middot; technology development &middot; arms race</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>
     <footer>
         <p>&copy; 2026 Chokmah LLC &middot;
