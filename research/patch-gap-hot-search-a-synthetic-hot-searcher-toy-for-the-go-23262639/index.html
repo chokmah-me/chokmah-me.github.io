@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap | Chokmah Research</title>
-    <meta name="description" content="1. Artifact claim. This deposit is a Python, stdlib-only toy that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph; the patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements.2. Problem / sc...">
+    <meta name="description" content="Synthetic HOT-searcher toy for the governance patch-gap: generates Rd; G and S are outputs, not legal measurements. v0.2.0 gates stock algebra (Lean 4) and §4.4 arithmetic. Prefer software concept DOI 10.5281/zenodo.21918091.">
     <link rel="canonical" href="https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-23262639/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-23262639/">
     <meta property="og:title" content="patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap">
-    <meta property="og:description" content="1. Artifact claim. This deposit is a Python, stdlib-only toy that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph; the patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements.2. Problem / sc...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="Synthetic HOT-searcher toy for the governance patch-gap: generates Rd; G and S are outputs, not legal measurements. v0.2.0 gates stock algebra (Lean 4) and §4.4 arithmetic. Prefer software concept DOI 10.5281/zenodo.21918091.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-23262565.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-23262565.png">
     <meta name="citation_title" content="patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-10-09">
@@ -34,15 +34,19 @@
   "headline": "patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap",
   "url": "https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-23262639/",
   "datePublished": "2026-10-09",
+  "dateModified": "2026-10-14",
   "inLanguage": "en",
-  "abstract": "1. Artifact claim. This deposit is a Python, stdlib-only toy that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph; the patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements.2. Problem / scientific context. Paper concept DOI 10.5281/zenodo.21910874 (this PDF 10.5281/zenodo.23262565, v1.2) defines the governance patch-gap as a rate ratio and a stock, and maps legal open texture onto HOT / robust-yet-fragile design. G in that PDF is a definition, not a dynamical model; the §4.4 powers of ten are heuristics. This software exists so those qualitative distinctions can be run.3. Contents. HOT vs uniform-null generators (simulation/graph.py); counted Rd, patcher, actor filters, two-stock dynamics (simulation/dynamics.py); thin Monte Carlo gate (verify_patchgap_claims.py); Lean 4 stock-algebra proofs (lean/, no Mathlib); regime-arithmetic, frozen 162-cell searcher sweep, source/prediction ledger (gates/, run_all_gates.py); five labeled SVGs; executed gate evidence under results/. No paper PDF. No real legal corpus.4. How to reproduce. Python 3.10+ (3.8 likely fine). No third-party packages. python verify_patchgap_claims.py — exit 0 iff three toy claims hold. python run_all_gates.py runs Lean (toolchain v4.15.0), regime arithmetic, searcher sweep, and source/prediction checks. Optional: python -m simulation.figures.5. Relation to paper. Illustrates the paper's §4.3 stock algebra and §4.4 distinction that G can fall while Sknown still rises, and that a searcher aimed at interfaces is not the same as a degree-greedy crawl of a robust core. Load-bearing legal argument, predictions, and named weaknesses stay in the PDF. Paper and software are separate Zenodo concepts; do not merge this zip with the paper record 21910874 / 23262565.6. Limitations / non-claims. Not a measurement of legal G, Rd, or Rp. Not support for the paper's heuristic exponents. Not a test that any statute is HOT (the generator assumes HOT structure). Not SocioHack, A1/VERITE, Rice/FLP, or an evaluation of any live bill. Claim 2 is the stock identity made executable. Claim 3 is an existence path under scenario knobs, not a legislature model.7. This version (v0.2.0, 2026-10-09). Adds four gates without changing the toy dynamics: Lean 4 proofs of the paper's §4.3 stock algebra (no sorry, standard axioms only; toolchain v4.15.0); a recomputation of the §4.4 regime arithmetic against the paper text; a 162-cell searcher sweep frozen before its first run (failed v1 spec kept); and a figure/prediction ledger that fails on drift or retired phrasing. Supersedes v0.1.1 10.5281/zenodo.21918637.8. Citation. Cite the paper concept DOI 10.5281/zenodo.21910874 for the argument. Cite this software concept DOI 10.5281/zenodo.21918091 for the runnable artifact (this zip: 10.5281/zenodo.23262639).",
+  "abstract": "A Python, stdlib-only toy companion to The Governance Patch-Gap. It generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph. The patch-gap G = Rd/Rp and the stocks Sknown and Sactive are outputs of that toy, not fitted measurements of any legal system. The paper defines G and maps legal open texture onto HOT / robust-yet-fragile design. This software exists so those qualitative distinctions can be run: a searcher produces Rd, a patcher produces Rp, and G and S emerge. It does not estimate Congress, courts, or any statute book. Version 0.2.0 adds four gates without changing the toy dynamics: Lean 4 proofs of the paper's §4.3 stock algebra; a recomputation of the §4.4 regime arithmetic against the paper text; a 162-cell searcher sweep frozen before its first run; and a figure/prediction ledger that fails on drift. Cite the paper concept for the argument; cite this software concept for the runnable artifact.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
     "value": "10.5281/zenodo.23262639"
   },
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-23262565.png",
   "sameAs": [
-    "https://doi.org/10.5281/zenodo.23262639"
+    "https://doi.org/10.5281/zenodo.23262639",
+    "https://doi.org/10.5281/zenodo.21918091",
+    "https://github.com/chokmah-me/patch-gap-hot-search"
   ],
   "author": [
     {
@@ -71,7 +75,8 @@
     "legal exploit discovery",
     "computational claim gate",
     "synthetic rule graph"
-  ]
+  ],
+  "license": "https://opensource.org/licenses/MIT"
 }
     </script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -102,10 +107,8 @@
         .site-nav a { text-decoration: none; }
         header { margin-bottom: 50px; padding-bottom: 30px; border-bottom: 1px solid var(--slate-armor); }
         h1 { font-size: 2.7rem; margin-bottom: 16px; letter-spacing: 0.3px; line-height: 1.22; }
-        .tagline { color: var(--active-amber); font-weight: 600; }
         h2 { font-size: 1.75rem; margin: 44px 0 16px; color: var(--signal-amber);
              border-bottom: 2px solid var(--slate-armor); padding-bottom: 8px; }
-        h3 { font-size: 1.4rem; color: var(--active-amber); }
         p, ul { margin-bottom: 18px; color: var(--cadet-grey); }
         ul { margin-left: 24px; } li { margin-bottom: 8px; }
         .meta { color: var(--cadet-grey); font-size: 1.1rem; margin-bottom: 24px; }
@@ -113,19 +116,7 @@
         .callout { background-color: var(--slate-armor); border-left: 3px solid var(--signal-amber);
                    border-radius: 6px; padding: 18px 22px; margin: 26px 0; font-size: 1.1rem; }
         .callout a { font-weight: 600; }
-        .poster { margin: 28px 0 8px; text-align: center; }
-        .poster img { max-width: min(563px, 100%); height: auto; border-radius: 8px;
-                      border: 1px solid rgba(255,255,255,0.08); }
-        .poster .cap { color: var(--cadet-grey); font-size: 1rem; margin-top: 12px; }
         .kw { color: var(--cadet-grey); font-size: 1.05rem; }
-        .card { background-color: var(--slate-armor); border-radius: 8px; padding: 24px 26px;
-                margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.05); transition: border-color 0.2s ease; }
-        .card:hover { border-color: var(--signal-amber); }
-        .card h3 { margin-bottom: 8px; }
-        .card h3 a { text-decoration: none; }
-        .card .meta { margin-bottom: 10px; font-size: 1rem; }
-        .card p { margin-bottom: 0; font-size: 1.08rem; }
-        .year-head { color: var(--signal-amber); font-size: 1.35rem; margin: 40px 0 16px; }
         footer { margin-top: 64px; padding-top: 26px; border-top: 1px solid var(--slate-armor);
                  color: var(--cadet-grey); font-size: 1rem; text-align: center; }
         footer a { text-decoration: none; }
@@ -136,13 +127,20 @@
     <nav class="site-nav"><a href="/">chokmah.me</a> / <a href="/research/">Research</a></nav>
     <header>
       <h1>patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap</h1>
-      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-10-09 &middot; software &middot; mit-license</p>
+      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-10-09 &middot; software &middot; mit-license &middot; v0.2.0</p>
     </header>
     <div class="callout">
-      <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.23262639">https://doi.org/10.5281/zenodo.23262639</a><br>
+      <strong>Version of record (concept DOI, always latest zip):</strong> <a href="https://doi.org/10.5281/zenodo.21918091">https://doi.org/10.5281/zenodo.21918091</a><br>
+      <strong>This version (v0.2.0):</strong> <a href="https://doi.org/10.5281/zenodo.23262639">https://doi.org/10.5281/zenodo.23262639</a><br>
+      <strong>Download zip (Zenodo):</strong> <a href="https://zenodo.org/records/23262639/files/patch-gap-hot-search-v0.2.0.zip?download=1">open</a><br>
+      <strong>GitHub companion:</strong> <a href="https://github.com/chokmah-me/patch-gap-hot-search">github.com/chokmah-me/patch-gap-hot-search</a> (release <a href="https://github.com/chokmah-me/patch-gap-hot-search/releases/tag/v0.2.0">v0.2.0</a>)<br>
+      <strong>Companion paper (separate concept):</strong> <a href="https://doi.org/10.5281/zenodo.21910874">10.5281/zenodo.21910874</a><br>
+      <strong>OSF (legacy mirror):</strong> <a href="https://osf.io/5pjcv/">osf.io/5pjcv</a>
     </div>
     <h2>Abstract</h2>
-    <p>1. Artifact claim. This deposit is a Python, stdlib-only toy that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph; the patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements.2. Problem / scientific context. Paper concept DOI 10.5281/zenodo.21910874 (this PDF 10.5281/zenodo.23262565, v1.2) defines the governance patch-gap as a rate ratio and a stock, and maps legal open texture onto HOT / robust-yet-fragile design. G in that PDF is a definition, not a dynamical model; the &#167;4.4 powers of ten are heuristics. This software exists so those qualitative distinctions can be run.3. Contents. HOT vs uniform-null generators (simulation/graph.py); counted Rd, patcher, actor filters, two-stock dynamics (simulation/dynamics.py); thin Monte Carlo gate (verify_patchgap_claims.py); Lean 4 stock-algebra proofs (lean/, no Mathlib); regime-arithmetic, frozen 162-cell searcher sweep, source/prediction ledger (gates/, run_all_gates.py); five labeled SVGs; executed gate evidence under results/. No paper PDF. No real legal corpus.4. How to reproduce. Python 3.10+ (3.8 likely fine). No third-party packages. python verify_patchgap_claims.py — exit 0 iff three toy claims hold. python run_all_gates.py runs Lean (toolchain v4.15.0), regime arithmetic, searcher sweep, and source/prediction checks. Optional: python -m simulation.figures.5. Relation to paper. Illustrates the paper&#39;s &#167;4.3 stock algebra and &#167;4.4 distinction that G can fall while Sknown still rises, and that a searcher aimed at interfaces is not the same as a degree-greedy crawl of a robust core. Load-bearing legal argument, predictions, and named weaknesses stay in the PDF. Paper and software are separate Zenodo concepts; do not merge this zip with the paper record 21910874 / 23262565.6. Limitations / non-claims. Not a measurement of legal G, Rd, or Rp. Not support for the paper&#39;s heuristic exponents. Not a test that any statute is HOT (the generator assumes HOT structure). Not SocioHack, A1/VERITE, Rice/FLP, or an evaluation of any live bill. Claim 2 is the stock identity made executable. Claim 3 is an existence path under scenario knobs, not a legislature model.7. This version (v0.2.0, 2026-10-09). Adds four gates without changing the toy dynamics: Lean 4 proofs of the paper&#39;s &#167;4.3 stock algebra (no sorry, standard axioms only; toolchain v4.15.0); a recomputation of the &#167;4.4 regime arithmetic against the paper text; a 162-cell searcher sweep frozen before its first run (failed v1 spec kept); and a figure/prediction ledger that fails on drift or retired phrasing. Supersedes v0.1.1 10.5281/zenodo.21918637.8. Citation. Cite the paper concept DOI 10.5281/zenodo.21910874 for the argument. Cite this software concept DOI 10.5281/zenodo.21918091 for the runnable artifact (this zip: 10.5281/zenodo.23262639).</p>
+    <p>A Python, stdlib-only toy companion to <em>The Governance Patch-Gap</em>. It generates a discovery rate <em>R</em><sub>d</sub> from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph. The patch-gap <em>G</em> = <em>R</em><sub>d</sub>/<em>R</em><sub>p</sub> and the stocks <em>S</em><sub>known</sub> and <em>S</em><sub>active</sub> are outputs of that toy, not fitted measurements of any legal system.</p>
+    <p>The paper defines <em>G</em> and maps legal open texture onto HOT / robust-yet-fragile design. This software exists so those qualitative distinctions can be run: a searcher produces <em>R</em><sub>d</sub>, a patcher produces <em>R</em><sub>p</sub>, and <em>G</em> and <em>S</em> emerge. It does not estimate Congress, courts, or any statute book.</p>
+    <p>Version 0.2.0 adds four gates without changing the toy dynamics: Lean 4 proofs of the paper's §4.3 stock algebra; a recomputation of the §4.4 regime arithmetic against the paper text; a 162-cell searcher sweep frozen before its first run; and a figure/prediction ledger that fails on drift. Cite the paper concept for the argument; cite this software concept for the runnable artifact.</p>
     <h2>Keywords</h2>
     <p class="kw">AI governance &middot; open texture &middot; reward hacking &middot; regulatory arbitrage &middot; highly optimized tolerance &middot; governance patch-gap &middot; legal exploit discovery &middot; computational claim gate &middot; synthetic rule graph</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>
@@ -151,7 +149,7 @@
         <a href="/">chokmah.me</a> &middot;
         <a href="/research/">Research</a> &middot;
         <a href="https://github.com/chokmah-me">GitHub</a></p>
-        <p>Records of version are hosted on <a href="https://zenodo.org">Zenodo</a>. Some earlier works also have an <a href="https://osf.io">OSF</a> archive node where one was created.</p>
+        <p>Records of version are hosted on <a href="https://zenodo.org">Zenodo</a> (software concept DOI 10.5281/zenodo.21918091). Some earlier works also have an <a href="https://osf.io">OSF</a> archive node where one was created.</p>
     </footer>
     </div>
 </body>

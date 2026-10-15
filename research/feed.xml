@@ -4,7 +4,7 @@
   <link href="https://chokmah.me/research/"/>
   <link rel="self" href="https://chokmah.me/research/feed.xml"/>
   <id>https://chokmah.me/research/</id>
-  <updated>2026-10-13T20:00:00Z</updated>
+  <updated>2026-10-14T00:00:00Z</updated>
   <author><name>Dr. Daniyel Yaacov Bilar</name></author>
   <entry>
     <title>Quantum-Safe Migration Playbook (Strategic &amp; Operational Guide)</title>
@@ -24,15 +24,15 @@
     <title>patch-gap-hot-search: a synthetic HOT-searcher toy for the governance patch-gap</title>
     <link href="https://chokmah.me/research/patch-gap-hot-search-a-synthetic-hot-searcher-toy-for-the-go-23262639/"/>
     <id>https://doi.org/10.5281/zenodo.23262639</id>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <summary>1. Artifact claim. This deposit is a Python, stdlib-only toy that generates a discovery rate Rd from a label-blind interface searcher on a Highly Optimized Tolerance (HOT) rule graph; the patch-gap G = Rd/Rp and the stocks Sknown, Sactive are outputs, not fitted legal measurements.2. Problem / sc...</summary>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <summary>Synthetic HOT-searcher toy for the governance patch-gap: generates Rd; G and S are outputs, not legal measurements. v0.2.0 gates stock algebra (Lean 4) and §4.4 arithmetic. Prefer software concept DOI 10.5281/zenodo.21918091.</summary>
   </entry>
   <entry>
     <title>The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair</title>
     <link href="https://chokmah.me/research/the-governance-patch-gap-machine-speed-exploit-discovery-aga-23262565/"/>
     <id>https://doi.org/10.5281/zenodo.23262565</id>
-    <updated>2026-10-09T00:00:00Z</updated>
-    <summary>1. Artifact claim. This deposit is the v1.2 preprint PDF of The Governance Patch-Gap: Machine-Speed Exploit Discovery Against Human-Speed Legal Repair. It defines the governance patch-gap as the rate ratio G = Rd/Rp and a stock S with dS/dt = Rd − Rp: AI collapses the cost of discovering legal op...</summary>
+    <updated>2026-10-14T00:00:00Z</updated>
+    <summary>AI collapses the cost of finding legal open texture while repair stays on a legislative clock. Defines G = Rd/Rp and stock S. v1.2 preprint; prefer concept DOI 10.5281/zenodo.21910874.</summary>
   </entry>
   <entry>
     <title>The Computability Filter</title>
