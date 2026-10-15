@@ -10,9 +10,9 @@
     <meta property="og:url" content="https://chokmah.me/research/circular-leverage-in-bank-nbfi-synthetic-risk-transfer-netwo-21995468/">
     <meta property="og:title" content="Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks">
     <meta property="og:description" content="Synthetic Risk Transfers (SRTs) let banks shed credit risk to non-bank financial intermediaries (NBFIs) while keeping the underlying loans on their balance sheets. A structural vulnerability arises when the same banks extend credit lines to the funds that buy their SRT protection, creating a circ...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:image" content="https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png?v=2">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png?v=2">
     <meta name="citation_title" content="Circular Leverage in Bank-NBFI Synthetic Risk Transfer Networks">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-08-18">
@@ -77,7 +77,8 @@
     "synthetic securitisation",
     "AnaCredit"
   ],
-  "license": "https://creativecommons.org/licenses/by/4.0/"
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "image": "https://chokmah.me/assets/circular-leverage-fig1-phase-transition.png?v=2"
 }
     </script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -147,6 +148,13 @@
     <div class="callout">
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.21995468">https://doi.org/10.5281/zenodo.21995468</a><br>
       <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/21995468/files/dyb-2026k-circular-nw-risk-v2.pdf?download=1">open</a><br>
+    </div>
+    <div class="poster">
+      <a href="/assets/circular-leverage-fig1-phase-transition.png?v=2">
+        <img src="/assets/circular-leverage-fig1-phase-transition.png?v=2" width="563" height="381"
+             alt="Figure 1: mean cascade size versus self-funding fraction lambda, with grey two-stage transition window between lambda onset and lambda star">
+      </a>
+      <p class="cap">Figure 1. Two-stage cascade transition as self-funding fraction &lambda; rises (CC BY 4.0). <a href="/assets/circular-leverage-fig1-phase-transition.png?v=2">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
     <p>Synthetic Risk Transfers (SRTs) let banks shed credit risk to non-bank financial intermediaries (NBFIs) while keeping the underlying loans on their balance sheets. A structural vulnerability arises when the same banks extend credit lines to the funds that buy their SRT protection, creating a circular leverage loop in which the capital relief is partly self-funded. We formalize this loop as a single parameter, &amp;lambda;, the fraction of total SRT protection weight financed by the originating bank or its affiliates. Using a directed network model of bank&amp;ndash;NBFI SRT relationships, we simulate contagion cascades across 1,000 random network realizations for each &amp;lambda; value. The simulation shows a two-stage phase transition: cascade size first departs from its baseline at &amp;lambda;onset &amp;asymp; 0.85&amp;ndash;0.95, then jumps sharply at &amp;lambda;* &amp;asymp; 0.95, where Dragon King events emerge from the loop itself. The transition location is invariant across network density, investor concentration, shock size, and tranche thickness; density controls cascade magnitude at high &amp;lambda; (0.18 to 0.61 in the tested range). A v2 re-run at the empirically observed median junior-tranche thickness &amp;delta; = 0.15 (Osberghaus and Schepens, 2026) leaves &amp;lambda;* at 0.95; the warning window between onset and cliff narrows. Since v1 (April 2026), transaction-level ECB AnaCredit evidence shows banks are 57&amp;ndash;66% more likely to sell SRTs to investors they also finance, with roughly 26% of SRT funding attributable to bank credit if the pre-deal debt rise is assigned to the SRT (Osberghaus and Schepens, 2026). The FSB (May 2026) reports about USD 220 billion of official bank credit lines to private credit funds (commercial estimates USD 270&amp;ndash;500 billion). The BIS (March 2026) discusses the same loop as &quot;circles of risk&quot; (ESRB 2025) and characterizes the documented scale as modest given scarce data. Six public proxy metrics are ranked by sensitivity-weighted ordinal position relative to &amp;lambda;*. As of Q2/Q3 2026, five of six show stress; SOFR&amp;ndash;OIS remains green, consistent with its role as a lagging indicator. One number, &amp;lambda;, would let supervisors place banks on the phase diagram. It is already known to each originating bank and is not reported. This version includes the v2 paper PDF, six figures, and a cockpit CSV. Simulation code is a separate MIT-licensed deposit (10.5281/zenodo.19651937) and github.com/chokmah-me/srt-circular-leverage.</p>
