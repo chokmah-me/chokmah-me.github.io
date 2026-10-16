@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Basin selection warm-start</title><style>
+  :root { --bg:#FAF8F0; --ink:#2D2D2D; --blue:#1B4F72; --orange:#D35400; --green:#1E8449; --purple:#6C3483; --red:#C0392B; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; width:832px; height:auto; background:var(--bg); overflow:visible; color:var(--ink); font-family:"Segoe UI","Trebuchet MS",sans-serif; }
+  .page { width:832px; height:auto; padding:16px 18px 18px; display:flex; flex-direction:column; gap:12px; }
+  .title { text-align:center; border-bottom:3px solid var(--blue); padding-bottom:6px; }
+  .title h1 { margin:0; font-family:Georgia,serif; font-size:28px; color:var(--blue); line-height:1.12; }
+  .title .sub { margin:3px 0 0; font-size:13px; font-weight:700; }
+  .title .by { margin:2px 0 0; font-size:11px; color:#555; }
+  .motto { margin:0; text-align:center; font-family:Georgia,serif; font-style:italic; font-size:14px; color:var(--orange); font-weight:700; }
+  .row { display:flex; gap:12px; }
+  .col { flex:1; min-width:0; }
+  .box { border:2.5px solid var(--ink); border-radius:10px; padding:12px 12px; background:rgba(255,255,255,.5); }
+  .box h2 { margin:0 0 5px; font-size:12.5px; font-weight:800; }
+  .box p, .box li { margin:0; font-size:13.5px; line-height:1.4; }
+  .box ul { margin:0; padding-left:16px; }
+  .box li { margin-bottom:3px; }
+  .tiny { font-size:11px; color:#444; line-height:1.3; }
+  .eq { font-family:"Courier New",Consolas,monospace; font-size:13px; color:var(--purple); font-weight:700; background:rgba(108,52,131,.08); border:1.5px dashed var(--purple); border-radius:7px; padding:6px 8px; margin-top:5px; text-align:center; }
+  .prob { border-color:var(--blue); background:rgba(27,79,114,.08); } .prob h2 { color:var(--blue); }
+  .insight { border-color:var(--orange); background:rgba(211,84,0,.10); border-width:3px; } .insight h2 { color:var(--orange); }
+  .method { border-color:var(--green); background:rgba(30,132,73,.08); } .method h2 { color:var(--green); }
+  .math { border-color:var(--purple); background:rgba(108,52,131,.08); } .math h2 { color:var(--purple); }
+  .res { border-color:var(--orange); background:rgba(211,84,0,.07); } .res h2 { color:var(--orange); }
+  .lim { border-color:var(--red); background:rgba(192,57,43,.08); } .lim h2 { color:var(--red); }
+  .footer { text-align:center; border-top:2.5px solid var(--blue); padding-top:6px; font-size:11px; color:#444; }
+  .footer .doi { font-family:Consolas,monospace; color:var(--blue); font-weight:700; }
+  .chips { display:flex; gap:6px; margin-top:6px; }
+  .chip { flex:1; border-radius:8px; padding:10px; text-align:center; font-size:11px; font-weight:700; color:#fff; line-height:1.25; }
+  .c1 { background:#1B4F72; } .c2 { background:#1E8449; } .c3 { background:#D35400; } .c4 { background:#6C3483; } .c5 { background:#C0392B; }
+  .flow { display:flex; align-items:stretch; gap:4px; margin-top:6px; }
+  .step { flex:1; background:#fff; border:2px solid var(--ink); border-radius:8px; padding:10px; font-size:11px; text-align:center; }
+  .step b { display:block; color:var(--blue); font-size:12px; }
+  .arrow { align-self:center; color:var(--orange); font-weight:800; }
+</style></head>
+<body><div class="page">
+<header class="title"><h1>WARM-START BEATS ANNEALING ALONE</h1><p class="sub">exp and ln at over-representational depth</p><p class="by">12 June 2026 · data and methods note</p></header>
+<p class="motto">Three-phase annealing does not recover valid exp and ln at that depth. A targeted warm-start and a top-aligned curriculum do.</p>
+
+<div class="box insight"><h2>KEY INSIGHT</h2>
+<p>Full valid recovery for exp and ln, including at over-representational depth, comes from a targeted warm-start plus a top-aligned curriculum.</p></div>
+<div class="box method"><h2>WHAT FAILS AND WHAT WORKS</h2>
+<div class="flow"><div class="step"><b>Annealing alone</b>three phases</div><div class="arrow">→</div><div class="step"><b>Miss</b>depth too deep</div></div>
+<div class="flow"><div class="step"><b>Warm-start</b>targeted</div><div class="arrow">+</div><div class="step"><b>Curriculum</b>top-aligned</div><div class="arrow">→</div><div class="step"><b>Valid</b>exp and ln</div></div></div>
+<div class="row">
+<div class="col box res"><h2>SCOPE OF THE NOTE</h2><p>Data and methods. The symbols named are exp and ln. The depth condition is over-representational.</p></div>
+<div class="col box lim"><h2>LIMIT</h2><p>Not a claim that every EML operator recovers this way. The false-snap criterion lives on the parent paper.</p></div>
+</div>
+
+
+<div class="box res"><h2>THE CONTRAST</h2>
+<ul>
+<li>Three-phase annealing alone: no full valid recovery of exp and ln at over-representational depth.</li>
+<li>Targeted warm-start plus top-aligned curriculum: full valid recovery for those two, including at that depth.</li>
+<li>Valid means the symbolic form, using the parent paper's criterion.</li>
+</ul></div>
+<div class="box math"><h2>SYMBOLS IN SCOPE</h2>
+<div class="eq">exp · ln · over-representational depth</div>
+<p class="tiny" style="margin-top:6px">Other operators are outside this note.</p></div>
+
+<footer class="footer"><div class="doi">10.5281/zenodo.20671272</div><div>Daniyel Yaacov Bilar · Chokmah LLC · CC BY 4.0 sketchnote</div></footer>
+</div></body></html>

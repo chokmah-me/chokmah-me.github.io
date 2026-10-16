@@ -1,118 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>MODERN JAVA 25 THOUGHTBASES — sketchnote</title>
-<style>
-  :root {
-    --bg: #FAF8F0; --ink: #2D2D2D; --blue: #1B4F72; --orange: #D35400;
-    --green: #1E8449; --purple: #6C3483; --red: #C0392B;
-  }
+<html lang="en"><head><meta charset="utf-8"><title>Java 25 thoughtbases</title><style>
+  :root { --bg:#FAF8F0; --ink:#2D2D2D; --blue:#1B4F72; --orange:#D35400; --green:#1E8449; --purple:#6C3483; --red:#C0392B; }
   * { box-sizing: border-box; }
-  html, body {
-    margin: 0; padding: 0; width: 832px; height: auto;
-    background: var(--bg); overflow: visible; color: var(--ink);
-    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-  }
-  .page {
-    width: 832px; height: auto; padding: 16px 16px 14px;
-    display: flex; flex-direction: column; gap: 9px;
-  }
-  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 5px; }
-  .title h1 {
-    margin: 0; font-family: Georgia, serif; font-size: 22px; letter-spacing: 0.3px;
-    color: var(--blue); line-height: 1.08;
-  }
-  .title .sub { margin: 3px 0 0; font-size: 12.5px; font-weight: 700; }
-  .title .by { margin: 2px 0 0; font-size: 11px; color: #555; }
-  .motto {
-    margin: 0; text-align: center; font-family: Georgia, serif; font-style: italic;
-    font-size: 14px; color: var(--orange); font-weight: 700;
-  }
-  .row { display: flex; gap: 8px; }
-  .col { flex: 1; min-width: 0; }
-  .box {
-    border: 2.5px solid var(--ink); border-radius: 10px; padding: 8px 10px;
-    background: rgba(255,255,255,0.5);
-  }
-  .box h2 {
-    margin: 0 0 5px; font-size: 12.5px; font-weight: 800;
-    display: flex; align-items: center; gap: 5px;
-  }
-  .box p { margin: 0; font-size: 12px; line-height: 1.35; }
-  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
-  .prob h2 { color: var(--blue); }
-  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
-  .insight h2 { color: var(--orange); }
-  .method { border-color: var(--green); background: rgba(30,132,73,0.08); }
-  .method h2 { color: var(--green); }
-  .math { border-color: var(--purple); background: rgba(108,52,131,0.08); }
-  .math h2 { color: var(--purple); }
-  .eq {
-    font-family: "Courier New", Consolas, monospace; font-size: 12.5px; color: var(--purple);
-    font-weight: 700; background: rgba(108,52,131,0.08); border: 1.5px dashed var(--purple);
-    border-radius: 7px; padding: 6px 8px; margin-top: 6px; text-align: center;
-  }
-  .res { border-color: var(--orange); background: rgba(211,84,0,0.07); }
-  .res h2 { color: var(--orange); }
-  .lim { border-color: var(--red); background: rgba(192,57,43,0.08); }
-  .lim h2 { color: var(--red); }
-  .footer {
-    text-align: center; border-top: 2.5px solid var(--blue); padding-top: 6px;
-    font-size: 11px; line-height: 1.35; color: #444;
-  }
-  .footer .doi { font-family: Consolas, monospace; font-size: 11px; color: var(--blue); font-weight: 700; }
-  .footer .close {
-    font-family: Georgia, serif; font-style: italic; color: var(--orange);
-    font-weight: 700; font-size: 13px; margin-top: 3px;
-  }
-  .burst {
-    float: right; background: var(--orange); color: #fff; font-size: 9px; font-weight: 800;
-    padding: 2px 7px; border-radius: 10px; margin: -1px 0 3px 8px;
-  }
-</style>
-</head>
-<body>
-<div class="page">
-  <header class="title">
-    <h1>MODERN JAVA 25 THOUGHTBASES</h1>
-    <p class="sub">AI-native retrieval assets · late 2025 dataset</p>
-    <p class="by">Daniyel Yaacov Bilar · Chokmah LLC · 27 November 2025</p>
-  </header>
-  <p class="motto">Paste the mesh, then ask from a real classroom.</p>
-  <div class="row">
-    <div class="col box prob">
-      <h2>PROBLEM</h2>
-      <p>Linear tutorials of modern Java do not survive contact with an LLM context window. Teachers and DevOps need linked, retrievable thoughts, not another slide deck.</p>
-    </div>
-    <div class="col box insight">
-      <span class="burst">KEY INSIGHT</span>
-      <h2>INSIGHT</h2>
-      <p>A Thoughtbase is a mesh of insight clusters: one distilled thought per node, pre-linked. Parsed from van Dijk and Przybyl&#x27;s Modern Java talks, then iterated.</p>
-    </div>
-  </div>
-  <div class="box method">
-    <h2>METHOD</h2>
-    <p>Parse talks → insight clusters → main TBIC for teaching (community-college constraints) plus addenda for CI/CD pain points: N+1, GC pauses, cold start, IaC, Panama, Spring AI, multi-version runtimes.</p>
-  </div>
-  <div class="box math">
-    <h2>FORMAL CORE</h2>
-    <div class="eq">Thoughtbase = {cluster_i} + links, used as RAG context</div>
-  </div>
-  <div class="row">
-    <div class="col box res">
-      <h2>RESULTS</h2>
-      <p>Dataset, CC BY 4.0. Use by pasting into an LLM and asking from a concrete &#x27;I last taught Java 7 on BlueJ&#x27; situation.</p>
-    </div>
-    <div class="col box lim">
-      <h2>LIMITS</h2>
-      <p>Not a Java specification. Not a replacement for the JEPs. Quality is the parse-and-cluster discipline, not model weights.</p>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="doi">10.5281/zenodo.17740921 · CC BY 4.0</div>
-    <div class="close">Give the model a mesh, not a transcript.</div>
-  </div>
+  html, body { margin:0; padding:0; width:832px; height:auto; background:var(--bg); overflow:visible; color:var(--ink); font-family:"Segoe UI","Trebuchet MS",sans-serif; }
+  .page { width:832px; height:auto; padding:16px 18px 18px; display:flex; flex-direction:column; gap:12px; }
+  .title { text-align:center; border-bottom:3px solid var(--blue); padding-bottom:6px; }
+  .title h1 { margin:0; font-family:Georgia,serif; font-size:28px; color:var(--blue); line-height:1.12; }
+  .title .sub { margin:3px 0 0; font-size:13px; font-weight:700; }
+  .title .by { margin:2px 0 0; font-size:11px; color:#555; }
+  .motto { margin:0; text-align:center; font-family:Georgia,serif; font-style:italic; font-size:14px; color:var(--orange); font-weight:700; }
+  .row { display:flex; gap:12px; }
+  .col { flex:1; min-width:0; }
+  .box { border:2.5px solid var(--ink); border-radius:10px; padding:12px 12px; background:rgba(255,255,255,.5); }
+  .box h2 { margin:0 0 5px; font-size:12.5px; font-weight:800; }
+  .box p, .box li { margin:0; font-size:13.5px; line-height:1.4; }
+  .box ul { margin:0; padding-left:16px; }
+  .box li { margin-bottom:3px; }
+  .tiny { font-size:11px; color:#444; line-height:1.3; }
+  .eq { font-family:"Courier New",Consolas,monospace; font-size:13px; color:var(--purple); font-weight:700; background:rgba(108,52,131,.08); border:1.5px dashed var(--purple); border-radius:7px; padding:6px 8px; margin-top:5px; text-align:center; }
+  .prob { border-color:var(--blue); background:rgba(27,79,114,.08); } .prob h2 { color:var(--blue); }
+  .insight { border-color:var(--orange); background:rgba(211,84,0,.10); border-width:3px; } .insight h2 { color:var(--orange); }
+  .method { border-color:var(--green); background:rgba(30,132,73,.08); } .method h2 { color:var(--green); }
+  .math { border-color:var(--purple); background:rgba(108,52,131,.08); } .math h2 { color:var(--purple); }
+  .res { border-color:var(--orange); background:rgba(211,84,0,.07); } .res h2 { color:var(--orange); }
+  .lim { border-color:var(--red); background:rgba(192,57,43,.08); } .lim h2 { color:var(--red); }
+  .footer { text-align:center; border-top:2.5px solid var(--blue); padding-top:6px; font-size:11px; color:#444; }
+  .footer .doi { font-family:Consolas,monospace; color:var(--blue); font-weight:700; }
+  .chips { display:flex; gap:6px; margin-top:6px; }
+  .chip { flex:1; border-radius:8px; padding:10px; text-align:center; font-size:11px; font-weight:700; color:#fff; line-height:1.25; }
+  .c1 { background:#1B4F72; } .c2 { background:#1E8449; } .c3 { background:#D35400; } .c4 { background:#6C3483; } .c5 { background:#C0392B; }
+  .flow { display:flex; align-items:stretch; gap:4px; margin-top:6px; }
+  .step { flex:1; background:#fff; border:2px solid var(--ink); border-radius:8px; padding:10px; font-size:11px; text-align:center; }
+  .step b { display:block; color:var(--blue); font-size:12px; }
+  .arrow { align-self:center; color:var(--orange); font-weight:800; }
+</style></head>
+<body><div class="page">
+<header class="title"><h1>NOT A TUTORIAL</h1><p class="sub">Dataset · Modern Java talks parsed for agents</p><p class="by">27 November 2025 · AI-native assets</p></header>
+<p class="motto">The asset is a retrieval structure. A linear talk is the wrong shape for an agent.</p>
+
+<div class="box insight"><h2>KEY INSIGHT · DATASET</h2>
+<p>Thoughtbase assets parsed from Van Dijk and Przybyl's Modern Java talks, so an AI coding agent can retrieve a fact without replaying the talk.</p></div>
+<div class="box method"><h2>SHAPE CHANGE</h2>
+<div class="flow"><div class="step"><b>Talk</b>linear audio and slides</div><div class="arrow">→</div><div class="step"><b>Parse</b>structured thoughtbase</div><div class="arrow">→</div><div class="step"><b>Retrieve</b>agent asks one fact</div></div>
+<p class="tiny" style="margin-top:6px">Java 25 is the subject matter. The contribution is the asset shape, not a new language feature.</p></div>
+<div class="row">
+<div class="col box res"><h2>WHO IT IS FOR</h2><p>Coding agents that need a lookup. A human can still read the source talks. This deposit is not a substitute syllabus.</p></div>
+<div class="col box lim"><h2>LIMIT</h2><p>A dataset label. This board does not claim retrieval accuracy, coverage of the talks, or a benchmark against a textbook.</p></div>
 </div>
-</body>
-</html>
+
+
+<div class="box res"><h2>WHAT AN AGENT IS SUPPOSED TO DO WITH IT</h2>
+<ul>
+<li>Ask for one Java 25 fact from Van Dijk and Przybyl's talks.</li>
+<li>Receive a structured thoughtbase hit, not a timestamp into a video.</li>
+<li>The human syllabus is the talks themselves. This deposit is the lookup shape.</li>
+</ul></div>
+<div class="box lim"><h2>WHAT IS NOT CLAIMED</h2>
+<p>No retrieval-accuracy number. No coverage fraction of the talks. No comparison with a textbook. Dataset, labeled as a dataset.</p></div>
+
+<footer class="footer"><div class="doi">10.5281/zenodo.17740921</div><div>Daniyel Yaacov Bilar · Chokmah LLC · CC BY 4.0 sketchnote</div></footer>
+</div></body></html>

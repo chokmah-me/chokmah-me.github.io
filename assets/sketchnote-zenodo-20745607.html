@@ -1,118 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>COMPRESSED BY DISCOVERY — sketchnote</title>
-<style>
-  :root {
-    --bg: #FAF8F0; --ink: #2D2D2D; --blue: #1B4F72; --orange: #D35400;
-    --green: #1E8449; --purple: #6C3483; --red: #C0392B;
-  }
+<html lang="en"><head><meta charset="utf-8"><title>iCE40 snapped primitives</title><style>
+  :root { --bg:#FAF8F0; --ink:#2D2D2D; --blue:#1B4F72; --orange:#D35400; --green:#1E8449; --purple:#6C3483; --red:#C0392B; }
   * { box-sizing: border-box; }
-  html, body {
-    margin: 0; padding: 0; width: 832px; height: auto;
-    background: var(--bg); overflow: visible; color: var(--ink);
-    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
-  }
-  .page {
-    width: 832px; height: auto; padding: 16px 16px 14px;
-    display: flex; flex-direction: column; gap: 9px;
-  }
-  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 5px; }
-  .title h1 {
-    margin: 0; font-family: Georgia, serif; font-size: 22px; letter-spacing: 0.3px;
-    color: var(--blue); line-height: 1.08;
-  }
-  .title .sub { margin: 3px 0 0; font-size: 12.5px; font-weight: 700; }
-  .title .by { margin: 2px 0 0; font-size: 11px; color: #555; }
-  .motto {
-    margin: 0; text-align: center; font-family: Georgia, serif; font-style: italic;
-    font-size: 14px; color: var(--orange); font-weight: 700;
-  }
-  .row { display: flex; gap: 8px; }
-  .col { flex: 1; min-width: 0; }
-  .box {
-    border: 2.5px solid var(--ink); border-radius: 10px; padding: 8px 10px;
-    background: rgba(255,255,255,0.5);
-  }
-  .box h2 {
-    margin: 0 0 5px; font-size: 12.5px; font-weight: 800;
-    display: flex; align-items: center; gap: 5px;
-  }
-  .box p { margin: 0; font-size: 12px; line-height: 1.35; }
-  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
-  .prob h2 { color: var(--blue); }
-  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
-  .insight h2 { color: var(--orange); }
-  .method { border-color: var(--green); background: rgba(30,132,73,0.08); }
-  .method h2 { color: var(--green); }
-  .math { border-color: var(--purple); background: rgba(108,52,131,0.08); }
-  .math h2 { color: var(--purple); }
-  .eq {
-    font-family: "Courier New", Consolas, monospace; font-size: 12.5px; color: var(--purple);
-    font-weight: 700; background: rgba(108,52,131,0.08); border: 1.5px dashed var(--purple);
-    border-radius: 7px; padding: 6px 8px; margin-top: 6px; text-align: center;
-  }
-  .res { border-color: var(--orange); background: rgba(211,84,0,0.07); }
-  .res h2 { color: var(--orange); }
-  .lim { border-color: var(--red); background: rgba(192,57,43,0.08); }
-  .lim h2 { color: var(--red); }
-  .footer {
-    text-align: center; border-top: 2.5px solid var(--blue); padding-top: 6px;
-    font-size: 11px; line-height: 1.35; color: #444;
-  }
-  .footer .doi { font-family: Consolas, monospace; font-size: 11px; color: var(--blue); font-weight: 700; }
-  .footer .close {
-    font-family: Georgia, serif; font-style: italic; color: var(--orange);
-    font-weight: 700; font-size: 13px; margin-top: 3px;
-  }
-  .burst {
-    float: right; background: var(--orange); color: #fff; font-size: 9px; font-weight: 800;
-    padding: 2px 7px; border-radius: 10px; margin: -1px 0 3px 8px;
-  }
-</style>
-</head>
-<body>
-<div class="page">
-  <header class="title">
-    <h1>COMPRESSED BY DISCOVERY</h1>
-    <p class="sub">Snapped SR primitives as verifiable function units on DSP-less FPGAs</p>
-    <p class="by">Daniyel Yaacov Bilar · Chokmah LLC · 18 June 2026 · technical note</p>
-  </header>
-  <p class="motto">Smaller and more accurate, on the same fabric.</p>
-  <div class="row">
-    <div class="col box prob">
-      <h2>PROBLEM</h2>
-      <p>DSP-less Lattice iCE40 has no comfortable home for quantized MLPs. Elementary functions still need to run, bit-exact, with a budget measured in LUTs.</p>
-    </div>
-    <div class="col box insight">
-      <span class="burst">KEY INSIGHT</span>
-      <h2>INSIGHT</h2>
-      <p>Argmax-snapped EML trees for exp and ln are simultaneously smaller and more accurate than every quantized MLP in a width/depth sweep, and bit-exact to a fixed-point golden model.</p>
-    </div>
-  </div>
-  <div class="box method">
-    <h2>METHOD</h2>
-    <p>Fixed-point golden models, iCE40 RTL emitters, quantized-MLP and direct-ROM baselines. Track C hardware realization of snapped primitives.</p>
-  </div>
-  <div class="box math">
-    <h2>FORMAL CORE</h2>
-    <div class="eq">snapped(exp, ln) ≺ MLP on LUT and on error, bit-exact to golden</div>
-  </div>
-  <div class="row">
-    <div class="col box res">
-      <h2>RESULTS</h2>
-      <p>On fabric without DSP inference, snapped symbolic primitives win the sweep. RTL is generated, not hand-tuned per net.</p>
-    </div>
-    <div class="col box lim">
-      <h2>LIMITS</h2>
-      <p>Targets are exp and ln as reported. Not a claim about arbitrary SR graphs. Golden model is the spec; FPGA matches it.</p>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="doi">10.5281/zenodo.20745607 · EML software 10.5281/zenodo.20748178 · CC BY 4.0</div>
-    <div class="close">Discover the primitive, then freeze the bits.</div>
-  </div>
+  html, body { margin:0; padding:0; width:832px; height:auto; background:var(--bg); overflow:visible; color:var(--ink); font-family:"Segoe UI","Trebuchet MS",sans-serif; }
+  .page { width:832px; height:auto; padding:16px 18px 18px; display:flex; flex-direction:column; gap:12px; }
+  .title { text-align:center; border-bottom:3px solid var(--blue); padding-bottom:6px; }
+  .title h1 { margin:0; font-family:Georgia,serif; font-size:28px; color:var(--blue); line-height:1.12; }
+  .title .sub { margin:3px 0 0; font-size:13px; font-weight:700; }
+  .title .by { margin:2px 0 0; font-size:11px; color:#555; }
+  .motto { margin:0; text-align:center; font-family:Georgia,serif; font-style:italic; font-size:14px; color:var(--orange); font-weight:700; }
+  .row { display:flex; gap:12px; }
+  .col { flex:1; min-width:0; }
+  .box { border:2.5px solid var(--ink); border-radius:10px; padding:12px 12px; background:rgba(255,255,255,.5); }
+  .box h2 { margin:0 0 5px; font-size:12.5px; font-weight:800; }
+  .box p, .box li { margin:0; font-size:13.5px; line-height:1.4; }
+  .box ul { margin:0; padding-left:16px; }
+  .box li { margin-bottom:3px; }
+  .tiny { font-size:11px; color:#444; line-height:1.3; }
+  .eq { font-family:"Courier New",Consolas,monospace; font-size:13px; color:var(--purple); font-weight:700; background:rgba(108,52,131,.08); border:1.5px dashed var(--purple); border-radius:7px; padding:6px 8px; margin-top:5px; text-align:center; }
+  .prob { border-color:var(--blue); background:rgba(27,79,114,.08); } .prob h2 { color:var(--blue); }
+  .insight { border-color:var(--orange); background:rgba(211,84,0,.10); border-width:3px; } .insight h2 { color:var(--orange); }
+  .method { border-color:var(--green); background:rgba(30,132,73,.08); } .method h2 { color:var(--green); }
+  .math { border-color:var(--purple); background:rgba(108,52,131,.08); } .math h2 { color:var(--purple); }
+  .res { border-color:var(--orange); background:rgba(211,84,0,.07); } .res h2 { color:var(--orange); }
+  .lim { border-color:var(--red); background:rgba(192,57,43,.08); } .lim h2 { color:var(--red); }
+  .footer { text-align:center; border-top:2.5px solid var(--blue); padding-top:6px; font-size:11px; color:#444; }
+  .footer .doi { font-family:Consolas,monospace; color:var(--blue); font-weight:700; }
+  .chips { display:flex; gap:6px; margin-top:6px; }
+  .chip { flex:1; border-radius:8px; padding:10px; text-align:center; font-size:11px; font-weight:700; color:#fff; line-height:1.25; }
+  .c1 { background:#1B4F72; } .c2 { background:#1E8449; } .c3 { background:#D35400; } .c4 { background:#6C3483; } .c5 { background:#C0392B; }
+  .flow { display:flex; align-items:stretch; gap:4px; margin-top:6px; }
+  .step { flex:1; background:#fff; border:2px solid var(--ink); border-radius:8px; padding:10px; font-size:11px; text-align:center; }
+  .step b { display:block; color:var(--blue); font-size:12px; }
+  .arrow { align-self:center; color:var(--orange); font-weight:800; }
+</style></head>
+<body><div class="page">
+<header class="title"><h1>SNAPPED exp AND ln ON iCE40</h1><p class="sub">DSP-less FPGA · bit-exact to a golden model</p><p class="by">18 June 2026 · paper</p></header>
+<p class="motto">Argmax-snapped EML primitives beat quantized MLPs on fabric that has no DSP inference, and they match the golden model bit for bit.</p>
+
+<div class="box insight"><h2>KEY INSIGHT</h2>
+<p>On Lattice iCE40 without DSP inference, snapped exp and ln are smaller and more accurate than quantized MLPs across a width and depth sweep.</p></div>
+<div class="box method"><h2>WHAT IS COMPARED</h2>
+<div class="chips"><div class="chip c1">EML primitive<br>argmax snap</div><div class="chip c3">Quantized MLP<br>same sweep</div><div class="chip c2">Golden model<br>bit-exact check</div></div>
+<div class="eq">no DSP inference · exp and ln · width × depth sweep</div>
+<p class="tiny" style="margin-top:6px">The sweep is the experiment. This board does not invent a winner's LUT count.</p></div>
+<div class="row">
+<div class="col box res"><h2>REPORTED DIRECTION</h2><ul><li>Smaller than the MLP on that fabric.</li><li>More accurate than the MLP.</li><li>Bit-exact to the golden model.</li></ul></div>
+<div class="col box lim"><h2>LIMIT</h2><p>The claim is this fabric and these two primitives. It is not a general FPGA result and not a claim about unsnapped trees.</p></div>
 </div>
-</body>
-</html>
+
+
+<div class="box res"><h2>THREE COMPARISONS, NO INVENTED COUNTS</h2>
+<ul>
+<li>Size: snapped exp and ln are smaller than quantized MLPs on this DSP-less iCE40 sweep.</li>
+<li>Accuracy: they are more accurate than those MLPs on the same sweep.</li>
+<li>Golden model: the primitive is bit-exact. A snap that drifts from the golden fails the check.</li>
+</ul></div>
+<div class="box prob"><h2>WHAT THE SWEEP IS FOR</h2>
+<p>Width and depth are the axes. The board records the direction of the result. It does not print a LUT table the landing does not print.</p></div>
+
+<footer class="footer"><div class="doi">10.5281/zenodo.20745607</div><div>Daniyel Yaacov Bilar · Chokmah LLC · CC BY 4.0 sketchnote</div></footer>
+</div></body></html>
