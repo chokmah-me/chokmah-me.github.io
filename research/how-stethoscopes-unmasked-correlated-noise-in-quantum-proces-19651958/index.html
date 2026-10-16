@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How &#39;Stethoscopes&#39; Unmasked Correlated Noise in Quantum Processors | Chokmah Research</title>
-    <meta name="description" content="For years, the quantum computing community has benchmarked its progress using simplified, independent noise models, leaving us to navigate the complexities of large-scale devices largely by feel. This commentary analyzes Google&#39;s recent out-of-time-order correlator (OTOC) experiments on the 65-qu...">
+    <meta name="description" content="Commentary on Google&#x27;s OTOC experiments on a 65-qubit processor: correlated noise that independent-error benchmarks miss, and what correlator &#x27;stethoscopes&#x27; change about device characterization.">
     <link rel="canonical" href="https://chokmah.me/research/how-stethoscopes-unmasked-correlated-noise-in-quantum-proces-19651958/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/how-stethoscopes-unmasked-correlated-noise-in-quantum-proces-19651958/">
     <meta property="og:title" content="How &#39;Stethoscopes&#39; Unmasked Correlated Noise in Quantum Processors">
-    <meta property="og:description" content="For years, the quantum computing community has benchmarked its progress using simplified, independent noise models, leaving us to navigate the complexities of large-scale devices largely by feel. This commentary analyzes Google&#39;s recent out-of-time-order correlator (OTOC) experiments on the 65-qu...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="Commentary on Google&#x27;s OTOC experiments on a 65-qubit processor: correlated noise that independent-error benchmarks miss, and what correlator &#x27;stethoscopes&#x27; change about device characterization.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-19651958.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-19651958.png">
     <meta name="citation_title" content="How &#39;Stethoscopes&#39; Unmasked Correlated Noise in Quantum Processors">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-04-19">
@@ -34,6 +34,7 @@
   "name": "How 'Stethoscopes' Unmasked Correlated Noise in Quantum Processors",
   "headline": "How 'Stethoscopes' Unmasked Correlated Noise in Quantum Processors",
   "url": "https://chokmah.me/research/how-stethoscopes-unmasked-correlated-noise-in-quantum-proces-19651958/",
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-19651958.png",
   "datePublished": "2026-04-19",
   "inLanguage": "en",
   "abstract": "For years, the quantum computing community has benchmarked its progress using simplified, independent noise models, leaving us to navigate the complexities of large-scale devices largely by feel. This commentary analyzes Google's recent out-of-time-order correlator (OTOC) experiments on the 65-qubit Willow processor (Nature 646, 825&ndash;830, 2025) and proposes that the primary value of the technique is as a new diagnostic tool rather than a pure quantum-advantage benchmark. The method, combining OTOC measurements with a Pauli insertion protocol, provides a direct, quantitative probe of many-body quantum interference. Two quantitative findings anchor the argument: (1) a simple independent-error model undershoots the observed SNR by roughly an order of magnitude (&chi;&sup2;/&nu; &asymp; 14.2; experimental SNR 3.9 vs. model 0.4), and (2) the Pauli-insertion protocol differentiates small-loop and large-loop interference, with 1-&rho; &asymp; 0.003 for OTOC⁽&sup1;⁾ versus 1-&rho; &asymp; 0.445 for OTOC⁽&sup2;⁾. We score these results against Gil Kalai's 2016 and 2023 predictions about correlated noise, finding direct experimental signatures for most of his claims. This follow-up to the author's 2024 analysis of Google Willow reframes a quantum-advantage result as the first scalable stethoscope for correlated noise in large quantum processors.",
@@ -144,6 +145,13 @@
     <div class="callout">
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.19651958">https://doi.org/10.5281/zenodo.19651958</a><br>
       <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/19651958/files/dyb2025c-OTOCStethoscope.pdf?download=1">open</a><br>
+    </div>
+    <div class="poster">
+      <a href="/assets/sketchnote-zenodo-19651958.png">
+        <img src="/assets/sketchnote-zenodo-19651958.png" width="563" height="352"
+             alt="Sketchnote for How Stethoscopes Unmasked Correlated Noise in Quantum Processors">
+      </a>
+      <p class="cap">Sketchnote for the OTOC commentary (CC BY 4.0). <a href="/assets/sketchnote-zenodo-19651958.png">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
     <p>For years, the quantum computing community has benchmarked its progress using simplified, independent noise models, leaving us to navigate the complexities of large-scale devices largely by feel. This commentary analyzes Google&#39;s recent out-of-time-order correlator (OTOC) experiments on the 65-qubit Willow processor (Nature 646, 825&amp;ndash;830, 2025) and proposes that the primary value of the technique is as a new diagnostic tool rather than a pure quantum-advantage benchmark. The method, combining OTOC measurements with a Pauli insertion protocol, provides a direct, quantitative probe of many-body quantum interference. Two quantitative findings anchor the argument: (1) a simple independent-error model undershoots the observed SNR by roughly an order of magnitude (&amp;chi;&amp;sup2;/&amp;nu; &amp;asymp; 14.2; experimental SNR 3.9 vs. model 0.4), and (2) the Pauli-insertion protocol differentiates small-loop and large-loop interference, with 1-&amp;rho; &amp;asymp; 0.003 for OTOC⁽&amp;sup1;⁾ versus 1-&amp;rho; &amp;asymp; 0.445 for OTOC⁽&amp;sup2;⁾. We score these results against Gil Kalai&#39;s 2016 and 2023 predictions about correlated noise, finding direct experimental signatures for most of his claims. This follow-up to the author&#39;s 2024 analysis of Google Willow reframes a quantum-advantage result as the first scalable stethoscope for correlated noise in large quantum processors.</p>

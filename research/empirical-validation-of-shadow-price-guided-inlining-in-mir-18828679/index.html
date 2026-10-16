@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empirical Validation of Shadow-Price-Guided Inlining in MIR | Chokmah Research</title>
-    <meta name="description" content="Full experimental validation of dual decomposition protocol for JIT compiler inlining on the MIR lightweight JIT compiler. Implements a three-phase pipeline: Phase 1 synthetic profiling (execution frequencies derived from benchmark structure), Phase 2 shadow-price-guided mutation pass (MIR_CALL &amp;...">
+    <meta name="description" content="Three-phase validation of dual-decomposition inlining on MIR: synthetic frequencies, shadow-price mutation of MIR_CALL, and measured speedups against baselines.">
     <link rel="canonical" href="https://chokmah.me/research/empirical-validation-of-shadow-price-guided-inlining-in-mir-18828679/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/empirical-validation-of-shadow-price-guided-inlining-in-mir-18828679/">
     <meta property="og:title" content="Empirical Validation of Shadow-Price-Guided Inlining in MIR">
-    <meta property="og:description" content="Full experimental validation of dual decomposition protocol for JIT compiler inlining on the MIR lightweight JIT compiler. Implements a three-phase pipeline: Phase 1 synthetic profiling (execution frequencies derived from benchmark structure), Phase 2 shadow-price-guided mutation pass (MIR_CALL &amp;...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="Three-phase validation of dual-decomposition inlining on MIR: synthetic frequencies, shadow-price mutation of MIR_CALL, and measured speedups against baselines.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-18828679.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-18828679.png">
     <meta name="citation_title" content="Empirical Validation of Shadow-Price-Guided Inlining in MIR">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-03-01">
@@ -34,6 +34,7 @@
   "name": "Empirical Validation of Shadow-Price-Guided Inlining in MIR",
   "headline": "Empirical Validation of Shadow-Price-Guided Inlining in MIR",
   "url": "https://chokmah.me/research/empirical-validation-of-shadow-price-guided-inlining-in-mir-18828679/",
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-18828679.png",
   "datePublished": "2026-03-01",
   "inLanguage": "en",
   "abstract": "Full experimental validation of dual decomposition protocol for JIT compiler inlining on the MIR lightweight JIT compiler. Implements a three-phase pipeline: Phase 1 synthetic profiling (execution frequencies derived from benchmark structure), Phase 2 shadow-price-guided mutation pass (MIR_CALL &rarr; MIR_INLINE promotion), Phase 3 wall-clock benchmarking across five conditions (no inlining, blind inline-all, random 50%, shadow-price, inverted-price). Includes two benchmark suites (3-function and 8-function workloads), raw timing data (20 runs &times; 5 conditions per benchmark), statistical analysis (Cohen's d effect sizes), and publication-quality figures (PNG + SVG). Key results: P3 (shadow vs. inverted-price) confirmed with d = 2.65&ndash;4.42 across both benchmarks; shadow-price matches blind inline-all performance with half the mutations on the 8-function benchmark (4 vs. 8 promotions, d = &minus;0.02); P1 (shadow vs. random) falsified on 3-function benchmark due to fixed RNG seed. Companion to theory paper (DOI: 10.5281/zenodo.18715390) and Paper 1 empirical consistency results (DOI: 10.5281/zenodo.18735516).",
@@ -142,6 +143,13 @@
     <div class="callout">
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.18828679">https://doi.org/10.5281/zenodo.18828679</a><br>
       <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/18828679/files/Empirical%20Validation%20of%20Shadow-Price-Guided%20Inlining%20in%20MIR.pdf?download=1">open</a><br>
+    </div>
+    <div class="poster">
+      <a href="/assets/sketchnote-zenodo-18828679.png">
+        <img src="/assets/sketchnote-zenodo-18828679.png" width="563" height="372"
+             alt="Sketchnote for Empirical Validation of Shadow-Price-Guided Inlining in MIR">
+      </a>
+      <p class="cap">Sketchnote for the MIR inlining paper (CC BY 4.0). <a href="/assets/sketchnote-zenodo-18828679.png">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
     <p>Full experimental validation of dual decomposition protocol for JIT compiler inlining on the MIR lightweight JIT compiler. Implements a three-phase pipeline: Phase 1 synthetic profiling (execution frequencies derived from benchmark structure), Phase 2 shadow-price-guided mutation pass (MIR_CALL &amp;rarr; MIR_INLINE promotion), Phase 3 wall-clock benchmarking across five conditions (no inlining, blind inline-all, random 50%, shadow-price, inverted-price). Includes two benchmark suites (3-function and 8-function workloads), raw timing data (20 runs &amp;times; 5 conditions per benchmark), statistical analysis (Cohen&#39;s d effect sizes), and publication-quality figures (PNG + SVG). Key results: P3 (shadow vs. inverted-price) confirmed with d = 2.65&amp;ndash;4.42 across both benchmarks; shadow-price matches blind inline-all performance with half the mutations on the 8-function benchmark (4 vs. 8 promotions, d = &amp;minus;0.02); P1 (shadow vs. random) falsified on 3-function benchmark due to fixed RNG seed. Companion to theory paper (DOI: 10.5281/zenodo.18715390) and Paper 1 empirical consistency results (DOI: 10.5281/zenodo.18735516).</p>

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software and Data: Empirical Validation of Shadow-Price-Guided Inlining in MIR | Chokmah Research</title>
-    <meta name="description" content="Complete experimental infrastructure supporting:Empirical Validation of Shadow-Price-Guided Inlining in MIR DOI: 10.5281/zenodo.18828679 Source code and analysis scripts for the empirical validation of the compiler-as-NUM (Network Utility Maximization) hypothesis using the MIR lightweight JIT com...">
+    <meta name="description" content="Experimental infrastructure for shadow-price-guided inlining on the MIR JIT: synthetic profiling, the shadow-price mutation pass, and analysis scripts for the compiler-as-NUM paper.">
     <link rel="canonical" href="https://chokmah.me/research/software-and-data-empirical-validation-of-shadow-price-guide-18890028/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/software-and-data-empirical-validation-of-shadow-price-guide-18890028/">
     <meta property="og:title" content="Software and Data: Empirical Validation of Shadow-Price-Guided Inlining in MIR">
-    <meta property="og:description" content="Complete experimental infrastructure supporting:Empirical Validation of Shadow-Price-Guided Inlining in MIR DOI: 10.5281/zenodo.18828679 Source code and analysis scripts for the empirical validation of the compiler-as-NUM (Network Utility Maximization) hypothesis using the MIR lightweight JIT com...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="Experimental infrastructure for shadow-price-guided inlining on the MIR JIT: synthetic profiling, the shadow-price mutation pass, and analysis scripts for the compiler-as-NUM paper.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-18828679.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-18828679.png">
     <meta name="citation_title" content="Software and Data: Empirical Validation of Shadow-Price-Guided Inlining in MIR">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-03-06">
@@ -33,9 +33,10 @@
   "name": "Software and Data: Empirical Validation of Shadow-Price-Guided Inlining in MIR",
   "headline": "Software and Data: Empirical Validation of Shadow-Price-Guided Inlining in MIR",
   "url": "https://chokmah.me/research/software-and-data-empirical-validation-of-shadow-price-guide-18890028/",
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-18828679.png",
   "datePublished": "2026-03-06",
   "inLanguage": "en",
-  "abstract": "Complete experimental infrastructure supporting:Empirical Validation of Shadow-Price-Guided Inlining in MIR DOI: 10.5281/zenodo.18828679 Source code and analysis scripts for the empirical validation of the compiler-as-NUM (Network Utility Maximization) hypothesis using the MIR lightweight JIT compiler. The repository implements a three-phase experimental pipeline: 1. Synthetic profiling &mdash; generates 750 function-call scenarios across 50 functions &times; 5 sizes &times; 3 optimization levels 2. Shadow-price-guided mutation &mdash; applies dual decomposition to adjust inlining thresholds via shadow prices (&lambda;) 3. Wall-clock benchmarking &mdash; measures outcomes across four conditions (baseline, uniform, skewed, perturbed) Key results: Spearman &rho; = 0.71 (p < 10⁻&sup1;&sup1;⁴), Cohen's d = 2.00 for hot vs cold functions, 98.4% perturbation robustness. Shadow-price optimization matches inline-all performance with half the mutations. Language: C (MIR patches), Python (analysis scripts).",
+  "abstract": "Source and analysis scripts for Empirical Validation of Shadow-Price-Guided Inlining in MIR (10.5281/zenodo.18828679). Three-phase pipeline: synthetic profiling across 750 function-call scenarios, a shadow-price mutation pass on MIR_CALL, and wall-clock benchmarking under baseline, uniform, skewed, and perturbed conditions. Language: C (MIR patches) and Python (analysis).",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
@@ -139,8 +140,15 @@
     <div class="callout">
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.18890028">https://doi.org/10.5281/zenodo.18890028</a><br>
     </div>
+    <div class="poster">
+      <a href="/assets/sketchnote-zenodo-18828679.png">
+        <img src="/assets/sketchnote-zenodo-18828679.png" width="563" height="372"
+             alt="Sketchnote for shadow-price-guided inlining in MIR">
+      </a>
+      <p class="cap">Companion sketchnote from the empirical paper (CC BY 4.0). <a href="/assets/sketchnote-zenodo-18828679.png">Full-size PNG</a>.</p>
+    </div>
     <h2>Abstract</h2>
-    <p>Complete experimental infrastructure supporting:Empirical Validation of Shadow-Price-Guided Inlining in MIR DOI: 10.5281/zenodo.18828679 Source code and analysis scripts for the empirical validation of the compiler-as-NUM (Network Utility Maximization) hypothesis using the MIR lightweight JIT compiler. The repository implements a three-phase experimental pipeline: 1. Synthetic profiling &amp;mdash; generates 750 function-call scenarios across 50 functions &amp;times; 5 sizes &amp;times; 3 optimization levels 2. Shadow-price-guided mutation &amp;mdash; applies dual decomposition to adjust inlining thresholds via shadow prices (&amp;lambda;) 3. Wall-clock benchmarking &amp;mdash; measures outcomes across four conditions (baseline, uniform, skewed, perturbed) Key results: Spearman &amp;rho; = 0.71 (p &lt; 10⁻&amp;sup1;&amp;sup1;⁴), Cohen&#39;s d = 2.00 for hot vs cold functions, 98.4% perturbation robustness. Shadow-price optimization matches inline-all performance with half the mutations. Language: C (MIR patches), Python (analysis scripts).</p>
+    <p>Source and analysis scripts for Empirical Validation of Shadow-Price-Guided Inlining in MIR (10.5281/zenodo.18828679). Three-phase pipeline: synthetic profiling across 750 function-call scenarios, a shadow-price mutation pass on MIR_CALL, and wall-clock benchmarking under baseline, uniform, skewed, and perturbed conditions. Language: C (MIR patches) and Python (analysis).</p>
     <h2>Keywords</h2>
     <p class="kw">compiler optimization &middot; JIT compilation &middot; network utility maximization &middot; dual decomposition &middot; empirical validation &middot; statistical hypothesis testing &middot; shadow pricing</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>

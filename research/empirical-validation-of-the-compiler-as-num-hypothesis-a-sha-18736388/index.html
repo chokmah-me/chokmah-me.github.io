@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR | Chokmah Research</title>
-    <meta name="description" content="A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a run...">
+    <meta name="description" content="A JIT doing profile-guided optimization is read as dual decomposition in Network Utility Maximization. A shadow-price experiment on MIR tests that mapping.">
     <link rel="canonical" href="https://chokmah.me/research/empirical-validation-of-the-compiler-as-num-hypothesis-a-sha-18736388/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/empirical-validation-of-the-compiler-as-num-hypothesis-a-sha-18736388/">
     <meta property="og:title" content="Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR">
-    <meta property="og:description" content="A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a run...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="A JIT doing profile-guided optimization is read as dual decomposition in Network Utility Maximization. A shadow-price experiment on MIR tests that mapping.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-18828679.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-18828679.png">
     <meta name="citation_title" content="Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
@@ -36,6 +36,7 @@
   "name": "Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR",
   "headline": "Empirical Validation of the Compiler-as-NUM Hypothesis: A Shadow-Price Experiment with MIR",
   "url": "https://chokmah.me/research/empirical-validation-of-the-compiler-as-num-hypothesis-a-sha-18736388/",
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-18828679.png",
   "datePublished": "2026-02-23",
   "inLanguage": "en",
   "abstract": "A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a runtime master broadcasts shadow prices (execution frequency data), and the optimizer allocates its budget where the price is highest. We test this hypothesis empirically by instrumenting MIR, a lightweight JIT compiler infrastructure, with a shadow-price-responsive inlining threshold. Across 3,000 inlining decisions (750 per condition x 4 conditions), we find strong monotonic correlation between shadow price and inlining outcome (Spearman rho = 0.71, p < 10^-114), large effect sizes (Cohen's d = 2.00), and 98.4% decision agreement under plus-or-minus 20% price perturbation. Stratified analysis reveals that shadow-price sensitivity is optimization-level-dependent: conservative settings (O0) show reduced responsiveness (rho = 0.50) due to threshold ceiling effects, while moderate and aggressive settings (O1, O2) show strong responsiveness (rho = 0.82). Size-stratified analysis identifies a decision boundary at 100 to 200 IR instructions where shadow prices govern the inlining outcome. These results corroborate the NUM formalism as a predictive framework for compiler inlining behavior and establish experimental infrastructure for further validation. Version 1.1 incorporates expanded discussion of the scope of claims, addressing underdetermination and the epistemological status of the standalone decision function as a passed falsification test. Design implications are strengthened with specific falsifiable predictions including O(1/sqrt(k)) convergence bounds for cross-module price propagation and O(log n) stability bounds for adaptive inlining. This preprint is archived for open access and to support reproducibility",
@@ -146,6 +147,13 @@
     <div class="callout">
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.18736388">https://doi.org/10.5281/zenodo.18736388</a><br>
       <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/18736388/files/JSA_submission-v4.pdf?download=1">open</a><br>
+    </div>
+    <div class="poster">
+      <a href="/assets/sketchnote-zenodo-18828679.png">
+        <img src="/assets/sketchnote-zenodo-18828679.png" width="563" height="372"
+             alt="Sketchnote for the compiler-as-NUM hypothesis on MIR">
+      </a>
+      <p class="cap">Companion sketchnote from the MIR inlining series (CC BY 4.0). <a href="/assets/sketchnote-zenodo-18828679.png">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
     <p>A recent formalism recasts the modern compiler as a distributed optimization system, mapping compiler architectures onto decomposition strategies from Network Utility Maximization (NUM). Under this framing, a JIT compiler performing profile-guided optimization implements dual decomposition: a runtime master broadcasts shadow prices (execution frequency data), and the optimizer allocates its budget where the price is highest. We test this hypothesis empirically by instrumenting MIR, a lightweight JIT compiler infrastructure, with a shadow-price-responsive inlining threshold. Across 3,000 inlining decisions (750 per condition x 4 conditions), we find strong monotonic correlation between shadow price and inlining outcome (Spearman rho = 0.71, p &lt; 10^-114), large effect sizes (Cohen&#39;s d = 2.00), and 98.4% decision agreement under plus-or-minus 20% price perturbation. Stratified analysis reveals that shadow-price sensitivity is optimization-level-dependent: conservative settings (O0) show reduced responsiveness (rho = 0.50) due to threshold ceiling effects, while moderate and aggressive settings (O1, O2) show strong responsiveness (rho = 0.82). Size-stratified analysis identifies a decision boundary at 100 to 200 IR instructions where shadow prices govern the inlining outcome. These results corroborate the NUM formalism as a predictive framework for compiler inlining behavior and establish experimental infrastructure for further validation. Version 1.1 incorporates expanded discussion of the scope of claims, addressing underdetermination and the epistemological status of the standalone decision function as a passed falsification test. Design implications are strengthened with specific falsifiable predictions including O(1/sqrt(k)) convergence bounds for cross-module price propagation and O(log n) stability bounds for adaptive inlining. This preprint is archived for open access and to support reproducibility</p>

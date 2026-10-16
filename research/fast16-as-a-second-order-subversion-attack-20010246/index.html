@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fast16 as a Second-Order Subversion Attack | Chokmah Research</title>
-    <meta name="description" content="v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne&#39;...">
+    <meta name="description" content="fast16.sys is classified as a second-order subversion: it reaches high-precision engineering codes through the OS filesystem stack, then the simulation tool above it. Defenses follow from the nth-order framework.">
     <link rel="canonical" href="https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/">
     <meta property="og:title" content="fast16 as a Second-Order Subversion Attack">
-    <meta property="og:description" content="v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne&#39;...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="fast16.sys is classified as a second-order subversion: it reaches high-precision engineering codes through the OS filesystem stack, then the simulation tool above it. Defenses follow from the nth-order framework.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-20010246.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-20010246.png">
     <meta name="citation_title" content="fast16 as a Second-Order Subversion Attack">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-05-03">
@@ -34,9 +34,10 @@
   "name": "fast16 as a Second-Order Subversion Attack",
   "headline": "fast16 as a Second-Order Subversion Attack",
   "url": "https://chokmah.me/research/fast16-as-a-second-order-subversion-attack-20010246/",
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-20010246.png",
   "datePublished": "2026-05-03",
   "inLanguage": "en",
-  "abstract": "v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne's April 2026 disclosure of fast16, a precision sabotage framework compiled in August 2005, predates Stuxnet by five years and corrupts floating-point calculations in engineering simulation software via kernel-mode filesystem filtering. The infosec community described the mechanism accurately but did not classify the attack class. This paper applies the nth-order attackframework from Bilar (NATO CCDCOE, 2009) and argues fast16 is a second-order subversion attack: the high-precision research end system is reached through two successive ancillary systems, the OS kernel filesystem stack and the engineering simulation software above it. The wormlet is a delivery mechanism, not a distinct ancillary hop. fast16 is structurally comparable to Thompson's compiler trojan but one order lower and more covert: it operates at runtime below the application layer with no source-level or on-disk trace, defeating the reproducible-build defense that catches Thompson. Stuxnet, dr0wned, and FLAW3D are mapped at the same second order in different substrates, showing the taxonomy holds across software and physical manufacturing pipelines. The classification yields concrete defenses (hardware-rooted driver attestation, diverse independent toolchains across validation hosts, air-gapped reference baselines) that follow from the framework rather than the incident report.Companion to Bilar (2026), \"Volt Typhoon as Operational Realization of the nth-Order Bleeding Thesis\" (Zenodo 19739954).",
+  "abstract": "SentinelOne's April 2026 disclosure of fast16, a 2005 kernel-mode framework that corrupts floating-point calculations in engineering simulation software, is classified as a second-order subversion attack: the high-precision end system is reached through the OS filesystem stack and the simulation tool above it. fast16.sys disables the Windows Prefetcher so a filesystem filter sees every EXE read, delays patching until explorer.exe opens, and checks for a long AV list before installing. The wormlet is delivery, not a distinct ancillary hop. The classification yields defenses (hardware-rooted driver attestation, diverse independent toolchains, air-gapped reference baselines) from the nth-order framework rather than the incident report.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
@@ -153,8 +154,16 @@
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.20010246">https://doi.org/10.5281/zenodo.20010246</a><br>
       <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/20010246/files/dyb-2026o-fast16%20as%20a%20Second-Order%20Subversion%20Attack-REL.pdf?download=1">open</a><br>
     </div>
+    <div class="poster">
+      <a href="/assets/sketchnote-zenodo-20010246.png">
+        <img src="/assets/sketchnote-zenodo-20010246.png" width="563" height="374"
+             alt="Sketchnote for fast16 as a second-order subversion attack">
+      </a>
+      <p class="cap">Sketchnote for v1.3 (CC BY 4.0). <a href="/assets/sketchnote-zenodo-20010246.png">Full-size PNG</a>.</p>
+    </div>
     <h2>Abstract</h2>
-    <p>v.1.3 adds technical detail from the SentinelOne source report: fast16.sys disables the Windows Prefetcher to guarantee filesystem-filter interception of all EXE reads, delays patching activation until explorer.exe opens, and checks for at least eighteen AV products before installing.SentinelOne&#39;s April 2026 disclosure of fast16, a precision sabotage framework compiled in August 2005, predates Stuxnet by five years and corrupts floating-point calculations in engineering simulation software via kernel-mode filesystem filtering. The infosec community described the mechanism accurately but did not classify the attack class. This paper applies the nth-order attackframework from Bilar (NATO CCDCOE, 2009) and argues fast16 is a second-order subversion attack: the high-precision research end system is reached through two successive ancillary systems, the OS kernel filesystem stack and the engineering simulation software above it. The wormlet is a delivery mechanism, not a distinct ancillary hop. fast16 is structurally comparable to Thompson&#39;s compiler trojan but one order lower and more covert: it operates at runtime below the application layer with no source-level or on-disk trace, defeating the reproducible-build defense that catches Thompson. Stuxnet, dr0wned, and FLAW3D are mapped at the same second order in different substrates, showing the taxonomy holds across software and physical manufacturing pipelines. The classification yields concrete defenses (hardware-rooted driver attestation, diverse independent toolchains across validation hosts, air-gapped reference baselines) that follow from the framework rather than the incident report.Companion to Bilar (2026), &quot;Volt Typhoon as Operational Realization of the nth-Order Bleeding Thesis&quot; (Zenodo 19739954).</p>
+    <p>SentinelOne's April 2026 disclosure of fast16, a 2005 kernel-mode framework that corrupts floating-point calculations in engineering simulation software, is classified as a second-order subversion attack: the high-precision end system is reached through the OS filesystem stack and the simulation tool above it.</p>
+    <p>fast16.sys disables the Windows Prefetcher so a filesystem filter sees every EXE read, delays patching until explorer.exe opens, and checks for a long AV list before installing. The wormlet is delivery, not a distinct ancillary hop. The classification yields defenses (hardware-rooted driver attestation, diverse independent toolchains, air-gapped reference baselines) from the nth-order framework rather than the incident report.</p>
     <h2>Keywords</h2>
     <p class="kw">nth-order attacks &middot; subversion attack &middot; fast16 &middot; Stuxnet &middot; supply chain &middot; kernel rootkit engineering &middot; simulation &middot; FLAW3D &middot; CPU &middot; additive manufacturing &middot; Thompson &middot; LS-DYNA &middot; FPU &middot; corruption &middot; Highly Optimized Tolerance &middot; cyber-physical sabotage &middot; reproducible builds &middot; trusting trust</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>

@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Compiler as a Decomposed Optimization System | Chokmah Research</title>
-    <meta name="description" content="This paper revisits the central claim of Bilar (2007) that the structure of executables is the product of anengineered optimization process. We introduce the Network Utility Maximization (NUM) framework anddemonstrate that modern compiler architectures can be formally mapped onto distinct decompo...">
+    <meta name="description" content="Bilar (2007) on executable structure as engineered optimization is restated in the NUM framework: compiler architectures map onto distinct decomposition strategies.">
     <link rel="canonical" href="https://chokmah.me/research/the-compiler-as-a-decomposed-optimization-system-18715390/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/the-compiler-as-a-decomposed-optimization-system-18715390/">
     <meta property="og:title" content="The Compiler as a Decomposed Optimization System">
-    <meta property="og:description" content="This paper revisits the central claim of Bilar (2007) that the structure of executables is the product of anengineered optimization process. We introduce the Network Utility Maximization (NUM) framework anddemonstrate that modern compiler architectures can be formally mapped onto distinct decompo...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="Bilar (2007) on executable structure as engineered optimization is restated in the NUM framework: compiler architectures map onto distinct decomposition strategies.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-18828679.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-18828679.png">
     <meta name="citation_title" content="The Compiler as a Decomposed Optimization System">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-02-20">
@@ -34,9 +34,10 @@
   "name": "The Compiler as a Decomposed Optimization System",
   "headline": "The Compiler as a Decomposed Optimization System",
   "url": "https://chokmah.me/research/the-compiler-as-a-decomposed-optimization-system-18715390/",
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-18828679.png",
   "datePublished": "2026-02-20",
   "inLanguage": "en",
-  "abstract": "This paper revisits the central claim of Bilar (2007) that the structure of executables is the product of anengineered optimization process. We introduce the Network Utility Maximization (NUM) framework anddemonstrate that modern compiler architectures can be formally mapped onto distinct decomposition strategiesfrom optimization theory. Specifically, we posit that ahead-of-time (AOT) pass pipelines implement primaldecomposition, just-in-time (JIT) compilers with profile-guided optimization implement dual decomposition,speculative optimization implements penalty methods, and link-time optimization implements the alternatingdirection method of multipliers (ADMM). This reframes the compiler not as a monolithic optimizer, but as asystem of interlocked, resource-allocating subsystems. The formalism generates testable predictions, which wevalidate empirically in a series of companion papers (Empirical Validation of Shadow-Price-Guided Inlining in MIR) This work provides a mathematical foundation for the paper&rsquo;s core insight and suggests new directions for compiler design.",
+  "abstract": "This paper revisits the central claim of Bilar (2007) that the structure of executables is the product of an engineered optimization process. We introduce the Network Utility Maximization (NUM) framework and demonstrate that modern compiler architectures map onto distinct decomposition strategies: AOT pass pipelines as primal decomposition, JIT with profile-guided optimization as dual decomposition, speculative optimization as penalty methods, and link-time optimization as ADMM. The compiler is treated as a system of interlocked resource-allocating subsystems rather than a monolithic optimizer. The formalism generates testable predictions, taken up empirically in the companion MIR inlining papers.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
@@ -141,8 +142,16 @@
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.18715390">https://doi.org/10.5281/zenodo.18715390</a><br>
       <strong>Download PDF (Zenodo):</strong> <a href="https://zenodo.org/records/18715390/files/dyb2025e-PAPER-Companion-Bilar2007b-CompilerasNUM.pdf?download=1">open</a><br>
     </div>
+    <div class="poster">
+      <a href="/assets/sketchnote-zenodo-18828679.png">
+        <img src="/assets/sketchnote-zenodo-18828679.png" width="563" height="845"
+             alt="Sketchnote for the compiler as a decomposed optimization system">
+      </a>
+      <p class="cap">Companion sketchnote from the MIR inlining series (CC BY 4.0). <a href="/assets/sketchnote-zenodo-18828679.png">Full-size PNG</a>.</p>
+    </div>
     <h2>Abstract</h2>
-    <p>This paper revisits the central claim of Bilar (2007) that the structure of executables is the product of anengineered optimization process. We introduce the Network Utility Maximization (NUM) framework anddemonstrate that modern compiler architectures can be formally mapped onto distinct decomposition strategiesfrom optimization theory. Specifically, we posit that ahead-of-time (AOT) pass pipelines implement primaldecomposition, just-in-time (JIT) compilers with profile-guided optimization implement dual decomposition,speculative optimization implements penalty methods, and link-time optimization implements the alternatingdirection method of multipliers (ADMM). This reframes the compiler not as a monolithic optimizer, but as asystem of interlocked, resource-allocating subsystems. The formalism generates testable predictions, which wevalidate empirically in a series of companion papers (Empirical Validation of Shadow-Price-Guided Inlining in MIR) This work provides a mathematical foundation for the paper&amp;rsquo;s core insight and suggests new directions for compiler design.</p>
+    <p>This paper revisits the central claim of Bilar (2007) that the structure of executables is the product of an engineered optimization process. We introduce the Network Utility Maximization (NUM) framework and demonstrate that modern compiler architectures map onto distinct decomposition strategies: AOT pass pipelines as primal decomposition, JIT with profile-guided optimization as dual decomposition, speculative optimization as penalty methods, and link-time optimization as ADMM.</p>
+    <p>The compiler is treated as a system of interlocked resource-allocating subsystems rather than a monolithic optimizer. The formalism generates testable predictions, taken up empirically in the companion MIR inlining papers.</p>
     <h2>Keywords</h2>
     <p class="kw">compiler optimization &middot; network utility maximization &middot; distributed optimization &middot; decomposition methods &middot; JIT compilation &middot; profile-guided optimization</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>

@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>chokmah-me/hashline: hashline 0.4.1 | Chokmah Research</title>
-    <meta name="description" content="hashline gives LLM coding agents stable, verifiable line edits: the model refers to changes by line-number ranges instead of re-quoting old code, and a 4-hex content-hash tag on every read rejects any patch built against stale content. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.">
+    <meta name="description" content="Line-range edits for LLM coding agents, with a content-hash tag on every read so patches against stale buffers are rejected. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.">
     <link rel="canonical" href="https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/">
     <meta property="og:title" content="chokmah-me/hashline: hashline 0.4.1">
-    <meta property="og:description" content="hashline gives LLM coding agents stable, verifiable line edits: the model refers to changes by line-number ranges instead of re-quoting old code, and a 4-hex content-hash tag on every read rejects any patch built against stale content. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="Line-range edits for LLM coding agents, with a content-hash tag on every read so patches against stale buffers are rejected. Works with Claude, Grok, DeepSeek, Gemini, Kimi, and any tool-using model.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-20766159.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-20766159.png">
     <meta name="citation_title" content="chokmah-me/hashline: hashline 0.4.1">
-    <meta name="citation_author" content="dyb">
+    <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-06-19">
     <meta name="citation_doi" content="10.5281/zenodo.20766159">
     <meta name="citation_publisher" content="Zenodo">
     <meta name="citation_public_url" content="https://zenodo.org/records/20766159">
     <meta name="citation_abstract_html_url" content="https://zenodo.org/records/20766159">
     <meta name="DC.title" content="chokmah-me/hashline: hashline 0.4.1">
-    <meta name="DC.creator" content="dyb">
+    <meta name="DC.creator" content="Bilar, Daniyel Yaacov">
     <meta name="DC.identifier" content="https://doi.org/10.5281/zenodo.20766159">
     <meta name="DC.date" content="2026-06-19">
     <meta name="DC.rights" content="cc-by-4.0">
@@ -32,6 +32,7 @@
   "name": "chokmah-me/hashline: hashline 0.4.1",
   "headline": "chokmah-me/hashline: hashline 0.4.1",
   "url": "https://chokmah.me/research/chokmah-me-hashline-hashline-0-4-1-20766159/",
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-20766159.png",
   "datePublished": "2026-06-19",
   "inLanguage": "en",
   "abstract": "hashline provides stable, verifiable line edits for LLM coding agents, replacing the usual fragile exact-string-replace approach. Instead of re-quoting old code byte-for-byte, the model reads a numbered, hash-tagged view of a file and expresses edits as line-number range operations (SWAP, DEL, INS) whose bodies contain only the new lines. Every read is tagged with a 4-hex hash of the file's content; when a patch is applied, hashline recomputes the hash and rejects the edit as \"stale\" if it no longer matches, so an edit never lands on content the model never saw. The core loop is read -> patch -> apply -> re-read, and the same rules work across Claude, Grok, DeepSeek, Gemini, Kimi, and any other tool-using model.",
@@ -125,10 +126,17 @@
     <nav class="site-nav"><a href="/">chokmah.me</a> / <a href="/research/">Research</a></nav>
     <header>
       <h1>chokmah-me/hashline: hashline 0.4.1</h1>
-      <p class="meta"><span>dyb</span> &middot; 2026-06-19 &middot; software &middot; cc-by-4.0</p>
+      <p class="meta"><span>Bilar, Daniyel Yaacov</span> &middot; 2026-06-19 &middot; software &middot; cc-by-4.0</p>
     </header>
     <div class="callout">
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.20766159">https://doi.org/10.5281/zenodo.20766159</a><br>
+    </div>
+    <div class="poster">
+      <a href="/assets/sketchnote-zenodo-20766159.png">
+        <img src="/assets/sketchnote-zenodo-20766159.png" width="563" height="363"
+             alt="Sketchnote for hashline: hashed line-range edits for coding agents">
+      </a>
+      <p class="cap">Sketchnote for hashline 0.4.1 (CC BY 4.0). <a href="/assets/sketchnote-zenodo-20766159.png">Full-size PNG</a>.</p>
     </div>
     <h2>Abstract</h2>
     <p>hashline provides stable, verifiable line edits for LLM coding agents, replacing the usual fragile exact-string-replace approach. Instead of re-quoting old code byte-for-byte, the model reads a numbered, hash-tagged view of a file and expresses edits as line-number range operations (SWAP, DEL, INS) whose bodies contain only the new lines. Every read is tagged with a 4-hex hash of the file&#39;s content; when a patch is applied, hashline recomputes the hash and rejects the edit as &quot;stale&quot; if it no longer matches, so an edit never lands on content the model never saw. The core loop is read -&gt; patch -&gt; apply -&gt; re-read, and the same rules work across Claude, Grok, DeepSeek, Gemini, Kimi, and any other tool-using model.</p>

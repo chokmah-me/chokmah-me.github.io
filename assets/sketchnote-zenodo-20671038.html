@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>VALID AND FALSE SNAPPING IN EML TREES — sketchnote</title>
+<style>
+  :root {
+    --bg: #FAF8F0; --ink: #2D2D2D; --blue: #1B4F72; --orange: #D35400;
+    --green: #1E8449; --purple: #6C3483; --red: #C0392B;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; width: 832px; height: auto;
+    background: var(--bg); overflow: visible; color: var(--ink);
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+  }
+  .page {
+    width: 832px; height: auto; padding: 16px 16px 14px;
+    display: flex; flex-direction: column; gap: 9px;
+  }
+  .title { text-align: center; border-bottom: 3px solid var(--blue); padding-bottom: 5px; }
+  .title h1 {
+    margin: 0; font-family: Georgia, serif; font-size: 22px; letter-spacing: 0.3px;
+    color: var(--blue); line-height: 1.08;
+  }
+  .title .sub { margin: 3px 0 0; font-size: 12.5px; font-weight: 700; }
+  .title .by { margin: 2px 0 0; font-size: 11px; color: #555; }
+  .motto {
+    margin: 0; text-align: center; font-family: Georgia, serif; font-style: italic;
+    font-size: 14px; color: var(--orange); font-weight: 700;
+  }
+  .row { display: flex; gap: 8px; }
+  .col { flex: 1; min-width: 0; }
+  .box {
+    border: 2.5px solid var(--ink); border-radius: 10px; padding: 8px 10px;
+    background: rgba(255,255,255,0.5);
+  }
+  .box h2 {
+    margin: 0 0 5px; font-size: 12.5px; font-weight: 800;
+    display: flex; align-items: center; gap: 5px;
+  }
+  .box p { margin: 0; font-size: 12px; line-height: 1.35; }
+  .prob { border-color: var(--blue); background: rgba(27,79,114,0.08); }
+  .prob h2 { color: var(--blue); }
+  .insight { border-color: var(--orange); background: rgba(211,84,0,0.10); border-width: 3px; }
+  .insight h2 { color: var(--orange); }
+  .method { border-color: var(--green); background: rgba(30,132,73,0.08); }
+  .method h2 { color: var(--green); }
+  .math { border-color: var(--purple); background: rgba(108,52,131,0.08); }
+  .math h2 { color: var(--purple); }
+  .eq {
+    font-family: "Courier New", Consolas, monospace; font-size: 12.5px; color: var(--purple);
+    font-weight: 700; background: rgba(108,52,131,0.08); border: 1.5px dashed var(--purple);
+    border-radius: 7px; padding: 6px 8px; margin-top: 6px; text-align: center;
+  }
+  .res { border-color: var(--orange); background: rgba(211,84,0,0.07); }
+  .res h2 { color: var(--orange); }
+  .lim { border-color: var(--red); background: rgba(192,57,43,0.08); }
+  .lim h2 { color: var(--red); }
+  .footer {
+    text-align: center; border-top: 2.5px solid var(--blue); padding-top: 6px;
+    font-size: 11px; line-height: 1.35; color: #444;
+  }
+  .footer .doi { font-family: Consolas, monospace; font-size: 11px; color: var(--blue); font-weight: 700; }
+  .footer .close {
+    font-family: Georgia, serif; font-style: italic; color: var(--orange);
+    font-weight: 700; font-size: 13px; margin-top: 3px;
+  }
+  .burst {
+    float: right; background: var(--orange); color: #fff; font-size: 9px; font-weight: 800;
+    padding: 2px 7px; border-radius: 10px; margin: -1px 0 3px 8px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="title">
+    <h1>VALID AND FALSE SNAPPING IN EML TREES</h1>
+    <p class="sub">The basin selection problem · symbolic regression</p>
+    <p class="by">Daniyel Yaacov Bilar · Chokmah LLC · June 2026</p>
+  </header>
+  <p class="motto">Committed is not correct.</p>
+  <div class="row">
+    <div class="col box prob">
+      <h2>PROBLEM</h2>
+      <p>Train EML (exp-minus-ln) expression trees, then snap soft input selectors to discrete choices. Commitment-based success looks green while the recovered formula is wrong.</p>
+    </div>
+    <div class="col box insight">
+      <span class="burst">KEY INSIGHT</span>
+      <h2>INSIGHT</h2>
+      <p>Add a symbolic-correctness criterion. Valid snaps recover the elementary form. False snaps are discrete, confident, and algebraically wrong. Depth that is too generous opens extra basins.</p>
+    </div>
+  </div>
+  <div class="box method">
+    <h2>METHOD</h2>
+    <p>Gradient descent, then argmax snap. Three-phase annealing (Adam on MAE, entropy-penalty ramp, temperature anneal) vs targeted warm-start + top-aligned curriculum.</p>
+  </div>
+  <div class="box math">
+    <h2>FORMAL CORE</h2>
+    <div class="eq">valid ⇔ snapped tree = target elementary form</div>
+  </div>
+  <div class="row">
+    <div class="col box res">
+      <h2>RESULTS</h2>
+      <p>Warm-start + curriculum recover valid exp and ln at over-representational depth, where annealing alone does not. Data: snapping_v2_final.csv and the basin-selection companion note.</p>
+    </div>
+    <div class="col box lim">
+      <h2>LIMITS</h2>
+      <p>iCE40 hardware is a separate note. Results are for exp/ln targets in the reported sweep, not a universal SR claim.</p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="doi">Paper 10.5281/zenodo.20671038 · companion data 10.5281/zenodo.20671272 · software 10.5281/zenodo.20748178</div>
+    <div class="close">Score the algebra, not the softmax.</div>
+  </div>
+</div>
+</body>
+</html>

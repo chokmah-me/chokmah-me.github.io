@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AttestationRegimeClassifier — Ghidra Plugin for ICS/Embedded Firmware Attestation Regime Classification | Chokmah Research</title>
-    <meta name="description" content="A Ghidra plugin that classifies embedded firmware functions into three attestation regimes (formally provable / statistically testable / adversarial input exposure) based on the Computability Filter framework (Bilar 2026). Supports ICS/embedded firmware triage with P-code analysis, call-graph pro...">
+    <meta name="description" content="Ghidra plugin that classifies embedded firmware functions into three attestation regimes from the Computability Filter: formally provable, statistically testable, or adversarial-input exposure.">
     <link rel="canonical" href="https://chokmah.me/research/attestationregimeclassifier-ghidra-plugin-for-ics-embedded-f-20218659/">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://chokmah.me/research/attestationregimeclassifier-ghidra-plugin-for-ics-embedded-f-20218659/">
     <meta property="og:title" content="AttestationRegimeClassifier — Ghidra Plugin for ICS/Embedded Firmware Attestation Regime Classification">
-    <meta property="og:description" content="A Ghidra plugin that classifies embedded firmware functions into three attestation regimes (formally provable / statistically testable / adversarial input exposure) based on the Computability Filter framework (Bilar 2026). Supports ICS/embedded firmware triage with P-code analysis, call-graph pro...">
-    <meta property="og:image" content="https://chokmah.me/assets/social-card.png">
+    <meta property="og:description" content="Ghidra plugin that classifies embedded firmware functions into three attestation regimes from the Computability Filter: formally provable, statistically testable, or adversarial-input exposure.">
+    <meta property="og:image" content="https://chokmah.me/assets/sketchnote-zenodo-20218659.png">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://chokmah.me/assets/social-card.png">
+    <meta name="twitter:image" content="https://chokmah.me/assets/sketchnote-zenodo-20218659.png">
     <meta name="citation_title" content="AttestationRegimeClassifier — Ghidra Plugin for ICS/Embedded Firmware Attestation Regime Classification">
     <meta name="citation_author" content="Bilar, Daniyel Yaacov">
     <meta name="citation_publication_date" content="2026-05-16">
@@ -33,9 +33,10 @@
   "name": "AttestationRegimeClassifier — Ghidra Plugin for ICS/Embedded Firmware Attestation Regime Classification",
   "headline": "AttestationRegimeClassifier — Ghidra Plugin for ICS/Embedded Firmware Attestation Regime Classification",
   "url": "https://chokmah.me/research/attestationregimeclassifier-ghidra-plugin-for-ics-embedded-f-20218659/",
+  "image": "https://chokmah.me/assets/sketchnote-zenodo-20218659.png",
   "datePublished": "2026-05-16",
   "inLanguage": "en",
-  "abstract": "A Ghidra plugin that classifies embedded firmware functions into three attestation regimes (formally provable / statistically testable / adversarial input exposure) based on the Computability Filter framework (Bilar 2026). Supports ICS/embedded firmware triage with P-code analysis, call-graph propagation, and memory map integration. v0.8.1 additions (build system / Ghidra 12.x compatibility): ✅ extension.properties &mdash; renamed from plugin.properties; Ghidra 12.x requires this exact filename ✅ Module.manifest &mdash; added required module marker file; without it Ghidra's module loader skips the extension ✅ Jackson deps bundled in lib/ &mdash; copyDependencies Gradle task added; jackson-databind, jackson-core, jackson-annotations now shipped in ZIP ✅ JAR placed in lib/ subdirectory &mdash; Ghidra ClassSearcher scans lib/, not the extension root ✅ Menu path corrected &mdash; all actions moved to Tools > Attestation Regime (was standalone top-level menu) ✅ Install script &mdash; scripts/Install-AttestationRegimePlugin.ps1 automates stop/remove/extract/verify ✅ First confirmed working end-to-end Ghidra 12.0.4 UI install: 170 functions classified on zephyr-hello_world_stm32f4.elf",
+  "abstract": "A Ghidra plugin that classifies embedded firmware functions into three attestation regimes from the Computability Filter: formally provable, statistically testable, or adversarial-input exposure. It uses P-code analysis, call-graph propagation, and memory-map integration for ICS and embedded triage. v0.8.1 is a Ghidra 12.x packaging pass: extension.properties, Module.manifest, Jackson libraries in lib/, a corrected Tools menu path, and an install script. End-to-end UI install on Ghidra 12.0.4 classified 170 functions on zephyr-hello_world_stm32f4.elf.",
   "identifier": {
     "@type": "PropertyValue",
     "propertyID": "DOI",
@@ -138,8 +139,16 @@
     <div class="callout">
       <strong>Version of record (canonical):</strong> <a href="https://doi.org/10.5281/zenodo.20218659">https://doi.org/10.5281/zenodo.20218659</a><br>
     </div>
+    <div class="poster">
+      <a href="/assets/sketchnote-zenodo-20218659.png">
+        <img src="/assets/sketchnote-zenodo-20218659.png" width="563" height="845"
+             alt="Sketchnote for AttestationRegimeClassifier, a Ghidra plugin">
+      </a>
+      <p class="cap">Sketchnote for the Ghidra plugin (CC BY 4.0). <a href="/assets/sketchnote-zenodo-20218659.png">Full-size PNG</a>.</p>
+    </div>
     <h2>Abstract</h2>
-    <p>A Ghidra plugin that classifies embedded firmware functions into three attestation regimes (formally provable / statistically testable / adversarial input exposure) based on the Computability Filter framework (Bilar 2026). Supports ICS/embedded firmware triage with P-code analysis, call-graph propagation, and memory map integration. v0.8.1 additions (build system / Ghidra 12.x compatibility): ✅ extension.properties &amp;mdash; renamed from plugin.properties; Ghidra 12.x requires this exact filename ✅ Module.manifest &amp;mdash; added required module marker file; without it Ghidra&#39;s module loader skips the extension ✅ Jackson deps bundled in lib/ &amp;mdash; copyDependencies Gradle task added; jackson-databind, jackson-core, jackson-annotations now shipped in ZIP ✅ JAR placed in lib/ subdirectory &amp;mdash; Ghidra ClassSearcher scans lib/, not the extension root ✅ Menu path corrected &amp;mdash; all actions moved to Tools &gt; Attestation Regime (was standalone top-level menu) ✅ Install script &amp;mdash; scripts/Install-AttestationRegimePlugin.ps1 automates stop/remove/extract/verify ✅ First confirmed working end-to-end Ghidra 12.0.4 UI install: 170 functions classified on zephyr-hello_world_stm32f4.elf</p>
+    <p>A Ghidra plugin that classifies embedded firmware functions into three attestation regimes from the Computability Filter: formally provable, statistically testable, or adversarial-input exposure. It uses P-code analysis, call-graph propagation, and memory-map integration for ICS and embedded triage.</p>
+    <p>v0.8.1 is a Ghidra 12.x packaging pass: extension.properties, Module.manifest, Jackson libraries in lib/, a corrected Tools menu path, and an install script. End-to-end UI install on Ghidra 12.0.4 classified 170 functions on zephyr-hello_world_stm32f4.elf.</p>
     <h2>Keywords</h2>
     <p class="kw">ghidra &middot; embedded firmware &middot; ICS security &middot; attestation &middot; static analysis &middot; ARM Cortex-M</p>
     <p style="margin-top:40px"><a href="/research/">&larr; All research</a></p>
