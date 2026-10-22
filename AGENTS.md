@@ -1,26 +1,28 @@
 # AGENTS.md — chokmah-me.github.io
 
-## What this is
-Public site for Chokmah LLC: research catalog, papers, and notes. Live at chokmah.me. This repository is the GitHub Pages mirror of the Cloudflare Pages deployment.
+Public site for Chokmah LLC. Live at chokmah.me. Vanilla HTML/CSS (Tailwind via CDN). GitHub Pages deploys from `main`.
 
-Full agent guidance for this repo lives in `CLAUDE.md`; this file is the cross-tool summary. Read `CLAUDE.md` before substantive work.
+## Commands
 
-## Layout (top level)
-- `CLAUDE.md`
-- `README.md`
-- `_headers`
-- `ai-ciso-training`
-- `apple-touch-icon.png`
-- `assets`
-- `cloud-security-intro`
-- `favicon-32x32.png`
-- `favicon.ico`
-- `functions`
+No build step.
+
+```powershell
+python -m http.server 8000
+python scripts/sort_research_catalog.py
+```
+
+HTML, JSON-LD, and `sitemap.xml` must stay in agreement when a page is added, removed, or demoted.
 
 ## Work rules
-- Work from the README first; it is the canonical description of purpose, layout, and any build or verify commands.
-- Do not change verdicts, locked data tables, or published artifacts without the user's explicit word.
-- Keep changes small and receipt-backed: name the commit or artifact a claim rests on.
 
-## Canonical docs
-- `README.md` — purpose, usage, and status.
+- Training/course pages under `training/` and `ai-ciso-training/` / `cloud-security-intro/` are demoted: reachable by URL, not in nav, sitemap, or JSON-LD `hasOfferCatalog`. Do not re-link them without the user's word.
+- Research catalog lives in `research/`. Prefer concept DOIs for “latest.”
+- Brand palette is in `theme.html`. No emojis in body copy.
+- `functions/_middleware.js` is Cloudflare middleware; keep it in sync with how the live host actually serves the site.
+
+## Pointers
+
+- `README.md` — portfolio index
+- `CLAUDE.md` — page map, SEO, demotion note
+- `sitemap.xml` / `robots.txt` — crawl surface
+- `research/` — paper catalog
